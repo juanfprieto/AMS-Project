@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization xmlns="obout:grid:localization-schema">
+  <grid
+     page_size_text  = "רשומות לכל דף:"
+     records_text    = "רשומות:"
+     to_text         = "-"
+     of_text         = "מ"
+     pages_text      = "דפים:"          
+     loading_text    = "טוען..."
+     no_records_text = "לא נמצאו רשומות זמינות."
+     resizing_tooltip_width = "רוחב:"
+     resizing_tooltip_pixels = "פיקסלים"
+     type_validation_error = "הערך שהכנסת בעמודה ה XXXXX אינו תקין."
+     maxlength_validation_error = "הערך שהזנת בעמודה XXXXX חורג מטווח התווים YYYYY המותר בעמודה זו."
+     js_warning = "There was an error initializing the Grid with the ID '[GRID_ID]'.\n\n[WARNING]\n\nPlease contact us for help using this page http://www.obout.com/inc/support.aspx."
+     >
+
+    <commands
+      add_link	      = "הוסף חדש"
+      edit_link       = "ערוך"
+      delete_link     = "מחק"      
+      update_link     = "עדכן"      
+      cancel_link     = "ביטול"
+      save_link       = "שמירה"
+      save_all_link   = "שמור הכל"
+      cancel_all_link = "ביטול הכל"
+      remove_link     = "הסר"
+      modify_link     = "התאם"
+      undelete_link   = "ביטול מחיקה"
+    />
+    
+    <filter
+      button_show_filter   = "הצג סינון"
+      button_hide_filter   = "הסתר סינון"
+      button_filter        = "החל סינון"
+      button_remove_filter = "הסר סינון"
+      
+      filter_criteria_nofilter                 = "ללא סינון"
+      filter_criteria_contains                 = "מכיל"
+      filter_criteria_does_not_contain         = "אינו מכיל"
+      filter_criteria_starts_with              = "מתחיל ב"
+      filter_criteria_ends_with                = "מסתיים ב"
+      filter_criteria_equal_to                 = "שווה ל"
+      filter_criteria_not_equal_to             = "שונה מ"
+      filter_criteria_smaller_than             = "קטן מ"
+      filter_criteria_greater_than             = "גדול מ"
+      filter_criteria_smaller_than_or_equal_to = "קטן או שווה ל"
+      filter_criteria_greater_than_or_equal_to = "גדול או שווה ל"
+      filter_criteria_is_null                  = "מאופס"
+      filter_criteria_is_not_null              = "אינו מאופס"
+      filter_criteria_is_empty                 = "ריק"
+      filter_criteria_is_not_empty             = "אינו ריק"
+    />        
+
+    <grouping
+      grouping_area_text = "גרור עמודת כותרת לכאן לקיבוץ לפי הרשומה."
+      group_information_count = " (XXXXX רשומות)"
+      group_information_count_single = " (XXXXX רשומות)"
+      group_information_next_page = " (מציג XXXXX מתוך YYYYY רשומות - קבוצה זו תוצג בעמוד הבא)"
+      group_information_previous_page = " (מציג XXXXX מתוך YYYYY רשומות - קבוצה זו התחילה בעמוד הקודם)"
+      group_information_previous_next_page = " (מציג XXXXX מתוך YYYYY רשומות - קבוצה זו החלה בעמוד הקודם ותמשיך בעמוד הבא.)"
+    />
+    <paging
+      total_number_of_pages  = " (מתוך XXXXX)"
+      manual_paging_link  = "עבור לעמוד »"
+      page_size_options_all = "הכל"
+    />
+  </grid>
+</localization>
+

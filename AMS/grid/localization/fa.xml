@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization xmlns="obout:grid:localization-schema">
+  <grid
+     page_size_text  = "تعداد ركورد در صفحه:"
+     records_text    = "ركوردها:"
+     to_text         = "تا"
+     of_text         = "از"
+     pages_text      = "صفحه:"
+     loading_text    = "در حــال بـارگذارى..."
+     no_records_text = "هيچ ركوردى وجود ندارد"
+     resizing_tooltip_width = "عرض:"
+     resizing_tooltip_pixels = " پيكسل"
+     type_validation_error = "مقدارى كه براى ستون XXXXX وارد كرده ايد معتبر نيست."
+     maxlength_validation_error = "مقدارى كه براي ستون XXXXX وارد كرده ايد حداكثر YYYYY كاراكتر مي پذيرد."
+     js_warning = "مشكلي وجود دارد در مقدار دهي اوليه گريد با شناسه  '[GRID_ID]'.\n\n[WARNING]\n\nلطفا جهت كسب راهنمايي هاي مورد نياز با آدرس مقابل تماس حاصل نماييد http://www.obout.com/."
+    >
+    <commands
+      add_link	      = "اضــافـه"
+      edit_link       = "ويرايش"
+      delete_link     = "حــذف"
+      update_link     = "ويرايش"
+      cancel_link     = "انصراف"
+      save_link       = "ذخيره"
+      save_all_link   = "ذخيره همه"
+      cancel_all_link = "انصراف همه"
+      remove_link     = "حذف"
+      modify_link     = "تغيير"
+      undelete_link   = "بازگرداندن"
+    />
+
+    <filter
+      button_show_filter   = "نمايش فيلتر"
+      button_hide_filter   = "عدم نمايش فيلتر"
+      button_filter        = "اعمال فيلتر"
+      button_remove_filter = "حذف فيلتر"
+      
+      filter_criteria_nofilter                 = "بدون فيلتر"
+      filter_criteria_contains                 = "شامل"
+      filter_criteria_does_not_contain         = "عدم شامل"
+      filter_criteria_starts_with              = "شروع با"
+      filter_criteria_ends_with                = "پايان با"
+      filter_criteria_equal_to                 = "مساوى با"
+      filter_criteria_not_equal_to             = "نا مساوى با"
+      filter_criteria_smaller_than             = "كوچكتر از"
+      filter_criteria_greater_than             = "بزرگتر از"
+      filter_criteria_smaller_than_or_equal_to = "كوچكتر يا مساوى"
+      filter_criteria_greater_than_or_equal_to = "بزرگتر يا مساوى"
+      filter_criteria_is_null                  = "نال"
+      filter_criteria_is_not_null              = "غير نال"
+      filter_criteria_is_empty                 = "تهى"
+      filter_criteria_is_not_empty             = "غير تهى"
+    />
+
+    <grouping
+      grouping_area_text = "ستون مورد نظر را جهت گروه بندى به اينجا بكشيد"
+      group_information_count = " (XXXXX ركورد)"
+      group_information_count_single = " (XXXXX ركورد)"
+      group_information_next_page = " (نمايش XXXXX از YYYYY ركود - ادامه اين گروه در صفحه بعدى است)"
+      group_information_previous_page = " (نمايش XXXXX از YYYYY ركورد - ابتداي اين گروه در صفحه قبلى است)"
+      group_information_previous_next_page = " (نمايش XXXXX از YYYYY ركورد - ابتدا و انتهاى اين گروه به ترتيب در صفحات قبل و بعد است)"
+    />
+
+    <paging
+      total_number_of_pages  = " ( خارج از: XXXXX)"
+      manual_paging_link  = "برو به صفحه »"
+      page_size_options_all = "همه"
+    />
+
+  </grid>
+</localization>

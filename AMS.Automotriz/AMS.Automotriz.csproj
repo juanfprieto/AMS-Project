@@ -1,0 +1,909 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1B84B99B-D392-48C7-A62A-06BDADA22005}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>AMS.Automotriz</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AMS.Automotriz</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\AMS\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\Compilados\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajax, Version=5.7.22.2, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS\bin\Ajax.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxControlToolkit, Version=4.1.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL" />
+    <Reference Include="eworld.ui, Version=1.9.0.0, Culture=neutral, PublicKeyToken=24d65337282035f2">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS\bin\eworld.ui.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="vortex.web.ui.webcontrols, Version=1.0.2851.30108, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\vortex.web.ui.webcontrols.dll</HintPath>
+    </Reference>
+    <Reference Include="WebChart, Version=1.1.1.4, Culture=neutral" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AMS.Automotriz.ConsumoSuraWS.ascx.cs">
+      <DependentUpon>AMS.Automotriz.ConsumoSuraWS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ConsumoSuraWS.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.ConsumoSuraWS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.DatosCliente.ascx.cs">
+      <DependentUpon>AMS.Automotriz.DatosCliente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.DatosCliente.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.DatosCliente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.CitaTallerWeb.ascx.cs">
+      <DependentUpon>AMS.Automotriz.CitaTallerWeb.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.CitaTallerWeb.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.CitaTallerWeb.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.EliminaLiquidacion.ascx.cs">
+      <DependentUpon>AMS.Automotriz.EliminaLiquidacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.EliminaLiquidacion.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.EliminaLiquidacion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.GestionDashBoard.ascx.cs">
+      <DependentUpon>AMS.Automotriz.GestionDashBoard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.GestionDashBoard.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.GestionDashBoard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ModificacionFechaOT.ascx.cs">
+      <DependentUpon>AMS.Automotriz.ModificacionFechaOT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ModificacionFechaOT.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.ModificacionFechaOT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ModificarCargoTransferencia.ascx.cs">
+      <DependentUpon>AMS.Automotriz.ModificarCargoTransferencia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ModificarCargoTransferencia.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.ModificarCargoTransferencia.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ModificarFactura.ascx.cs">
+      <DependentUpon>AMS.Automotriz.ModificarFactura.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ModificarFactura.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.ModificarFactura.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenTrabajo.Cancelacion.ascx.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajo.Cancelacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenTrabajo.Cancelacion.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajo.Cancelacion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.PanelPrecios.aspx.cs">
+      <DependentUpon>AMS.Automotriz.PanelPrecios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.PanelPrecios.aspx.designer.cs">
+      <DependentUpon>AMS.Automotriz.PanelPrecios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.PlanificacionTallerVeh.aspx.cs">
+      <DependentUpon>AMS.Automotriz.PlanificacionTallerVeh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.PlanificacionTallerVeh.aspx.designer.cs">
+      <DependentUpon>AMS.Automotriz.PlanificacionTallerVeh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenTrabajoCotizaciones.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajoCotizaciones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenTrabajoCotizaciones.ascx.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajoCotizaciones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenTrabajoCotizaciones.DatosOrden.ascx.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajoCotizaciones.DatosOrden.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenTrabajoCotizaciones.DatosOrden.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajoCotizaciones.DatosOrden.ascx</DependentUpon>
+    </Compile>
+    <Content Include="AMS.Automotriz.Acciones.ascx" />
+    <Content Include="AMS.Automotriz.ActDatosOrdenTemp.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Automotriz.ActEstadoOperaciones.ascx" />
+    <Content Include="AMS.Automotriz.AdminKitsCombos.ascx" />
+    <Content Include="AMS.Automotriz.AjusteInflacion.ascx" />
+    <Content Include="AMS.Automotriz.Categorizacion.ascx" />
+    <Content Include="AMS.Automotriz.CierreTaller.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Automotriz.CitasTaller.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="AMS.Automotriz.CitaTaller.ascx" />
+    <Content Include="AMS.Automotriz.ConsumoSuraWS.ascx" />
+    <Content Include="AMS.Automotriz.DatosCliente.ascx" />
+    <Content Include="AMS.Automotriz.ConsultaOT.ascx" />
+    <Content Include="AMS.Automotriz.ConsultaOTSHMTL.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Automotriz.ConsultarCitas.ascx" />
+    <Content Include="AMS.Automotriz.ControlKit.ascx" />
+    <Content Include="AMS.Automotriz.DevolucionesOT.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Automotriz.EditarCitaTaller.ascx" />
+    <Content Include="AMS.Automotriz.EliminaLiquidacion.ascx" />
+    <Content Include="AMS.Automotriz.EliminaOrden.ascx" />
+    <Content Include="AMS.Automotriz.FacturaProveedor.ascx" />
+    <Content Include="AMS.Automotriz.Garantias.ascx" />
+    <Content Include="AMS.Automotriz.GarantiasAprobadas.ascx" />
+    <Content Include="AMS.Automotriz.GarantiasAprobadasFormato.ascx" />
+    <Content Include="AMS.Automotriz.Garantias_2.ascx" />
+    <Content Include="AMS.Automotriz.GestionDashBoard.ascx" />
+    <Content Include="AMS.Automotriz.HojaVida.ascx" />
+    <Content Include="AMS.Automotriz.HojaVida.CargarHoja.ascx" />
+    <Content Include="AMS.Automotriz.HojaVida.ConsultarHoja.ascx" />
+    <Content Include="AMS.Automotriz.IngresoPresenciaMecanico.ascx" />
+    <Content Include="AMS.Automotriz.LiquidaManoObra.ascx" />
+    <Content Include="AMS.Automotriz.LiquidaOrden.ascx" />
+    <Content Include="AMS.Automotriz.Modificacion.ascx" />
+    <Content Include="AMS.Automotriz.ModificacionFechaOT.ascx" />
+    <Content Include="AMS.Automotriz.ModificarCargoTransferencia.ascx" />
+    <Content Include="AMS.Automotriz.ModificarFactura.ascx" />
+    <Content Include="AMS.Automotriz.ModificarNitOt.ascx" />
+    <Content Include="AMS.Automotriz.ModificarVIN.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Automotriz.OrdenTrabajo.ascx" />
+    <Content Include="AMS.Automotriz.OrdenTrabajo.Cancelacion.ascx" />
+    <Content Include="AMS.Automotriz.OrdenTrabajo.DatosOrden.ascx" />
+    <Content Include="AMS.Automotriz.OrdenTrabajo.DatosPropietario.ascx" />
+    <Content Include="AMS.Automotriz.OrdenTrabajo.DatosVehiculo.ascx" />
+    <Content Include="AMS.Automotriz.OrdenTrabajo.EstadoOrdenes.ascx" />
+    <Content Include="AMS.Automotriz.OrdenTrabajo.KitsCombos.ascx" />
+    <Content Include="AMS.Automotriz.OrdenTrabajo.OperacionesPeritaje.ascx" />
+    <Content Include="AMS.Automotriz.OrdenTrabajo.OtrosDatos.ascx" />
+    <Content Include="AMS.Automotriz.PanelPrecios.aspx" />
+    <Content Include="AMS.Automotriz.PedidoCliente.ascx" />
+    <Content Include="AMS.Automotriz.Pedidos.ascx" />
+    <Content Include="AMS.Automotriz.PlanificacionTaller.aspx" />
+    <Content Include="AMS.Automotriz.PlanificarTaller.ascx" />
+    <Content Include="AMS.Automotriz.PlanningTaller.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Automotriz.PostVenta.ascx" />
+    <Content Include="AMS.Automotriz.PrecioItems.ascx" />
+    <Content Include="AMS.Automotriz.PreliquidacionOT.ascx" />
+    <Content Include="AMS.Automotriz.ProcesosLiquidacion.ascx" />
+    <Content Include="AMS.Automotriz.ProgramacionCitas.ascx" />
+    <Content Include="AMS.Automotriz.ProgramacionTaller.ascx" />
+    <Content Include="AMS.Automotriz.ReImpresionOT.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Automotriz.TestGases.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Automotriz.TorreControl.ascx" />
+    <Content Include="AMS.Automotriz.UnificarTemparioOperaciones.ascx" />
+    <Content Include="AMS.Automotriz.VistaImpresion.ascx" />
+    <Compile Include="AMS.Automotriz.ActDatosOrdenTemp.ascx.cs">
+      <DependentUpon>AMS.Automotriz.ActDatosOrdenTemp.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ActDatosOrdenTemp.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.ActDatosOrdenTemp.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ActEstadoOperaciones.ascx.cs">
+      <DependentUpon>AMS.Automotriz.ActEstadoOperaciones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ActEstadoOperaciones.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.ActEstadoOperaciones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.AdminKitsCombos.ascx.cs">
+      <DependentUpon>AMS.Automotriz.AdminKitsCombos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.AdminKitsCombos.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.AdminKitsCombos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.Categorizacion.ascx.cs">
+      <DependentUpon>AMS.Automotriz.Categorizacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.Categorizacion.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.Categorizacion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.CierreTaller.ascx.cs">
+      <DependentUpon>AMS.Automotriz.CierreTaller.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.CierreTaller.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.CierreTaller.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.CitasTaller.aspx.cs">
+      <DependentUpon>AMS.Automotriz.CitasTaller.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.CitasTaller.aspx.designer.cs">
+      <DependentUpon>AMS.Automotriz.CitasTaller.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.CitaTaller.ascx.cs">
+      <DependentUpon>AMS.Automotriz.CitaTaller.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.CitaTaller.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.CitaTaller.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.Combo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ConsultaOT.ascx.cs">
+      <DependentUpon>AMS.Automotriz.ConsultaOT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ConsultaOT.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.ConsultaOT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ConsultaOTSHMTL.ascx.cs">
+      <DependentUpon>AMS.Automotriz.ConsultaOTSHMTL.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ConsultaOTSHMTL.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.ConsultaOTSHMTL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ConsultarCitas.ascx.cs">
+      <DependentUpon>AMS.Automotriz.ConsultarCitas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ConsultarCitas.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.ConsultarCitas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ControlKit.ascx.cs">
+      <DependentUpon>AMS.Automotriz.ControlKit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ControlKit.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.ControlKit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.Cotizacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.DevolucionesOT.ascx.cs">
+      <DependentUpon>AMS.Automotriz.DevolucionesOT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.DevolucionesOT.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.DevolucionesOT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.EditarCitaTaller.ascx.cs">
+      <DependentUpon>AMS.Automotriz.EditarCitaTaller.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.EditarCitaTaller.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.EditarCitaTaller.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.FacturaGarantias.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.Garantias.ascx.cs">
+      <DependentUpon>AMS.Automotriz.Garantias.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.Garantias.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.Garantias.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.GarantiasAprobadas.ascx.cs">
+      <DependentUpon>AMS.Automotriz.GarantiasAprobadas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.GarantiasAprobadas.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.GarantiasAprobadas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.GarantiasAprobadasFormato.ascx.cs">
+      <DependentUpon>AMS.Automotriz.GarantiasAprobadasFormato.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.GarantiasAprobadasFormato.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.GarantiasAprobadasFormato.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.Garantias_2.ascx.cs">
+      <DependentUpon>AMS.Automotriz.Garantias_2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.Garantias_2.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.Garantias_2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.HojaVida.ascx.cs">
+      <DependentUpon>AMS.Automotriz.HojaVida.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.HojaVida.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.HojaVida.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.HojaVida.ConsultarHoja.ascx.cs">
+      <DependentUpon>AMS.Automotriz.HojaVida.ConsultarHoja.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.HojaVida.ConsultarHoja.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.HojaVida.ConsultarHoja.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.HojaVida.ConsultarHojaUsuario.ascx.cs">
+      <DependentUpon>AMS.Automotriz.HojaVida.ConsultarHojaUsuario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.HojaVida.ConsultarHojaUsuario.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.HojaVida.ConsultarHojaUsuario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.HojaVidaSinPrecio.ascx.cs">
+      <DependentUpon>AMS.Automotriz.HojaVidaSinPrecio.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.HojaVidaSinPrecio.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.HojaVidaSinPrecio.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.IngresoPresenciaMecanico.ascx.cs">
+      <DependentUpon>AMS.Automotriz.IngresoPresenciaMecanico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.IngresoPresenciaMecanico.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.IngresoPresenciaMecanico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.LiquidacionOrden.ascx.cs">
+      <DependentUpon>AMS.Automotriz.LiquidaOrden.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.LiquidacionOrden.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.LiquidaOrden.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.LiquidaManoObra.ascx.cs">
+      <DependentUpon>AMS.Automotriz.LiquidaManoObra.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.LiquidaManoObra.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.LiquidaManoObra.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ModificarNitOt.ascx.cs">
+      <DependentUpon>AMS.Automotriz.ModificarNitOt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ModificarNitOt.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.ModificarNitOt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ModificarVIN.ascx.cs">
+      <DependentUpon>AMS.Automotriz.ModificarVIN.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ModificarVIN.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.ModificarVIN.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.Ordenes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenesTaller.ascx.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenesTaller.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenesTaller.DatosOrden.ascx.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajo.DatosOrden.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenesTaller.DatosOrden.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajo.DatosOrden.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenesTaller.DatosPropietario.ascx.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajo.DatosPropietario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenesTaller.DatosPropietario.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajo.DatosPropietario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenesTaller.DatosVehiculo.ascx.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajo.DatosVehiculo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenesTaller.DatosVehiculo.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajo.DatosVehiculo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenesTaller.EstadoOrdenes.ascx.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajo.EstadoOrdenes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenesTaller.EstadoOrdenes.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajo.EstadoOrdenes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenesTaller.KitsCombos.ascx.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajo.KitsCombos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenesTaller.KitsCombos.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajo.KitsCombos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenesTaller.OperacionesPeritaje.ascx.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajo.OperacionesPeritaje.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenesTaller.OperacionesPeritaje.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajo.OperacionesPeritaje.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenesTaller.OtrosDatos.ascx.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajo.OtrosDatos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.OrdenesTaller.OtrosDatos.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajo.OtrosDatos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.PlanificacionTaller.aspx.cs">
+      <DependentUpon>AMS.Automotriz.PlanificacionTaller.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.PlanificacionTaller.aspx.designer.cs">
+      <DependentUpon>AMS.Automotriz.PlanificacionTaller.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.PlanificarTaller.ascx.cs">
+      <DependentUpon>AMS.Automotriz.PlanificarTaller.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.PlanificarTaller.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.PlanificarTaller.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.PlanningTaller.ascx.cs">
+      <DependentUpon>AMS.Automotriz.PlanningTaller.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.PlanningTaller.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.PlanningTaller.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.PlanningTaller.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.PreliquidacionOT.ascx.cs">
+      <DependentUpon>AMS.Automotriz.PreliquidacionOT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.PreliquidacionOT.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.PreliquidacionOT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ProcesosLiquidacion.ascx.cs">
+      <DependentUpon>AMS.Automotriz.ProcesosLiquidacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ProcesosLiquidacion.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.ProcesosLiquidacion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ProgramacionCitas.ascx.cs">
+      <DependentUpon>AMS.Automotriz.ProgramacionCitas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ProgramacionCitas.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.ProgramacionCitas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ProgramacionTaller.ascx.cs">
+      <DependentUpon>AMS.Automotriz.ProgramacionTaller.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ProgramacionTaller.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.ProgramacionTaller.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ReImpresionOT.ascx.cs">
+      <DependentUpon>AMS.Automotriz.ReImpresionOT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.ReImpresionOT.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.ReImpresionOT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.RevisorFactura.cs" />
+    <Compile Include="AMS.Automotriz.TestGases.ascx.cs">
+      <DependentUpon>AMS.Automotriz.TestGases.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.TestGases.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.TestGases.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.Tools.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.TorreControl.ascx.cs">
+      <DependentUpon>AMS.Automotriz.TorreControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.TorreControl.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.TorreControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.UnificarTemparioOperaciones.ascx.cs">
+      <DependentUpon>AMS.Automotriz.UnificarTemparioOperaciones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.UnificarTemparioOperaciones.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.UnificarTemparioOperaciones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Automotriz.VistaImpresion.ascx.cs">
+      <DependentUpon>AMS.Automotriz.VistaImpresion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Automotriz.VistaImpresion.ascx.designer.cs">
+      <DependentUpon>AMS.Automotriz.VistaImpresion.ascx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AMS.Automotriz.ActDatosOrdenTemp.ascx.resx">
+      <DependentUpon>AMS.Automotriz.ActDatosOrdenTemp.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.ActEstadoOperaciones.ascx.resx">
+      <DependentUpon>AMS.Automotriz.ActEstadoOperaciones.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.AdminKitsCombos.ascx.resx">
+      <DependentUpon>AMS.Automotriz.AdminKitsCombos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.Categorizacion.ascx.resx">
+      <DependentUpon>AMS.Automotriz.Categorizacion.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.CierreTaller.ascx.resx">
+      <DependentUpon>AMS.Automotriz.CierreTaller.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.CitasTaller.aspx.resx">
+      <DependentUpon>AMS.Automotriz.CitasTaller.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.CitaTaller.ascx.resx">
+      <DependentUpon>AMS.Automotriz.CitaTaller.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.ConsultaOT.ascx.resx">
+      <DependentUpon>AMS.Automotriz.ConsultaOT.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.ConsultaOTSHMTL.ascx.resx">
+      <DependentUpon>AMS.Automotriz.ConsultaOTSHMTL.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.ControlKit.ascx.resx">
+      <DependentUpon>AMS.Automotriz.ControlKit.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.DevolucionesOT.ascx.resx">
+      <DependentUpon>AMS.Automotriz.DevolucionesOT.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.EditarCitaTaller.ascx.resx">
+      <DependentUpon>AMS.Automotriz.EditarCitaTaller.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.Garantias.ascx.resx">
+      <DependentUpon>AMS.Automotriz.Garantias.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.GarantiasAprobadas.ascx.resx">
+      <DependentUpon>AMS.Automotriz.GarantiasAprobadas.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.GarantiasAprobadasFormato.ascx.resx">
+      <DependentUpon>AMS.Automotriz.GarantiasAprobadasFormato.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.Garantias_2.ascx.resx">
+      <DependentUpon>AMS.Automotriz.Garantias_2.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.HojaVida.ascx.resx">
+      <DependentUpon>AMS.Automotriz.HojaVida.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.HojaVida.ConsultarHoja.ascx.resx">
+      <DependentUpon>AMS.Automotriz.HojaVida.ConsultarHoja.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.IngresoPresenciaMecanico.ascx.resx">
+      <DependentUpon>AMS.Automotriz.IngresoPresenciaMecanico.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.LiquidacionOrden.ascx.resx">
+      <DependentUpon>AMS.Automotriz.LiquidacionOrden.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.LiquidaManoObra.ascx.resx">
+      <DependentUpon>AMS.Automotriz.LiquidaManoObra.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.ModificarNitOt.ascx.resx">
+      <DependentUpon>AMS.Automotriz.ModificarNitOt.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.ModificarVIN.ascx.resx">
+      <DependentUpon>AMS.Automotriz.ModificarVIN.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.OrdenesTaller.ascx.resx">
+      <DependentUpon>AMS.Automotriz.OrdenesTaller.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.OrdenesTaller.DatosOrden.ascx.resx">
+      <DependentUpon>AMS.Automotriz.OrdenesTaller.DatosOrden.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.OrdenesTaller.DatosPropietario.ascx.resx">
+      <DependentUpon>AMS.Automotriz.OrdenesTaller.DatosPropietario.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.OrdenesTaller.DatosVehiculo.ascx.resx">
+      <DependentUpon>AMS.Automotriz.OrdenesTaller.DatosVehiculo.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.OrdenesTaller.EstadoOrdenes.ascx.resx">
+      <DependentUpon>AMS.Automotriz.OrdenesTaller.EstadoOrdenes.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.OrdenesTaller.KitsCombos.ascx.resx">
+      <DependentUpon>AMS.Automotriz.OrdenesTaller.KitsCombos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.OrdenesTaller.OperacionesPeritaje.ascx.resx">
+      <DependentUpon>AMS.Automotriz.OrdenesTaller.OperacionesPeritaje.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.OrdenesTaller.OtrosDatos.ascx.resx">
+      <DependentUpon>AMS.Automotriz.OrdenesTaller.OtrosDatos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.PlanificacionTaller.aspx.resx">
+      <DependentUpon>AMS.Automotriz.PlanificacionTaller.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.PlanificarTaller.ascx.resx">
+      <DependentUpon>AMS.Automotriz.PlanificarTaller.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.PlanningTaller.ascx.resx">
+      <DependentUpon>AMS.Automotriz.PlanningTaller.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.PreliquidacionOT.ascx.resx">
+      <DependentUpon>AMS.Automotriz.PreliquidacionOT.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.ProcesosLiquidacion.ascx.resx">
+      <DependentUpon>AMS.Automotriz.ProcesosLiquidacion.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.ProgramacionCitas.ascx.resx">
+      <DependentUpon>AMS.Automotriz.ProgramacionCitas.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.ProgramacionTaller.ascx.resx">
+      <DependentUpon>AMS.Automotriz.ProgramacionTaller.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.ReImpresionOT.ascx.resx">
+      <DependentUpon>AMS.Automotriz.ReImpresionOT.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.TestGases.ascx.resx">
+      <DependentUpon>AMS.Automotriz.TestGases.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.TorreControl.ascx.resx">
+      <DependentUpon>AMS.Automotriz.TorreControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.VistaImpresion.ascx.resx">
+      <DependentUpon>AMS.Automotriz.VistaImpresion.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.CitaTallerWeb.ascx.resx">
+      <DependentUpon>AMS.Automotriz.CitaTallerWeb.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.PlanificacionTallerVeh.aspx.resx">
+      <DependentUpon>AMS.Automotriz.PlanificacionTallerVeh.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Automotriz.OrdenTrabajoCotizaciones.DatosOrden.ascx.resx">
+      <DependentUpon>AMS.Automotriz.OrdenTrabajoCotizaciones.DatosOrden.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AMS.Automotriz.HojaVida.ConsultarHojaUsuario.ascx" />
+    <Content Include="AMS.Automotriz.HojaVidaSinPrecio.ascx" />
+    <Content Include="AMS.Automotriz.CitaTallerWeb.ascx" />
+    <Content Include="AMS.Automotriz.PlanificacionTallerVeh.aspx" />
+    <Content Include="AMS.Automotriz.OrdenTrabajoCotizaciones.ascx" />
+    <Content Include="AMS.Automotriz.OrdenTrabajoCotizaciones.DatosOrden.ascx" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AMS.Contabilidad\AMS.Contabilidad.csproj">
+      <Project>{6E5D9657-A3F0-4BCA-8D48-3F089E82439D}</Project>
+      <Name>AMS.Contabilidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.CryptoServices\AMS.CryptoServices.csproj">
+      <Project>{137D79F7-AA92-4A71-A6F4-FE44FFEB715B}</Project>
+      <Name>AMS.CryptoServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.DBManager\AMS.DBManager.csproj">
+      <Project>{41ED97B6-DDCF-4AA6-BA60-8F23A5661C49}</Project>
+      <Name>AMS.DBManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.DB\AMS.DB.csproj">
+      <Project>{BAE52CE2-EF3D-4B65-9F5A-9DA33502F99C}</Project>
+      <Name>AMS.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Documentos\AMS.Documentos.csproj">
+      <Project>{19EF3FAA-C588-4E81-813B-6F3C723B222B}</Project>
+      <Name>AMS.Documentos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Estadisticos\AMS.Estadisticos.csproj">
+      <Project>{E6B41552-75D6-43C0-BC87-98F3C516AD3F}</Project>
+      <Name>AMS.Estadisticos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Forms\AMS.Forms.csproj">
+      <Project>{4E9173A3-45B7-4B17-846D-8D790517DDF5}</Project>
+      <Name>AMS.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Inventarios\AMS.Inventarios.csproj">
+      <Project>{F8976D54-8AE0-4A6C-91D5-60671FE19B09}</Project>
+      <Name>AMS.Inventarios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Tools\AMS.Tools.csproj">
+      <Project>{97030739-855C-4ECE-A72B-231624365A8D}</Project>
+      <Name>AMS.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1249</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/AMS/AMS.Automotriz</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

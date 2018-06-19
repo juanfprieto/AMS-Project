@@ -1,0 +1,9 @@
+<table rules="all" bordercolor="Black" border="1">
+	<tr>
+		<td width="150" align="left">ORIGEN_ITEM</td><td width="150" align="left">CANTIDAD</td><td width="150" align="left">VALOR</td>
+	</tr><tr>
+		<td width="150" align="left">Fábrica</td><td width="150" align="left">10025,00</td><td width="150" align="left">745,589,149,86</td>
+	</tr><tr>
+		<td width="150" align="left">Servicio</td><td width="150" align="left">5,00</td><td width="150" align="left">164,401,00</td>
+	</tr>
+</table>

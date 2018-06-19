@@ -1,0 +1,52 @@
+﻿/* The container for the column sets */
+.ob_gCSCont
+{
+    position: absolute !important;
+    top: 17px !important;
+    left: 0px !important;
+    right: 0px !important;
+    overflow: hidden;
+}
+        
+/* A column set row (level) */
+.ob_gCSContLevel
+{
+    height: 25px !important;
+    background-image: url(column-set.png);
+    background-repeat: repeat-x;
+    background-color: #A8AEBD;    
+}
+        
+/* The column set for a number of columns */
+.ob_gCSet
+{
+    color:#01354D;
+    font-family:Verdana;
+    font-size:12px;
+    font-weight:normal;
+    float: left;
+    text-align: center;
+}
+        
+/* The text of a column set */
+.ob_gCSet div
+{
+    margin-left: 20px;
+    margin-top: 3px;
+}
+        
+/* The separator between two column sets */
+.ob_gCSetSep
+{
+    top: -25px !important;
+}
+        
+.ob_gHCont, .ob_gHContWG
+{            
+    z-index: 10 !important;
+}
+        
+.ob_gHICont
+{
+    overflow: visible !important;            
+}

@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2AEDD9DB-90C2-40FF-8067-9D8140452EC4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AMS.SAC_Asesoria</RootNamespace>
+    <AssemblyName>AMS.SAC_Asesoria</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\AMS\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Compilados\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajax, Version=5.7.22.2, Culture=neutral" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="obout_Grid_NET, Version=7.0.10.0, Culture=neutral, PublicKeyToken=5ddc49d3b53e3f98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS\bin\obout_Grid_NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AMS.SAC_Asesoria.AdministrarOSC.ascx" />
+    <Content Include="AMS.SAC_Asesoria.AgendaActualizaciones.ascx" />
+    <Content Include="AMS.SAC_Asesoria.AgendaAsesores.ascx" />
+    <Content Include="AMS.SAC_Asesoria.Capacitacion.ascx" />
+    <Content Include="AMS.SAC_Asesoria.ConsultarOSC.ascx" />
+    <Content Include="AMS.SAC_Asesoria.ConsultarOSCCliente.ascx" />
+    <Content Include="AMS.SAC_Asesoria.ConsultarSolicitud.ascx" />
+    <Content Include="AMS.SAC_Asesoria.ConsultarSolicitudCliente.ascx" />
+    <Content Include="AMS.SAC_Asesoria.ConsultarSolicitudClientO.aspx" />
+    <Content Include="AMS.SAC_Asesoria.CrearOSC.ascx" />
+    <Content Include="AMS.SAC_Asesoria.CrearSolicitud.ascx" />
+    <Content Include="AMS.SAC_Asesoria.HojaVida.ascx" />
+    <Content Include="AMS.SAC_Asesoria.MostrarOSC.ascx" />
+    <Content Include="AMS.SAC_Asesoria.MostrarSolicitud.ascx" />
+    <Content Include="AMS.SAC_Asesoria.MostrarSolicitudOSC.aspx" />
+    <Content Include="AMS.SAC_Asesoria.ResponderOSC.ascx" />
+    <Content Include="AMS.SAC_Asesoria.VerAgendaAsesores.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AMS.SAC_Asesoria.AdministrarOSC.ascx.cs">
+      <DependentUpon>AMS.SAC_Asesoria.AdministrarOSC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.AdministrarOSC.ascx.designer.cs">
+      <DependentUpon>AMS.SAC_Asesoria.AdministrarOSC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.AgendaActualizaciones.ascx.cs">
+      <DependentUpon>AMS.SAC_Asesoria.AgendaActualizaciones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.AgendaActualizaciones.ascx.designer.cs">
+      <DependentUpon>AMS.SAC_Asesoria.AgendaActualizaciones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.AgendaAsesores.ascx.cs">
+      <DependentUpon>AMS.SAC_Asesoria.AgendaAsesores.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.AgendaAsesores.ascx.designer.cs">
+      <DependentUpon>AMS.SAC_Asesoria.AgendaAsesores.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.Capacitacion.ascx.cs">
+      <DependentUpon>AMS.SAC_Asesoria.Capacitacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.Capacitacion.ascx.designer.cs">
+      <DependentUpon>AMS.SAC_Asesoria.Capacitacion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.ConsultarOSC.ascx.cs">
+      <DependentUpon>AMS.SAC_Asesoria.ConsultarOSC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.ConsultarOSC.ascx.designer.cs">
+      <DependentUpon>AMS.SAC_Asesoria.ConsultarOSC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.ConsultarOSCCliente.ascx.cs">
+      <DependentUpon>AMS.SAC_Asesoria.ConsultarOSCCliente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.ConsultarOSCCliente.ascx.designer.cs">
+      <DependentUpon>AMS.SAC_Asesoria.ConsultarOSCCliente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.ConsultarSolicitud.ascx.cs">
+      <DependentUpon>AMS.SAC_Asesoria.ConsultarSolicitud.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.ConsultarSolicitud.ascx.designer.cs">
+      <DependentUpon>AMS.SAC_Asesoria.ConsultarSolicitud.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.ConsultarSolicitudCliente.ascx.cs">
+      <DependentUpon>AMS.SAC_Asesoria.ConsultarSolicitudCliente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.ConsultarSolicitudCliente.ascx.designer.cs">
+      <DependentUpon>AMS.SAC_Asesoria.ConsultarSolicitudCliente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.ConsultarSolicitudClientO.aspx.cs">
+      <DependentUpon>AMS.SAC_Asesoria.ConsultarSolicitudClientO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.ConsultarSolicitudClientO.aspx.designer.cs">
+      <DependentUpon>AMS.SAC_Asesoria.ConsultarSolicitudClientO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.CrearOSC.ascx.cs">
+      <DependentUpon>AMS.SAC_Asesoria.CrearOSC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.CrearOSC.ascx.designer.cs">
+      <DependentUpon>AMS.SAC_Asesoria.CrearOSC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.CrearSolicitud.ascx.cs">
+      <DependentUpon>AMS.SAC_Asesoria.CrearSolicitud.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.CrearSolicitud.ascx.designer.cs">
+      <DependentUpon>AMS.SAC_Asesoria.CrearSolicitud.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.HojaVida.ascx.cs">
+      <DependentUpon>AMS.SAC_Asesoria.HojaVida.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.HojaVida.ascx.designer.cs">
+      <DependentUpon>AMS.SAC_Asesoria.HojaVida.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.MostrarOSC.ascx.cs">
+      <DependentUpon>AMS.SAC_Asesoria.MostrarOSC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.MostrarOSC.ascx.designer.cs">
+      <DependentUpon>AMS.SAC_Asesoria.MostrarOSC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.MostrarSolicitud.ascx.cs">
+      <DependentUpon>AMS.SAC_Asesoria.MostrarSolicitud.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.MostrarSolicitud.ascx.designer.cs">
+      <DependentUpon>AMS.SAC_Asesoria.MostrarSolicitud.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.MostrarSolicitudOSC.aspx.cs">
+      <DependentUpon>AMS.SAC_Asesoria.MostrarSolicitudOSC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.MostrarSolicitudOSC.aspx.designer.cs">
+      <DependentUpon>AMS.SAC_Asesoria.MostrarSolicitudOSC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.ResponderOSC.ascx.cs">
+      <DependentUpon>AMS.SAC_Asesoria.ResponderOSC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.ResponderOSC.ascx.designer.cs">
+      <DependentUpon>AMS.SAC_Asesoria.ResponderOSC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.VerAgendaAsesores.ascx.cs">
+      <DependentUpon>AMS.SAC_Asesoria.VerAgendaAsesores.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.SAC_Asesoria.VerAgendaAsesores.ascx.designer.cs">
+      <DependentUpon>AMS.SAC_Asesoria.VerAgendaAsesores.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AMS.DB\AMS.DB.csproj">
+      <Project>{BAE52CE2-EF3D-4B65-9F5A-9DA33502F99C}</Project>
+      <Name>AMS.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Forms\AMS.Forms.csproj">
+      <Project>{4E9173A3-45B7-4B17-846D-8D790517DDF5}</Project>
+      <Name>AMS.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Reportes\AMS.Reportes.csproj">
+      <Project>{E680F9B3-AE3F-4A97-B6E9-3294983EBA18}</Project>
+      <Name>AMS.Reportes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Tools\AMS.Tools.csproj">
+      <Project>{97030739-855C-4ECE-A72B-231624365A8D}</Project>
+      <Name>AMS.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>33748</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/AMS/AMS.SAC_Asesoria</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

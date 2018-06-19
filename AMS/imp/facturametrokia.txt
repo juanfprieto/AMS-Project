@@ -1,0 +1,181 @@
+﻿813203W020      
+974801Y000EQ   
+865173W010      
+822101G001      
+974801Y000EQ   
+974101Y000EQ   
+974201Y000EQ   
+974801Y000EQ   
+974901Y000EQ   
+866111F500      
+924021F580      
+2521203200      
+
+CHAPA PUERTA DELANTERA  
+DERECHA 
+REJILLA  IZQUIERDA VENTILACION 
+TAPA BOMPER DELANTERO 
+LAMEVIDRIO PUERTA DEL IZQ 
+REJILLA  IZQUIERDA VENTILACION 
+REJILLA  LH  A/A  MILLARE 
+REJILLA  CENTRAL A/A 
+REJILLA  IZQUIERDA VENTILACION 
+REJILLA  DERECHA  AIRE  
+ACONDICIONADO 
+CARETA BOMPER TRASERO 
+STOP DERECHO 
+CORREA AIRE ACONDICIONADO 
+
+ 1.00 
+ 1.00 
+ 1.00 
+ 1.00 
+ 1.00 
+ 1.00 
+ 1.00 
+ 1.00 
+ 1.00 
+ 1.00 
+ 1.00 
+ 1.00 
+ 
+663,841.00 
+ 152,434.00 
+ 10,331.00 
+ 56,943.00 
+ 152,434.00 
+ 192,471.00 
+ 153,978.00 
+ 152,434.00 
+ 152,434.00 
+ 544,347.00 
+ 431,650.00 
+ 52,567.00 
+     572,277.00 
+     131,409.00 
+       8,906.00 
+      49,089.00 
+     131,409.00 
+     165,923.00 
+     132,740.00 
+     131,409.00 
+     131,409.00 
+     469,265.00 
+     372,112.00 
+      45,316.00 
+
+*******    ULTIMA LINEA    ******* 
+ 91,564.00 
+ 21,025.00 
+ 1,425.00 
+ 7,854.00 
+ 21,025.00 
+ 26,548.00 
+ 21,238.00 
+ 21,025.00 
+ 21,025.00 
+ 75,082.00 
+ 59,538.00 
+ 7,251.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00 
+ 0.00  
+830.078.966-6  
+METROKIA S.A  
+NIT:  
+OTROS IMPUESTOS  
+OBSERVACIONES: 
+Despues de entregada la mercaderia no se aceptan devoluciones  
+ 2,715,864.00 
+TOTAL A PAGAR 
+ 374,600.00 
++ IVA : 
++ 
+ 0.00 
+ 0.00 
+- RETEFUENTE : 
+ 0.00 
+- RETEICA :   
+ 0.00 
+- RETEIVA :  
+CARTAGENA  
+ SUBTOTAL : 
+ 2,341,264.00  
+- DESCUENTOS : 
+ 0.00  
+OTROS IMPUESTO  
+:  
+NOMBRE Y APELLIDO DEL COMPRADOR  
+FIRMA Y SELLO DEL COMPRADOR   
+RECIBIDA Y ACEPTADA  
+ELABORA  
+REVISA 
+APRUEBA  
+BHERNANDEZ 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10 
+11 
+12  
+ 3,340 
+Peso:  
+   .00% 
+Volumen :  
+12 
+Tot. Und.:  
+   .00% 
+Forma de pago :  
+  Localización  :  
+  Vendedor  : 
+VWHOLE  
+-  
+VENTAS WHOLE VEH  
+130-BRWBNC  
+  Lista  : 
+LIPCOS 
+COP  
+NO  
+BOGOTA D.C.  
+TEL: 877 6700  
+Parque Ind. Guadalajara Aut. Medellín Km 2.5 Via Cota Bodega 7  
+GRANDES CONTRIBUYENTES 
+RESOLUCIÓN N° 12506 DE DIC. 26 / 2002 
+AUTORRETENEDORES 
+RESOLUCIÓN N° 11405 DE NOV. 22 / 2002 
+SOMOS AGENTES RETENEDORES DE IVA  
+** COPIA ** EC5R  
+ 0.00 
+- RETECREE :   
+
+
+
+
+4363754

@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://201.228.212.66/WebService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://201.228.212.66/WebService/AbstractTypes" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://201.228.212.66/WebService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://201.228.212.66/WebService">
+      <s:element name="RequestSQL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestSQLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RequestSQLResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SingleDataSQL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SingleDataSQLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SingleDataSQLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NonQuerySQL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NonQuerySQLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="NonQuerySQLResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NonQueryBlobSQL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="blob" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NonQueryBlobSQLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="NonQueryBlobSQLResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecordExistSQL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecordExistSQLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RecordExistSQLResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransactionSQL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TransactionSQLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TransactionSQLResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="int" type="s:int" />
+      <s:element name="boolean" type="s:boolean" />
+    </s:schema>
+    <s:schema targetNamespace="http://201.228.212.66/WebService/AbstractTypes">
+      <s:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <s:complexType name="StringArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="String" type="s:string" />
+            </s:sequence>
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RequestSQLSoapIn">
+    <wsdl:part name="parameters" element="tns:RequestSQL" />
+  </wsdl:message>
+  <wsdl:message name="RequestSQLSoapOut">
+    <wsdl:part name="parameters" element="tns:RequestSQLResponse" />
+  </wsdl:message>
+  <wsdl:message name="SingleDataSQLSoapIn">
+    <wsdl:part name="parameters" element="tns:SingleDataSQL" />
+  </wsdl:message>
+  <wsdl:message name="SingleDataSQLSoapOut">
+    <wsdl:part name="parameters" element="tns:SingleDataSQLResponse" />
+  </wsdl:message>
+  <wsdl:message name="NonQuerySQLSoapIn">
+    <wsdl:part name="parameters" element="tns:NonQuerySQL" />
+  </wsdl:message>
+  <wsdl:message name="NonQuerySQLSoapOut">
+    <wsdl:part name="parameters" element="tns:NonQuerySQLResponse" />
+  </wsdl:message>
+  <wsdl:message name="NonQueryBlobSQLSoapIn">
+    <wsdl:part name="parameters" element="tns:NonQueryBlobSQL" />
+  </wsdl:message>
+  <wsdl:message name="NonQueryBlobSQLSoapOut">
+    <wsdl:part name="parameters" element="tns:NonQueryBlobSQLResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecordExistSQLSoapIn">
+    <wsdl:part name="parameters" element="tns:RecordExistSQL" />
+  </wsdl:message>
+  <wsdl:message name="RecordExistSQLSoapOut">
+    <wsdl:part name="parameters" element="tns:RecordExistSQLResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransactionSQLSoapIn">
+    <wsdl:part name="parameters" element="tns:TransactionSQL" />
+  </wsdl:message>
+  <wsdl:message name="TransactionSQLSoapOut">
+    <wsdl:part name="parameters" element="tns:TransactionSQLResponse" />
+  </wsdl:message>
+  <wsdl:message name="RequestSQLHttpGetIn">
+    <wsdl:part name="user" type="s:string" />
+    <wsdl:part name="pass" type="s:string" />
+    <wsdl:part name="sql" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RequestSQLHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="SingleDataSQLHttpGetIn">
+    <wsdl:part name="user" type="s:string" />
+    <wsdl:part name="pass" type="s:string" />
+    <wsdl:part name="sql" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SingleDataSQLHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="NonQuerySQLHttpGetIn">
+    <wsdl:part name="user" type="s:string" />
+    <wsdl:part name="pass" type="s:string" />
+    <wsdl:part name="sql" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="NonQuerySQLHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="NonQueryBlobSQLHttpGetIn">
+    <wsdl:part name="user" type="s:string" />
+    <wsdl:part name="pass" type="s:string" />
+    <wsdl:part name="sql" type="s:string" />
+    <wsdl:part name="blob" type="s1:StringArray" />
+  </wsdl:message>
+  <wsdl:message name="NonQueryBlobSQLHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="RecordExistSQLHttpGetIn">
+    <wsdl:part name="user" type="s:string" />
+    <wsdl:part name="pass" type="s:string" />
+    <wsdl:part name="sql" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RecordExistSQLHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="RequestSQLHttpPostIn">
+    <wsdl:part name="user" type="s:string" />
+    <wsdl:part name="pass" type="s:string" />
+    <wsdl:part name="sql" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RequestSQLHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="SingleDataSQLHttpPostIn">
+    <wsdl:part name="user" type="s:string" />
+    <wsdl:part name="pass" type="s:string" />
+    <wsdl:part name="sql" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SingleDataSQLHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="NonQuerySQLHttpPostIn">
+    <wsdl:part name="user" type="s:string" />
+    <wsdl:part name="pass" type="s:string" />
+    <wsdl:part name="sql" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="NonQuerySQLHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="NonQueryBlobSQLHttpPostIn">
+    <wsdl:part name="user" type="s:string" />
+    <wsdl:part name="pass" type="s:string" />
+    <wsdl:part name="sql" type="s:string" />
+    <wsdl:part name="blob" type="s1:StringArray" />
+  </wsdl:message>
+  <wsdl:message name="NonQueryBlobSQLHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="RecordExistSQLHttpPostIn">
+    <wsdl:part name="user" type="s:string" />
+    <wsdl:part name="pass" type="s:string" />
+    <wsdl:part name="sql" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RecordExistSQLHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:portType name="AMS_WebserviceSoap">
+    <wsdl:operation name="RequestSQL">
+      <wsdl:input message="tns:RequestSQLSoapIn" />
+      <wsdl:output message="tns:RequestSQLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SingleDataSQL">
+      <wsdl:input message="tns:SingleDataSQLSoapIn" />
+      <wsdl:output message="tns:SingleDataSQLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NonQuerySQL">
+      <wsdl:input message="tns:NonQuerySQLSoapIn" />
+      <wsdl:output message="tns:NonQuerySQLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NonQueryBlobSQL">
+      <wsdl:input message="tns:NonQueryBlobSQLSoapIn" />
+      <wsdl:output message="tns:NonQueryBlobSQLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecordExistSQL">
+      <wsdl:input message="tns:RecordExistSQLSoapIn" />
+      <wsdl:output message="tns:RecordExistSQLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TransactionSQL">
+      <wsdl:input message="tns:TransactionSQLSoapIn" />
+      <wsdl:output message="tns:TransactionSQLSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="AMS_WebserviceHttpGet">
+    <wsdl:operation name="RequestSQL">
+      <wsdl:input message="tns:RequestSQLHttpGetIn" />
+      <wsdl:output message="tns:RequestSQLHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SingleDataSQL">
+      <wsdl:input message="tns:SingleDataSQLHttpGetIn" />
+      <wsdl:output message="tns:SingleDataSQLHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NonQuerySQL">
+      <wsdl:input message="tns:NonQuerySQLHttpGetIn" />
+      <wsdl:output message="tns:NonQuerySQLHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NonQueryBlobSQL">
+      <wsdl:input message="tns:NonQueryBlobSQLHttpGetIn" />
+      <wsdl:output message="tns:NonQueryBlobSQLHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecordExistSQL">
+      <wsdl:input message="tns:RecordExistSQLHttpGetIn" />
+      <wsdl:output message="tns:RecordExistSQLHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="AMS_WebserviceHttpPost">
+    <wsdl:operation name="RequestSQL">
+      <wsdl:input message="tns:RequestSQLHttpPostIn" />
+      <wsdl:output message="tns:RequestSQLHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SingleDataSQL">
+      <wsdl:input message="tns:SingleDataSQLHttpPostIn" />
+      <wsdl:output message="tns:SingleDataSQLHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NonQuerySQL">
+      <wsdl:input message="tns:NonQuerySQLHttpPostIn" />
+      <wsdl:output message="tns:NonQuerySQLHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NonQueryBlobSQL">
+      <wsdl:input message="tns:NonQueryBlobSQLHttpPostIn" />
+      <wsdl:output message="tns:NonQueryBlobSQLHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecordExistSQL">
+      <wsdl:input message="tns:RecordExistSQLHttpPostIn" />
+      <wsdl:output message="tns:RecordExistSQLHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AMS_WebserviceSoap" type="tns:AMS_WebserviceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RequestSQL">
+      <soap:operation soapAction="http://201.228.212.66/WebService/RequestSQL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SingleDataSQL">
+      <soap:operation soapAction="http://201.228.212.66/WebService/SingleDataSQL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NonQuerySQL">
+      <soap:operation soapAction="http://201.228.212.66/WebService/NonQuerySQL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NonQueryBlobSQL">
+      <soap:operation soapAction="http://201.228.212.66/WebService/NonQueryBlobSQL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecordExistSQL">
+      <soap:operation soapAction="http://201.228.212.66/WebService/RecordExistSQL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransactionSQL">
+      <soap:operation soapAction="http://201.228.212.66/WebService/TransactionSQL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AMS_WebserviceSoap12" type="tns:AMS_WebserviceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RequestSQL">
+      <soap12:operation soapAction="http://201.228.212.66/WebService/RequestSQL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SingleDataSQL">
+      <soap12:operation soapAction="http://201.228.212.66/WebService/SingleDataSQL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NonQuerySQL">
+      <soap12:operation soapAction="http://201.228.212.66/WebService/NonQuerySQL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NonQueryBlobSQL">
+      <soap12:operation soapAction="http://201.228.212.66/WebService/NonQueryBlobSQL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecordExistSQL">
+      <soap12:operation soapAction="http://201.228.212.66/WebService/RecordExistSQL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransactionSQL">
+      <soap12:operation soapAction="http://201.228.212.66/WebService/TransactionSQL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AMS_WebserviceHttpGet" type="tns:AMS_WebserviceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="RequestSQL">
+      <http:operation location="/RequestSQL" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SingleDataSQL">
+      <http:operation location="/SingleDataSQL" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NonQuerySQL">
+      <http:operation location="/NonQuerySQL" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NonQueryBlobSQL">
+      <http:operation location="/NonQueryBlobSQL" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecordExistSQL">
+      <http:operation location="/RecordExistSQL" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AMS_WebserviceHttpPost" type="tns:AMS_WebserviceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="RequestSQL">
+      <http:operation location="/RequestSQL" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SingleDataSQL">
+      <http:operation location="/SingleDataSQL" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NonQuerySQL">
+      <http:operation location="/NonQuerySQL" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NonQueryBlobSQL">
+      <http:operation location="/NonQueryBlobSQL" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecordExistSQL">
+      <http:operation location="/RecordExistSQL" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AMS_Webservice">
+    <wsdl:port name="AMS_WebserviceSoap" binding="tns:AMS_WebserviceSoap">
+      <soap:address location="http://localhost/WebService/AMS_Webservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AMS_WebserviceSoap12" binding="tns:AMS_WebserviceSoap12">
+      <soap12:address location="http://localhost/WebService/AMS_Webservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AMS_WebserviceHttpGet" binding="tns:AMS_WebserviceHttpGet">
+      <http:address location="http://localhost/WebService/AMS_Webservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AMS_WebserviceHttpPost" binding="tns:AMS_WebserviceHttpPost">
+      <http:address location="http://localhost/WebService/AMS_Webservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

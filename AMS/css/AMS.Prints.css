@@ -1,0 +1,21 @@
+@charset "iso-8859-1";
+
+/* author: Metroid */
+
+/* Creation date: 21/05/2003 */
+
+
+@media print
+{
+ .header {display: none;}
+ .footer {display: none;}
+ margin: 2cm;
+ size auto;
+}
+
+@page 
+{
+
+.mainTb{size auto; margin: 2cm;}
+
+}

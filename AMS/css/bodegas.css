@@ -1,0 +1,61 @@
+.configurar
+{
+	font-size: 4px;
+	padding-top: 8px;
+	text-shadow: 2px 2px 5px #222;
+	transition: all 0.7s ease;
+	visibility: hidden;
+}
+
+.eliminar
+{
+	font-size: 4px;
+	padding-top: 4px;
+	text-shadow: 1px 1px 2px #222;
+	transition: all 0.7s ease;
+	visibility: hidden;
+}
+
+.imgBodega
+{	
+	background: url("../img/bodegamc.png") no-repeat;
+	background-size: 100%;
+	border-radius: 2px;
+	box-shadow: 2px 2px 5px #222;
+	height: 54px;
+	transition: all 0.7s ease;
+	width: 50px;
+	z-index: 9999;
+}
+.imgBodega:hover
+{
+	transform: scale(2,2);
+}
+.imgBodega:hover .configurar
+{
+	font-size: 9px;
+	visibility: visible;
+}
+.imgBodega:hover .eliminar
+{
+	font-size: 9px;
+	visibility: visible;
+}
+.imgBodega img
+{
+	height: 80%;
+	width: 100%;
+}
+
+.seccion
+{
+	background: orange;
+	border-radius: 3px;
+	box-shadow: 2px 2px 5px #222;
+	font-size: 12px;
+	overflow: hidden;
+	transition: all 0.7s ease;
+	width: 80%;
+}
+
+

@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A7D34068-42C5-45DE-927C-2870C7399F44}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>AMS.Marketing</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AMS.Marketing</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\AMS\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\Compilados\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="eWorld.UI, Version=1.9.0.0, Culture=neutral, PublicKeyToken=24d65337282035f2" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebChart, Version=1.1.1.4, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS\bin\WebChart.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AMS.Marketing.AccionMarketing.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Marketing.AnalisisEncuestas.ascx" />
+    <Content Include="AMS.Marketing.AplicacionEncuestas.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Marketing.CreacionEncuesta.ascx" />
+    <Content Include="AMS.Marketing.DisenoEncuestas.ascx" />
+    <Content Include="AMS.Marketing.DisenoPreguntas.ascx" />
+    <Content Include="AMS.Marketing.ReporteLlamadasClientes.ascx" />
+    <Content Include="AMS.Marketing.ReporteSeguimientoOrdenes.ascx" />
+    <Content Include="AMS.Marketing.ResutadosSAM.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Marketing.RevisarResultadosEncuestas.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Marketing.SeguimientoClienteEspecifico.ascx" />
+    <Content Include="AMS.Marketing.SeguimientoOrdenes.ascx" />
+    <Compile Include="AMS.Marketing.AccionMarketing.ascx.cs">
+      <DependentUpon>AMS.Marketing.AccionMarketing.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Marketing.AccionMarketing.ascx.designer.cs">
+      <DependentUpon>AMS.Marketing.AccionMarketing.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Marketing.AnalisisEncuestas.ascx.cs">
+      <DependentUpon>AMS.Marketing.AnalisisEncuestas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Marketing.AnalisisEncuestas.ascx.designer.cs">
+      <DependentUpon>AMS.Marketing.AnalisisEncuestas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Marketing.AplicacionEncuestas.ascx.cs">
+      <DependentUpon>AMS.Marketing.AplicacionEncuestas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Marketing.AplicacionEncuestas.ascx.designer.cs">
+      <DependentUpon>AMS.Marketing.AplicacionEncuestas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Marketing.CreacionEncuesta.ascx.cs">
+      <DependentUpon>AMS.Marketing.CreacionEncuesta.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Marketing.CreacionEncuesta.ascx.designer.cs">
+      <DependentUpon>AMS.Marketing.CreacionEncuesta.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Marketing.DisenoEncuestas.ascx.cs">
+      <DependentUpon>AMS.Marketing.DisenoEncuestas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Marketing.DisenoEncuestas.ascx.designer.cs">
+      <DependentUpon>AMS.Marketing.DisenoEncuestas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Marketing.DisenoPreguntas.ascx.cs">
+      <DependentUpon>AMS.Marketing.DisenoPreguntas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Marketing.DisenoPreguntas.ascx.designer.cs">
+      <DependentUpon>AMS.Marketing.DisenoPreguntas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Marketing.ReporteLlamadasClientes.ascx.cs">
+      <DependentUpon>AMS.Marketing.ReporteLlamadasClientes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Marketing.ReporteLlamadasClientes.ascx.designer.cs">
+      <DependentUpon>AMS.Marketing.ReporteLlamadasClientes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Marketing.ReporteSeguimientoOrdenes.ascx.cs">
+      <DependentUpon>AMS.Marketing.ReporteSeguimientoOrdenes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Marketing.ReporteSeguimientoOrdenes.ascx.designer.cs">
+      <DependentUpon>AMS.Marketing.ReporteSeguimientoOrdenes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Marketing.ResutadosSAM.ascx.cs">
+      <DependentUpon>AMS.Marketing.ResutadosSAM.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Marketing.ResutadosSAM.ascx.designer.cs">
+      <DependentUpon>AMS.Marketing.ResutadosSAM.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Marketing.RevisarResultadosEncuestas.ascx.cs">
+      <DependentUpon>AMS.Marketing.RevisarResultadosEncuestas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Marketing.RevisarResultadosEncuestas.ascx.designer.cs">
+      <DependentUpon>AMS.Marketing.RevisarResultadosEncuestas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Marketing.SeguimientoClienteEspecifico.ascx.cs">
+      <DependentUpon>AMS.Marketing.SeguimientoClienteEspecifico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Marketing.SeguimientoClienteEspecifico.ascx.designer.cs">
+      <DependentUpon>AMS.Marketing.SeguimientoClienteEspecifico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Marketing.SeguimientoClienteEspecifico.Logic.cs" />
+    <Compile Include="AMS.Marketing.SeguimientoOrdenes.ascx.cs">
+      <DependentUpon>AMS.Marketing.SeguimientoOrdenes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Marketing.SeguimientoOrdenes.ascx.designer.cs">
+      <DependentUpon>AMS.Marketing.SeguimientoOrdenes.ascx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AMS.Marketing.AccionMarketing.ascx.resx">
+      <DependentUpon>AMS.Marketing.AccionMarketing.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Marketing.AplicacionEncuestas.ascx.resx">
+      <DependentUpon>AMS.Marketing.AplicacionEncuestas.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Marketing.CreacionEncuesta.ascx.resx">
+      <DependentUpon>AMS.Marketing.CreacionEncuesta.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Marketing.ReporteLlamadasClientes.ascx.resx">
+      <DependentUpon>AMS.Marketing.ReporteLlamadasClientes.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Marketing.ReporteSeguimientoOrdenes.ascx.resx">
+      <DependentUpon>AMS.Marketing.ReporteSeguimientoOrdenes.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Marketing.ResutadosSAM.ascx.resx">
+      <DependentUpon>AMS.Marketing.ResutadosSAM.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Marketing.RevisarResultadosEncuestas.ascx.resx">
+      <DependentUpon>AMS.Marketing.RevisarResultadosEncuestas.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Marketing.SeguimientoOrdenes.ascx.resx">
+      <DependentUpon>AMS.Marketing.SeguimientoOrdenes.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AMS.Automotriz\AMS.Automotriz.csproj">
+      <Project>{1B84B99B-D392-48C7-A62A-06BDADA22005}</Project>
+      <Name>AMS.Automotriz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.DB\AMS.DB.csproj">
+      <Project>{BAE52CE2-EF3D-4B65-9F5A-9DA33502F99C}</Project>
+      <Name>AMS.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Forms\AMS.Forms.csproj">
+      <Project>{4E9173A3-45B7-4B17-846D-8D790517DDF5}</Project>
+      <Name>AMS.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Tools\AMS.Tools.csproj">
+      <Project>{97030739-855C-4ECE-A72B-231624365A8D}</Project>
+      <Name>AMS.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1084</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/AMS/AMS.Marketing</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

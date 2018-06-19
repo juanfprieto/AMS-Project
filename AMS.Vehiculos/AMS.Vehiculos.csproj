@@ -1,0 +1,939 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94F184F4-565B-4E86-B404-53D4EC0C2CFD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>AMS.Vehiculos</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AMS.Vehiculos</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\AMS\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\Compilados\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajax, Version=5.7.22.2, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS\bin\Ajax.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxControlToolkit, Version=4.1.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\AMS\bin\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AMS.Vehiculos.AnfitrionVentas.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.AnfitrionVentas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.AnfitrionVentas.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.AnfitrionVentas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.CrearAlquiler.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.CrearAlquiler.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.CrearAlquiler.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.CrearAlquiler.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.CrearOrdenTramite.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.CrearOrdenTramite.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.CrearOrdenTramite.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.CrearOrdenTramite.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.DevolucionGastoDirectoVehiculos.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.DevolucionGastoDirectoVehiculos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.DevolucionGastoDirectoVehiculos.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.DevolucionGastoDirectoVehiculos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.DevolucionTramites.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.DevolucionTramites.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.DevolucionTramites.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.DevolucionTramites.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.FacturacionTramite.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.FacturacionTramite.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.FacturacionTramite.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.FacturacionTramite.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.GestionVendedor.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.GestionVendedor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.GestionVendedor.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.GestionVendedor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.RecepcionAlquiler.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.RecepcionAlquiler.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.RecepcionAlquiler.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.RecepcionAlquiler.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.RecepcionFisica.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.RecepcionFisica.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.RecepcionFisica.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.RecepcionFisica.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.ValoresImpuestosVehiculos.cs" />
+    <Content Include="AMS.Vehiculos.ActualizarInfo.ascx" />
+    <Content Include="AMS.Vehiculos.AnfitrionVentas.ascx" />
+    <Content Include="AMS.Vehiculos.AnulacionPedidoClientes.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Vehiculos.AsignacionFacturacionVehiculos.ascx" />
+    <Content Include="AMS.Vehiculos.AsignacionVehiculos.ascx" />
+    <Content Include="AMS.Vehiculos.AutorizacionGarantias.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Vehiculos.CapPedCliMayor.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Vehiculos.CapPedPro.ascx" />
+    <Content Include="AMS.Vehiculos.CierreMensual.ascx" />
+    <Content Include="AMS.Vehiculos.ConsultaPagosPedido.ascx" />
+    <Content Include="AMS.Vehiculos.CrearAlquiler.ascx" />
+    <Content Include="AMS.Vehiculos.CrearOrdenTramite.ascx" />
+    <Content Include="AMS.Vehiculos.Creditos.ascx" />
+    <Content Include="AMS.Vehiculos.DevolucionFacturaCliente.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Vehiculos.DevolucionGastoDirectoVehiculos.ascx" />
+    <Content Include="AMS.Vehiculos.DevolucionPedidoMayor.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Vehiculos.DevolucionPedidoProveedor.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Vehiculos.DevolucionTramites.ascx" />
+    <Content Include="AMS.Vehiculos.Documentos.ascx" />
+    <Content Include="AMS.Vehiculos.EntregaVehiculos.ascx" />
+    <Content Include="AMS.Vehiculos.EntregaVehiculosFormulario.ascx" />
+    <Content Include="AMS.Vehiculos.EntregaVehiculosProceso.ascx" />
+    <Content Include="AMS.Vehiculos.FacturacionFormulario.ascx" />
+    <Content Include="AMS.Vehiculos.FacturacionPedido.ascx" />
+    <Content Include="AMS.Vehiculos.FacturacionPedidoMayor.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Vehiculos.FacturacionTramite.ascx" />
+    <Content Include="AMS.Vehiculos.FacturaProveedor.ascx" />
+    <Content Include="AMS.Vehiculos.FechaEstimadaLlegada.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Vehiculos.GastoDirecto.ascx" />
+    <Content Include="AMS.Vehiculos.GastoDirectoEmbarques.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Vehiculos.GastoDirectoVehiculos.ascx" />
+    <Content Include="AMS.Vehiculos.GestionVendedor.ascx" />
+    <Content Include="AMS.Vehiculos.GestorDocVehiculos.ascx" />
+    <Content Include="AMS.Vehiculos.HVPostventa.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Vehiculos.LiquidacionGarantias.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Vehiculos.ModificacionDatosVehiculo.ascx" />
+    <Content Include="AMS.Vehiculos.ModificacionFormulario.ascx" />
+    <Content Include="AMS.Vehiculos.ModificarSeguimientoDiario.ascx" />
+    <Content Include="AMS.Vehiculos.PedidoClienteMayor.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Vehiculos.PedidoClientes.ascx" />
+    <Content Include="AMS.Vehiculos.PedidoClientesFormulario.ascx" />
+    <Content Include="AMS.Vehiculos.PedidoProveedor.ascx" />
+    <Content Include="AMS.Vehiculos.PostVenta.ascx" />
+    <Content Include="AMS.Vehiculos.ProcesosPostventa.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Vehiculos.PruebaXML.ascx" />
+    <Content Include="AMS.Vehiculos.RecepcionAlquiler.ascx" />
+    <Content Include="AMS.Vehiculos.RecepcionFisica.ascx" />
+    <Content Include="AMS.Vehiculos.RecepcionFormulario.ascx" />
+    <Content Include="AMS.Vehiculos.RelacionarDocumentos.ascx" />
+    <Content Include="AMS.Vehiculos.SeguimientoDiario.ascx" />
+    <Content Include="AMS.Vehiculos.UbicacionVehiculo.ascx" />
+    <Content Include="AMS.Vehiculos.UnificacionPedidoClientes.ascx" />
+    <Content Include="AMS.Vehiculos.Validador.ascx" />
+    <Compile Include="AMS.Vehiculos.ActualizarInfo.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.ActualizarInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.ActualizarInfo.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.ActualizarInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.AnulacionPedidoClientes.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.AnulacionPedidoClientes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.AnulacionPedidoClientes.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.AnulacionPedidoClientes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.AsignacionFacturacionVehiculos.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.AsignacionFacturacionVehiculos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.AsignacionFacturacionVehiculos.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.AsignacionFacturacionVehiculos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.AsignacionVehiculos.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.AsignacionVehiculos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.AsignacionVehiculos.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.AsignacionVehiculos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.AutorizacionGarantias.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.AutorizacionGarantias.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.AutorizacionGarantias.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.AutorizacionGarantias.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.CapPedCliMayor.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.CapPedCliMayor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.CapPedCliMayor.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.CapPedCliMayor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.CapPedPro.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.CapPedPro.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.CapPedPro.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.CapPedPro.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.CierreMensual.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.CierreMensual.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.CierreMensual.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.CierreMensual.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.ConsultaPagosPedido.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.ConsultaPagosPedido.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.ConsultaPagosPedido.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.ConsultaPagosPedido.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.Consultas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.Creditos.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.Creditos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.Creditos.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.Creditos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.DevolucionFacturaCliente.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.DevolucionFacturaCliente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.DevolucionFacturaCliente.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.DevolucionFacturaCliente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.DevolucionPedidoMayor.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.DevolucionPedidoMayor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.DevolucionPedidoMayor.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.DevolucionPedidoMayor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.DevolucionPedidoProveedor.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.DevolucionPedidoProveedor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.DevolucionPedidoProveedor.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.DevolucionPedidoProveedor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.Documentos.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.Documentos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.Documentos.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.Documentos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.EntregaVehiculos.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.EntregaVehiculos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.EntregaVehiculos.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.EntregaVehiculos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.EntregaVehiculosFormulario.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.EntregaVehiculosFormulario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.EntregaVehiculosFormulario.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.EntregaVehiculosFormulario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.EntregaVehiculosProceso.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.EntregaVehiculosProceso.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.EntregaVehiculosProceso.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.EntregaVehiculosProceso.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.FacturacionFormulario.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.FacturacionFormulario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.FacturacionFormulario.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.FacturacionFormulario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.FacturacionPedido.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.FacturacionPedido.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.FacturacionPedido.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.FacturacionPedido.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.FacturacionPedidoMayor.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.FacturacionPedidoMayor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.FacturacionPedidoMayor.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.FacturacionPedidoMayor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.FacturaGastos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.FacturaPedido.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.FacturaProveedor.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.FacturaProveedor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.FacturaProveedor.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.FacturaProveedor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.FechaEstimadaLlegada.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.FechaEstimadaLlegada.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.FechaEstimadaLlegada.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.FechaEstimadaLlegada.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.GastoDirecto.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.GastoDirecto.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.GastoDirecto.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.GastoDirecto.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.GastoDirectoEmbarques.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.GastoDirectoEmbarques.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.GastoDirectoEmbarques.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.GastoDirectoEmbarques.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.GastoDirectoVehiculos.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.GastoDirectoVehiculos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.GastoDirectoVehiculos.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.GastoDirectoVehiculos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.GestorDocVehiculos.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.GestorDocVehiculos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.GestorDocVehiculos.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.GestorDocVehiculos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.HVPostventa.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.HVPostventa.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.HVPostventa.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.HVPostventa.ascx</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.LiquidacionGarantias.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.LiquidacionGarantias.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.LiquidacionGarantias.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.LiquidacionGarantias.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.ModificacionDatosVehiculo.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.ModificacionDatosVehiculo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.ModificacionDatosVehiculo.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.ModificacionDatosVehiculo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.ModificacionFormulario.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.ModificacionFormulario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.ModificacionFormulario.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.ModificacionFormulario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.ModificarSeguimientoDiario.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.ModificarSeguimientoDiario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.ModificarSeguimientoDiario.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.ModificarSeguimientoDiario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.Pedido.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.PedidoClienteMayor.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.PedidoClienteMayor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.PedidoClienteMayor.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.PedidoClienteMayor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.PedidoClienteMayor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.PedidoClientes.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.PedidoClientes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.PedidoClientes.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.PedidoClientes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.PedidoClientesFormulario.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.PedidoClientesFormulario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.PedidoClientesFormulario.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.PedidoClientesFormulario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.PedidoProveedor.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.PedidoProveedor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.PedidoProveedor.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.PedidoProveedor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.PedidoProveedor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.PostVenta.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.PostVenta.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.PostVenta.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.PostVenta.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.ProcesoPostventa.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.ProcesosPostventa.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.ProcesosPostventa.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.ProcesosPostventa.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.ProcesosPostventa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.PruebaXML.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.PruebaXML.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.PruebaXML.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.PruebaXML.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.Recepcion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.RecepcionFormulario.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.RecepcionFormulario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.RecepcionFormulario.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.RecepcionFormulario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.RelacionarDocumentos.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.RelacionarDocumentos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.RelacionarDocumentos.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.RelacionarDocumentos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.SeguimientoDiario.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.SeguimientoDiario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.SeguimientoDiario.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.SeguimientoDiario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.UbicacionVehiculo.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.UbicacionVehiculo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.UbicacionVehiculo.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.UbicacionVehiculo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.UnificacionPedidoClientes.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.UnificacionPedidoClientes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.UnificacionPedidoClientes.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.UnificacionPedidoClientes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.Utilidades.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.Validador.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.Validador.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.Validador.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.Validador.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.ConsultaExcel.ascx.cs">
+      <DependentUpon>AMS.Vehiculos.ConsultaExcel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Vehiculos.ConsultaExcel.ascx.designer.cs">
+      <DependentUpon>AMS.Vehiculos.ConsultaExcel.ascx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AMS.Vehiculos.ActualizarInfo.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.ActualizarInfo.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.AnulacionPedidoClientes.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.AnulacionPedidoClientes.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.AsignacionFacturacionVehiculos.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.AsignacionFacturacionVehiculos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.AsignacionVehiculos.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.AsignacionVehiculos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.AutorizacionGarantias.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.AutorizacionGarantias.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.CapPedCliMayor.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.CapPedCliMayor.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.CapPedPro.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.CapPedPro.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.CierreMensual.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.CierreMensual.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.ConsultaPagosPedido.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.ConsultaPagosPedido.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.DevolucionFacturaCliente.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.DevolucionFacturaCliente.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.DevolucionPedidoMayor.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.DevolucionPedidoMayor.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.DevolucionPedidoProveedor.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.DevolucionPedidoProveedor.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.Documentos.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.Documentos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.EntregaVehiculos.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.EntregaVehiculos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.EntregaVehiculosFormulario.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.EntregaVehiculosFormulario.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.EntregaVehiculosProceso.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.EntregaVehiculosProceso.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.FacturacionFormulario.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.FacturacionFormulario.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.FacturacionPedido.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.FacturacionPedido.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.FacturacionPedidoMayor.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.FacturacionPedidoMayor.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.FacturaProveedor.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.FacturaProveedor.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.FechaEstimadaLlegada.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.FechaEstimadaLlegada.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.GastoDirecto.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.GastoDirecto.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.GastoDirectoEmbarques.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.GastoDirectoEmbarques.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.GastoDirectoVehiculos.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.GastoDirectoVehiculos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.GestorDocVehiculos.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.GestorDocVehiculos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.HVPostventa.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.HVPostventa.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.LiquidacionGarantias.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.LiquidacionGarantias.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.ModificacionDatosVehiculo.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.ModificacionDatosVehiculo.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.ModificacionFormulario.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.ModificacionFormulario.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.ModificarSeguimientoDiario.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.ModificarSeguimientoDiario.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.PedidoClienteMayor.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.PedidoClienteMayor.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.PedidoClientes.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.PedidoClientes.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.PedidoClientesFormulario.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.PedidoClientesFormulario.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.PedidoProveedor.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.PedidoProveedor.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.PostVenta.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.PostVenta.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.ProcesosPostventa.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.ProcesosPostventa.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.PruebaXML.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.PruebaXML.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.RecepcionFormulario.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.RecepcionFormulario.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.RelacionarDocumentos.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.RelacionarDocumentos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.SeguimientoDiario.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.SeguimientoDiario.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.UbicacionVehiculo.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.UbicacionVehiculo.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.UnificacionPedidoClientes.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.UnificacionPedidoClientes.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.Validador.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.Validador.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Vehiculos.ConsultaExcel.ascx.resx">
+      <DependentUpon>AMS.Vehiculos.ConsultaExcel.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AMS.Vehiculos.ConsultaExcel.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Vehiculos.BusquedaUsados.ascx" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\AjaxControlToolkit.pdb" />
+    <Content Include="bin\AMS.Contabilidad.dll" />
+    <Content Include="bin\AMS.Contabilidad.pdb" />
+    <Content Include="bin\AMS.CryptoServices.dll" />
+    <Content Include="bin\AMS.CryptoServices.pdb" />
+    <Content Include="bin\AMS.DB.dll" />
+    <Content Include="bin\AMS.DB.pdb" />
+    <Content Include="bin\AMS.DBManager.dll" />
+    <Content Include="bin\AMS.DBManager.pdb" />
+    <Content Include="bin\AMS.Documentos.dll" />
+    <Content Include="bin\AMS.Documentos.pdb" />
+    <Content Include="bin\AMS.Finanzas.dll" />
+    <Content Include="bin\AMS.Finanzas.pdb" />
+    <Content Include="bin\AMS.Inventarios.dll" />
+    <Content Include="bin\AMS.Inventarios.pdb" />
+    <Content Include="bin\AMS.Reports.dll" />
+    <Content Include="bin\AMS.Reports.pdb" />
+    <Content Include="bin\AMS.Tools.dll" />
+    <Content Include="bin\AMS.Tools.pdb" />
+    <Content Include="bin\AMS.Utilidades.dll" />
+    <Content Include="bin\AMS.Utilidades.pdb" />
+    <Content Include="bin\AMS.Vehiculos.dll" />
+    <Content Include="bin\AMS.Vehiculos.pdb" />
+    <Content Include="bin\ar\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\cs\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\de\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\es\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\eWorld.UI.dll" />
+    <Content Include="bin\fr\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\he\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\hi\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\it\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ja\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ko\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="bin\Microsoft.Office.Interop.Excel.xml" />
+    <Content Include="bin\Microsoft.Vbe.Interop.dll" />
+    <Content Include="bin\nl\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\pt\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ru\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\tr-TR\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\WebChart.dll" />
+    <Content Include="bin\zh-CHS\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\zh-CHT\AjaxControlToolkit.resources.dll" />
+    <Content Include="Calendar_scheduleHS.png" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AMS.Contabilidad\AMS.Contabilidad.csproj">
+      <Project>{6E5D9657-A3F0-4BCA-8D48-3F089E82439D}</Project>
+      <Name>AMS.Contabilidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.CryptoServices\AMS.CryptoServices.csproj">
+      <Project>{137D79F7-AA92-4A71-A6F4-FE44FFEB715B}</Project>
+      <Name>AMS.CryptoServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.DB\AMS.DB.csproj">
+      <Project>{bae52ce2-ef3d-4b65-9f5a-9da33502f99c}</Project>
+      <Name>AMS.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Documentos\AMS.Documentos.csproj">
+      <Project>{19EF3FAA-C588-4E81-813B-6F3C723B222B}</Project>
+      <Name>AMS.Documentos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Finanzas\AMS.Finanzas.csproj">
+      <Project>{000D52F5-9028-4138-AB13-7AC5721613A6}</Project>
+      <Name>AMS.Finanzas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Forms\AMS.Forms.csproj">
+      <Project>{4E9173A3-45B7-4B17-846D-8D790517DDF5}</Project>
+      <Name>AMS.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Inventarios\AMS.Inventarios.csproj">
+      <Project>{F8976D54-8AE0-4A6C-91D5-60671FE19B09}</Project>
+      <Name>AMS.Inventarios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Tools\AMS.Tools.csproj">
+      <Project>{97030739-855C-4ECE-A72B-231624365A8D}</Project>
+      <Name>AMS.Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Utilidades\AMS.Utilidades.csproj">
+      <Project>{029CA7F3-E7C7-4D25-BD68-DDAB1C17EA64}</Project>
+      <Name>AMS.Utilidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Web\AMS.Web.csproj">
+      <Project>{469308d3-ca26-4ee1-a0d6-a3ea8018d5bf}</Project>
+      <Name>AMS.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1095</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/AMS/AMS.Vehiculos</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

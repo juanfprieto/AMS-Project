@@ -1,0 +1,854 @@
+/*
+$Revision: #12 $
+*/
+/* main body */
+
+#content{
+	width:729px;
+	margin:0px auto;
+	padding:0;
+}
+
+.accesslinks {display:none;}
+
+/* Global Nav Container Elements */
+
+#GN_Container{height:144px; width:729px; margin-bottom:4px; margin-top:0;}
+#GN_Container form{padding:0; margin:0;}
+#GN_TopContainer{height:86px; width:729px; padding:0; margin:0;}
+#GN1_Container{height:35px; width:614px; float:right;}
+#GN2_Container{height:51px; width:614px; float:right;}
+#GN3_Container{height:30px; width:728px;}
+#GN4_Container{height:28px; width:728px;}
+#GN_Bullseye{height:86px; width:115px; float:left;}
+
+
+/* NAV 1 */
+
+#navHolder{width:729px; height:144px; padding:0; margin:auto;}
+#navTopHolder{position:absolute;}
+#navColumn1{width:115px; height:86px; left:0; position:relative; padding:0; margin:0;}
+#navColumn2{width:614px; height:86px; left:115px; position:relative; padding:0; margin:0;}
+
+
+#nav1 {
+	width: 614px;
+	height: 35px;
+	background-image: url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/nav1.gif);
+	background-repeat:no-repeat;
+	margin:0;
+	padding: 0;
+	position: relative;
+}
+#nav1 li {margin: 0; padding: 0; list-style: none; position: absolute; top: 0;}
+
+#nav1 li, #nav1 a {height: 35px; display: block; color:transparent;}
+#nav1_1b {left: 118px; width: 73px;}
+#nav1_2b {left: 208px; width: 71px;}
+#nav1_3b {left: 300px; width: 76px;}
+#nav1_4b {left: 396px; width: 56px;}
+#nav1_5b {left: 470px; width: 31px;}
+#nav1_6b {left: 516px; width: 97px;}
+
+
+
+#nav1_1b a:hover {background: transparent url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/nav1.gif) -118px -35px no-repeat;}
+#nav1_2b a:hover {background: transparent url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/nav1.gif) -208px -35px no-repeat;}
+#nav1_3b a:hover {background: transparent url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/nav1.gif) -300px -35px no-repeat;}
+#nav1_4b a:hover {background: transparent url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/nav1.gif) -396px -35px no-repeat;}
+#nav1_5b a:hover {background: transparent url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/nav1.gif) -470px -35px no-repeat;}
+#nav1_6b a:hover {background: transparent url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/nav1.gif) -516px -35px no-repeat;}
+
+/* NAV 2 */
+
+#nav2 {
+ width: 613px;
+ height: 51px;
+ background: url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/nav2.gif);
+ background-repeat:no-repeat;
+ margin: 0px; padding: 0;
+ position: relative;
+}
+#nav2 li {margin: 0; padding: 0; list-style: none; position: absolute; top: 0;}
+
+#nav2 li, #nav2 a {height: 51px; display: block; color:transparent;}
+#nav2_1b {left: 0; width: 60px;}
+#nav2_2b {left: 60px; width: 112px;}
+#nav2_3b {left: 172px; width: 113px;}
+#nav2_4b {left: 285px; width: 142px;}
+#nav2_5b {left: 431px; width: 84px;}
+#nav2_6b {left: 515px; width: 98px;}
+
+#nav2_2b a.highlighted  {background: transparent url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/nav2.gif) -60px -51px no-repeat;}
+#nav2_3b a.highlighted  {background: transparent url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/nav2.gif) -172px -51px no-repeat;}
+#nav2_4b a.highlighted  {background: transparent url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/nav2.gif) -285px -51px no-repeat;}
+#nav2_5b a:hover  {background: transparent url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/nav2.gif) -431px -51px no-repeat;}
+#nav2_6b a:hover  {background: transparent url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/nav2.gif) -515px -51px no-repeat;}
+
+
+/* SEARCH ROW */
+
+
+
+/* NAV 3 ("CSS Sprites" rollovers) */
+
+#nav3 {
+	width: 729px;
+	height: 30px;
+	background: url(nav3.jpg) no-repeat;
+	margin:0; 
+	padding: 0;
+	position: relative;
+}
+#nav3 li {margin: 0; padding: 0; list-style: none; position: absolute; top: 0;}
+#nav3 li, #nav3 a {height: 30px; display: block; color:transparent;}
+#nav3_1b {left: 0; width: 67px;}
+#nav3_2b {left: 66px; width: 45px;}
+#nav3_3b {left: 112px; width: 50px;}
+#nav3_4b {left: 163px; width: 46px;}
+#nav3_5b {left: 210px; width: 54px;}
+#nav3_6b {left: 265px; width: 82px;}
+#nav3_7b {left: 348px; width: 64px;}
+#nav3_8b {left: 412px; width: 71px;}
+#nav3_9b {left: 484px; width: 44px;}
+#nav3_10b {left: 529px; width: 81px;}
+#nav3_11b {left: 611px; width: 57px;}
+#nav3_12b {left: 670px; width: 59px;}
+
+#nav3_1b a.highlighted {background: transparent url(nav3.jpg) 0 -30px no-repeat;}
+#nav3_2b a.highlighted {background: transparent url(nav3.jpg) -66px -30px no-repeat;}
+#nav3_3b a.highlighted {background: transparent url(nav3.jpg) -112px -30px no-repeat;}
+#nav3_4b a.highlighted {background: transparent url(nav3.jpg) -163px -30px no-repeat;}
+#nav3_5b a.highlighted {background: transparent url(nav3.jpg) -210px -30px no-repeat;}
+#nav3_6b a.highlighted {background: transparent url(nav3.jpg) -265px -30px no-repeat;}
+#nav3_7b a.highlighted {background: transparent url(nav3.jpg) -348px -30px no-repeat;}
+#nav3_8b a.highlighted {background: transparent url(nav3.jpg) -412px -30px no-repeat;}
+#nav3_9b a.highlighted {background: transparent url(nav3.jpg) -484px -30px no-repeat;}
+#nav3_10b a.highlighted {background: transparent url(nav3.jpg) -529px -30px no-repeat;}
+#nav3_11b a.highlighted {background: transparent url(nav3.jpg) -611px -30px no-repeat;}
+#nav3_12b a.highlighted {background: transparent url(nav3.jpg) -670px -30px no-repeat;}
+
+
+.nav3_1baover {background: transparent url(nav3.jpg) 0 -30px no-repeat;}
+.nav3_2baover {background: transparent url(nav3.jpg) -66px -30px no-repeat;}
+.nav3_3baover {background: transparent url(nav3.jpg) -112px -30px no-repeat;}
+.nav3_4baover {background: transparent url(nav3.jpg) -163px -30px no-repeat;}
+.nav3_5baover {background: transparent url(nav3.jpg) -210px -30px no-repeat;}
+.nav3_6baover {background: transparent url(nav3.jpg) -265px -30px no-repeat;}
+.nav3_7baover {background: transparent url(nav3.jpg) -348px -30px no-repeat;}
+.nav3_8baover {background: transparent url(nav3.jpg) -412px -30px no-repeat;}
+.nav3_9baover {background: transparent url(nav3.jpg) -484px -30px no-repeat;}
+.nav3_10baover {background: transparent url(nav3.jpg) -529px -30px no-repeat;}
+.nav3_11baover {background: transparent url(nav3.jpg) -611px -30px no-repeat;}
+.nav3_12baover {background: transparent url(nav3.jpg) -670px -30px no-repeat;}
+
+.nav3_1baout {background: none;}
+.nav3_2baout {background: none;}
+.nav3_3baout {background: none;}
+.nav3_4baout {background: none;}
+.nav3_5baout {background: none;}
+.nav3_6baout {background: none;}
+.nav3_7baout {background: none;}
+.nav3_8baout {background: none;}
+.nav3_9baout {background: none;}
+.nav3_10baout {background: none;}
+.nav3_11baout {background: none;}
+.nav3_12baout {background: none;}
+
+
+/* Nav 4 (Search Bar) */
+
+#nav4 {
+	width: 729px;
+	background: url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/nav4.gif);
+	height: 28px;
+	background-repeat:no-repeat;
+	margin:0;
+	padding: 0;
+	position: relative;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
+#nav4_1b {position:absolute; height:28px; left: 0px; width: 53px;}
+#nav4_2b {position:absolute; height:28px; left: 53px; width: 169px;}
+#nav4_3b {position:absolute; height:28px; left: 222px; width: 105px;}
+#nav4_4b {position:absolute; height:28px; left: 327px; width: 30px;}
+#nav4_5b {position:absolute; height:28px; left: 357px; width: 367px;}
+#nav4_6b {position:absolute; height:28px; left: 724px; width: 5px;}
+
+
+.nav4WelcomeHolder{margin: 8px 10px 8px 10px; text-align:right; font-size:11px; color:#999999;}
+.nav4WelcomeHolder a {font-weight:normal; font-size:11px; color:#999999;  text-decoration:underline;}
+.nav4WelcomeHolder a:hover {color:#cc0000;}
+
+
+.nav4_Search{
+
+font-family: Arial, Helvetica, sans-serif;
+color:#333333 ;
+font-size:11px;
+width:159px;
+
+}
+
+.nav4txt_capleft{float:left; overflow:hidden; height:28px; width:4px; margin:0; padding:0;}
+.nav4txt_capright{float:left; overflow:hidden; height:28px; width:4px; margin:0; padding:0; }
+.nav4txt_textholder{float:left; overflow:hidden; height:28px; margin:0; padding:0; background-image: url(http://g-images.amazon.com/images/G/16/nav/treatment2/holidaynav_2006/nav4txtbody.gif);}
+
+input.nav4_Search {background: transparent url(http://g-images.amazon.com/images/G/16/nav/treatment2/holidaynav_2006/inputempty.gif); margin:5px 0 5px 0; padding:3px 0 0 0; border:none;}
+		
+.nav4_SearchLegend {padding:0; margin:0; display:none;}
+
+
+/* Nav 4 Search Bar and Drop Menu Styling*/
+	
+	
+	
+	.nav4dropcontainer{padding:5px 0 0 0; margin:0; z-index:10;}
+	.nav4dropcontainer select{margin:0; padding:0; width:102px; font-size:11px; color:#333333; background-color:#FFFFFF;}
+	
+
+/*End Nav4 (Search Bar) */
+
+
+/* NAV 3 DROPDOWNS */
+
+
+div.dd{
+	padding: 0;
+	margin: 0 auto;
+	z-index:500;
+	visibility:visible;
+	overflow:hidden;
+}
+
+ul.menu {
+	list-style:none;
+	margin-top:4px;
+	margin-left:0;
+	margin-right:8px;
+	padding-left:0;
+	}
+	
+ul.menu li{
+	font-size: 10px;
+	font-weight:bold;
+	margin-left:0;
+	padding-left:15px;
+	padding-bottom:.7em;
+}
+
+ul.menu li a:hover {
+	color: #CC0000;
+	cursor: pointer;
+	cursor: hand;
+	
+}
+ul.menu li a {
+	color: #666666;
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:none;
+	padding-bottom:1em;
+	cursor: pointer;
+	cursor: hand;
+}
+
+
+
+
+
+
+		
+/* 
+
+	Container Element for all Size and Shape Nav 3 Drop Down Level 1 Menus
+
+	The .container class needs to wrap all of the columns
+	The .container .column class assigns necessary positioning elements to each column
+
+ */		
+		
+.container {overflow: hidden;
+            font-size: 11px;
+	        font-family: Arial, Helvetica, sans-serif;
+	        color: #666666;
+	        /* TEST LAYOUT 9/12 EOD */
+	        position:relative;
+	        }
+
+
+
+/*** 1 Column menus with a Round Top Left Edge ***/
+
+
+.dd1cRound_C1 {width:148px; height:275px; 	background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd1cbody.gif);	background-repeat:repeat-y; }
+
+.dd1cRound_Top{position:relative; height:5px; width:148px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd1ctopRound.gif); background-repeat:no-repeat; overflow:hidden;} 
+
+.dd1cRound_Base{position:relative;	height:8px;	width:148px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd1cbase.gif); background-repeat:no-repeat ; clear: both; }
+
+
+/*** 1 Column menus with a Square Top Left Edge ***/
+
+.dd1cSquare_C1 {left:0;	width:148px; height:275px; 	background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd1cbody.gif);	background-repeat:repeat-y; float:left;}
+
+.dd1cSquare_Top{position:relative;	height:5px; width:148px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd1ctopSquare.gif); 	background-repeat:no-repeat; overflow:hidden;} 
+
+.dd1cSquare_Base{position:relative;	height:8px;	width:148px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd1cbase.gif);	background-repeat:no-repeat ; clear: both; }
+
+
+/*** 2 Column menus with a Round Top Left Edge ***/
+
+
+.dd2cRound_C1{width:146px; height:275px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd2cbodyLeft.gif); background-repeat:repeat-y; float:left;}
+
+.dd2cRound_C2 {width:148px; height:275px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd2cbodyRight.gif); background-repeat:repeat-y; float:left;}
+
+.dd2cRound_Top{position:relative; height:5px; width:294px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd2ctopRound.gif); background-repeat:no-repeat; overflow:hidden;} 
+
+.dd2cRound_Base{position:relative;	height:8px;	width:294px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd2cbase.gif);background-repeat:no-repeat ; clear: both; }
+
+
+/*** 2 Column menus with a Square Top Left Edge ***/
+
+
+.dd2cSquare_C1{width:146px; height:275px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd2cbodyLeft.gif); background-repeat:repeat-y; float: left; }
+
+.dd2cSquare_C2 {width:148px; height:275px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd2cbodyRight.gif); background-repeat:repeat-y; float: left; }
+
+.dd2cSquare_Top{position:relative;	height:5px; width:294px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd2ctopSquare.gif); 	background-repeat:no-repeat; overflow:hidden;} 
+
+.dd2cSquare_Base{position:relative;	height:8px;	width:294px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd2cbase.gif);	background-repeat:no-repeat ; clear: both;}
+
+
+/*** 3 Column menus with a Round Top Left Edge ***/
+
+
+.dd3cRound_C1{width:146px; height:275px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd3cbodyLeft.gif); background-repeat:repeat-y; float: left; }
+
+.dd3cRound_C2 {width:146px; height:275px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd3cbodyCenter.gif); background-repeat:repeat-y; float: left;}
+
+.dd3cRound_C3 {width:148px; height:275px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd3cbodyRight.gif); background-repeat:repeat-y;  float: left;}
+
+.dd3cRound_Top{position:relative;	height:5px; 	width:440px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd3ctopRound.gif); 	background-repeat:no-repeat; overflow:hidden;} 
+
+.dd3cRound_Base{position:relative;	height:8px;	width:440px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd3cbase.gif);	background-repeat:no-repeat ; clear: both; }
+
+
+/*** 3 Column menus with a Square Top Left Edge ***/
+
+
+.dd3cSquare_C1{width:146px; height:275px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd3cbodyLeft.gif); background-repeat:repeat-y; float: left;}
+
+.dd3cSquare_C2 {width:146px; height:275px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd3cbodyCenter.gif); background-repeat:repeat-y;  float: left;}
+
+.dd3cSquare_C3 {width:148px; height:275px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd3cbodyRight.gif); background-repeat:repeat-y;  float: left;}
+
+.dd3cSquare_Top{position:relative;	height:5px; 	width:440px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd3ctopSquare.gif); 	background-repeat:no-repeat; overflow:hidden;} 
+
+.dd3cSquare_Base{position:relative;	height:8px;	width:440px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd3cbase.gif);	background-repeat:no-repeat ; clear: both; }
+
+
+/*** 4 Column menus with a Round Top Left Edge ***/
+
+
+.dd4cRound_C1{width:146px; height:auto; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4cbodyLeft.gif); background-repeat:repeat-y; float: left;}
+
+.dd4cRound_C2 {width:146px; height:auto; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4cbodycolumn2.gif);; background-repeat:repeat-y;  float: left;}
+
+.dd4cRound_C3 {width:146px; height:auto; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4cbodycolumn3.gif); background-repeat:repeat-y;		 float: left;}
+
+.dd4cRound_C4 {width:146px; height:auto; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4cbodyRight.gif); background-repeat:repeat-y; 		 float: left;}
+
+.dd4cRound_Top{position:relative;	height:5px; 	width:584px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4ctopRound.gif); 	background-repeat:no-repeat; overflow:hidden;} 
+
+.dd4cRound_Base{position:relative;	height:8px;	width:584px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4cbase.gif);	background-repeat:no-repeat ; clear: both; }
+
+
+/*** 4 Column menus with a Square Top Left Edge ***/
+
+
+.dd4cSquare_C1{left:0;width:146px; height:250px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4cbodyLeft.gif); background-repeat:repeat-y;  float: left;}
+
+.dd4cSquare_C2 {left:0px; width:146px; height:250px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4cbodycolumn2.gif); background-repeat:repeat-y;   float: left;}
+
+.dd4cSquare_C3 {left:0px; width:146px; height:250px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4cbodycolumn3.gif); background-repeat:repeat-y;  float: left;}
+
+.dd4cSquare_C4 {left:0px; width:146px; height:250px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4cbodyRight.gif); background-repeat:repeat-y;  float: left;}
+
+.dd4cSquare_Top{position:relative;	height:5px; 	width:584px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4ctopSquare.gif); 	background-repeat:no-repeat; overflow:hidden;} 
+
+.dd4cSquare_Base{position:relative;	height:8px;	width:584px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4cbase.gif);	background-repeat:no-repeat ; clear: both; }
+
+
+
+
+/*** 4 Column menus with See All ***/
+
+
+/* This is currently not being used 
+
+.dd4cSeeAll_C1{left:0;width:146px; height:207px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4cbodyLeft.gif); background-repeat:repeat-y; position: relative;   float: left;}
+
+.dd4cSeeAll_C2 {left:0px; width:146px; height:207px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4cbodycolumn2.gif); background-repeat:repeat-y; position: relative;   float: left;}
+
+.dd4cSeeAll_C3 {left:0px; width:146px; height:207px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4cbodycolumn3.gif); background-repeat:repeat-y; position: relative;   float: left;}
+
+.dd4cSeeAll_C4 {left:0px; width:146px; height:207px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4cbodyRight.gif); background-repeat:repeat-y; position: relative;   float: left;}
+
+.dd4cSeeAll_Top{position:relative;	height:5px; 	width:584px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4ctopSeeAll.gif); background-repeat:no-repeat; overflow:hidden;} 
+
+.dd4cSeeAll_Base{position:relative;	height:8px;	width:584px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4cbase.gif);background-repeat:no-repeat ; clear: both; }
+
+*/
+
+/*** 5 Column menus with a Round Top Left Edge ***/
+
+
+.dd5cSquare_C1{width:146px; height:275px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4cbodyLeft.gif); background-repeat:repeat-y; float: left;}
+
+.dd5cSquare_C2 {width:146px; height:275px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4cbodycolumn2.gif); background-repeat:repeat-y; float: left;}
+
+.dd5cSquare_C3 {width:146px; height:275px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4cbodycolumn3.gif); background-repeat:repeat-y; float: left;}
+
+.dd5cSquare_C4 {width:145px; height:275px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment1/dd4cbodycolumn2.gif); background-repeat:repeat-y; float: left;}
+
+.dd5cSquare_C5 {width:146px; height:275px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment2/holidaynav_2006/dd5cbodyRight.gif); background-repeat:repeat-y; float: left;}
+
+.dd5cSquare_Top{position:relative; height:5px; width:729px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment2/holidaynav_2006/dd5ctopRound.gif); background-repeat:no-repeat; overflow:hidden;} 
+.dd5cSquare_Base{position:relative;	height:8px;	width:729px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment2/holidaynav_2006/dd5cbase.gif);	background-repeat:no-repeat ; clear: both; }
+
+
+
+
+
+/* FOOTER */
+
+#footer{
+	width:729px;
+	height:190px;
+	margin:0;
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#333333;
+	text-align:left;
+	background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment2/holidaynav_2006/footerfullback.jpg);
+	background-repeat:repeat-x;
+}
+
+#footerNav{
+	width:729px;
+	height:30px;
+	background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment2/holidaynav_2006/footerHead.jpg);
+	background-repeat:no-repeat;
+	padding-bottom:1px;
+	margin:0;
+	position:relative;
+}
+#footerNav li {margin-top: 0; padding: 0; list-style: none; position: absolute; top: 0;}
+#footerNav li, #footerNav a {height: 30px; display: block; color:transparent;}
+
+#footernavcol1{left:0; width: 188px;}
+#footernavcol2{left:188px; width:179px;}
+#footernavcol3{left:367px; width:182px;}
+#footernavcol4{left:549px; width:179px;}
+#footernavcol5{left:549px; width:179px;}
+
+#footbaseholder{
+	margin:0;
+	position:relative;
+	height:160px;
+}
+
+.footerlists{
+	font-size:11px;
+	margin-top:0;
+	margin-left:0;
+	padding-left:0;
+}
+
+.footerlists ul{
+	margin-top:0;
+	margin-left:0;
+	padding-left:0;
+}
+
+.footerlists li{
+	list-style:none;
+	margin-left:0;
+	padding-left:0;
+	line-height:1.4em;
+	text-indent:15px;
+}
+
+.footerlists a{
+    text-decoration:none;
+	color:#666666;
+}
+
+.footerlists a:hover{
+	text-decoration:underline;
+}
+
+
+#footbase1{
+	width:145px;
+	height:160px;
+	left:0;
+	position:absolute;
+}
+
+#footbasespacer1{
+	width: 2px;
+	height:160px;
+	left:145px;
+	position:absolute;
+	background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment2/holidaynav_2006/footerBottomSpacer.jpg);
+	background-repeat:no-repeat;
+}
+
+#footbase2{
+	width:144px;
+	height:160px;
+	left:147px;
+	position:absolute;
+}
+
+#footbasespacer2{
+	width: 2px;
+	height:160px;
+	left:291px;
+	position:absolute;
+	background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment2/holidaynav_2006/footerBottomSpacer.jpg);
+	background-repeat:no-repeat;
+}
+
+#footbase3{
+	width:143px;
+	height:160px;
+	left:293px;
+	position:absolute;
+}
+
+#footbasespacer3{
+	width: 2px;
+	height:160px;
+	left:436px;
+	position:absolute;
+	background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment2/holidaynav_2006/footerBottomSpacer.jpg);
+	background-repeat:no-repeat;
+}
+
+#footbase4{
+	width:144px;
+	height:160px;
+	left:438px; 
+	position:absolute;
+}
+
+#footbasespacer4{
+	width: 2px;
+	height:160px;
+	left:582px;
+	position:absolute;
+	background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment2/holidaynav_2006/footerBottomSpacer.jpg);
+	background-repeat:no-repeat;
+}
+
+#footbase5{
+	width:145px;
+	height:160px;
+	left:584px; 
+	position:absolute;
+}
+
+/***************************************/
+/*** Bottom "Legal and Privacy Footer ***/
+/*************************************/
+
+
+
+
+#legalfooter{width:729px; font-family:Arial, Helvetica, sans-serif; color:#666666;}
+#legalfooter a{text-decoration:none; color:#333333;}
+#legalfooter a:hover{text-decoration:underline;}
+#lfColumnLeft{text-align:left; font-weight:bold; font-size:11px; width:250px; float:left; height:40px;}
+#lfcolumnRight{text-align:right; font-size:11px; width:479px; float:right; height:40px;}
+
+
+
+
+/* for l2 dd */
+
+/***************************************/
+/*** Nav2 Two Column Drop Down Menus ***/
+/*************************************/
+
+
+	/*** General border for all nav 2 drop down menus ***/
+	
+		
+		.nav2dd_C1{width:214px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment2/holidaynav_2006/nav2dropBodyLeft.gif); background-repeat:repeat-y; position:relative;float: left;}
+		.nav2dd_C2 {width:218px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment2/holidaynav_2006/nav2dropBodyRight.gif); background-repeat:repeat-y; position: relative; float: left;}
+		
+		.nav2dd_Top{position:relative;	height:5px; width:432px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment2/holidaynav_2006/nav2dropTop.gif); background-repeat:no-repeat; overflow:hidden;} 
+		.nav2dd_TopRight{position:relative;	height:5px; width:432px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment2/holidaynav_2006/nav2dropTopRight.gif); background-repeat:no-repeat; overflow:hidden;}
+		
+		.nav2dd_Base{position:relative; width:432px; height:5px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment2/holidaynav_2006/nav2dropBase.gif); background-repeat:no-repeat; overflow:hidden;}	
+		.nav2dd_CellLeft{padding:5px 5px 5px 10px; font-family:Arial, Helvetica, sans-serif;}
+		.nav2dd_CellRight{padding:5px 7px 5px 7px; font-family:Arial, Helvetica, sans-serif;}
+		
+		
+	
+	/*** "Gift Card" Drop down Classes ***/	
+		
+		#nav2dd_GC_Top_C1_Over{width:209px; height:73px; background-repeat:repeat-y; position:absolute; left:10px; top: 5px; z-index:1000;}
+		
+		.nav2dd_GC_Top_C1{width:198px; height:73px;}
+		.nav2dd_GC_Body_C1{width:198px; height:107px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment2/holidaynav_2006/giveGCback.gif); background-repeat:no-repeat; overflow:hidden;}
+		.nav2dd_GC_Base_C1{width:198px; height:5px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment2/holidaynav_2006/GCbase.gif); background-repeat:no-repeat; clear:both;}
+		
+		.nav2dd_GC_Top_C2{width:198px; height:73px;}
+		.nav2dd_GC_Body_C2{width:198px; height:107px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment2/holidaynav_2006/sendGCback.gif); background-repeat:no-repeat; overflow:hidden;}
+		.nav2dd_GC_Base_C2{width:198px; height:5px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment2/holidaynav_2006/GCbase.gif); background-repeat:no-repeat; clear:both;}
+		
+		p.nav2dd_GC_Body_C1_Largetype{font-size:12px; font-weight:bold; margin:0; padding:10px 15px 0 15px; color:#333333;}
+		p.nav2dd_GC_Body_C2_Largetype{font-size:12px; font-weight:bold; margin:0; padding:10px 15px 0 15px; color:#333333;}
+		
+		p.nav2dd_GC_Body_C1_Smalltype{font-size:11px; margin:0; padding:0 14px 5px 14px; color:#666666;}
+		p.nav2dd_GC_Body_C2_Smalltype{font-size:11px; margin:0; padding:0 14px 5px 14px; color:#666666;}
+		
+		.nav2dd_GC_Body_C1 a{font-size:10px; margin:0; padding:0 14px 10px 14px; color:#999999; text-align:center; text-decoration:underline;}
+		.nav2dd_GC_Body_C2 a{font-size:10px; margin:0; padding:0 14px 10px 14px; color:#999999; text-align:center; text-decoration:underline;}
+		
+		.nav2dd_GC_Body_C1 a:hover{color:#CC0000;}
+		.nav2dd_GC_Body_C2 a:hover{color:#CC0000;}
+		
+		.nav2dd_GC_buy {padding:0; margin:0 0 0 20px;}
+		.nav2dd_GC_buy a{display:block; width:130px; height:22px;}
+		 
+		.nav2dd_EGC_buy {padding:0; margin:0 0 0 17px;}
+		.nav2dd_EGC_buy a{display:block;  width:143px; height:22px;}
+	
+	
+	/*** "Shop By" Drop down Classes ***/	
+		
+		
+		.nav2dd_GF_Body{width:198px; height:130px; background-color:#EFEFEF;}
+		
+		/** Column 1 **/
+		
+		.nav2dd_GF_C1_Top{width:198px; height:50px;}
+		.nav2dd_GF_C1_Base{width:198px; height:5px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment2/SBBase.gif); background-repeat:no-repeat;}
+		
+		.nav2dd_GF_C1_C1{width:99px; height:130px;  float:left; border-right:1px solid #DDDDDD; }
+		.nav2dd_GF_C1_C2{width:97px; height:130px;  float:right; }
+		
+		/** Column 2 **/
+		
+		.nav2dd_GF_C2_Top{width:198px; height:50px;}
+		.nav2dd_GF_C2_Base{width:198px; height:5px; background-image:url(http://g-images.amazon.com/images/G/16/nav/treatment2/SBBase.gif); background-repeat:no-repeat;}
+		
+		.nav2dd_GF_C2_C1{width:99px; height:130px;  float:left;border-right:1px solid #DDDDDD;}
+		.nav2dd_GF_C2_C2{width:97px; height:130px;  float:right;}
+		
+		.nav2dd_GF_Body ul {
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:11px;
+		list-style: none;
+		margin:0;
+		padding:10px 0 0 14px;
+		}
+		
+		.nav2dd_GF_Body li {
+				margin:0;
+				padding:0 0 9px 0;
+				}
+		
+		.nav2dd_GF_Body li a {
+				display: block;
+				text-decoration: none;
+				color:#333333;
+				line-height:1.2em;
+				}
+		
+			.nav2dd_GF_Body li a:hover {
+				text-decoration:underline;
+				color: #CC0000;
+		}
+				
+		/*** These are the bottom-left "See All" links ***/	
+		
+		.nav2dd_GF_Body p{
+				font-size:11px;
+				padding:10px 0 13px 14px;
+				margin:0;
+				text-align:left;
+				}
+		
+		.nav2dd_GF_Body  a{
+				color:#CC0000;
+				text-decoration:none;
+				}
+				
+		.nav2dd_GF_Body a:hover{
+				text-decoration:underline;
+				}
+		
+		
+		
+	/*** "Registries" Drop down Classes ***/	
+		
+		.RG_TB_container legend{margin:0; padding:0; visibility:hidden;}
+		.RG_TB_container fieldset{margin:0; padding:0; border:none; }
+		.RG_TB_container form{margin:0; padding:0;}
+		.RG_TB_container{width:198px; margin:0; padding:0; }
+		
+		
+		.RG_CW_container legend{margin:0; padding:0; visibility:hidden;}
+		.RG_CW_container fieldset{margin:0; padding:0; border:none; }
+		.RG_CW_container form{margin:0; padding:0; }	
+		.RG_CW_container{width:198px; margin:0; padding:0; }
+		
+		/* New Target Baby Registries Drop-Down Styles */
+		
+		#GN_NAV2DD_GR_TB_CONTAINER{
+                font-family:Arial, Helvetica, sans-serif;
+                position:relative;
+                width:198px;
+                height:184px;
+                }  
+                #GN_NAV2DD_GR_TB_R1{position:absolute; top:0; left:0; width:198px; height:51px;}
+                
+                #GN_NAV2DD_GR_TB_R2{font-size:11px; color:#999999; font-weight:bold; position:absolute; top:51px; left:0; width:198px; height:30px; background-color:#DBEEF5;}
+                
+                        #GN_NAV2DD_GR_TB_R2_CONTAINER{position:relative;}
+                                #GN_NAV2DD_GR_TB_R2_ID1{position:absolute; top:10px; left:10px; font-size:12px; color:#999999; font-weight:bold;}
+                                #GN_NAV2DD_GR_TB_R2_ID2{position:absolute; top:10px; left:58px; font-size:12px; color:#339999; font-weight:bold;} 
+                                #GN_NAV2DD_GR_TB_R2_ID3{position:absolute; top:8px; left:100px; font-size:12px; color:#339999; font-weight:bold;}
+                                #GN_NAV2DD_GR_TB_R2_ID4{position:absolute; top:10px; left:131px; font-size:12px; color:#339999; font-weight:bold;}
+                                #GN_NAV2DD_GR_TB_R2_ID5{position:absolute; top:8px; left:170px; font-size:12px; color:#339999; font-weight:bold;}
+                
+                #GN_NAV2DD_GR_TB_R2 input{ padding:0; margin-left:3px;} 
+                
+                #GN_NAV2DD_GR_TB_R3{position:absolute; top:81px; left:0; width:198px; height:25px; background-color:#DBEEF5;}
+                
+                        #GN_NAV2DD_GR_TB_R3_CONTAINER{position:relative; }
+                                #GN_NAV2DD_GR_TB_R3_ID1{position:absolute; top:5px; left:10px; font-size:12px; color:#339999; font-weight:bold;}
+                                #GN_NAV2DD_GR_TB_R3_ID2{position:absolute; top:0px; left:82px; font-size:12px; color:#339999; font-weight:bold;} 
+                
+                #GN_NAV2DD_GR_TB_R4{font-size:11px; color:#339999; font-weight: bold; position:absolute; top:106px; left:0; width:198px; height:25px; background-color:#DBEEF5;}
+                
+                        #GN_NAV2DD_GR_TB_R4_CONTAINER{position:relative;}
+                                #GN_NAV2DD_GR_TB_R4_ID1{position:absolute; top:5px; left:10px; font-size:12px; color:#339999; font-weight:bold;}
+                                #GN_NAV2DD_GR_TB_R4_ID2{position:absolute; top:0px; left:82px; font-size:12px; color:#339999; font-weight:bold;}
+               
+                .GN_NAV2DD_GR_TB_TEXT{width:102px; height:25px; float:left; padding-left:5px;}
+                
+                .GN_NAV2DD_GR_TB_TEXT_BODY{height:25px; width:96px;  float:left;}
+                
+                input.GN_NAV2DD_GR_TB_TEXT{width:96px; height:25px; background: transparent url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/gn_nav2_tb_inputback.gif); background-repeat:repeat-x; padding:5px 0 0 0; margin:0;  border:none; font-size:10px; color:#666666; font-family:Arial, Helvetica, sans-serif;}
+                
+                #GN_NAV2DD_GR_TB_R5{position:absolute; top:131px; left:0; width:198px; height:27px; background-color:#DBEEF5;}
+                        #GN_NAV2DD_GR_TB_R5_CONTAINER{position:relative;}
+                        #GN_NAV2DD_GR_TB_R5_ID1{position:absolute; top:5px; left:10px; font-size:10px; color:#339999; }
+                        #GN_NAV2DD_GR_TB_R5_ID2{position:absolute; top:0px; left:105px; }
+                
+                #GN_NAV2DD_GR_TB_R5 input{float:left; height: 23px; width:63px; padding:0; margin:0 0 0 22px;}
+                
+                #GN_NAV2DD_GR_TB_R6{position:absolute; top:158px; left:0; width:198px; height:26px; background-image:url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/gn_nav2_tb_base.gif);}
+               .GN_NAV2DD_GR_TB_R6 {font-size:11px; color:#339999; margin:0; padding:5px 0 0 5px;} 
+                #GN_NAV2DD_GR_TB_R6 a{font-size:11px; color:#339999; margin:0; padding:0; text-decoration:underline; float:left;}
+                #GN_NAV2DD_GR_TB_R6 a:hover{color:#CC0000;}
+                
+                        #GN_NAV2DD_GR_TB_R6_CONTAINER{position:relative;}
+                                #GN_NAV2DD_GR_TB_R6_ID1{position:absolute; top:6px; left:7px; font-size:11px; color:#339999; }
+                                #GN_NAV2DD_GR_TB_R6_ID2{position:absolute; top:6px; left:95px; font-size:11px; color:#339999;}
+                                #GN_NAV2DD_GR_TB_R6_ID3{position:absolute; top:6px; left:100px;  font-size:11px; color:#339999; }
+                
+
+                 /* Begin Club Wedd Styles */
+                
+                #GN_NAV2DD_GR_CW_CONTAINER{
+                font-family:Arial, Helvetica, sans-serif;
+                position:relative;
+                width:198px;
+                height:184px;
+                }
+                
+                #GN_NAV2DD_GR_CW_R1{position:absolute; top:0; left:0; width:198px; height:51px;}
+                
+                #GN_NAV2DD_GR_CW_R2{font-size:11px; color:#999999; font-weight:bold; position:absolute; top:51px; left:0; width:198px; height:30px; background-color:#F3E5B0;}
+                
+                #GN_NAV2DD_GR_CW_R2_CONTAINER{position:relative;}
+                #GN_NAV2DD_GR_CW_R2_ID1{position:absolute; top:10px; left:10px; font-size:12px; color:#999966; font-weight:bold;}
+                #GN_NAV2DD_GR_CW_R2_ID2{position:absolute; top:10px; left:63px; font-size:12px; color:#999966; font-weight:bold;} 
+                #GN_NAV2DD_GR_CW_R2_ID3{position:absolute; top:8px; left:100px; font-size:12px; color:#999966; font-weight:bold;}
+                #GN_NAV2DD_GR_CW_R2_ID4{position:absolute; top:10px; left:129px; font-size:12px; color:#999966; font-weight:bold;}
+                #GN_NAV2DD_GR_CW_R2_ID5{position:absolute; top:8px; left:172px; font-size:12px; color:#999966; font-weight:bold;}
+                
+                #GN_NAV2DD_GR_CW_R2 input{ padding:0; margin-left:1px;} 
+                
+                #GN_NAV2DD_GR_CW_R3{position:absolute; top:81px; left:0; width:198px; height:25px; background-color:#F3E5B0;}
+                
+                #GN_NAV2DD_GR_CW_R3_CONTAINER{position:relative; }
+                #GN_NAV2DD_GR_CW_R3_ID1{position:absolute; top:5px; left:10px; font-size:12px; color:#999966; font-weight:bold;}
+                #GN_NAV2DD_GR_CW_R3_ID2{position:absolute; top:0px; left:82px; font-size:12px; color:#999966; font-weight:bold;} 
+                
+                #GN_NAV2DD_GR_CW_R4{font-size:11px; color:#999966; font-weight: bold; position:absolute; top:106px; left:0; width:198px; height:25px; background-color:#F3E5B0;}
+                
+                #GN_NAV2DD_GR_CW_R4_CONTAINER{position:relative;}
+                #GN_NAV2DD_GR_CW_R4_ID1{position:absolute; top:5px; left:10px; font-size:12px; color:#999966; font-weight:bold;}
+                #GN_NAV2DD_GR_CW_R4_ID2{position:absolute; top:0px; left:82px; font-size:12px; color:#999966; font-weight:bold;}
+                
+                .GN_NAV2DD_GR_CW_TEXT{width:102px; height:25px; float:left; padding-left:5px;}
+                
+                .GN_NAV2DD_GR_CW_TEXT_BODY{height:25px; width:96px;  float:left;}
+                
+                input.GN_NAV2DD_GR_CW_TEXT{width:96px; height:25px; background: transparent url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/gn_nav2_cw_inputback.gif); background-repeat:repeat-x; padding:5px 0 0 0; margin:0;  border:none; font-size:10px; color:#666666; font-family:Arial, Helvetica, sans-serif;}
+                
+                #GN_NAV2DD_GR_CW_R5{position:absolute; top:131px; left:0; width:198px; height:27px; background-color:#F3E5B0;}
+                #GN_NAV2DD_GR_CW_R5_CONTAINER{position:relative;}
+                #GN_NAV2DD_GR_CW_R5_ID1{position:absolute; top:5px; left:10px; font-size:10px; color:#999966; }
+                #GN_NAV2DD_GR_CW_R5_ID2{position:absolute; top:0px; left:105px; }
+                
+                #GN_NAV2DD_GR_CW_R5 input{float:left; height: 23px; width:63px; padding:0; margin:0 0 0 22px;}
+                
+                #GN_NAV2DD_GR_CW_R6{position:absolute; top:158px; left:0; width:198px; height:26px; background-image:url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/gn_nav2_cw_base.gif);}
+                .GN_NAV2DD_GR_CW_R6 {font-size:11px; color:#999966; margin:0; padding:5px 0 0 5px;} 
+                #GN_NAV2DD_GR_CW_R6 a{font-size:11px; color:#999966; margin:0; padding:0; text-decoration:underline; float:left;}
+                #GN_NAV2DD_GR_CW_R6 a:hover{color:#CC0000;}
+                
+                #GN_NAV2DD_GR_CW_R6_CONTAINER{position:relative;}
+                #GN_NAV2DD_GR_CW_R6_ID1{position:absolute; top:6px; left:7px; font-size:11px; color:#999966; }
+                #GN_NAV2DD_GR_CW_R6_ID2{position:absolute; top:6px; left:95px; font-size:11px; color:#999966;}
+                #GN_NAV2DD_GR_CW_R6_ID3{position:absolute; top:6px; left:100px;  font-size:11px; color:#999966; }
+                
+                
+                /* Accessibility - Only Styles added 12/4/2006 */
+               div.tgt_gn_acc_title{
+                position:absolute;
+                left:0px;
+                top:-500px;
+                width:1px;
+                height:1px;
+                overflow:hidden;
+                }
+             
+                
+
+
+/* Due to Safari Compatibility Issues (i.e inability, as of Safari version 2 to display skin-able input attributes), these items must appear at the end of the style sheet */
+/* These classes represent the left and right rounded corner "caps" of the input areas for the main page search and the search boxes for the gift registries drop-down menus */
+/* A "#" must appear at the end of the class to hide that class from Safari */
+.nav4txt_capright{background-image: url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/nav4txt_rightcap.gif);#}
+.nav4txt_capleft{background-image: url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/nav4txt_leftcap.gif);#}
+.GN_NAV2DD_GR_TB_TEXT_LEFTCAP{height:25px; width:3px; background-image:url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/gn_nav2_tb_inputleftcap.gif); float:left; #}
+.GN_NAV2DD_GR_TB_TEXT_RIGHTCAP{height:25px; width:3px;  background-image:url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/gn_nav2_tb_inputrightcap.gif); float:left; #}
+.GN_NAV2DD_GR_CW_TEXT_LEFTCAP{height:25px; width:3px; background-image:url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/gn_nav2_cw_inputleftcap.gif); float:left; #}
+.GN_NAV2DD_GR_CW_TEXT_RIGHTCAP{height:25px; width:3px;  background-image:url(http://g-images.amazon.com/images/G/16/nav/jan07_global_nav/gn_nav2_cw_inputrightcap.gif); float:left; #}
+		

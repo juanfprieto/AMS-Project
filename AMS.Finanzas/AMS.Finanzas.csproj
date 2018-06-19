@@ -1,0 +1,927 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{000D52F5-9028-4138-AB13-7AC5721613A6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>AMS.Finanzas</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AMS.Finanzas</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\AMS\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\Compilados\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajax, Version=5.7.22.2, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS.Documentos\bin\Release\Ajax.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AMS.Cartera.AjustesCartera.ascx.cs">
+      <DependentUpon>AMS.Cartera.AjustesCartera.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Cartera.AjustesCartera.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.AjustesCartera.ascx</DependentUpon>
+    </Compile>
+    <Content Include="AMS.Cartera.CancelaSaldos.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Cartera.CausacionAutomatica.ascx" />
+    <Content Include="AMS.Cartera.CausacionAutomatica.Impresion.ascx" />
+    <Content Include="AMS.Cartera.CausacionFacturasAdministrativas.ascx" />
+    <Content Include="AMS.Cartera.CausacionFacturasAdministrativas.Cliente.ascx" />
+    <Content Include="AMS.Cartera.CausacionFacturasAdministrativas.Proveedor.ascx" />
+    <Content Include="AMS.Cartera.CierreMensual.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Cartera.ConsultaFacturas.ascx" />
+    <Content Include="AMS.Cartera.ConsultaFacturasClientes.ascx" />
+    <Content Include="AMS.Cartera.ConsultaFacturasProveedores.ascx" />
+    <Content Include="AMS.Cartera.DeterioroCartera.ascx" />
+    <Content Include="AMS.Cartera.DevolucionFacAdmin.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Cartera.EmisionOrdenSalidaVehiculo.ascx" />
+    <Content Include="AMS.Cartera.EmisionOrdenSalidaVehiculo.Catalogo.ascx" />
+    <Content Include="AMS.Cartera.EmisionOrdenSalidaVehiculo.Emision.ascx" />
+    <Content Include="AMS.Cartera.EmisionOrdenSalidaVehiculo.Orden.ascx" />
+    <Content Include="AMS.Cartera.EmisionOrdenSalidaVehiculo.Placa.ascx" />
+    <Content Include="AMS.Cartera.EmisionOrdenSalidaVehiculo.Propietario.ascx" />
+    <Content Include="AMS.Cartera.EmisionOrdenSalidaVehiculo.Reporte.ascx" />
+    <Content Include="AMS.Cartera.LiquidacionInteresesMora.ascx" />
+    <Content Include="AMS.Cartera.LiquidacionInteresesMora.Impresion.ascx" />
+    <Content Include="AMS.Cartera.ModificacionRetenciones.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Cartera.PruebaXML2.ascx" />
+    <Content Include="AMS.Cartera.ReporteCruces.aspx" />
+    <Content Include="AMS.Finanzas.AnulacionCrucesCartera.ascx" />
+    <Content Include="AMS.Finanzas.AnulacionTesoreria.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Tesoreria.ActivosFijos.ascx" />
+    <Content Include="AMS.Tesoreria.ActivosFijos.Ingresar.ascx" />
+    <Content Include="AMS.Tesoreria.AnulacionReciboCaja.ascx" />
+    <Content Include="AMS.Tesoreria.CausacionObligacionesFinancieras.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Tesoreria.ConciliacionBancaria.ascx" />
+    <Content Include="AMS.Tesoreria.ConciliacionManual.ascx" />
+    <Content Include="AMS.Tesoreria.ConsignaCheques.Anulaciones.ascx" />
+    <Content Include="AMS.Tesoreria.ConsignaCheques.ascx" />
+    <Content Include="AMS.Tesoreria.ConsignaCheques.ConsignacionCC.ascx" />
+    <Content Include="AMS.Tesoreria.ConsignaCheques.DevCheqFinan.ascx" />
+    <Content Include="AMS.Tesoreria.ConsignaCheques.DevolucionCC.ascx" />
+    <Content Include="AMS.Tesoreria.ConsignaCheques.EntrChequesProv.ascx" />
+    <Content Include="AMS.Tesoreria.ConsignaCheques.NotasBancarias.ascx" />
+    <Content Include="AMS.Tesoreria.ConsignaCheques.RemCheqFinan.ascx" />
+    <Content Include="AMS.Tesoreria.ConsignaCheques.TrasFondosCCCarta.ascx" />
+    <Content Include="AMS.Tesoreria.ConsignaCheques.TrasFondosCCCheque.ascx" />
+    <Content Include="AMS.Tesoreria.ConsultaCheques.ascx" />
+    <Content Include="AMS.Tesoreria.CruceDocs.ascx" />
+    <Content Include="AMS.Tesoreria.EjecutarEfectividad.ascx" />
+    <Content Include="AMS.Tesoreria.EmisionRecibos.ascx" />
+    <Content Include="AMS.Tesoreria.EmisionRecibos.CuerpoRecibo.ascx" />
+    <Content Include="AMS.Tesoreria.EmisionRecibos.DatosCliente.ascx" />
+    <Content Include="AMS.Tesoreria.EmisionRecibos.Documentos.ascx" />
+    <Content Include="AMS.Tesoreria.EmisionRecibos.Encabezados.ascx" />
+    <Content Include="AMS.Tesoreria.EmisionRecibos.NoCausados.ascx" />
+    <Content Include="AMS.Tesoreria.EmisionRecibos.Obligaciones.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Tesoreria.EmisionRecibos.Pagos.ascx" />
+    <Content Include="AMS.Tesoreria.EmisionRecibos.Varios.ascx" />
+    <Content Include="AMS.Tesoreria.ImpresionRC.aspx" />
+    <Content Include="AMS.Tesoreria.ObligacionesFinancieras.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Tesoreria.ProcesoConciliacion.ascx" />
+    <Content Include="AMS.Tesoreria.ReImpresionRecibos.ascx" />
+    <Compile Include="AMS.Cartera.CancelaSaldos.ascx.cs">
+      <DependentUpon>AMS.Cartera.CancelaSaldos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Cartera.CancelaSaldos.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.CancelaSaldos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Cartera.CierreMensual.ascx.cs">
+      <DependentUpon>AMS.Cartera.CierreMensual.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Cartera.CierreMensual.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.CierreMensual.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Cartera.ConsultaFacturasClientes.ascx.cs">
+      <DependentUpon>AMS.Cartera.ConsultaFacturasClientes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Cartera.ConsultaFacturasClientes.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.ConsultaFacturasClientes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Cartera.ConsultaFacturasProveedores.ascx.cs">
+      <DependentUpon>AMS.Cartera.ConsultaFacturasProveedores.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Cartera.ConsultaFacturasProveedores.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.ConsultaFacturasProveedores.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Cartera.DeterioroCartera.ascx.cs">
+      <DependentUpon>AMS.Cartera.DeterioroCartera.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Cartera.DeterioroCartera.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.DeterioroCartera.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Cartera.DevolucionFacAdmin.ascx.cs">
+      <DependentUpon>AMS.Cartera.DevolucionFacAdmin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Cartera.DevolucionFacAdmin.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.DevolucionFacAdmin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Cartera.ModificacionRetenciones.ascx.cs">
+      <DependentUpon>AMS.Cartera.ModificacionRetenciones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Cartera.ModificacionRetenciones.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.ModificacionRetenciones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.AnulacionCrucesCartera.ascx.cs">
+      <DependentUpon>AMS.Finanzas.AnulacionCrucesCartera.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.AnulacionCrucesCartera.ascx.designer.cs">
+      <DependentUpon>AMS.Finanzas.AnulacionCrucesCartera.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.AnulacionTesoreria.ascx.cs">
+      <DependentUpon>AMS.Finanzas.AnulacionTesoreria.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.AnulacionTesoreria.ascx.designer.cs">
+      <DependentUpon>AMS.Finanzas.AnulacionTesoreria.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.CausacionAutmatica.Impresion.ascx.cs">
+      <DependentUpon>AMS.Cartera.CausacionAutomatica.Impresion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.CausacionAutmatica.Impresion.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.CausacionAutomatica.Impresion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.CausacionAutomatica.ascx.cs">
+      <DependentUpon>AMS.Cartera.CausacionAutomatica.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.CausacionAutomatica.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.CausacionAutomatica.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.CausacionFacturasAdministrativas.ascx.cs">
+      <DependentUpon>AMS.Cartera.CausacionFacturasAdministrativas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.CausacionFacturasAdministrativas.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.CausacionFacturasAdministrativas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.CausacionFacturasAdministrativas.Cliente.ascx.cs">
+      <DependentUpon>AMS.Cartera.CausacionFacturasAdministrativas.Cliente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.CausacionFacturasAdministrativas.Cliente.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.CausacionFacturasAdministrativas.Cliente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.CausacionFacturasAdministrativas.Proveedor.ascx.cs">
+      <DependentUpon>AMS.Cartera.CausacionFacturasAdministrativas.Proveedor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.CausacionFacturasAdministrativas.Proveedor.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.CausacionFacturasAdministrativas.Proveedor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.ConsultaFacturas.ascx.cs">
+      <DependentUpon>AMS.Cartera.ConsultaFacturas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.ConsultaFacturas.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.ConsultaFacturas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.ascx.cs">
+      <DependentUpon>AMS.Cartera.EmisionOrdenSalidaVehiculo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.EmisionOrdenSalidaVehiculo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Catalogo.ascx.cs">
+      <DependentUpon>AMS.Cartera.EmisionOrdenSalidaVehiculo.Catalogo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Catalogo.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.EmisionOrdenSalidaVehiculo.Catalogo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Emision.ascx.cs">
+      <DependentUpon>AMS.Cartera.EmisionOrdenSalidaVehiculo.Emision.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Emision.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.EmisionOrdenSalidaVehiculo.Emision.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Orden.ascx..cs">
+      <DependentUpon>AMS.Cartera.EmisionOrdenSalidaVehiculo.Orden.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Orden.ascx..designer.cs">
+      <DependentUpon>AMS.Cartera.EmisionOrdenSalidaVehiculo.Orden.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Placa.ascx..cs">
+      <DependentUpon>AMS.Cartera.EmisionOrdenSalidaVehiculo.Placa.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Placa.ascx..designer.cs">
+      <DependentUpon>AMS.Cartera.EmisionOrdenSalidaVehiculo.Placa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Propietario.ascx.cs">
+      <DependentUpon>AMS.Cartera.EmisionOrdenSalidaVehiculo.Propietario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Propietario.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.EmisionOrdenSalidaVehiculo.Propietario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Reporte.ascx.cs">
+      <DependentUpon>AMS.Cartera.EmisionOrdenSalidaVehiculo.Reporte.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Reporte.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.EmisionOrdenSalidaVehiculo.Reporte.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.FacturaAdministrativa.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.LiquidacionInteresesMora.ascx.cs">
+      <DependentUpon>AMS.Cartera.LiquidacionInteresesMora.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.LiquidacionInteresesMora.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.LiquidacionInteresesMora.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.LiquidacionInteresesMora.Impresion.ascx.cs">
+      <DependentUpon>AMS.Cartera.LiquidacionInteresesMora.Impresion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.LiquidacionInteresesMora.Impresion.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.LiquidacionInteresesMora.Impresion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.PruebaXML2.ascx.cs">
+      <DependentUpon>AMS.Cartera.PruebaXML2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.PruebaXML2.ascx.designer.cs">
+      <DependentUpon>AMS.Cartera.PruebaXML2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.ReporteCruces.aspx.cs">
+      <DependentUpon>AMS.Cartera.ReporteCruces.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Cartera.ReporteCruces.aspx.designer.cs">
+      <DependentUpon>AMS.Cartera.ReporteCruces.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ActivosFijos.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.ActivosFijos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ActivosFijos.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.ActivosFijos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ActivosFijos.Ingresar.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.ActivosFijos.Ingresar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ActivosFijos.Ingresar.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.ActivosFijos.Ingresar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.AnulacionReciboCaja.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.AnulacionReciboCaja.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.AnulacionReciboCaja.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.AnulacionReciboCaja.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConciliacionBancaria.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.ConciliacionBancaria.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConciliacionBancaria.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.ConciliacionBancaria.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConciliacionManual.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.ConciliacionManual.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConciliacionManual.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.ConciliacionManual.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsignaCheques.Anulaciones.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.ConsignaCheques.Anulaciones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsignaCheques.Anulaciones.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.ConsignaCheques.Anulaciones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsignaCheques.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.ConsignaCheques.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsignaCheques.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.ConsignaCheques.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsignaCheques.ConsignacionCC.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.ConsignaCheques.ConsignacionCC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsignaCheques.ConsignacionCC.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.ConsignaCheques.ConsignacionCC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsignaCheques.DevCheqFinan.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.ConsignaCheques.DevCheqFinan.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsignaCheques.DevCheqFinan.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.ConsignaCheques.DevCheqFinan.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsignaCheques.DevolucionCC.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.ConsignaCheques.DevolucionCC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsignaCheques.DevolucionCC.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.ConsignaCheques.DevolucionCC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsignaCheques.EntrChequesProv.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.ConsignaCheques.EntrChequesProv.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsignaCheques.EntrChequesProv.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.ConsignaCheques.EntrChequesProv.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsignaCheques.NotasBancarias.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.ConsignaCheques.NotasBancarias.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsignaCheques.NotasBancarias.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.ConsignaCheques.NotasBancarias.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsignaCheques.RemCheqFinan.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.ConsignaCheques.RemCheqFinan.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsignaCheques.RemCheqFinan.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.ConsignaCheques.RemCheqFinan.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsignaCheques.TrasFondosCCCarta.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.ConsignaCheques.TrasFondosCCCarta.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsignaCheques.TrasFondosCCCarta.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.ConsignaCheques.TrasFondosCCCarta.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsignaCheques.TrasFondosCCCheque.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.ConsignaCheques.TrasFondosCCCheque.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsignaCheques.TrasFondosCCCheque.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.ConsignaCheques.TrasFondosCCCheque.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.Consignacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsultaCheques.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.ConsultaCheques.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ConsultaCheques.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.ConsultaCheques.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.CruceDocs.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.CruceDocs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.CruceDocs.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.CruceDocs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.EjecutarEfectivivad.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.EjecutarEfectividad.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.EjecutarEfectivivad.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.EjecutarEfectividad.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.EmisionRecibos.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.EmisionRecibos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.EmisionRecibos.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.EmisionRecibos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.EmisionRecibos.CuerpoRecibo.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.EmisionRecibos.CuerpoRecibo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.EmisionRecibos.CuerpoRecibo.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.EmisionRecibos.CuerpoRecibo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.EmisionRecibos.DatosCliente.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.EmisionRecibos.DatosCliente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.EmisionRecibos.DatosCliente.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.EmisionRecibos.DatosCliente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.EmisionRecibos.Documentos.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.EmisionRecibos.Documentos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.EmisionRecibos.Documentos.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.EmisionRecibos.Documentos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.EmisionRecibos.Encabezados.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.EmisionRecibos.Encabezados.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.EmisionRecibos.Encabezados.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.EmisionRecibos.Encabezados.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.EmisionRecibos.NoCausados.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.EmisionRecibos.NoCausados.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.EmisionRecibos.NoCausados.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.EmisionRecibos.NoCausados.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.EmisionRecibos.Pagos.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.EmisionRecibos.Pagos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.EmisionRecibos.Pagos.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.EmisionRecibos.Pagos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.EmisionRecibos.ReImpresionRecibos.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.ReImpresionRecibos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.EmisionRecibos.ReImpresionRecibos.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.ReImpresionRecibos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.EmisionRecibos.Varios.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.EmisionRecibos.Varios.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.EmisionRecibos.Varios.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.EmisionRecibos.Varios.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ImpresionRC.aspx.cs">
+      <DependentUpon>AMS.Tesoreria.ImpresionRC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ImpresionRC.aspx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.ImpresionRC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ProcesoConciliacion.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.ProcesoConciliacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.ProcesoConciliacion.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.ProcesoConciliacion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Finanzas.Tesoreria.Recibos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Tesoreria.CausacionObligacionesFinancieras.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.CausacionObligacionesFinancieras.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tesoreria.CausacionObligacionesFinancieras.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.CausacionObligacionesFinancieras.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tesoreria.EmisionRecibos.Obligaciones.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.EmisionRecibos.Obligaciones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tesoreria.EmisionRecibos.Obligaciones.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.EmisionRecibos.Obligaciones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tesoreria.ObligacionesFinancieras.ascx.cs">
+      <DependentUpon>AMS.Tesoreria.ObligacionesFinancieras.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tesoreria.ObligacionesFinancieras.ascx.designer.cs">
+      <DependentUpon>AMS.Tesoreria.ObligacionesFinancieras.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tesoreria.ObligacionFinanciera.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="AMS.Cartera.CancelaSaldos.ascx.resx">
+      <DependentUpon>AMS.Cartera.CancelaSaldos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Cartera.CierreMensual.ascx.resx">
+      <DependentUpon>AMS.Cartera.CierreMensual.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Cartera.ConsultaFacturasClientes.ascx.resx">
+      <DependentUpon>AMS.Cartera.ConsultaFacturasClientes.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Cartera.ConsultaFacturasProveedores.ascx.resx">
+      <DependentUpon>AMS.Cartera.ConsultaFacturasProveedores.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Cartera.DevolucionFacAdmin.ascx.resx">
+      <DependentUpon>AMS.Cartera.DevolucionFacAdmin.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Cartera.ModificacionRetenciones.ascx.resx">
+      <DependentUpon>AMS.Cartera.ModificacionRetenciones.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.AnulacionTesoreria.ascx.resx">
+      <DependentUpon>AMS.Finanzas.AnulacionTesoreria.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Cartera.CausacionAutmatica.Impresion.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Cartera.CausacionAutmatica.Impresion.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Cartera.CausacionAutomatica.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Cartera.CausacionAutomatica.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Cartera.CausacionFacturasAdministrativas.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Cartera.CausacionFacturasAdministrativas.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Cartera.CausacionFacturasAdministrativas.Cliente.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Cartera.CausacionFacturasAdministrativas.Cliente.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Cartera.CausacionFacturasAdministrativas.Proveedor.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Cartera.CausacionFacturasAdministrativas.Proveedor.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Cartera.ConsultaFacturas.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Cartera.ConsultaFacturas.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Catalogo.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Catalogo.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Emision.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Emision.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Orden.ascx..resx">
+      <DependentUpon>AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Orden.ascx..cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Placa.ascx..resx">
+      <DependentUpon>AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Placa.ascx..cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Propietario.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Propietario.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Reporte.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Cartera.EmisionOrdenSalidaVehiculo.Reporte.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Cartera.LiquidacionInteresesMora.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Cartera.LiquidacionInteresesMora.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Cartera.LiquidacionInteresesMora.Impresion.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Cartera.LiquidacionInteresesMora.Impresion.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Cartera.PruebaXML2.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Cartera.PruebaXML2.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Cartera.ReporteCruces.aspx.resx">
+      <DependentUpon>AMS.Finanzas.Cartera.ReporteCruces.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.ActivosFijos.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.ActivosFijos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.ActivosFijos.Ingresar.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.ActivosFijos.Ingresar.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.AnulacionReciboCaja.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.AnulacionReciboCaja.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.ConciliacionBancaria.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.ConciliacionBancaria.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.ConciliacionManual.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.ConciliacionManual.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.ConsignaCheques.Anulaciones.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.ConsignaCheques.Anulaciones.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.ConsignaCheques.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.ConsignaCheques.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.ConsignaCheques.ConsignacionCC.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.ConsignaCheques.ConsignacionCC.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.ConsignaCheques.DevCheqFinan.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.ConsignaCheques.DevCheqFinan.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.ConsignaCheques.DevolucionCC.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.ConsignaCheques.DevolucionCC.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.ConsignaCheques.EntrChequesProv.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.ConsignaCheques.EntrChequesProv.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.ConsignaCheques.NotasBancarias.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.ConsignaCheques.NotasBancarias.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.ConsignaCheques.RemCheqFinan.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.ConsignaCheques.RemCheqFinan.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.ConsignaCheques.TrasFondosCCCarta.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.ConsignaCheques.TrasFondosCCCarta.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.ConsignaCheques.TrasFondosCCCheque.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.ConsignaCheques.TrasFondosCCCheque.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.ConsultaCheques.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.ConsultaCheques.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.CruceDocs.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.CruceDocs.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.EjecutarEfectivivad.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.EjecutarEfectivivad.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.EmisionRecibos.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.EmisionRecibos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.EmisionRecibos.CuerpoRecibo.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.EmisionRecibos.CuerpoRecibo.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.EmisionRecibos.DatosCliente.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.EmisionRecibos.DatosCliente.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.EmisionRecibos.Documentos.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.EmisionRecibos.Documentos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.EmisionRecibos.Encabezados.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.EmisionRecibos.Encabezados.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.EmisionRecibos.NoCausados.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.EmisionRecibos.NoCausados.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.EmisionRecibos.Pagos.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.EmisionRecibos.Pagos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.EmisionRecibos.ReImpresionRecibos.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.EmisionRecibos.ReImpresionRecibos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.EmisionRecibos.Varios.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.EmisionRecibos.Varios.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.ImpresionRC.aspx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.ImpresionRC.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Finanzas.Tesoreria.ProcesoConciliacion.ascx.resx">
+      <DependentUpon>AMS.Finanzas.Tesoreria.ProcesoConciliacion.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tesoreria.CausacionObligacionesFinancieras.ascx.resx">
+      <DependentUpon>AMS.Tesoreria.CausacionObligacionesFinancieras.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tesoreria.EmisionRecibos.Obligaciones.ascx.resx">
+      <DependentUpon>AMS.Tesoreria.EmisionRecibos.Obligaciones.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tesoreria.ObligacionesFinancieras.ascx.resx">
+      <DependentUpon>AMS.Tesoreria.ObligacionesFinancieras.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Cartera.AjustesCartera.ascx.resx">
+      <DependentUpon>AMS.Cartera.AjustesCartera.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AMS.Cartera.AjustesCartera.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AMS.Contabilidad\AMS.Contabilidad.csproj">
+      <Project>{6E5D9657-A3F0-4BCA-8D48-3F089E82439D}</Project>
+      <Name>AMS.Contabilidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.CryptoServices\AMS.CryptoServices.csproj">
+      <Project>{137D79F7-AA92-4A71-A6F4-FE44FFEB715B}</Project>
+      <Name>AMS.CryptoServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.DBManager\AMS.DBManager.csproj">
+      <Project>{41ED97B6-DDCF-4AA6-BA60-8F23A5661C49}</Project>
+      <Name>AMS.DBManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.DB\AMS.DB.csproj">
+      <Project>{BAE52CE2-EF3D-4B65-9F5A-9DA33502F99C}</Project>
+      <Name>AMS.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Documentos\AMS.Documentos.csproj">
+      <Project>{19EF3FAA-C588-4E81-813B-6F3C723B222B}</Project>
+      <Name>AMS.Documentos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Forms\AMS.Forms.csproj">
+      <Project>{4E9173A3-45B7-4B17-846D-8D790517DDF5}</Project>
+      <Name>AMS.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Tools\AMS.Tools.csproj">
+      <Project>{97030739-855C-4ECE-A72B-231624365A8D}</Project>
+      <Name>AMS.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1067</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/AMS/AMS.Finanzas</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

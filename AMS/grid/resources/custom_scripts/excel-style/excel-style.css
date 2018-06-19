@@ -1,0 +1,39 @@
+﻿.excel-textbox
+{
+    background-color: transparent;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    outline: 0;
+    font: inherit;
+    width: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    cursor: default;
+    font-size: 10px !important;
+}
+        
+.ob_gR, .ob_gRA
+{
+    background-image: none !important;
+}
+    
+.ob_gCc2 
+{
+    padding-left: 3px !important;
+}
+	
+.ob_gBCont
+{
+	border-bottom: 1px solid #C3C9CE;
+}
+	    
+.ob_gALFS
+{
+	display: none !important;
+}
+	    
+.ob_gFALC
+{
+	margin-right: 10px !important;
+}

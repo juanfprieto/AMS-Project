@@ -1,0 +1,290 @@
+body
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	background-color: #ffffff;
+}
+
+hr
+{
+	height: 1px;
+	border-top: solid 1px #7DA5E0;
+}
+
+P.Description
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	background-color: #EEF4FD;
+	border: solid 1px #0B4491;
+	padding: 5;
+}
+
+.Panel
+{
+	
+}
+
+.Tab
+{
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Verdana;
+	text-decoration: none;
+}
+
+.Tree
+{
+	font-size: 11px;
+	font-family: Tahoma;
+}
+
+.Text
+{
+	font-family: Tahoma;
+	font-size: 11px;	
+}
+
+a:link
+{
+	font: 11px Tahoma;
+	text-decoration:none;
+	color:lightyellow;
+}
+a:hover
+{
+	font: 11px Tahoma;
+	text-decoration:none;
+	color:lightgray;
+}
+a:visited
+{
+	font: 11px Tahoma;
+	text-decoration:none;
+	color:lightyellow;
+}
+
+/* Tree view */
+.DefaultNode
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	color: black;
+	padding: 0;
+	border: solid 1px white;
+}
+a.DefaultNode:visited {color: black}
+.HoveredNode
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	color: black;
+	padding: 0;
+	background-color: #D8E7FC;
+	border: solid 1px #0B4491;
+}
+a.HoveredNode:visited {color: black}
+.SelectedNode
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	color: black;
+	padding: 0;
+	background-color: #FFE0B3;
+	border: solid 1px #0B4491;
+}
+a.SelectedNode:visited {color: black}
+
+/* Navigation pane */
+.BaseTable
+{
+	font-family: Tahoma;
+	font-size: 11px;
+}
+
+.NavigationPane
+{
+	font-family: Tahoma;
+	font-size: 11px;
+}
+
+.NavigationPaneTabStrip
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	width: 100%;
+	height: 100%;
+}
+
+.NavigationPaneClient
+{
+	background-color: white;
+	border-bottom: solid 1px #0B4491;
+	padding: 2;
+}
+
+.NavigationPaneButton
+{
+	padding-left: 3px;
+	border-bottom: solid 1px #0B4491;
+	cursor: hand;
+	/*background-image: url("Images/NavigationPane/ButtonBackgroundDefault.PNG");*/
+}
+
+.NavigationPaneButtonHovered
+{
+	padding-left: 3px;
+	border-bottom: solid 1px #0B4491;
+	cursor: hand;
+	/*background-image: url("Images/NavigationPane/ButtonBackgroundHovered.PNG");*/
+}
+
+.NavigationPaneButtonSelected
+{
+	padding-left: 3px;
+	border-bottom: solid 1px #0B4491;
+	cursor: hand;
+	/*background-image: url("Images/NavigationPane/ButtonBackgroundSelected.PNG");*/
+}
+
+.NavigationPaneCaption
+{
+	height: 24px;
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: solid 1px #0B4491;
+	padding-left: 3px;
+	color:White;
+	cursor:default;
+	/*background-image: url("Images/NavigationPane/CaptionBackground.PNG");*/
+}
+
+/* TabControl Styles*/
+.TabControl
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	width: 100%;
+	height: 100%;
+}
+.TabControlTabStrip
+{
+	font-family: Tahoma;
+	font-size: 11px;
+}
+.TabControlPage
+{
+	background-color: white;
+	height: 100%;
+	padding: 2;
+}
+.TabControlTab
+{
+	cursor: pointer;
+	padding-right: 1px;
+	padding-left: 1px;
+	border-bottom: solid 1px #0B4491;
+}
+.TabControlTabSelected
+{
+	cursor: pointer;
+	padding: 0px;
+	border-bottom: none;
+}
+.TabControlTabStripSeparator
+{
+	height: 100%;
+	border-bottom: solid 1px #0B4491;
+}
+
+/* Frames Styles */
+frame
+{
+	border: solid 1px #0B4491;
+}
+.TopMostFrameset
+{
+	border: solid 5px white;
+}
+
+/* Search control */
+.ResultCell
+{
+	vertical-align: top;
+}
+
+.ResultsTable
+{
+	font: 11px Tahoma;
+}
+.ResultLink:link
+{
+	width: 100%;
+	height: 100%;
+	background-color: #F9F9F8;
+	color: Black;
+	padding: 3px;
+	text-decoration: none;
+	border: solid 1px #F9F9F8;
+}
+.ResultLink:visited
+{
+	width: 100%;
+	height: 100%;
+	background-color: #F9F9F8;
+	color: navy;
+	padding: 3px;
+	text-decoration: none;
+	border: solid 1px #F9F9F8;
+}
+.ResultLink:hover
+{
+	width: 100%;
+	height: 100%;
+	background-color: #FFE0B3;
+	color: black;
+	padding: 3px;
+	text-decoration: none;
+	border: solid 1px #0B4491;
+}
+
+/* Common Controls */
+.TextBox
+{
+	font: 11px Tahoma;
+	border: solid 1px #0B4491;
+}
+.ComboBox
+{
+	font: 11px Tahoma;
+	border: solid 1px #0B4491;
+}
+.CheckBox
+{
+	font: 11px Tahoma;
+}
+.ListBox
+{
+	font: 11px Tahoma;
+	border: solid 1px #0B4491;
+	overflow: auto;
+	padding: 1px;
+	background-color: #F9F9F8;
+}
+.Button
+{
+	font: 11px Tahoma;
+	padding: 2px;
+	border: solid 1px #0B4491;
+	background-color: #D8E7FC;
+	cursor: pointer;
+	/*background-image: url("Images/NavigationPane/ButtonBackgroundDefault.PNG");*/
+}
+.ButtonHot
+{
+	font: 11px Tahoma;
+	padding: 2px;
+	border: solid 1px #0B4491;
+	background-color: #EE9515;
+	cursor: pointer;
+}

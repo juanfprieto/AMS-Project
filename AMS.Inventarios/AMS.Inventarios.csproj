@@ -1,0 +1,943 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F8976D54-8AE0-4A6C-91D5-60671FE19B09}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>AMS.Inventarios</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AMS.Inventarios</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\AMS\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\Compilados\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajax, Version=5.7.22.2, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS\bin\Ajax.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxControlToolkit, Version=4.1.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AMS.Contabilidad, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS.Contabilidad\bin\AMS.Contabilidad.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML, Version=0.76.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS\bin\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="eWorld.UI, Version=1.9.0.0, Culture=neutral, PublicKeyToken=24d65337282035f2">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS.Documentos\bin\Release\eWorld.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.Data.DB2, Version=9.7.4.4, Culture=neutral, PublicKeyToken=7c307b91aa13d208, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\IBM\SQLLIB\BIN\netf40\IBM.Data.DB2.dll</HintPath>
+    </Reference>
+    <Reference Include="office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\AMS\bin\office.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebChart, Version=1.1.1.4, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS.Documentos\bin\Release\WebChart.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AMS.Inventarios.CapturaDatosLector.ascx.cs">
+      <DependentUpon>AMS.Inventarios.CapturaDatosLector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.CapturaDatosLector.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.CapturaDatosLector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.DeterioroInventario.ascx.cs">
+      <DependentUpon>AMS.Inventarios.DeterioroInventario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.DeterioroInventario.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.DeterioroInventario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.DeterioroInventarios.ascx.cs">
+      <DependentUpon>AMS.Inventarios.DeterioroInventarios.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.DeterioroInventarios.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.DeterioroInventarios.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ModificarPedidos.ascx.cs">
+      <DependentUpon>AMS.Inventarios.ModificarPedidos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ModificarPedidos.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.ModificarPedidos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.SegundoConteoAutomaticoInventarioFisico.ascx.cs">
+      <DependentUpon>AMS.Inventarios.SegundoConteoAutomaticoInventarioFisico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.SegundoConteoAutomaticoInventarioFisico.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.SegundoConteoAutomaticoInventarioFisico.ascx</DependentUpon>
+    </Compile>
+    <Content Include="AMS.Inventarios.AdminSugerido.ascx" />
+    <Content Include="AMS.Inventarios.AdminSustitucion.ascx" />
+    <Content Include="AMS.Inventarios.AdminUbicaciones.ascx" />
+    <Content Include="AMS.Inventarios.Ajustador.ascx" />
+    <Content Include="AMS.Inventarios.AjustesInf.ascx" />
+    <Content Include="AMS.Inventarios.AjustesInv.ascx" />
+    <Content Include="AMS.Inventarios.ArchivoLista.ascx" />
+    <Content Include="AMS.Inventarios.AsignarValoresLista1.ascx" />
+    <Content Include="AMS.Inventarios.AsignarValoresLista2.ascx" />
+    <Content Include="AMS.Inventarios.AutorizacionPedidoMayor.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Inventarios.AutorizacionPedidoMayorVehiculo.ascx" />
+    <Content Include="AMS.Inventarios.BackOrder.ascx" />
+    <Content Include="AMS.Inventarios.CancelarPedidos.ascx" />
+    <Content Include="AMS.Inventarios.CapturaDatos.ascx" />
+    <Content Include="AMS.Inventarios.CapturaDatosLector.ascx" />
+    <Content Include="AMS.Inventarios.CapturaDatosTarjeta.ascx" />
+    <Content Include="AMS.Inventarios.CfgUbicaciones.ascx" />
+    <Content Include="AMS.Inventarios.CierreInventario.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Inventarios.CierreInventarioFisico.ascx" />
+    <Content Include="AMS.Inventarios.CierreInventarios.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Inventarios.CierrePedidos.ascx" />
+    <Content Include="AMS.Inventarios.ClasificacionABC.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Inventarios.ConsPedidos.ascx" />
+    <Content Include="AMS.Inventarios.ConsultaBackOrder.ascx" />
+    <Content Include="AMS.Inventarios.ConsultaInventarioFisico.ascx" />
+    <Content Include="AMS.Inventarios.ConsultaSustitucion.ascx" />
+    <Content Include="AMS.Inventarios.CrearInventarioFisico.ascx" />
+    <Content Include="AMS.Inventarios.CrearPedido.ascx" />
+    <Content Include="AMS.Inventarios.DeterioroInventario.ascx" />
+    <Content Include="AMS.Inventarios.DeterioroInventarios.ascx" />
+    <Content Include="AMS.Inventarios.DevolGrid.ascx" />
+    <Content Include="AMS.Inventarios.Devoluciones.ascx" />
+    <Content Include="AMS.Inventarios.EditarTarjetaConteo.ascx" />
+    <Content Include="AMS.Inventarios.EliminarUbicaciones.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Inventarios.FacAdmin.ascx" />
+    <Content Include="AMS.Inventarios.Facturacion.ascx" />
+    <Content Include="AMS.Inventarios.Facturador.ascx" />
+    <Content Include="AMS.Inventarios.FormatoPedidoProveedor.ascx" />
+    <Content Include="AMS.Inventarios.Guias.ascx" />
+    <Content Include="AMS.Inventarios.ImportarPedidos.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Inventarios.ImpresionCodigodeBarras.ascx" />
+    <Content Include="AMS.Inventarios.InventarioFisico.ascx" />
+    <Content Include="AMS.Inventarios.InventarioFisicoTodos.ascx" />
+    <Content Include="AMS.Inventarios.ListaPrecios.ascx" />
+    <Content Include="AMS.Inventarios.ListasEmpaque.ascx" />
+    <Content Include="AMS.Inventarios.ModificadorListaEmpaque.ascx" />
+    <Content Include="AMS.Inventarios.ModificarPedido.ascx" />
+    <Content Include="AMS.Inventarios.ModificarPedidos.ascx" />
+    <Content Include="AMS.Inventarios.NuevaLista.ascx" />
+    <Content Include="AMS.Inventarios.Pedidor.ascx" />
+    <Content Include="AMS.Inventarios.Pedidos.ascx" />
+    <Content Include="AMS.Inventarios.PrincipalRelacionItemsGrupo.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Inventarios.Recepcionador.ascx" />
+    <Content Include="AMS.Inventarios.RecepcionItems.ascx" />
+    <Content Include="AMS.Inventarios.RelacionItemsGrupos.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Inventarios.RemisionAlmacenes.ascx" />
+    <Content Include="AMS.Inventarios.ReporteItems.ascx" />
+    <Content Include="AMS.Inventarios.ReversarPrerecepciones.ascx" />
+    <Content Include="AMS.Inventarios.RolesInventario.ascx" />
+    <Content Include="AMS.Inventarios.SolicitarPedido.ascx" />
+    <Content Include="AMS.Inventarios.Sustitucion.ascx" />
+    <Content Include="AMS.Inventarios.VistaImpresion.ascx" />
+    <Compile Include="AMS.Inventarios.AdminSugerido.ascx.cs">
+      <DependentUpon>AMS.Inventarios.AdminSugerido.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.AdminSugerido.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.AdminSugerido.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.AdminSustitucion.ascx.cs">
+      <DependentUpon>AMS.Inventarios.AdminSustitucion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.AdminSustitucion.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.AdminSustitucion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.AdminUbicaciones.ascx.cs">
+      <DependentUpon>AMS.Inventarios.AdminUbicaciones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.AdminUbicaciones.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.AdminUbicaciones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.AjustesInf.ascx.cs">
+      <DependentUpon>AMS.Inventarios.AjustesInf.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.AjustesInf.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.AjustesInf.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.AjustesInv.ascx.cs">
+      <DependentUpon>AMS.Inventarios.AjustesInv.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.AjustesInv.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.AjustesInv.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ArchivoLista.ascx.cs">
+      <DependentUpon>AMS.Inventarios.ArchivoLista.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ArchivoLista.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.ArchivoLista.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.AsignarValoresLista1.ascx.cs">
+      <DependentUpon>AMS.Inventarios.AsignarValoresLista1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.AsignarValoresLista1.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.AsignarValoresLista1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.AsignarValoresLista2.ascx.cs">
+      <DependentUpon>AMS.Inventarios.AsignarValoresLista2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.AsignarValoresLista2.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.AsignarValoresLista2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.AutorizacionPedidoMayor.ascx.cs">
+      <DependentUpon>AMS.Inventarios.AutorizacionPedidoMayor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.AutorizacionPedidoMayor.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.AutorizacionPedidoMayor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.AutorizacionPedidoMayorVehiculo.ascx.cs">
+      <DependentUpon>AMS.Inventarios.AutorizacionPedidoMayorVehiculo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.AutorizacionPedidoMayorVehiculo.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.AutorizacionPedidoMayorVehiculo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.BackOrder.ascx.cs">
+      <DependentUpon>AMS.Inventarios.BackOrder.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.BackOrder.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.BackOrder.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.CancelarPedidos.ascx.cs">
+      <DependentUpon>AMS.Inventarios.CancelarPedidos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.CancelarPedidos.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.CancelarPedidos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.CapturaDatos.ascx.cs">
+      <DependentUpon>AMS.Inventarios.CapturaDatos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.CapturaDatos.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.CapturaDatos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.CapturaDatosTarjeta.ascx.cs">
+      <DependentUpon>AMS.Inventarios.CapturaDatosTarjeta.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.CapturaDatosTarjeta.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.CapturaDatosTarjeta.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.CfgUbicaciones.ascx.cs">
+      <DependentUpon>AMS.Inventarios.CfgUbicaciones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.CfgUbicaciones.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.CfgUbicaciones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.CierreInventario.ascx.cs">
+      <DependentUpon>AMS.Inventarios.CierreInventario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.CierreInventario.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.CierreInventario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.CierreInventarioFisico.ascx.cs">
+      <DependentUpon>AMS.Inventarios.CierreInventarioFisico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.CierreInventarioFisico.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.CierreInventarioFisico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.CierreInventarios.ascx.cs">
+      <DependentUpon>AMS.Inventarios.CierreInventarios.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.CierreInventarios.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.CierreInventarios.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.CierrePedidos.ascx.cs">
+      <DependentUpon>AMS.Inventarios.CierrePedidos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ClasificacionABC.ascx.cs">
+      <DependentUpon>AMS.Inventarios.ClasificacionABC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ClasificacionABC.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.ClasificacionABC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ConfiguracionInventario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ConsPedidos.ascx.cs">
+      <DependentUpon>AMS.Inventarios.ConsPedidos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ConsPedidos.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.ConsPedidos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.Constantes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ConsultaBackOrder.ascx.cs">
+      <DependentUpon>AMS.Inventarios.ConsultaBackOrder.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ConsultaBackOrder.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.ConsultaBackOrder.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ConsultaInventarioFisico.ascx.cs">
+      <DependentUpon>AMS.Inventarios.ConsultaInventarioFisico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ConsultaInventarioFisico.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.ConsultaInventarioFisico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ConsultaSustitucion.ascx.cs">
+      <DependentUpon>AMS.Inventarios.ConsultaSustitucion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ConsultaSustitucion.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.ConsultaSustitucion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.CrearInventarioFisico.ascx.cs">
+      <DependentUpon>AMS.Inventarios.CrearInventarioFisico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.CrearInventarioFisico.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.CrearInventarioFisico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.CrearPedido.ascx.cs">
+      <DependentUpon>AMS.Inventarios.CrearPedido.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.CrearPedido.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.CrearPedido.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.DevolGrid.ascx.cs">
+      <DependentUpon>AMS.Inventarios.DevolGrid.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.Devoluciones.ascx.cs">
+      <DependentUpon>AMS.Inventarios.Devoluciones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.Devoluciones.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.Devoluciones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.EditarTarjetaConteo.ascx.cs">
+      <DependentUpon>AMS.Inventarios.EditarTarjetaConteo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.EditarTarjetaConteo.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.EditarTarjetaConteo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.EliminarUbicaciones.ascx.cs">
+      <DependentUpon>AMS.Inventarios.EliminarUbicaciones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.EliminarUbicaciones.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.EliminarUbicaciones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.Facturacion.ascx.cs">
+      <DependentUpon>AMS.Inventarios.Facturacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.Facturacion.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.Facturacion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.Facturador.ascx.cs">
+      <DependentUpon>AMS.Inventarios.Facturador.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.FacturasImpresion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.FormatoPedido.ascx.cs">
+      <DependentUpon>AMS.Inventarios.FormatoPedidoProveedor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.FormatoPedido.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.FormatoPedidoProveedor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.Guias.ascx.cs">
+      <DependentUpon>AMS.Inventarios.Guias.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.Guias.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.Guias.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.importarCCA.ascx.cs">
+      <DependentUpon>AMS.Inventarios.importarCCA.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.importarCCA.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.importarCCA.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ImportarPedidos.ascx.cs">
+      <DependentUpon>AMS.Inventarios.ImportarPedidos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ImportarPedidos.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.ImportarPedidos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ImpresionCodigodeBarras.ascx.cs">
+      <DependentUpon>AMS.Inventarios.ImpresionCodigodeBarras.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ImpresionCodigodeBarras.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.ImpresionCodigodeBarras.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.InventarioFisico.ascx.cs">
+      <DependentUpon>AMS.Inventarios.InventarioFisico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.InventarioFisico.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.InventarioFisico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.InventarioFisico.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.InventarioFisicoTodos.ascx.cs">
+      <DependentUpon>AMS.Inventarios.InventarioFisicoTodos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.InventarioFisicoTodos.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.InventarioFisicoTodos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.Items.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ListaEmpaque.cs">
+      <DependentUpon>AMS.Inventarios.ListasEmpaque.ascx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ListaPrecios.ascx.cs">
+      <DependentUpon>AMS.Inventarios.ListaPrecios.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ListaPrecios.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.ListaPrecios.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ListaPrecios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ListasEmpaque.cs">
+      <DependentUpon>AMS.Inventarios.ListasEmpaque.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ListasEmpaque.designer.cs">
+      <DependentUpon>AMS.Inventarios.ListasEmpaque.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ModificadorListaEmpaque.ascx.cs">
+      <DependentUpon>AMS.Inventarios.ModificadorListaEmpaque.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ModificadorListaEmpaque.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.ModificadorListaEmpaque.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ModificarPedido.ascx.cs">
+      <DependentUpon>AMS.Inventarios.ModificarPedido.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ModificarPedido.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.ModificarPedido.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.Movimiento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.NuevaLista.ascx.cs">
+      <DependentUpon>AMS.Inventarios.NuevaLista.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.NuevaLista.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.NuevaLista.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.PedidoFactura.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.PrincipalRelacionItemsGrupo.ascx.cs">
+      <DependentUpon>AMS.Inventarios.PrincipalRelacionItemsGrupo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.PrincipalRelacionItemsGrupo.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.PrincipalRelacionItemsGrupo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.RecepcionItems.ascx.cs">
+      <DependentUpon>AMS.Inventarios.RecepcionItems.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.RecepcionItems.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.RecepcionItems.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.RelacionItemsGrupos.ascx.cs">
+      <DependentUpon>AMS.Inventarios.RelacionItemsGrupos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.RelacionItemsGrupos.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.RelacionItemsGrupos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.Remision.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.RemisionAlmacenes.ascx.cs">
+      <DependentUpon>AMS.Inventarios.RemisionAlmacenes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.RemisionAlmacenes.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.RemisionAlmacenes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ReporteItems.cs">
+      <DependentUpon>AMS.Inventarios.ReporteItems.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ReporteItems.designer.cs">
+      <DependentUpon>AMS.Inventarios.ReporteItems.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ReversarPreRecepcion.cs">
+      <DependentUpon>AMS.Inventarios.ReversarPrerecepciones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.ReversarPreRecepcion.designer.cs">
+      <DependentUpon>AMS.Inventarios.ReversarPrerecepciones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.RolesInventario.ascx.cs">
+      <DependentUpon>AMS.Inventarios.RolesInventario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.RolesInventario.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.RolesInventario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.SaldoItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.SolicitarPedido.ascx.cs">
+      <DependentUpon>AMS.Inventarios.SolicitarPedido.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.SolicitarPedido.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.SolicitarPedido.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.Sustitucion.ascx.cs">
+      <DependentUpon>AMS.Inventarios.Sustitucion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.Sustitucion.ascx.designer.cs">
+      <DependentUpon>AMS.Inventarios.Sustitucion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Inventarios.Sustitucion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.Ubicacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.VistaImpresion.cs">
+      <DependentUpon>AMS.Inventarios.VistaImpresion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Inventarios.VistaImpresion.designer.cs">
+      <DependentUpon>AMS.Inventarios.VistaImpresion.ascx</DependentUpon>
+    </Compile>
+    <Content Include="AMS.Inventarios.SegundoConteoAutomaticoInventarioFisico.ascx" />
+    <EmbeddedResource Include="AMS.Inventarios.AdminSugerido.ascx.resx">
+      <DependentUpon>AMS.Inventarios.AdminSugerido.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.AdminSustitucion.ascx.resx">
+      <DependentUpon>AMS.Inventarios.AdminSustitucion.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.AdminUbicaciones.ascx.resx">
+      <DependentUpon>AMS.Inventarios.AdminUbicaciones.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.AjustesInf.ascx.resx">
+      <DependentUpon>AMS.Inventarios.AjustesInf.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.AjustesInv.ascx.resx">
+      <DependentUpon>AMS.Inventarios.AjustesInv.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.ArchivoLista.ascx.resx">
+      <DependentUpon>AMS.Inventarios.ArchivoLista.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.AutorizacionPedidoMayor.ascx.resx">
+      <DependentUpon>AMS.Inventarios.AutorizacionPedidoMayor.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.AutorizacionPedidoMayorVehiculo.ascx.resx">
+      <DependentUpon>AMS.Inventarios.AutorizacionPedidoMayorVehiculo.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.BackOrder.ascx.resx">
+      <DependentUpon>AMS.Inventarios.BackOrder.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.CancelarPedidos.ascx.resx">
+      <DependentUpon>AMS.Inventarios.CancelarPedidos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.CapturaDatos.ascx.resx">
+      <DependentUpon>AMS.Inventarios.CapturaDatos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.CapturaDatosTarjeta.ascx.resx">
+      <DependentUpon>AMS.Inventarios.CapturaDatosTarjeta.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.CfgUbicaciones.ascx.resx">
+      <DependentUpon>AMS.Inventarios.CfgUbicaciones.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.CierreInventario.ascx.resx">
+      <DependentUpon>AMS.Inventarios.CierreInventario.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.CierreInventarioFisico.ascx.resx">
+      <DependentUpon>AMS.Inventarios.CierreInventarioFisico.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.CierreInventarios.ascx.resx">
+      <DependentUpon>AMS.Inventarios.CierreInventarios.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.CierrePedidos.ascx.resx">
+      <DependentUpon>AMS.Inventarios.CierrePedidos.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.ClasificacionABC.ascx.resx">
+      <DependentUpon>AMS.Inventarios.ClasificacionABC.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.ConsPedidos.ascx.resx">
+      <DependentUpon>AMS.Inventarios.ConsPedidos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.ConsultaBackOrder.ascx.resx">
+      <DependentUpon>AMS.Inventarios.ConsultaBackOrder.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.ConsultaInventarioFisico.ascx.resx">
+      <DependentUpon>AMS.Inventarios.ConsultaInventarioFisico.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.ConsultaSustitucion.ascx.resx">
+      <DependentUpon>AMS.Inventarios.ConsultaSustitucion.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.CrearInventarioFisico.ascx.resx">
+      <DependentUpon>AMS.Inventarios.CrearInventarioFisico.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.CrearPedido.ascx.resx">
+      <DependentUpon>AMS.Inventarios.CrearPedido.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.DevolGrid.ascx.resx">
+      <DependentUpon>AMS.Inventarios.DevolGrid.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.Devoluciones.ascx.resx">
+      <DependentUpon>AMS.Inventarios.Devoluciones.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.EditarTarjetaConteo.ascx.resx">
+      <DependentUpon>AMS.Inventarios.EditarTarjetaConteo.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.EliminarUbicaciones.ascx.resx">
+      <DependentUpon>AMS.Inventarios.EliminarUbicaciones.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.Facturacion.ascx.resx">
+      <DependentUpon>AMS.Inventarios.Facturacion.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.Facturador.ascx.resx">
+      <DependentUpon>AMS.Inventarios.Facturador.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.FormatoPedido.ascx.resx">
+      <DependentUpon>AMS.Inventarios.FormatoPedido.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.ImportarPedidos.ascx.resx">
+      <DependentUpon>AMS.Inventarios.ImportarPedidos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.InventarioFisico.ascx.resx">
+      <DependentUpon>AMS.Inventarios.InventarioFisico.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.InventarioFisicoTodos.ascx.resx">
+      <DependentUpon>AMS.Inventarios.InventarioFisicoTodos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.ListaPrecios.ascx.resx">
+      <DependentUpon>AMS.Inventarios.ListaPrecios.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.ListasEmpaque.resx">
+      <DependentUpon>AMS.Inventarios.ListasEmpaque.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.ModificadorListaEmpaque.ascx.resx">
+      <DependentUpon>AMS.Inventarios.ModificadorListaEmpaque.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.PrincipalRelacionItemsGrupo.ascx.resx">
+      <DependentUpon>AMS.Inventarios.PrincipalRelacionItemsGrupo.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.RecepcionItems.ascx.resx">
+      <DependentUpon>AMS.Inventarios.RecepcionItems.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.RelacionItemsGrupos.ascx.resx">
+      <DependentUpon>AMS.Inventarios.RelacionItemsGrupos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.RemisionAlmacenes.ascx.resx">
+      <DependentUpon>AMS.Inventarios.RemisionAlmacenes.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.ReporteItems.resx">
+      <DependentUpon>AMS.Inventarios.ReporteItems.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.ReversarPreRecepcion.resx">
+      <DependentUpon>AMS.Inventarios.ReversarPreRecepcion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.RolesInventario.ascx.resx">
+      <DependentUpon>AMS.Inventarios.RolesInventario.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.Sustitucion.ascx.resx">
+      <DependentUpon>AMS.Inventarios.Sustitucion.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.VistaImpresion.resx">
+      <DependentUpon>AMS.Inventarios.VistaImpresion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Inventarios.SegundoConteoAutomaticoInventarioFisico.ascx.resx">
+      <DependentUpon>AMS.Inventarios.SegundoConteoAutomaticoInventarioFisico.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AMS.CryptoServices\AMS.CryptoServices.csproj">
+      <Project>{137D79F7-AA92-4A71-A6F4-FE44FFEB715B}</Project>
+      <Name>AMS.CryptoServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.DB\AMS.DB.csproj">
+      <Project>{BAE52CE2-EF3D-4B65-9F5A-9DA33502F99C}</Project>
+      <Name>AMS.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Documentos\AMS.Documentos.csproj">
+      <Project>{19EF3FAA-C588-4E81-813B-6F3C723B222B}</Project>
+      <Name>AMS.Documentos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Forms\AMS.Forms.csproj">
+      <Project>{4E9173A3-45B7-4B17-846D-8D790517DDF5}</Project>
+      <Name>AMS.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Reportes\AMS.Reportes.csproj">
+      <Project>{E680F9B3-AE3F-4A97-B6E9-3294983EBA18}</Project>
+      <Name>AMS.Reportes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Tools\AMS.Tools.csproj">
+      <Project>{97030739-855C-4ECE-A72B-231624365A8D}</Project>
+      <Name>AMS.Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Utilidades\AMS.Utilidades.csproj">
+      <Project>{029CA7F3-E7C7-4D25-BD68-DDAB1C17EA64}</Project>
+      <Name>AMS.Utilidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AMS.Inventarios.importarCCA.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1081</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/AMS/AMS.Inventarios</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

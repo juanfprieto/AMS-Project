@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{469308D3-CA26-4EE1-A0D6-A3EA8018D5BF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>AMS.Web</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AMS.Web</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\AMS\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\Compilados\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajax, Version=5.7.22.2, Culture=neutral" />
+    <Reference Include="AjaxControlToolkit, Version=4.1.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="bd.WebScheduledTasks, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.UI.WebControls, Version=1.0.2.226, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS\bin\Microsoft.Web.UI.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.ServiceProcess">
+      <Name>System.ServiceProcess</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AMS.Web.Bienvenida.aspx.cs">
+      <DependentUpon>AMS.Web.Bienvenida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.Bienvenida.aspx.designer.cs">
+      <DependentUpon>AMS.Web.Bienvenida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.GetImage.aspx.cs">
+      <DependentUpon>AMS.Web.GetImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.GetImage.aspx.designer.cs">
+      <DependentUpon>AMS.Web.GetImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.IIndexPage.cs" />
+    <Compile Include="AMS.Web.IndexAjax.aspx.cs">
+      <DependentUpon>AMS.Web.IndexAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.IndexAjax.aspx.designer.cs">
+      <DependentUpon>AMS.Web.IndexAjax.aspx</DependentUpon>
+    </Compile>
+    <Content Include="AMS.Web.Bienvenida.aspx" />
+    <Content Include="AMS.Web.CerrarSesion.aspx" />
+    <Content Include="AMS.Web.ConfiguracionOperacion.aspx" />
+    <Content Include="AMS.Web.ConfiguracionOperacionIFrame.aspx" />
+    <Content Include="AMS.Web.DataViewForm.aspx" />
+    <Content Include="AMS.Web.Default.aspx" />
+    <Content Include="AMS.Web.DialogBox.aspx" />
+    <Content Include="AMS.Web.DialogBoxIFrame.aspx" />
+    <Content Include="AMS.Web.Error.aspx" />
+    <Content Include="AMS.Web.GetImage.aspx" />
+    <Content Include="AMS.Web.Index.aspx" />
+    <Content Include="AMS.Web.Inicio.aspx" />
+    <Content Include="AMS.Web.JMenu.aspx" />
+    <Content Include="AMS.Web.Menu.aspx" />
+    <Content Include="AMS.Web.MobileIndex.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="AMS.Web.ModalDialog.aspx" />
+    <Content Include="AMS.Web.ModalDialogAyuda.aspx" />
+    <Content Include="AMS.Web.ModalDialogAyudaIFrame.aspx" />
+    <Content Include="AMS.Web.ModalDialogCache.aspx" />
+    <Content Include="AMS.Web.ModalDialogConfirm.aspx" />
+    <Content Include="AMS.Web.ModalDialogCont.aspx" />
+    <Content Include="AMS.Web.ModalDialogIFrame.aspx" />
+    <Content Include="AMS.Web.ModalDialogIns.aspx" />
+    <Content Include="AMS.Web.ModalDialogPagos.aspx" />
+    <Content Include="AMS.Web.ModalDialogPagosIFrame.aspx" />
+    <Content Include="AMS.Web.ModalDialogQuery.aspx" />
+    <Content Include="AMS.Web.ModalDialogShow.aspx" />
+    <Content Include="AMS.Web.ModalDialogUbicaciones.aspx" />
+    <Content Include="AMS.Web.ModalDialogUbicacionesIFrame.aspx" />
+    <Content Include="AMS.Web.ModalIngActFij.aspx" />
+    <Content Include="AMS.Web.ModalIngActFijIFrame.aspx" />
+    <Content Include="AMS.Web.ModalPDF.aspx" />
+    <Content Include="AMS.Web.Permiso.ascx" />
+    <Content Include="AMS.Web.PrintBox.aspx" />
+    <Content Include="AMS.Web.PrintBoxIFrame.aspx" />
+    <Content Include="AMS.Web.WizardDirection.aspx" />
+    <Content Include="AMS.Web.WizardDirectionIFrame.aspx" />
+    <Compile Include="AMS.Web.CerrarSesion.aspx.cs">
+      <DependentUpon>AMS.Web.CerrarSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.CerrarSesion.aspx.designer.cs">
+      <DependentUpon>AMS.Web.CerrarSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.ConfiguracionOperacion.aspx.cs">
+      <DependentUpon>AMS.Web.ConfiguracionOperacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.ConfiguracionOperacion.aspx.designer.cs">
+      <DependentUpon>AMS.Web.ConfiguracionOperacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.DataViewForm.aspx.cs">
+      <DependentUpon>AMS.Web.DataViewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.DataViewForm.aspx.designer.cs">
+      <DependentUpon>AMS.Web.DataViewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.Default.aspx.cs">
+      <DependentUpon>AMS.Web.Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.Default.aspx.designer.cs">
+      <DependentUpon>AMS.Web.Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.DialogBox.aspx.cs">
+      <DependentUpon>AMS.Web.DialogBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.DialogBox.aspx.designer.cs">
+      <DependentUpon>AMS.Web.DialogBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.Error.aspx.cs">
+      <DependentUpon>AMS.Web.Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.Error.aspx.designer.cs">
+      <DependentUpon>AMS.Web.Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.Index.aspx.cs">
+      <DependentUpon>AMS.Web.Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.Index.aspx.designer.cs">
+      <DependentUpon>AMS.Web.Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.Inicio.aspx.cs">
+      <DependentUpon>AMS.Web.Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.Inicio.aspx.designer.cs">
+      <DependentUpon>AMS.Web.Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.JMenu.aspx.cs">
+      <DependentUpon>AMS.Web.JMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.JMenu.aspx.designer.cs">
+      <DependentUpon>AMS.Web.JMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.Menu.aspx.cs">
+      <DependentUpon>AMS.Web.Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.Menu.aspx.designer.cs">
+      <DependentUpon>AMS.Web.Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.MobileIndex.aspx.cs">
+      <DependentUpon>AMS.Web.MobileIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.MobileIndex.aspx.designer.cs">
+      <DependentUpon>AMS.Web.MobileIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.ModalDialog.aspx.cs">
+      <DependentUpon>AMS.Web.ModalDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.ModalDialog.aspx.designer.cs">
+      <DependentUpon>AMS.Web.ModalDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.ModalDialogAyuda.aspx.cs">
+      <DependentUpon>AMS.Web.ModalDialogAyuda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.ModalDialogAyuda.aspx.designer.cs">
+      <DependentUpon>AMS.Web.ModalDialogAyuda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.ModalDialogCache.aspx.cs">
+      <DependentUpon>AMS.Web.ModalDialogCache.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.ModalDialogCache.aspx.designer.cs">
+      <DependentUpon>AMS.Web.ModalDialogCache.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.ModalDialogConfirm.aspx.cs">
+      <DependentUpon>AMS.Web.ModalDialogConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.ModalDialogConfirm.aspx.designer.cs">
+      <DependentUpon>AMS.Web.ModalDialogConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.ModalDialogCont.aspx.cs">
+      <DependentUpon>AMS.Web.ModalDialogCont.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.ModalDialogCont.aspx.designer.cs">
+      <DependentUpon>AMS.Web.ModalDialogCont.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.ModalDialogIns.aspx.cs">
+      <DependentUpon>AMS.Web.ModalDialogIns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.ModalDialogIns.aspx.designer.cs">
+      <DependentUpon>AMS.Web.ModalDialogIns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.ModalDialogPagos.aspx.cs">
+      <DependentUpon>AMS.Web.ModalDialogPagos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.ModalDialogPagos.aspx.designer.cs">
+      <DependentUpon>AMS.Web.ModalDialogPagos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.ModalDialogQuery.aspx.cs">
+      <DependentUpon>AMS.Web.ModalDialogQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.ModalDialogQuery.aspx.designer.cs">
+      <DependentUpon>AMS.Web.ModalDialogQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.ModalDialogShow.aspx.cs">
+      <DependentUpon>AMS.Web.ModalDialogShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.ModalDialogShow.aspx.designer.cs">
+      <DependentUpon>AMS.Web.ModalDialogShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.ModalDialogUbicaciones.aspx.cs">
+      <DependentUpon>AMS.Web.ModalDialogUbicaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.ModalDialogUbicaciones.aspx.designer.cs">
+      <DependentUpon>AMS.Web.ModalDialogUbicaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.ModalIngActFij.aspx.cs">
+      <DependentUpon>AMS.Web.ModalIngActFij.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.ModalIngActFij.aspx.designer.cs">
+      <DependentUpon>AMS.Web.ModalIngActFij.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.ModalPDF.aspx.cs">
+      <DependentUpon>AMS.Web.ModalPDF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.ModalPDF.aspx.designer.cs">
+      <DependentUpon>AMS.Web.ModalPDF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.Permiso.ascx.cs">
+      <DependentUpon>AMS.Web.Permiso.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.Permiso.ascx.designer.cs">
+      <DependentUpon>AMS.Web.Permiso.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.PrintBox.aspx.cs">
+      <DependentUpon>AMS.Web.PrintBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.PrintBox.aspx.designer.cs">
+      <DependentUpon>AMS.Web.PrintBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Web.Usuario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.WizardDirection.aspx.cs">
+      <DependentUpon>AMS.Web.WizardDirection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Web.WizardDirection.aspx.designer.cs">
+      <DependentUpon>AMS.Web.WizardDirection.aspx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AMS.Web.CerrarSesion.aspx.resx">
+      <DependentUpon>AMS.Web.CerrarSesion.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Web.DataViewForm.aspx.resx">
+      <DependentUpon>AMS.Web.DataViewForm.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Web.Error.aspx.resx">
+      <DependentUpon>AMS.Web.Error.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Web.Index.aspx.resx">
+      <DependentUpon>AMS.Web.Index.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Web.Inicio.aspx.resx">
+      <DependentUpon>AMS.Web.Inicio.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Web.Menu.aspx.resx">
+      <DependentUpon>AMS.Web.Menu.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Web.MobileIndex.aspx.resx">
+      <DependentUpon>AMS.Web.MobileIndex.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Web.ModalDialogAyuda.aspx.resx">
+      <DependentUpon>AMS.Web.ModalDialogAyuda.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Web.ModalDialogCache.aspx.resx">
+      <DependentUpon>AMS.Web.ModalDialogCache.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Web.ModalDialogPagos.aspx.resx">
+      <DependentUpon>AMS.Web.ModalDialogPagos.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Web.ModalIngActFij.aspx.resx">
+      <DependentUpon>AMS.Web.ModalIngActFij.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Web.Permiso.ascx.resx">
+      <DependentUpon>AMS.Web.Permiso.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Web.IndexAjax.aspx.resx">
+      <DependentUpon>AMS.Web.IndexAjax.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AMS.Web.IndexAjax.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AMS.CryptoServices\AMS.CryptoServices.csproj">
+      <Project>{137D79F7-AA92-4A71-A6F4-FE44FFEB715B}</Project>
+      <Name>AMS.CryptoServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.DBManager\AMS.DBManager.csproj">
+      <Project>{41ED97B6-DDCF-4AA6-BA60-8F23A5661C49}</Project>
+      <Name>AMS.DBManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.DB\AMS.DB.csproj">
+      <Project>{BAE52CE2-EF3D-4B65-9F5A-9DA33502F99C}</Project>
+      <Name>AMS.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Documentos\AMS.Documentos.csproj">
+      <Project>{19EF3FAA-C588-4E81-813B-6F3C723B222B}</Project>
+      <Name>AMS.Documentos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Forms\AMS.Forms.csproj">
+      <Project>{4E9173A3-45B7-4B17-846D-8D790517DDF5}</Project>
+      <Name>AMS.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Tools\AMS.Tools.csproj">
+      <Project>{97030739-855C-4ECE-A72B-231624365A8D}</Project>
+      <Name>AMS.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1255</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/AMS/AMS.Web</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

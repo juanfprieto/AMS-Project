@@ -1,0 +1,27 @@
+30
+<RED>------------------------------
+     ASIGNACION PAPELERIA
+<RED>------------------------------
+ 
+Num asignacion: <NUMERO>
+Agencia:
+ <AGENCIA>
+Fecha:
+ <FECHA>
+Asignado por:
+ <ASIGNA_NOMBRE>
+Asignado a:
+ <ASIGNADO_NOMBRE>
+ 
+<CONTENIDO>
+ 
+ Firma Encargado:
+ 
+ 
+ 
+ 
+ Firma Responsable:
+ 
+ 
+ 
+ 

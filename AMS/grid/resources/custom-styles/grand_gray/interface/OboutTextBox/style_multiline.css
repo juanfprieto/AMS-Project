@@ -1,0 +1,494 @@
+	/* Textarea */
+	.ob_iTaMC textarea
+	{
+	    position: absolute;
+	    display: block;
+	    left: 0px;
+	    width: 100%;
+	    height: 100%;
+	    font-family: Verdana !important;
+		font-size: 10px !important;
+		color: #4B555E !important;
+		outline: 0;
+		border: 0px;
+		margin: 0px;
+		padding: 0px;
+		overflow: auto;
+		resize: none;
+		background-image: none;
+	}
+	
+	/* Top Left */
+	.ob_iTaTL
+	{
+		position: absolute;
+    	font-family: Verdana;
+    	font-size: 1px;
+    	height: 7px;
+    	width: 7px;
+    	left: 0px;
+    	top: 0px;
+    	background-image: url(images/textarea-vertical.png);
+	}
+	
+	* HTML .ob_iTaTL
+	{
+	    -background-image: url(images/textarea-vertical.gif);
+	}
+	
+	/* Top Center */
+	.ob_iTaTC
+	{
+		position: absolute;
+		height: 7px;
+		top: 0px;
+		left: 7px;
+		right: 7px;
+		font-family: Verdana;
+    	font-size: 1px;
+    	background-image: url(images/textarea-vertical.png);
+	}
+	
+	* HTML .ob_iTaTC
+	{
+	    -background-image: url(images/textarea-vertical.gif);
+	}
+	
+	/* Top Right */
+	.ob_iTaTR
+	{
+		position: absolute;    	
+    	font-family: Verdana;
+    	font-size: 1px;
+    	height: 7px;
+		width: 7px;
+		right: 0px;
+		top: 0px;
+		background-image: url(images/textarea-vertical.png);
+	}
+	
+	* HTML .ob_iTaTR
+	{
+	    -background-image: url(images/textarea-vertical.gif);
+	}
+	
+	
+	
+	/* Middle Left */
+	.ob_iTaML
+	{
+		position: absolute;
+    	font-family: Verdana;
+    	font-size: 1px;
+    	width: 7px;
+    	left: 0px;
+    	top: 7px;
+    	bottom: 7px;
+    	background-image: url(images/textarea-horizontal.png);
+	}
+	
+	* HTML .ob_iTaML
+	{
+	    -background-image: url(images/textarea-horizontal.gif);
+	}
+	
+	/* Middle Center */
+	.ob_iTaMC
+	{
+		position: absolute;
+		width: auto;
+		height: auto;
+		left: 7px;
+		top: 7px;
+		bottom: 7px;
+		right: 7px;
+		font-family: Verdana;
+    	font-size: 1px;
+	}
+	
+	/* Middle Right */
+	.ob_iTaMR
+	{
+		position: absolute;
+    	font-family: Verdana;
+    	font-size: 1px;
+    	width: 7px;
+    	right: 0px;
+    	top: 7px;
+    	bottom: 7px;
+    	background-image: url(images/textarea-horizontal.png);
+	}
+	
+	* HTML .ob_iTaMR
+	{
+	    -background-image: url(images/textarea-horizontal.gif);
+	}
+	
+	
+	
+	/* Bottom Left */
+	.ob_iTaBL
+	{
+		position: absolute;
+    	font-family: Verdana;
+    	font-size: 1px;
+    	height: 7px;
+    	width: 7px;
+    	left: 0px;
+    	bottom: 0px;
+    	background-image: url(images/textarea-vertical.png);
+	}
+	
+	* HTML .ob_iTaBL
+	{
+	    -background-image: url(images/textarea-vertical.gif);
+	}
+	
+	/* Bottom Center */
+	.ob_iTaBC
+	{
+		position: absolute;
+		height: 7px;
+		bottom: 0px;
+		left: 7px;
+		right: 7px;
+		font-family: Verdana;
+    	font-size: 1px;
+    	background-image: url(images/textarea-vertical.png);
+	}
+	
+	* HTML .ob_iTaBC
+	{
+	    -background-image: url(images/textarea-vertical.gif);
+	}
+	
+	/* Bottom Right */
+	.ob_iTaBR
+	{
+		position: absolute;
+		font-family: Verdana;
+    	font-size: 1px;
+    	height: 7px;
+		width: 7px;
+		right: 0px;
+		bottom: 0px;
+		background-image: url(images/textarea-vertical.png);
+	}
+	
+	* HTML .ob_iTaBR
+	{
+	    -background-image: url(images/textarea-vertical.gif);
+	}
+	
+	
+	
+	
+	
+	/* Normal State - container */
+	.ob_iTaCN
+	{
+    	position: relative;
+        display:-moz-inline-stack;
+        display:inline-block;
+        zoom:1;
+        *display:inline;
+        font-family: Courier;
+        font-size: 10px;
+    	padding: 0px;
+    	text-align: center;
+	}
+	
+	/* Normal State - Top Left */
+	.ob_iTaCN .ob_iTaTL
+	{
+		background-position: 0px 0px;
+	}
+	
+	/* Normal State - Top Center */
+	.ob_iTaCN .ob_iTaTC
+	{		
+		background-position: 0px -7px;		
+	}		
+		
+	/* Normal State - Top Right */
+	.ob_iTaCN .ob_iTaTR
+	{
+		background-position: 0px -14px;		
+	}
+	
+	
+	
+	/* Normal State - Middle Left */
+	.ob_iTaCN .ob_iTaML
+	{
+		background-position: 0px 0px;
+		background-repeat: repeat-y;
+	}
+	
+	/* Normal State - Middle Center */
+	.ob_iTaCN .ob_iTaMC textarea
+	{
+	    background-color: #FFFFFF;
+	}
+		
+	/* Normal State - Middle Right */
+	.ob_iTaCN .ob_iTaMR
+	{
+		background-position: -7px 0px;
+		background-repeat: repeat-y;
+	}
+	
+	
+	
+	/* Normal State - Bottom Left */
+	.ob_iTaCN .ob_iTaBL
+	{
+		background-position: 0px -21px;
+	}
+	
+	/* Normal State - Bottom Center */
+	.ob_iTaCN .ob_iTaBC
+	{
+		background-position: 0px -28px;
+	}
+		
+	/* Normal State - Bottom Right */
+	.ob_iTaCN .ob_iTaBR
+	{
+		background-position: 0px -35px;
+	}
+	
+	
+	
+	
+	
+	/* Disabled State - container */
+	.ob_iTaCD
+	{
+    	position: relative;
+        display:-moz-inline-stack;
+        display:inline-block;
+        zoom:1;
+        *display:inline;
+        font-family: Courier;
+        font-size: 10px;
+    	padding: 0px;
+    	text-align: center;
+	}
+	
+	/* Disabled State - Top Left */
+	.ob_iTaCD .ob_iTaTL
+	{
+		background-position: 0px -42px;
+	}
+	
+	/* Disabled State - Top Center */
+	.ob_iTaCD .ob_iTaTC
+	{
+		background-position: 0px -49px;
+	}		
+		
+	/* Disabled State - Top Right */
+	.ob_iTaCD .ob_iTaTR
+	{
+		background-position: 0px -56px;
+	}
+	
+	
+	
+	/* Disabled State - Middle Left */
+	.ob_iTaCD .ob_iTaML
+	{
+		background-position: -14px 0px;
+		background-repeat: repeat-y;
+	}
+	
+	/* Disabled State - Middle Center */
+	.ob_iTaCD .ob_iTaMC textarea
+	{
+	    background-color: #f6f6f6;		
+	}
+		
+	/* Disabled State - Middle Right */
+	.ob_iTaCD .ob_iTaMR
+	{
+		background-position: -21px 0px;
+		background-repeat: repeat-y;
+	}
+	
+	
+	
+	/* Disabled State - Bottom Left */
+	.ob_iTaCD .ob_iTaBL
+	{
+		background-position: 0px -63px;
+	}
+	
+	/* Disabled State - Bottom Center */
+	.ob_iTaCD .ob_iTaBC
+	{
+		background-position: 0px -70px;
+	}
+		
+	/* Disabled State - Bottom Right */
+	.ob_iTaCD .ob_iTaBR
+	{
+		background-position: 0px -77px;
+	}
+	
+	
+	
+	
+	
+	/* Over State - container */
+	.ob_iTaCO
+	{
+    	position: relative;
+        display:-moz-inline-stack;
+        display:inline-block;
+        zoom:1;
+        *display:inline;
+        font-family: Courier;
+        font-size: 10px;
+    	padding: 0px;
+    	text-align: center;
+	}
+	
+	/* Over State - Top Left */
+	.ob_iTaCO .ob_iTaTL
+	{
+		background-position: 0px -84px;
+	}
+	
+	/* Over State - Top Center */
+	.ob_iTaCO .ob_iTaTC
+	{
+		background-position: 0px -91px;
+	}		
+		
+	/* Over State - Top Right */
+	.ob_iTaCO .ob_iTaTR
+	{
+		background-position: 0px -98px;
+	}
+	
+	
+	
+	/* Over State - Middle Left */
+	.ob_iTaCO .ob_iTaML
+	{
+		background-position: -28px 0px;
+		background-repeat: repeat-y;
+	}
+	
+	/* Over State - Middle Center */
+	.ob_iTaCO .ob_iTaMC textarea
+	{
+	    background-color: #FFFFFF;		
+	}
+		
+	/* Over State - Middle Right */
+	.ob_iTaCO .ob_iTaMR
+	{
+		background-position: -35px 0px;
+		background-repeat: repeat-y;
+	}
+	
+	
+	
+	/* Over State - Bottom Left */
+	.ob_iTaCO .ob_iTaBL
+	{
+		background-position: 0px -105px;
+	}
+	
+	/* Over State - Bottom Center */
+	.ob_iTaCO .ob_iTaBC
+	{
+		background-position: 0px -112px;
+	}
+		
+	/* Over State - Bottom Right */
+	.ob_iTaCO .ob_iTaBR
+	{
+		background-position: 0px -119px;
+	}
+	
+	
+	
+	
+	
+	/* Focused State - container */
+	.ob_iTaCF
+	{
+    	position: relative;
+        display:-moz-inline-stack;
+        display:inline-block;
+        zoom:1;
+        *display:inline;
+        font-family: Courier;
+        font-size: 10px;
+    	padding: 0px;
+    	text-align: center;
+	}
+	
+	/* Focused State - Top Left */
+	.ob_iTaCF .ob_iTaTL
+	{
+		background-position: 0px -126px;
+	}
+	
+	/* Focused State - Top Center */
+	.ob_iTaCF .ob_iTaTC
+	{
+		background-position: 0px -133px;
+	}		
+		
+	/* Focused State - Top Right */
+	.ob_iTaCF .ob_iTaTR
+	{
+		background-position: 0px -140px;
+	}
+	
+	
+	
+	/* Focused State - Middle Left */
+	.ob_iTaCF .ob_iTaML
+	{
+		background-position: -42px 0px;
+		background-repeat: repeat-y;
+	}
+	
+	/* Focused State - Middle Center */
+	.ob_iTaCF .ob_iTaMC textarea
+	{
+	    background-color: #eef4fc;		
+	}
+		
+	/* Focused State - Middle Right */
+	.ob_iTaCF .ob_iTaMR
+	{
+		background-position: -49px 0px;
+		background-repeat: repeat-y;
+	}
+	
+	
+	
+	/* Focused State - Bottom Left */
+	.ob_iTaCF .ob_iTaBL
+	{
+		background-position: 0px -147px;
+	}
+	
+	/* Focused State - Bottom Center */
+	.ob_iTaCF .ob_iTaBC
+	{
+		background-position: 0px -154px;
+		font-size: 1px;
+	}
+		
+	/* Focused State - Bottom Right */
+	.ob_iTaCF .ob_iTaBR
+	{
+		background-position: 0px -161px;
+	}

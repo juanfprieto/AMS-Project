@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<ArchivoRegistro xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ListaRegistroActividad />
+  <ListaRegistroError>
+    <Registro>
+      <Fecha>2018-03-13T17:44:23.8626126-05:00</Fecha>
+      <Dia>3/13/2018</Dia>
+      <Hora>5:44 PM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql>SET SCHEMA DBXSCHEMA</Sql>
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [08001] [IBM] SQL30081N  Se ha detectado un error en las comunicaciones. Protocolo de comunicaciones que se está utilizando: "TCP/IP".  API de comunicaciones que se está utilizando: "SOCKETS".  Ubicación donde se ha encontrado el error: "50.23.209.234".  Función de comunicación que ha detectado el error: "send".  Código(s) de error específico(s) del protocolo: "10053", "*", "*".  SQLSTATE=08001
+
+ERROR [08001] [IBM] SQL30081N  Se ha detectado un error en las comunicaciones. Protocolo de comunicaciones que se está utilizando: "TCP/IP".  API de comunicaciones que se está utilizando: "SOCKETS".  Ubicación donde se ha encontrado el error: "50.23.209.234".  Función de comunicación que ha detectado el error: "send".  Código(s) de error específico(s) del protocolo: "10053", "*", "*".  SQLSTATE=08001
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.SetSchema(DB2Connection con)
+   at AMS.DB.DB2Functions.OpenConnectionGlobal()
+   at AMS.DB.DB2Functions.SingleDataGlobal(String sql)
+   at AMS.DB.DBFunctions.SingleDataGlobal(String sql)
+   at AMS.Web.Bienvenida.mostrarMensaje()
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Ajax.AjaxRequestProcessor.Run()
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Error al ejecutar: 
+
+IBM.Data.DB2.DB2Exception (0x80004005): ERROR [08001] [IBM] SQL30081N  Se ha detectado un error en las comunicaciones. Protocolo de comunicaciones que se está utilizando: "TCP/IP".  API de comunicaciones que se está utilizando: "SOCKETS".  Ubicación donde se ha encontrado el error: "50.23.209.234".  Función de comunicación que ha detectado el error: "send".  Código(s) de error específico(s) del protocolo: "10053", "*", "*".  SQLSTATE=08001
+
+ERROR [08001] [IBM] SQL30081N  Se ha detectado un error en las comunicaciones. Protocolo de comunicaciones que se está utilizando: "TCP/IP".  API de comunicaciones que se está utilizando: "SOCKETS".  Ubicación donde se ha encontrado el error: "50.23.209.234".  Función de comunicación que ha detectado el error: "send".  Código(s) de error específico(s) del protocolo: "10053", "*", "*".  SQLSTATE=08001
+
+   at IBM.Data.DB2.DB2Connection.HandleError(IntPtr hHandle, SQL_HANDLE hType, RETCODE retcode)
+   at IBM.Data.DB2.DB2Command.ExecuteNonQueryObject(Boolean skipInitialValidation)
+   at IBM.Data.DB2.DB2Command.ExecuteNonQueryObject()
+   at IBM.Data.DB2.DB2Command.ExecuteNonQuery()
+   at AMS.DB.DB2Functions.SetSchema(DB2Connection con) in C:\inetpub\wwwroot\AMS\AMS.DB\AMS.DB.DB2Functions.cs:line 219</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-03-13T17:44:36.8643562-05:00</Fecha>
+      <Dia>3/13/2018</Dia>
+      <Hora>5:44 PM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>System.InvalidOperationException</NombreExcepcion>
+      <MensajeExcepcion>Invalid operation. The connection is closed.</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnectionGlobal()
+   at AMS.DB.DB2Functions.SingleDataGlobal(String sql)
+   at AMS.DB.DBFunctions.SingleDataGlobal(String sql)
+   at AMS.Web.Bienvenida.mostrarMensaje()
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Ajax.AjaxRequestProcessor.Run()
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=ECASSAS;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+  </ListaRegistroError>
+  <ListaRegistroInformacion />
+  <ListaRegistroErrorCrystalReports />
+  <ListaRegistroInformacionCrystalRepots />
+</ArchivoRegistro>

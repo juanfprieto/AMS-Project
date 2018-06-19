@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<localization xmlns="obout:grid:localization-schema">
+  <grid
+     page_size_text  = "毎頁行数:"
+     records_text    = "行数:"
+     to_text         = "-"
+     of_text         = "の"
+     pages_text      = "頁数:"          
+     loading_text    = "読み込み中..."
+     no_records_text = "レコード行無し."
+     resizing_tooltip_width = "横幅:"
+     resizing_tooltip_pixels = "ピクセル"
+     type_validation_error = "列XXXXXに入力した値が有効でない."
+     maxlength_validation_error = "列XXXXXに入力した値がこの列の最大許容文字数YYYYを超えた"
+     js_warning = "ID '[GRID_ID]'でグリッドを初期化するときエラーが発生した.\n\n[警告]\n\nこのページの使用方法お問い合わせください http://www.obout.com/inc/support.aspx."
+     >
+
+    <commands
+      add_link	      = "追加"
+      edit_link       = "編集"
+      delete_link     = "削除"      
+      update_link     = "更新"      
+      cancel_link     = "キャンセル"
+      save_link       = "保存"
+      save_all_link   = "すべて保存"
+      cancel_all_link = "すべてキャンセル"
+      remove_link     = "移除"
+      modify_link     = "変更"
+      undelete_link   = "元に戻す"
+    />
+    
+    <filter
+      button_show_filter   = "表示フィルタ"
+      button_hide_filter   = "隠すフィルタ"
+      button_filter        = "応用フィルタ"
+      button_remove_filter = "移除フィルタ"
+      
+      filter_criteria_nofilter                 = "フィルタなし"
+      filter_criteria_contains                 = "文字列含む"
+      filter_criteria_does_not_contain         = "文字列含まない"
+      filter_criteria_starts_with              = "文字列開始"
+      filter_criteria_ends_with                = "文字列終了"
+      filter_criteria_equal_to                 = "等しい"
+      filter_criteria_not_equal_to             = "等しくない"
+      filter_criteria_smaller_than             = "小さい"
+      filter_criteria_greater_than             = "大きい"
+      filter_criteria_smaller_than_or_equal_to = "小さいか等しい"
+      filter_criteria_greater_than_or_equal_to = "大きいか等しい"
+      filter_criteria_is_null                  = "ヌル値"
+      filter_criteria_is_not_null              = "ヌルでない値"
+      filter_criteria_is_empty                 = "空値"
+      filter_criteria_is_not_empty             = "空でない値"
+    />        
+
+    <grouping
+      grouping_area_text = "グループ化するため,ここに列ヘッダーをドラッグして."
+      group_information_count = " (XXXXX行数)"
+      group_information_count_single = " (XXXXX行)"
+      group_information_next_page = " (表示XXXXXのYYYYY行数 - このグループは、次のページに続く)"
+      group_information_previous_page = " (表示XXXXXのYYYYY行数 - このグループは、前のページに開始された)"
+      group_information_previous_next_page = " (表示XXXXXのYYYYY行数 - このグループは、前のページに開始されたと次のページに続く)"
+    />
+
+    <paging
+      total_number_of_pages  = " (のうちXXXXX)"
+      manual_paging_link  = "ページに行く »"
+      page_size_options_all = "全数"
+    />
+    
+  </grid>
+</localization>

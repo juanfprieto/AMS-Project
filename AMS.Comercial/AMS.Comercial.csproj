@@ -1,0 +1,1405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4E45EA0-830A-45C6-9EEA-5E9FAD830662}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>AMS.Comercial</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AMS.Comercial</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\AMS\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\Compilados\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajax">
+      <Name>Ajax</Name>
+      <HintPath>..\bin\Ajax.dll</HintPath>
+    </Reference>
+    <Reference Include="AMS.Contabilidad">
+      <Name>AMS.Contabilidad</Name>
+      <HintPath>..\bin\AMS.Contabilidad.dll</HintPath>
+    </Reference>
+    <Reference Include="AMS.CryptoServices">
+      <Name>AMS.CryptoServices</Name>
+      <HintPath>..\bin\AMS.CryptoServices.dll</HintPath>
+    </Reference>
+    <Reference Include="AMS.DB">
+      <Name>AMS.DB</Name>
+      <HintPath>..\bin\AMS.DB.dll</HintPath>
+    </Reference>
+    <Reference Include="AMS.DBManager">
+      <Name>AMS.DBManager</Name>
+      <HintPath>..\bin\AMS.DBManager.dll</HintPath>
+    </Reference>
+    <Reference Include="AMS.Documentos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS.Documentos\bin\AMS.Documentos.dll</HintPath>
+    </Reference>
+    <Reference Include="AMS.Forms">
+      <Name>AMS.Forms</Name>
+      <HintPath>..\bin\AMS.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.UI.WebControls">
+      <HintPath>bin\Microsoft.Web.UI.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebChart">
+      <Name>WebChart</Name>
+      <HintPath>..\bin\WebChart.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Content Include="AMS.Comercial.ActualizarAnticipos.ascx" />
+    <Content Include="AMS.Comercial.AgregarBusAfiliado.ascx" />
+    <Content Include="AMS.Comercial.Anticipo.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.AnticiposManuales.ascx" />
+    <Content Include="AMS.Comercial.AnulacionPapeleria.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.AnulacionTiquetes.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.AsignacionPapeleria.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.AsignacionPapeleria.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.AsignacionPlanillasChequeo.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.AsignarAgencias.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.AutorizacionConceptos.ascx" />
+    <Content Include="AMS.Comercial.CierreDiarioAgencia.ascx" />
+    <Content Include="AMS.Comercial.CierreMensualTransportes.ascx" />
+    <Content Include="AMS.Comercial.ConfiguracionBus.ascx" />
+    <Content Include="AMS.Comercial.ConsultaEncomiendas.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.ConsultaGiros.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.ConsultarPapeleria.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.ConsultaServiciosAnticipos.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.ConsultaVentasDiaUsuario.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.ConsultaViajes.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.CrearComparendo.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.CrearProcesoJuridico.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.CrearViaje.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.CuadroRutas.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.DeshacerRecepcionPapeleria.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.DespachoPapeleria.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.DespachoPapeleriaPrepago.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.DevolucionPapeleriaAgencia.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.DevolucionPapeleriaPersonal.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.Encomiendas.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.EncuestaTransportes.ascx" />
+    <Content Include="AMS.Comercial.EntregaEncomiendas.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.EntregaRemesas.ascx" />
+    <Content Include="AMS.Comercial.Giro.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.GirosAgencias.ascx" />
+    <Content Include="AMS.Comercial.HistorialPapeleria.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.Impresion.ascx" />
+    <Content Include="AMS.Comercial.IngresoManualTiquetes.ascx" />
+    <Content Include="AMS.Comercial.IngresosGastos.ascx" />
+    <Content Include="AMS.Comercial.InterfaceContable.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.InterfaceContablePlanillas.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.LocalizacionBuses.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.Manuales.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.MedidorEncuesta.ascx" />
+    <Content Include="AMS.Comercial.Melementobus.ascx" />
+    <Content Include="AMS.Comercial.ModComaparendo.ascx" />
+    <Content Include="AMS.Comercial.ModificarAgencia.ascx" />
+    <Content Include="AMS.Comercial.ModificarBusAfiliado.ascx" />
+    <Content Include="AMS.Comercial.ModificarComparendo.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.ModificarProcesoJuridico.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.ModificarRecorrido.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.ModificarRuta.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.ModificarRutasRecorrido.ascx" />
+    <Content Include="AMS.Comercial.ModificarViaje.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.ModProcesosJuridicos.ascx" />
+    <Content Include="AMS.Comercial.PagoGiros.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.PapeleriaAlmacen.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.PersonalAgencias.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.Planilla.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.PlanillaAnticipos.ascx" />
+    <Content Include="AMS.Comercial.PlanillaAnticiposExtras.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.PlanillaAutorizacionServicio.ascx" />
+    <Content Include="AMS.Comercial.PlanillaBus.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.PlanillaBusesRentados.ascx" />
+    <Content Include="AMS.Comercial.PlanillaChequeo.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.PlanillaComparendos.ascx" />
+    <Content Include="AMS.Comercial.PlanillaDoble.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.PlanillaGemela.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.PlanillaGeneral.ascx" />
+    <Content Include="AMS.Comercial.PlanillaGiros.ascx" />
+    <Content Include="AMS.Comercial.PlanillaManual.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.PlanillaManualGaviota.ascx" />
+    <Content Include="AMS.Comercial.PlanillaRemesas.ascx" />
+    <Content Include="AMS.Comercial.PlanillarViaje.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.PlanillaVirtual.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.ProcesoReservas.ascx" />
+    <Content Include="AMS.Comercial.ProcesosJuridicos.ascx" />
+    <Content Include="AMS.Comercial.PruebaAnticipos.ascx" />
+    <Content Include="AMS.Comercial.RecepcionEncomiendas.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.RecepcionGiros.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.RecepcionPapeleria.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.RecepcionPapeleriaPrepago.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.RecepcionPlanillasChequeo.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.RegistrarNovedadAgencia.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.RegistroAuxilioMutuo.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.RelacionarManuales.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.RelacionarPlanilla.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.Relevadores.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.RemesaManual.ascx" />
+    <Content Include="AMS.Comercial.RemesasImpresion.ascx" />
+    <Content Include="AMS.Comercial.Repocision.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.ReporteAgencia.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.ReporteBus.ascx" />
+    <Content Include="AMS.Comercial.ReporteBusTotal.ascx" />
+    <Content Include="AMS.Comercial.ReportePersonal.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.Reservas.ascx" />
+    <Content Include="AMS.Comercial.RetirarBusAfiliado.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.RutasDisponibles.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.ServiciosAnticipos.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.Tiquete.aspx" />
+    <Content Include="AMS.Comercial.TiqueteraPrepago.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.VentaTiquetesPrepago.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Comercial.VerHojasVida.ascx" />
+    <Content Include="AMS.Comercial.Viaje.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="AMS.Tiquetes.ReservacionTiquetes.ascx" />
+    <Compile Include="AMS.Comercial.ActualizarAnticipos.ascx.cs">
+      <DependentUpon>AMS.Comercial.ActualizarAnticipos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ActualizarAnticiposAuditor.ascx.cs">
+      <DependentUpon>AMS.Comercial.ActualizarAnticiposAuditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Agencias.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.AgregarBusAfiliado.ascx.cs">
+      <DependentUpon>AMS.Comercial.AgregarBusAfiliado.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Anticipo.aspx.cs">
+      <DependentUpon>AMS.Comercial.Anticipo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Anticipos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.AnticiposManuales.ascx.cs">
+      <DependentUpon>AMS.Comercial.AnticiposManuales.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.AnulacionPapeleria.ascx.cs">
+      <DependentUpon>AMS.Comercial.AnulacionPapeleria.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.AnulacionTiquetes.ascx.cs">
+      <DependentUpon>AMS.Comercial.AnulacionTiquetes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.AsignacionPapeleria.ascx.cs">
+      <DependentUpon>AMS.Comercial.AsignacionPapeleria.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.AsignacionPapeleria.aspx.cs">
+      <DependentUpon>AMS.Comercial.AsignacionPapeleria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.AsignacionPlanillasChequeo.ascx.cs">
+      <DependentUpon>AMS.Comercial.AsignacionPlanillasChequeo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.AsignarAgencias.ascx.cs">
+      <DependentUpon>AMS.Comercial.AsignarAgencias.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.AutorizacionConceptos.ascx.cs">
+      <DependentUpon>AMS.Comercial.AutorizacionConceptos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.AuxilioMutuo.ascx.cs">
+      <DependentUpon>AMS.Comercial.AuxilioMutuo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.BorrarPlanilla.ascx.cs">
+      <DependentUpon>AMS.Comercial.BorrarPlanilla.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Buses.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.CierreDiarioAgencia.ascx.cs">
+      <DependentUpon>AMS.Comercial.CierreDiarioAgencia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.CierreMensualTransportes.ascx.cs">
+      <DependentUpon>AMS.Comercial.CierreMensualTransportes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ConfiguracionBus.ascx.cs">
+      <DependentUpon>AMS.Comercial.ConfiguracionBus.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ConsolidarAutorizaciones.ascx.cs">
+      <DependentUpon>AMS.Comercial.ConsolidarAutorizaciones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ConsolidarPlanillas.ascx.cs">
+      <DependentUpon>AMS.Comercial.ConsolidarPlanillas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ConsolidarPlanillasBuses.ascx.cs">
+      <DependentUpon>AMS.Comercial.ConsolidarPlanillasBuses.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ConsultaEncomiendas.ascx.cs">
+      <DependentUpon>AMS.Comercial.ConsultaEncomiendas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ConsultaGiros.ascx.cs">
+      <DependentUpon>AMS.Comercial.ConsultaGiros.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ConsultarPapeleria.ascx.cs">
+      <DependentUpon>AMS.Comercial.ConsultarPapeleria.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ConsultarPapeleriaAgencia.ascx.cs">
+      <DependentUpon>AMS.Comercial.ConsultarPapeleriaAgencia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ConsultaServiciosAnticipos.ascx.cs">
+      <DependentUpon>AMS.Comercial.ConsultaServiciosAnticipos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ConsultaVentasDiaUsuario.ascx.cs">
+      <DependentUpon>AMS.Comercial.ConsultaVentasDiaUsuario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ConsultaVentasHoraUsuario.ascx.cs">
+      <DependentUpon>AMS.Comercial.ConsultaVentasHoraUsuario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ConsultaViajes.ascx.cs">
+      <DependentUpon>AMS.Comercial.ConsultaViajes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.CrearComparendo.ascx.cs">
+      <DependentUpon>AMS.Comercial.CrearComparendo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.CrearProcesoJuridico.ascx.cs">
+      <DependentUpon>AMS.Comercial.CrearProcesoJuridico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.CrearViaje.ascx.cs">
+      <DependentUpon>AMS.Comercial.CrearViaje.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.CuadroRutas.ascx.cs">
+      <DependentUpon>AMS.Comercial.CuadroRutas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.DeshacerRecepcionPapeleria.ascx.cs">
+      <DependentUpon>AMS.Comercial.DeshacerRecepcionPapeleria.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.DespachoPapeleria.ascx.cs">
+      <DependentUpon>AMS.Comercial.DespachoPapeleria.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.DespachoPapeleriaPrepago.ascx.cs">
+      <DependentUpon>AMS.Comercial.DespachoPapeleriaPrepago.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.DevolucionPapeleriaAgencia.ascx.cs">
+      <DependentUpon>AMS.Comercial.DevolucionPapeleriaAgencia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.DevolucionPapeleriaPersonal.ascx.cs">
+      <DependentUpon>AMS.Comercial.DevolucionPapeleriaPersonal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.EliminarRemesaGiro.ascx.cs">
+      <DependentUpon>AMS.Comercial.EliminarRemesaGiro.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Encomiendas.aspx.cs">
+      <DependentUpon>AMS.Comercial.Encomiendas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Encomiendas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.EncuestaTransportes.ascx.cs">
+      <DependentUpon>AMS.Comercial.EncuestaTransportes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.EntregaEncomiendas.ascx.cs">
+      <DependentUpon>AMS.Comercial.EntregaEncomiendas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.EntregaRemesas.ascx.cs">
+      <DependentUpon>AMS.Comercial.EntregaRemesas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Giro.aspx.cs">
+      <DependentUpon>AMS.Comercial.Giro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Giros.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.GirosAgencias.ascx.cs">
+      <DependentUpon>AMS.Comercial.GirosAgencias.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.HistorialPapeleria.ascx.cs">
+      <DependentUpon>AMS.Comercial.HistorialPapeleria.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Impresion.ascx.cs">
+      <DependentUpon>AMS.Comercial.Impresion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.IngresoManualTiquetes.ascx.cs">
+      <DependentUpon>AMS.Comercial.IngresoManualTiquetes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.IngresosGastos.ascx.cs">
+      <DependentUpon>AMS.Comercial.IngresosGastos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.InterfaceContable.ascx.cs">
+      <DependentUpon>AMS.Comercial.InterfaceContable.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.InterfaceContablePlanillas.ascx.cs">
+      <DependentUpon>AMS.Comercial.InterfaceContablePlanillas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.LocalizacionBuses.ascx.cs">
+      <DependentUpon>AMS.Comercial.LocalizacionBuses.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Manuales.ascx.cs">
+      <DependentUpon>AMS.Comercial.Manuales.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.MedidorEncuesta.ascx.cs">
+      <DependentUpon>AMS.Comercial.MedidorEncuesta.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Melementobus.ascx.cs">
+      <DependentUpon>AMS.Comercial.Melementobus.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ModComaparendo.ascx.cs">
+      <DependentUpon>AMS.Comercial.ModComaparendo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ModificarAgencia.ascx.cs">
+      <DependentUpon>AMS.Comercial.ModificarAgencia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ModificarBusAfiliado.ascx.cs">
+      <DependentUpon>AMS.Comercial.ModificarBusAfiliado.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ModificarComparendo.ascx.cs">
+      <DependentUpon>AMS.Comercial.ModificarComparendo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ModificarProcesoJuridico.ascx.cs">
+      <DependentUpon>AMS.Comercial.ModificarProcesoJuridico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ModificarRecorrido.ascx.cs">
+      <DependentUpon>AMS.Comercial.ModificarRecorrido.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ModificarRuta.ascx.cs">
+      <DependentUpon>AMS.Comercial.ModificarRuta.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ModificarRutasRecorrido.ascx.cs">
+      <DependentUpon>AMS.Comercial.ModificarRutasRecorrido.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ModificarViaje.ascx.cs">
+      <DependentUpon>AMS.Comercial.ModificarViaje.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ModProcesosJuridicos.ascx.cs">
+      <DependentUpon>AMS.Comercial.ModProcesosJuridicos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.PagoGiros.ascx.cs">
+      <DependentUpon>AMS.Comercial.PagoGiros.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.PapeleriaAlmacen.ascx.cs">
+      <DependentUpon>AMS.Comercial.PapeleriaAlmacen.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.PersonalAgencias.ascx.cs">
+      <DependentUpon>AMS.Comercial.PersonalAgencias.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Planilla.aspx.cs">
+      <DependentUpon>AMS.Comercial.Planilla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.PlanillaAnticipos.ascx.cs">
+      <DependentUpon>AMS.Comercial.PlanillaAnticipos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.PlanillaAnticiposExtras.ascx.cs">
+      <DependentUpon>AMS.Comercial.PlanillaAnticiposExtras.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.PlanillaAutorizacionServicio.ascx.cs">
+      <DependentUpon>AMS.Comercial.PlanillaAutorizacionServicio.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.PlanillaBus.ascx.cs">
+      <DependentUpon>AMS.Comercial.PlanillaBus.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.PlanillaBusesRentados.ascx.cs">
+      <DependentUpon>AMS.Comercial.PlanillaBusesRentados.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.PlanillaChequeo.ascx.cs">
+      <DependentUpon>AMS.Comercial.PlanillaChequeo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.PlanillaComparendos.ascx.cs">
+      <DependentUpon>AMS.Comercial.PlanillaComparendos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.PlanillaDoble.ascx.cs">
+      <DependentUpon>AMS.Comercial.PlanillaDoble.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.PlanillaGemela.aspx.cs">
+      <DependentUpon>AMS.Comercial.PlanillaGemela.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.PlanillaGeneral.ascx.cs">
+      <DependentUpon>AMS.Comercial.PlanillaGeneral.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.PlanillaGiros.ascx.cs">
+      <DependentUpon>AMS.Comercial.PlanillaGiros.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.PlanillaManual.ascx.cs">
+      <DependentUpon>AMS.Comercial.PlanillaManual.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.PlanillaManualGaviota.ascx.cs">
+      <DependentUpon>AMS.Comercial.PlanillaManualGaviota.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.PlanillaRemesas.ascx.cs">
+      <DependentUpon>AMS.Comercial.PlanillaRemesas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.PlanillarViaje.ascx.cs">
+      <DependentUpon>AMS.Comercial.PlanillarViaje.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Planillas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.PlanillaVirtual.ascx.cs">
+      <DependentUpon>AMS.Comercial.PlanillaVirtual.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Plantillas.cs" />
+    <Compile Include="AMS.Comercial.ProcesoReservas.ascx.cs">
+      <DependentUpon>AMS.Comercial.ProcesoReservas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ProcesosJuridicos.ascx.cs">
+      <DependentUpon>AMS.Comercial.ProcesosJuridicos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.RecepcionEncomiendas.ascx.cs">
+      <DependentUpon>AMS.Comercial.RecepcionEncomiendas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.RecepcionGiros.ascx.cs">
+      <DependentUpon>AMS.Comercial.RecepcionGiros.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.RecepcionPapeleria.ascx.cs">
+      <DependentUpon>AMS.Comercial.RecepcionPapeleria.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.RecepcionPapeleriaPrepago.ascx.cs">
+      <DependentUpon>AMS.Comercial.RecepcionPapeleriaPrepago.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.RecepcionPlanillasChequeo.ascx.cs">
+      <DependentUpon>AMS.Comercial.RecepcionPlanillasChequeo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.RegistrarNovedadAgencia.ascx.cs">
+      <DependentUpon>AMS.Comercial.RegistrarNovedadAgencia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.RegistroAuxilioMutuo.ascx.cs">
+      <DependentUpon>AMS.Comercial.RegistroAuxilioMutuo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.RelacionarManuales.ascx.cs">
+      <DependentUpon>AMS.Comercial.RelacionarManuales.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.RelacionarPlanilla.ascx.cs">
+      <DependentUpon>AMS.Comercial.RelacionarPlanilla.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Relevadores.ascx.cs">
+      <DependentUpon>AMS.Comercial.Relevadores.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.RemesaManual.ascx.cs">
+      <DependentUpon>AMS.Comercial.RemesaManual.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.RemesasImpresion.ascx.cs">
+      <DependentUpon>AMS.Comercial.RemesasImpresion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Repocision.ascx.cs">
+      <DependentUpon>AMS.Comercial.Repocision.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ReporteAgencia.ascx.cs">
+      <DependentUpon>AMS.Comercial.ReporteAgencia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ReporteBus.ascx.cs">
+      <DependentUpon>AMS.Comercial.ReporteBus.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ReporteBusTotal.ascx.cs">
+      <DependentUpon>AMS.Comercial.ReporteBusTotal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ReportePersonal.ascx.cs">
+      <DependentUpon>AMS.Comercial.ReportePersonal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Reservas.ascx.cs">
+      <DependentUpon>AMS.Comercial.Reservas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.RetirarBusAfiliado.ascx.cs">
+      <DependentUpon>AMS.Comercial.RetirarBusAfiliado.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.RutasDisponibles.ascx.cs">
+      <DependentUpon>AMS.Comercial.RutasDisponibles.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.ServiciosAnticipos.ascx.cs">
+      <DependentUpon>AMS.Comercial.ServiciosAnticipos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Tiquete.aspx.cs">
+      <DependentUpon>AMS.Comercial.Tiquete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.TiqueteraPrepago.ascx.cs">
+      <DependentUpon>AMS.Comercial.TiqueteraPrepago.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Tiquetes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.VentaTiquetes.ascx.cs">
+      <DependentUpon>AMS.Comercial.VentaTiquetes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.VentaTiquetesPrepago.ascx.cs">
+      <DependentUpon>AMS.Comercial.VentaTiquetesPrepago.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.VerHojasVida.ascx.cs">
+      <DependentUpon>AMS.Comercial.VerHojasVida.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Viaje.aspx.cs">
+      <DependentUpon>AMS.Comercial.Viaje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Comercial.Viajes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Tiquetes.ReservacionTiquetes.ascx.cs">
+      <DependentUpon>AMS.Tiquetes.ReservacionTiquetes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <EmbeddedResource Include="AMS.Comercial.ActualizarAnticipos.ascx.resx">
+      <DependentUpon>AMS.Comercial.ActualizarAnticipos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ActualizarAnticiposAuditor.ascx.resx">
+      <DependentUpon>AMS.Comercial.ActualizarAnticiposAuditor.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.AgregarBusAfiliado.ascx.resx">
+      <DependentUpon>AMS.Comercial.AgregarBusAfiliado.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.Anticipo.aspx.resx">
+      <DependentUpon>AMS.Comercial.Anticipo.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.AnticiposManuales.ascx.resx">
+      <DependentUpon>AMS.Comercial.AnticiposManuales.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.AnulacionPapeleria.ascx.resx">
+      <DependentUpon>AMS.Comercial.AnulacionPapeleria.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.AnulacionTiquetes.ascx.resx">
+      <DependentUpon>AMS.Comercial.AnulacionTiquetes.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.AsignacionPapeleria.ascx.resx">
+      <DependentUpon>AMS.Comercial.AsignacionPapeleria.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.AsignacionPapeleria.aspx.resx">
+      <DependentUpon>AMS.Comercial.AsignacionPapeleria.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.AsignacionPlanillasChequeo.ascx.resx">
+      <DependentUpon>AMS.Comercial.AsignacionPlanillasChequeo.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.AsignarAgencias.ascx.resx">
+      <DependentUpon>AMS.Comercial.AsignarAgencias.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.AutorizacionConceptos.ascx.resx">
+      <DependentUpon>AMS.Comercial.AutorizacionConceptos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.AuxilioMutuo.ascx.resx">
+      <DependentUpon>AMS.Comercial.AuxilioMutuo.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.BorrarPlanilla.ascx.resx">
+      <DependentUpon>AMS.Comercial.BorrarPlanilla.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.CierreDiarioAgencia.ascx.resx">
+      <DependentUpon>AMS.Comercial.CierreDiarioAgencia.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.CierreMensualTransportes.ascx.resx">
+      <DependentUpon>AMS.Comercial.CierreMensualTransportes.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ConfiguracionBus.ascx.resx">
+      <DependentUpon>AMS.Comercial.ConfiguracionBus.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ConsolidarAutorizaciones.ascx.resx">
+      <DependentUpon>AMS.Comercial.ConsolidarAutorizaciones.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ConsolidarPlanillas.ascx.resx">
+      <DependentUpon>AMS.Comercial.ConsolidarPlanillas.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ConsolidarPlanillasBuses.ascx.resx">
+      <DependentUpon>AMS.Comercial.ConsolidarPlanillasBuses.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ConsultaEncomiendas.ascx.resx">
+      <DependentUpon>AMS.Comercial.ConsultaEncomiendas.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ConsultaGiros.ascx.resx">
+      <DependentUpon>AMS.Comercial.ConsultaGiros.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ConsultarPapeleria.ascx.resx">
+      <DependentUpon>AMS.Comercial.ConsultarPapeleria.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ConsultarPapeleriaAgencia.ascx.resx">
+      <DependentUpon>AMS.Comercial.ConsultarPapeleriaAgencia.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ConsultaServiciosAnticipos.ascx.resx">
+      <DependentUpon>AMS.Comercial.ConsultaServiciosAnticipos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ConsultaVentasDiaUsuario.ascx.resx">
+      <DependentUpon>AMS.Comercial.ConsultaVentasDiaUsuario.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ConsultaViajes.ascx.resx">
+      <DependentUpon>AMS.Comercial.ConsultaViajes.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.CrearComparendo.ascx.resx">
+      <DependentUpon>AMS.Comercial.CrearComparendo.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.CrearProcesoJuridico.ascx.resx">
+      <DependentUpon>AMS.Comercial.CrearProcesoJuridico.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.CrearViaje.ascx.resx">
+      <DependentUpon>AMS.Comercial.CrearViaje.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.CuadroRutas.ascx.resx">
+      <DependentUpon>AMS.Comercial.CuadroRutas.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.DeshacerRecepcionPapeleria.ascx.resx">
+      <DependentUpon>AMS.Comercial.DeshacerRecepcionPapeleria.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.DespachoPapeleria.ascx.resx">
+      <DependentUpon>AMS.Comercial.DespachoPapeleria.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.DespachoPapeleriaPrepago.ascx.resx">
+      <DependentUpon>AMS.Comercial.DespachoPapeleriaPrepago.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.DevolucionPapeleriaAgencia.ascx.resx">
+      <DependentUpon>AMS.Comercial.DevolucionPapeleriaAgencia.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.DevolucionPapeleriaPersonal.ascx.resx">
+      <DependentUpon>AMS.Comercial.DevolucionPapeleriaPersonal.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.EliminarRemesaGiro.ascx.resx">
+      <DependentUpon>AMS.Comercial.EliminarRemesaGiro.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.Encomiendas.aspx.resx">
+      <DependentUpon>AMS.Comercial.Encomiendas.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.EncuestaTransportes.ascx.resx">
+      <DependentUpon>AMS.Comercial.EncuestaTransportes.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.EntregaEncomiendas.ascx.resx">
+      <DependentUpon>AMS.Comercial.EntregaEncomiendas.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.EntregaRemesas.ascx.resx">
+      <DependentUpon>AMS.Comercial.EntregaRemesas.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.Giro.aspx.resx">
+      <DependentUpon>AMS.Comercial.Giro.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.GirosAgencias.ascx.resx">
+      <DependentUpon>AMS.Comercial.GirosAgencias.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.HistorialPapeleria.ascx.resx">
+      <DependentUpon>AMS.Comercial.HistorialPapeleria.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.Impresion.ascx.resx">
+      <DependentUpon>AMS.Comercial.Impresion.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.IngresoManualTiquetes.ascx.resx">
+      <DependentUpon>AMS.Comercial.IngresoManualTiquetes.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.IngresosGastos.ascx.resx">
+      <DependentUpon>AMS.Comercial.IngresosGastos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.InterfaceContable.ascx.resx">
+      <DependentUpon>AMS.Comercial.InterfaceContable.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.InterfaceContablePlanillas.ascx.resx">
+      <DependentUpon>AMS.Comercial.InterfaceContablePlanillas.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.LocalizacionBuses.ascx.resx">
+      <DependentUpon>AMS.Comercial.LocalizacionBuses.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.Manuales.ascx.resx">
+      <DependentUpon>AMS.Comercial.Manuales.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.MedidorEncuesta.ascx.resx">
+      <DependentUpon>AMS.Comercial.MedidorEncuesta.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.Melementobus.ascx.resx">
+      <DependentUpon>AMS.Comercial.Melementobus.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ModComaparendo.ascx.resx">
+      <DependentUpon>AMS.Comercial.ModComaparendo.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ModificarAgencia.ascx.resx">
+      <DependentUpon>AMS.Comercial.ModificarAgencia.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ModificarBusAfiliado.ascx.resx">
+      <DependentUpon>AMS.Comercial.ModificarBusAfiliado.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ModificarComparendo.ascx.resx">
+      <DependentUpon>AMS.Comercial.ModificarComparendo.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ModificarProcesoJuridico.ascx.resx">
+      <DependentUpon>AMS.Comercial.ModificarProcesoJuridico.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ModificarRecorrido.ascx.resx">
+      <DependentUpon>AMS.Comercial.ModificarRecorrido.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ModificarRuta.ascx.resx">
+      <DependentUpon>AMS.Comercial.ModificarRuta.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ModificarRutasRecorrido.ascx.resx">
+      <DependentUpon>AMS.Comercial.ModificarRutasRecorrido.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ModificarViaje.ascx.resx">
+      <DependentUpon>AMS.Comercial.ModificarViaje.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ModProcesosJuridicos.ascx.resx">
+      <DependentUpon>AMS.Comercial.ModProcesosJuridicos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.PagoGiros.ascx.resx">
+      <DependentUpon>AMS.Comercial.PagoGiros.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.PapeleriaAlmacen.ascx.resx">
+      <DependentUpon>AMS.Comercial.PapeleriaAlmacen.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.PersonalAgencias.ascx.resx">
+      <DependentUpon>AMS.Comercial.PersonalAgencias.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.Planilla.aspx.resx">
+      <DependentUpon>AMS.Comercial.Planilla.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.PlanillaAnticipos.ascx.resx">
+      <DependentUpon>AMS.Comercial.PlanillaAnticipos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.PlanillaAnticiposExtras.ascx.resx">
+      <DependentUpon>AMS.Comercial.PlanillaAnticiposExtras.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.PlanillaAutorizacionServicio.ascx.resx">
+      <DependentUpon>AMS.Comercial.PlanillaAutorizacionServicio.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.PlanillaBus.ascx.resx">
+      <DependentUpon>AMS.Comercial.PlanillaBus.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.PlanillaBusesRentados.ascx.resx">
+      <DependentUpon>AMS.Comercial.PlanillaBusesRentados.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.PlanillaChequeo.ascx.resx">
+      <DependentUpon>AMS.Comercial.PlanillaChequeo.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.PlanillaComparendos.ascx.resx">
+      <DependentUpon>AMS.Comercial.PlanillaComparendos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.PlanillaDoble.ascx.resx">
+      <DependentUpon>AMS.Comercial.PlanillaDoble.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.PlanillaGemela.aspx.resx">
+      <DependentUpon>AMS.Comercial.PlanillaGemela.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.PlanillaGeneral.ascx.resx">
+      <DependentUpon>AMS.Comercial.PlanillaGeneral.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.PlanillaGiros.ascx.resx">
+      <DependentUpon>AMS.Comercial.PlanillaGiros.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.PlanillaManual.ascx.resx">
+      <DependentUpon>AMS.Comercial.PlanillaManual.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.PlanillaManualGaviota.ascx.resx">
+      <DependentUpon>AMS.Comercial.PlanillaManualGaviota.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.PlanillaRemesas.ascx.resx">
+      <DependentUpon>AMS.Comercial.PlanillaRemesas.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.PlanillarViaje.ascx.resx">
+      <DependentUpon>AMS.Comercial.PlanillarViaje.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.PlanillaVirtual.ascx.resx">
+      <DependentUpon>AMS.Comercial.PlanillaVirtual.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ProcesoReservas.ascx.resx">
+      <DependentUpon>AMS.Comercial.ProcesoReservas.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ProcesosJuridicos.ascx.resx">
+      <DependentUpon>AMS.Comercial.ProcesosJuridicos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.RecepcionEncomiendas.ascx.resx">
+      <DependentUpon>AMS.Comercial.RecepcionEncomiendas.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.RecepcionGiros.ascx.resx">
+      <DependentUpon>AMS.Comercial.RecepcionGiros.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.RecepcionPapeleria.ascx.resx">
+      <DependentUpon>AMS.Comercial.RecepcionPapeleria.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.RecepcionPapeleriaPrepago.ascx.resx">
+      <DependentUpon>AMS.Comercial.RecepcionPapeleriaPrepago.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.RecepcionPlanillasChequeo.ascx.resx">
+      <DependentUpon>AMS.Comercial.RecepcionPlanillasChequeo.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.RegistrarNovedadAgencia.ascx.resx">
+      <DependentUpon>AMS.Comercial.RegistrarNovedadAgencia.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.RegistroAuxilioMutuo.ascx.resx">
+      <DependentUpon>AMS.Comercial.RegistroAuxilioMutuo.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.RelacionarManuales.ascx.resx">
+      <DependentUpon>AMS.Comercial.RelacionarManuales.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.RelacionarPlanilla.ascx.resx">
+      <DependentUpon>AMS.Comercial.RelacionarPlanilla.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.Relevadores.ascx.resx">
+      <DependentUpon>AMS.Comercial.Relevadores.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.RemesaManual.ascx.resx">
+      <DependentUpon>AMS.Comercial.RemesaManual.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.RemesasImpresion.ascx.resx">
+      <DependentUpon>AMS.Comercial.RemesasImpresion.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.Repocision.ascx.resx">
+      <DependentUpon>AMS.Comercial.Repocision.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ReporteAgencia.ascx.resx">
+      <DependentUpon>AMS.Comercial.ReporteAgencia.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ReporteBus.ascx.resx">
+      <DependentUpon>AMS.Comercial.ReporteBus.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ReporteBusTotal.ascx.resx">
+      <DependentUpon>AMS.Comercial.ReporteBusTotal.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ReportePersonal.ascx.resx">
+      <DependentUpon>AMS.Comercial.ReportePersonal.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.Reservas.ascx.resx">
+      <DependentUpon>AMS.Comercial.Reservas.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.RetirarBusAfiliado.ascx.resx">
+      <DependentUpon>AMS.Comercial.RetirarBusAfiliado.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.RutasDisponibles.ascx.resx">
+      <DependentUpon>AMS.Comercial.RutasDisponibles.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.ServiciosAnticipos.ascx.resx">
+      <DependentUpon>AMS.Comercial.ServiciosAnticipos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.Tiquete.aspx.resx">
+      <DependentUpon>AMS.Comercial.Tiquete.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.TiqueteraPrepago.ascx.resx">
+      <DependentUpon>AMS.Comercial.TiqueteraPrepago.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.VentaTiquetes.ascx.resx">
+      <DependentUpon>AMS.Comercial.VentaTiquetes.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.VentaTiquetesPrepago.ascx.resx">
+      <DependentUpon>AMS.Comercial.VentaTiquetesPrepago.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.VerHojasVida.ascx.resx">
+      <DependentUpon>AMS.Comercial.VerHojasVida.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Comercial.Viaje.aspx.resx">
+      <DependentUpon>AMS.Comercial.Viaje.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tiquetes.ReservacionTiquetes.ascx.resx">
+      <DependentUpon>AMS.Tiquetes.ReservacionTiquetes.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AMS.Comercial.ActualizarAnticiposAuditor.ascx" />
+    <Content Include="AMS.Comercial.AuxilioMutuo.ascx" />
+    <Content Include="AMS.Comercial.BorrarPlanilla.ascx" />
+    <Content Include="AMS.Comercial.ConsolidarAutorizaciones.ascx" />
+    <Content Include="AMS.Comercial.ConsolidarPlanillas.ascx" />
+    <Content Include="AMS.Comercial.ConsolidarPlanillasBuses.ascx" />
+    <Content Include="AMS.Comercial.ConsultarPapeleriaAgencia.ascx" />
+    <Content Include="AMS.Comercial.ConsultaVentasHoraUsuario.ascx" />
+    <Content Include="AMS.Comercial.EliminarRemesaGiro.ascx" />
+    <Content Include="AMS.Comercial.VentaTiquetes.ascx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\AMS.Comercial.GraficaBus.js" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AMS.Reportes\AMS.Reportes.csproj">
+      <Project>{e680f9b3-ae3f-4a97-b6e9-3294983eba18}</Project>
+      <Name>AMS.Reportes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Tools\AMS.Tools.csproj">
+      <Project>{97030739-855C-4ECE-A72B-231624365A8D}</Project>
+      <Name>AMS.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49412</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/AMS/AMS.Comercial</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

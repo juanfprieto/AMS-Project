@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<localization xmlns="obout:grid:localization-schema">
+  <grid
+     page_size_text  = "Snimaka po strani:"
+     records_text    = "Snimci:"
+     to_text         = "-"
+     of_text         = "od"
+     pages_text      = "Strane:"          
+     loading_text    = "UÄitavanje..."
+     no_records_text = "Nema raspoloÅ¾ivih snimaka."
+     resizing_tooltip_width = "Å irina:"
+     resizing_tooltip_pixels = "Pikseli"
+     type_validation_error = "Vrednost uneta u koloni XXXXX nije ispravna."
+     maxlength_validation_error = "Vrednost uneta u koloni XXXXX prevazilazi maksimalni broj karaktera YYYYY dozvoljen za ovu kolonu."
+     js_warning = "GreÅ¡ka inicijalizovanja mreÅ¾e identifikacionim brojem '[GRID_ID]'.\n\n[UPOZORENJE]\n\nKontaktirajte support@obout.com za pomoÄ‡."
+     >
+
+    <commands
+      add_link	      = "Dodaj novi"
+      edit_link       = "Uredi"
+      delete_link     = "IzbriÅ¡i"      
+      update_link     = "Usaglasi"      
+      cancel_link     = "PoniÅ¡ti"
+      save_link       = "SaÄuvaj"
+      save_all_link   = "SaÄuvaj sve"
+      cancel_all_link = "PoniÅ¡ti sve"
+      remove_link     = "Ukloni"
+      modify_link     = "Izmeni"
+      undelete_link   = "Vrati"
+    />
+    
+    <filter
+      button_show_filter   = "PokaÅ¾i filter"
+      button_hide_filter   = "Sakrij filter"
+      button_filter        = "Primeni Filter"
+      button_remove_filter = "Ukloni Filter"
+      
+      filter_criteria_nofilter                 = "Nema filtera"
+      filter_criteria_contains                 = "SadrÅ¾i"
+      filter_criteria_does_not_contain         = "Ne sadrÅ¾i"
+      filter_criteria_starts_with              = "PoÄinje sa"
+      filter_criteria_ends_with                = "ZavrÅ¡ava sa"
+      filter_criteria_equal_to                 = "Jednako"
+      filter_criteria_not_equal_to             = "Nije jednako"
+      filter_criteria_smaller_than             = "Manje od"
+      filter_criteria_greater_than             = "VeÄ‡e od"
+      filter_criteria_smaller_than_or_equal_to = "Manje ili jednako"
+      filter_criteria_greater_than_or_equal_to = "VeÄ‡e ili jednako"
+      filter_criteria_is_null                  = "Je Null"
+      filter_criteria_is_not_null              = "Nije Null"
+      filter_criteria_is_empty                 = "Prazno"
+      filter_criteria_is_not_empty             = "Nije prazno"
+    />        
+
+    <grouping
+      grouping_area_text = "Prevuci zaglavlje ovde da bi grupisao po koloni."
+      group_information_count = " (XXXXX snimaka)"
+      group_information_count_single = " (XXXXX snimak)"
+      group_information_next_page = " (Prikaz XXXXX od YYYYY snimaka - Ova grupa se nastavlja na sledeÄ‡oj strani)"
+      group_information_previous_page = " (Prikaz XXXXX od YYYYY snimaka - Ova grupa je poÄela na prethodnoj strani)"
+      group_information_previous_next_page = " (Prikaz XXXXX od YYYYY snimaka - Ova grupa je poÄela na prethodnoj strani i nastavlja se na sledeÄ‡oj)"
+    />
+
+    <paging
+      total_number_of_pages  = " (izvan XXXXX)"
+      manual_paging_link  = "Idi na stranu Â»"
+      page_size_options_all = "Sve"
+    />
+    
+  </grid>
+</localization>

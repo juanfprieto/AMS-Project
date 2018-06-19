@@ -1,0 +1,17 @@
+set schema dbxschema;
+
+ -- 1. quitar llave primaria y llave unica a mcatalogovehiculo
+ALTER TABLE DBXSCHEMA.MCATALOGOVEHICULO DROP PRIMARY KEY;
+	-- 2. actualizar catalogo y vin en mcatalogovehiculo 
+update dbxschema.mcatalogovehiculo set PCAT_CODIGO='ST401D',mcat_vin='KMJWVH7BP6U688486' where mcat_vin='C089421' ;
+	-- 3. actualizar catalogo y vin en mvehiculo
+update dbxschema.mvehiculo set PCAT_CODIGO='ST401D',mcat_vin='KMJWVH7BP6U688486' where mcat_vin='C089421' ;
+	-- 4. actualizar catalogo y vin en mubicacionvehiculo
+update dbxschema.mubicacionvehiculo set PCAT_CODIGO='ST401D',mcat_vin='KMJWVH7BP6U688486' where mcat_vin='C089421' ;
+	-- 5. actualizar catalogo y vin en morden
+update dbxschema.morden set PCAT_CODIGO='ST401D',mcat_vin='KMJWVH7BP6U688486' where mcat_vin='C089421' ;
+	-- -   revisar tabla mauditoriavehiculos que hace?
+	-- 6. restablecer llave primaria y llave unica a mcatalogovehiculo
+ALTER TABLE DBXSCHEMA.MCATALOGOVEHICULO ADD PRIMARY KEY (MCAT_VIN);
+			
+select * from mcatalogovehiculo where mcat_placa = 'BTE027';

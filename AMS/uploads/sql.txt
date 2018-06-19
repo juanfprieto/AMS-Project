@@ -1,0 +1,50 @@
+<table id="_ctl1_tbDB" class="filtersIn" border="0">
+	<tr>
+		<td><span>Tipo Base De Datos:</span><input name="_ctl1:txtBase1" type="text" value="BASE 1" id="_ctl1_txtBase1" disabled="disabled" class="tmediando" /></td>
+	</tr>
+</table>
+
+
+<TABLE class="filtersIn" >
+        <tr>
+            <td>
+                Tipo Base De Datos: <asp:textbox id="txtTipoBase" class="tmediano" runat="server" enabled="false"></asp:textbox>
+            </td>
+            <td align="left">Autorizar:&nbsp;&nbsp;
+                <asp:radiobutton id="rdSi" runat="server" enabled="true" GroupName="grupo" Checked="true" Text="Si"></asp:radiobutton> &nbsp;&nbsp;&nbsp;
+                <asp:radiobutton id="rdNo" runat="server" enabled="true" GroupName="grupo" Text="No"></asp:radiobutton>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Tipo Base De Datos: <asp:textbox id="Textbox1" class="tmediano" runat="server" enabled="false"></asp:textbox>
+            </td>
+            <td align="left">Autorizar:&nbsp;&nbsp;
+                <asp:radiobutton id="Radiobutton1" runat="server" enabled="true" GroupName="grupo" Checked="true" Text="Si"></asp:radiobutton> &nbsp;&nbsp;&nbsp;
+                <asp:radiobutton id="Radiobutton2" runat="server" enabled="true" GroupName="grupo" Text="No"></asp:radiobutton>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Tipo Base De Datos: <asp:textbox id="Textbox2" class="tmediano" runat="server" enabled="false"></asp:textbox>
+            </td>
+            <td align="left">Autorizar:&nbsp;&nbsp;
+                <asp:radiobutton id="Radiobutton3" runat="server" enabled="true" GroupName="grupo" Checked="true" Text="Si"></asp:radiobutton> &nbsp;&nbsp;&nbsp;
+                <asp:radiobutton id="Radiobutton4" runat="server" enabled="true" GroupName="grupo" Text="No"></asp:radiobutton>
+            </td>
+        </tr>
+    </TABLE>
+
+
+04/10/2013	$ 8,879	00133579	Descuento Cobro Servicios Entre Ciudades	LA DORADA-LADORADA
+04/10/2013	$20,000	00133579	Consignacion Efectivo en Oficina	LA DORADA-LADORADA
+____________________________
+		$11,121
+
+04/10/2013	$ 8,879	00133561	Descuento Cobro Servicios Entre Ciudades	LA DORADA-LADORADA
+04/10/2013	$50,000	00133561	Consignacion Efectivo en Oficina	LA DORADA-LADORADA
+____________________________
+		$41,121
+
+____________________________
+		$52,242			TOTAL

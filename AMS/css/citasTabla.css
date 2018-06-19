@@ -1,0 +1,145 @@
+﻿body
+{
+	background: rgba(205,205,244,0.65);
+}
+table.citasTitulo
+{
+	background: rgba(205,205,244,1);
+	color: #2F2F45;
+	font-weight: bold;
+	height: 30px;
+	left: 25px;
+	margin: auto;
+	position: fixed;
+	width: 95%;
+	z-index: 998;
+}
+table.citasEncabezado
+{
+	border-collapse: separate; 
+	border-spacing: 1px 4px;
+	color: #2F2F45;
+	left: 25px;
+	margin: auto;
+	overflow: scroll;
+	position: fixed;
+	table-layout: fixed;
+	top:67px;
+	width: 95%;
+	z-index: 999;
+}
+table.citasEncabezado th
+{
+	background: rgba(120,120,228,1);
+	border-radius: 6px;
+	border-style: solid;
+	border-width: 1.8px;
+	border-bottom-width: 3px;
+	box-shadow: 1px 6px 8px #888888;
+	color: #181860;
+	padding: 10px;
+}
+table.citasTaller
+{
+	border-collapse: separate; 
+	border-spacing: 1px 4px;
+	color: #2F2F45;
+	left: 25px;
+	margin: auto;
+	overflow: scroll;
+	position: absolute;
+	table-layout: fixed;
+	top:155px;
+	width: 95%;
+	z-index: 1;
+}
+table.citasTaller td
+{
+	border-top-width: 1px;
+	border-bottom-width: 3px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	background: rgba(174,240,100,0.2);
+	border-radius: 6px;
+	border-style: solid;
+	padding: 5px;
+	text-align: center;
+	box-shadow: 1px 2px 5px #888888;
+}
+table.citasTaller td.amarillo
+{
+	background: rgba(250,228,100,0.9);
+}
+table.citasTaller td.verde
+{
+	background: rgba(174,240,100,0.9);
+}
+table.citasTaller td.rojo
+{
+	background: rgba(250,100,100,0.9);
+}
+table.citasTaller td.naranja
+{
+	background: rgba(255,160,20,0.9);
+}
+#amarillo
+{
+	background: rgba(250,228,100,0.9);
+	border-radius: 8px;
+	border-style: solid;
+	border-width: 1.2px;
+	text-align: center;
+	width: 70px;
+	
+}
+#verde
+{
+	background: rgba(174,240,100,0.9);
+	border-radius: 8px;
+	border-style: solid;
+	border-width: 1.2px;
+	text-align: center;
+	width: 70px;
+}
+#rojo
+{
+	background: rgba(250,100,100,0.9);
+	border-radius: 8px;
+	border-style: solid;
+	border-width: 1.2px;
+	text-align: center;
+	width: 70px;
+}
+#naranja
+{
+	background: rgba(255,160,20,0.9);
+	border-radius: 8px;
+	border-style: solid;
+	text-align: center;
+	border-width: 1.2px;
+	width: 70px;
+}
+table.citasTaller td.blanco
+{
+	background: rgba(205,205,244,0.1);
+	border-radius: 6px;
+	border-style: none;
+	padding: 0.8px;
+	text-align: center;
+	box-shadow: none;
+}
+.bombillo
+{
+    position: inherit;
+    width: 12px;
+    height: 12px;
+    background-color: lightgray;
+    display: inline-block;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+}
+.cajaSemaforo
+{
+    text-align:right;
+}

@@ -1,0 +1,820 @@
+﻿/*iframe:layer under window layer*/
+.geryonIframeLayer
+{
+	border:0px;
+	background-color:white;
+	filter:alpha(opacity=40);
+	-moz-opacity:0.0;
+	opacity:0.0;
+}
+/*div:Layer contains window*/
+.geryonWindowLayer
+{
+	display:none;
+}
+/*Master Table contains window parts*/
+.geryonMasterTable
+{
+	width:100%;
+	height:100%;
+	border-collapse:collapse;
+	margin:0;
+}
+/*td*/
+.geryonHeaderContainer
+{
+	height:30px;
+	width:100%;
+	vertical-align:top;
+	padding:0px;
+}
+/*td*/
+.geryonToolbarContainer
+{
+	height:18px;
+	width:100%;
+	vertical-align:top;
+	padding:0px;
+}
+/*td*/
+.geryonContentContainer
+{
+	width:100%;
+	padding:0px;
+	vertical-align:top;
+}
+/*td*/
+.geryonFooterContainer
+{
+	height:21px;
+	width:100%;
+	vertical-align:top;
+	padding:0px;
+
+}
+
+.geryonBottomLineContainer
+{
+	height:4px;
+	width:100%;
+	vertical-align:bottom;
+	padding:0px;
+}
+/*Header-----------------------------------------------------------------------------------------------*/
+/*td*/
+.geryonHeaderTable
+{
+	width:100%;
+	border-collapse:collapse;
+	margin:0;
+}
+
+/*tr*/
+.geryonHeaderTop
+{
+	display:none;
+}
+
+/*tr*/
+.geryonHeaderBottom
+{
+	display:none;
+}
+
+
+
+/*td*/
+.geryonHeaderTopLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.geryonHeaderTopCenter
+{
+	height:0px;	
+	padding:0px;
+}
+/*td*/
+.geryonHeaderTopRight
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+
+}
+/*td*/
+.geryonHeaderMiddleLeft
+{
+	padding:0px;
+	width:4px;
+	height:30px;
+	background-image:url(HeaderMiddleLeft.gif);
+}
+/*td*/
+.geryonHeaderMiddleCenter
+{
+	padding:0px;
+	height:30px;	
+	background-image:url(HeaderMiddleCenter.gif);
+	background-repeat:repeat;
+	
+}
+/*td*/
+.geryonHeaderMiddleRight
+{
+	padding:0px;
+	width:4px;
+	height:30px;
+	background-image:url(HeaderMiddleRight.gif);
+}
+/*td*/
+.geryonHeaderBottomLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.geryonHeaderBottomCenter
+{
+	height:0px;	
+	padding:0px;
+}
+/*td*/
+.geryonHeaderBottomRight
+{
+	height:0px;
+	width:0px;	
+	padding:0px;
+}
+/*Small table inside header*/
+.geryonHeaderInnerTable
+{
+	width:100%;
+	border-collapse:collapse;
+	margin:0;
+}
+/*td*/
+.geryonHeaderLogoContainer
+{
+	width:1px;
+	padding:0px;
+	padding-left:5px;
+}
+/*img*/
+.geryonHeaderLogo
+{
+	width:17px;
+	height:17px;
+}
+/*td*/
+.geryonHeaderTitle
+{
+	padding:0px;
+	padding-left:2px;
+	cursor:default;
+
+}
+
+/*div*/
+.geryonTitlePanel
+{
+	font-weight:bold;
+	font-family:Arial;
+	font-size:11px;
+	color:Black;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+/*div*/
+.geryonTitlePanelDisable
+{
+	font-weight:bold;
+	font-family:Arial;
+	font-size:11px;
+	color:White;
+	overflow:hidden;
+	white-space:nowrap;		
+}
+
+
+
+/*Contain built-in buttons td*/
+/*td*/
+.geryonHeaderBuiltinButtonsContainer
+{
+	width:85px;
+	height:19px;
+	background:url(BuiltinButtonsContainer.gif);
+	padding:0px;
+	padding-right:1px;
+	
+	
+}
+
+
+/*Buttons table*/
+.geryonWindowBuiltinButtonsTable
+{
+	width:auto;
+	border-collapse:collapse;
+	margin:0;
+}
+
+
+/*Individual Button Container, it is the td cover button*/
+.geryonButtonContainer
+{
+	padding:0px;
+	padding-right:2px;
+}
+/*Minimize Button*/
+/*img*/
+.geryonButtonMinimizeOver
+{
+	width:17px;
+	height:17px;
+	background:url(MinimizeOver.gif);
+}
+/*img*/
+.geryonButtonMinimizeDown
+{
+	width:17px;
+	height:17px;
+	background:url(MinimizeDown.gif);
+}
+
+
+/*img*/
+.geryonButtonMinimizeOut
+{
+	width:17px;
+	height:17px;
+	background:url(MinimizeOut.gif);
+}
+
+
+
+
+/*Maximize Button*/
+/*img*/
+.geryonButtonMaximizeOver
+{
+	width:17px;
+	height:17px;
+	background:url(MaximizeOver.gif);	
+}
+/*img*/
+.geryonButtonMaximizeDown
+{
+	width:17px;
+	height:17px;
+	background:url(MaximizeDown.gif);	
+}
+/*img*/
+.geryonButtonMaximizeOut
+{
+	width:17px;
+	height:17px;
+	background:url(MaximizeOut.gif);		
+}
+
+/*Restore Down Button*/
+/*img*/
+.geryonButtonRestoreDownOver
+{
+	width:17px;
+	height:17px;
+	background:url(RestoreDownOver.gif);	
+}
+/*img*/
+.geryonButtonRestoreDownDown
+{
+	width:17px;
+	height:17px;
+	background:url(RestoreDownDown.gif);	
+}
+/*img*/
+.geryonButtonRestoreDownOut
+{
+	width:17px;
+	height:17px;
+	background:url(RestoreDownOut.gif);		
+}
+
+
+/*Close Button*/
+/*img*/
+.geryonButtonCloseOver
+{
+	width:17px;
+	height:17px;
+	background:url(CloseOver.gif);	
+}
+/*img*/
+.geryonButtonCloseDown
+{
+	width:17px;
+	height:17px;
+	background:url(CloseDown.gif);		
+}
+
+/*img*/
+.geryonButtonCloseOut
+{
+	width:17px;
+	height:17px;
+	background:url(CloseOut.gif);		
+}
+
+/*Toolbar-----------------------------------------------------------------------------------------------*/
+.geryonToolbarTable
+{
+	width:100%;
+	border-collapse:collapse;
+	margin:0;
+		
+}
+
+/*tr*/
+.geryonToolbarTop
+{
+	display:none;
+}
+
+/*tr*/
+.geryonToolbarBottom
+{
+	display:none;
+}
+
+
+/*td*/
+.geryonToolbarTopLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.geryonToolbarTopCenter
+{
+	height:0px;
+	padding:0px;
+}
+/*td*/
+.geryonToolbarTopRight
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.geryonToolbarMiddleLeft
+{
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.geryonToolbarMiddleCenter
+{
+	padding:0px;
+}
+/*td*/
+.geryonToolbarMiddleRight
+{
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.geryonToolbarBottomLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.geryonToolbarBottomCenter
+{
+	height:0px;
+	padding:0px;
+}
+/*td*/
+.geryonToolbarBottomRight
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*div*/
+.geryonToolbarPanel
+{
+	background-color:Aqua;
+}
+
+
+/*Content-----------------------------------------------------------------------------------------------*/
+.geryonContentTable
+{
+	width:100%;
+	height:100%;
+	border-collapse:collapse;
+	margin:0;
+	
+}
+
+/*tr*/
+.geryonContentTop
+{
+	display:none;
+}
+
+/*tr*/
+.geryonContentBottom
+{
+	display:none;
+}
+
+
+
+/*td*/
+.geryonContentTopLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.geryonContentTopCenter
+{
+	height:0px;
+	padding:0px;
+}
+/*td*/
+.geryonContentTopRight
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.geryonContentMiddleLeft
+{
+	padding:0px;
+	width:4px;
+	background-image:url(ContentMiddleLeft.gif);
+	background-repeat:repeat;
+}
+/*td*/
+.geryonContentMiddleCenter
+{
+	padding:0px;
+	vertical-align:top;
+	
+}
+/*td*/
+.geryonContentMiddleRight
+{
+	padding:0px;
+	width:4px;
+	background-image:url(ContentMiddleRight.gif);
+	background-repeat:repeat;
+	
+}
+/*td*/
+.geryonContentBottomLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+	font-size:1px;
+}
+/*td*/
+.geryonContentBottomCenter
+{
+	height:0px;
+	padding:0px;
+	font-size:1px;
+}
+/*td*/
+.geryonContentBottomRight
+{
+	height:0%;
+	width:0px;
+	padding:0px;
+	font-size:1px;
+}
+
+/*IFRAME or DIV*/
+.geryonContentPanel
+{
+	border:0px;
+	background-color:#ECF5E2;
+	overflow:hidden;
+	padding:0px;	
+}
+
+
+/*Footer-----------------------------------------------------------------------------------------------*/
+.geryonFooterTable
+{
+	border-collapse:collapse;
+	margin:0;	
+	width:100%;
+}
+
+/*tr*/
+.geryonFooterTop
+{
+	display:none;
+}
+
+/*tr*/
+.geryonFooterBottom
+{
+	display:none;	
+}
+
+
+/*td*/
+.geryonFooterTopLeft 
+{
+	padding:0px;
+}
+/*td*/
+.geryonFooterTopCenter
+{
+	padding:0px;
+}
+/*td*/
+.geryonFooterTopRight
+{
+	padding:0px;
+}
+/*td*/
+.geryonFooterMiddleLeft
+{
+	width:4px;
+	padding:0px;
+	background-image:url(ContentMiddleLeft.gif);	
+}
+/*td*/
+.geryonFooterMiddleCenter
+{
+	height:21px;
+	padding:0px;
+	background-image:url(FooterMiddleCenter.gif);	
+	background-repeat:repeat;
+	white-space:nowrap;	
+		
+}
+/*td*/
+.geryonFooterMiddleRight
+{
+	width:18px;
+	height:21px;
+	padding:0px;
+	background-image:url(FooterMiddleRight.gif);
+
+}
+/*td*/
+.geryonFooterBottomLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+	background-color:#ECF5E2;
+}
+/*td*/
+.geryonFooterBottomCenter
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.geryonFooterBottomRight
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+	
+}
+/*div*/
+.geryonFooterPanel
+{
+	cursor:default;
+	font-family:Tahoma;
+	font-size:11px;
+	padding-left:5px;
+	padding-top:1px;
+	overflow:hidden;
+	height:13px;
+	width:100%;
+	white-space:nowrap;
+}
+
+
+/*BottomLine-----------------------------------------------------------------------------------------------*/
+.geryonBottomLineTable
+{
+	border-collapse:collapse;
+	margin:0;	
+	width:100%;
+}
+.geryonBottomLineLeft
+{
+	width:4px;
+	height:4px;
+	padding:0px;
+	background-image:url(BottomLineLeft.gif);	
+}
+.geryonBottomLineCenter
+{
+	height:4px;
+	padding:0px;
+	background-image:url(BottomLineCenter.gif);
+	background-repeat:repeat;
+}
+.geryonBottomLineRight
+{
+	width:4px;
+	height:4px;
+	padding:0px;
+	background-image:url(BottomLineRight.gif);	
+}
+
+
+
+/*DragPanel-----------------------------------------------------------------------------------------------*/
+
+.geryonDragPanel
+{
+	background-color:Gray;
+	filter:alpha(opacity=25);
+	-moz-opacity:0.25;
+	opacity:0.25;
+	z-index:999999999;	
+}
+
+/*Filter-----------------------------------------------------------------------------------------------*/
+
+.geryonFilterIframeLayer
+{
+	border:0px;
+	filter:alpha(opacity=0);
+	-moz-opacity:0.0;
+	opacity:0.0;	
+}
+.geryonFilterDivLayer
+{
+	background-color:gray;
+	filter:alpha(opacity=15);
+	-moz-opacity:0.15;
+	opacity:0.15;	
+}
+/*Window Resize-----------------------------------------------------------------------------------------------*/
+
+
+.geryonResizeHandle
+{
+	position:absolute;
+	background-color:white;
+	filter:alpha(opacity=0);
+	-moz-opacity:0.0;
+	opacity:0.0;
+	font-size:1px;
+	height:4px;
+	width:4px;	
+}
+
+/*Handle cursor of mouseover*/
+.geryonCursorResizeLeft
+{	
+	cursor:e-resize;
+}
+.geryonCursorResizeTop
+{	
+	cursor:n-resize;
+}
+.geryonCursorResizeRight
+{
+	cursor:w-resize;
+}
+
+.geryonCursorResizeBottom
+{
+	cursor:s-resize;
+}
+
+.geryonCursorResizeTopLeft
+{
+	cursor:nw-resize;	
+
+}
+
+.geryonCursorResizeTopRight
+{
+	cursor:ne-resize;
+}
+
+.geryonCursorResizeBottomRight
+{
+	cursor:se-resize;
+}
+
+.geryonCursorResizeBottomLeft
+{
+	cursor:sw-resize;
+}
+/*The size of diagonal resize at each conner*/
+.geryonResizeConnerSize
+{	
+	width:20px;
+	height:20px;
+	background-color:transparent;			
+}
+
+.geryonResizePanel
+{
+	z-index:99999;
+	background-color:Gray;
+	filter:alpha(opacity=25);
+	-moz-opacity:0.25;
+	opacity:0.25;	
+}
+/*-BuiltinWindow------------------------------------------------*/
+
+.geryonAlertContentTable
+{
+	width:100%;
+	height:100%;
+}
+
+.geryonAlertLogoContainer
+{
+	padding:0px;
+	width:30px;
+	vertical-align:top;
+	padding-top:10px;
+	padding-left:15px;
+}
+.geryonAlertMessageContainer
+{
+	padding:0px;
+	font-family:Verdana;
+	font-size:8pt;
+	vertical-align:top;
+	padding-top:15px;
+	padding-left:10px;
+}
+.geryonAlertOKContainer
+{
+	padding:0px;
+	text-align:center;
+	vertical-align:bottom;
+	padding-bottom:10px;
+}
+.geryonwarningLogo
+{
+	padding:0px;
+	width:32px;
+	height:32px;
+	background-image:url(windows-warning.png);
+}
+.geryoninfoLogo
+{
+	padding:0px;
+	width:32px;
+	height:32px;
+	background-image:url(windows-info.png);
+}
+.geryonerrorLogo
+{
+	padding:0px;
+	width:32px;
+	height:32px;
+	background-image:url(windows-error.png);
+}
+
+
+.geryonAlertOKButton
+{
+	width:60px;
+}
+
+/*use to detect finsihed loading, do not change*/
+.geryonEnd
+{
+	background-color:Transparent;
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:9px;
+	width:9px;
+	font-size:1px;
+}
+

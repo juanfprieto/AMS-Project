@@ -1,0 +1,676 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97030739-855C-4ECE-A72B-231624365A8D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>AMS.Tools</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AMS.Tools</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\AMS\bin\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\Compilados\bin\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajax, Version=5.7.22.2, Culture=neutral" />
+    <Reference Include="AMS.DB, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="bd.WebScheduledTasks, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="ClosedXML, Version=0.76.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS\bin\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS\bin\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=3.1.3.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL" />
+    <Reference Include="IBM.Data.DB2, Version=9.7.4.4, Culture=neutral, PublicKeyToken=7c307b91aa13d208, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS\bin\IBM.Data.DB2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AMS.Tools.Actualizaciones.ascx.cs">
+      <DependentUpon>AMS.Tools.Actualizaciones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.Actualizaciones.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.Actualizaciones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.AutorizacionCliente.ascx.cs">
+      <DependentUpon>AMS.Tools.AutorizacionCliente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.AutorizacionCliente.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.AutorizacionCliente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.AutorizacionClienteLista.ascx.cs">
+      <DependentUpon>AMS.Tools.AutorizacionClienteLista.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.AutorizacionClienteLista.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.AutorizacionClienteLista.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.DescargaFTP.ascx.cs">
+      <DependentUpon>AMS.Tools.DescargaFTP.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.DescargaFTP.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.DescargaFTP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.DescriptorTarea.cs" />
+    <Compile Include="AMS.Tools.DiccionarioPalabras.ascx.cs">
+      <DependentUpon>AMS.Tools.DiccionarioPalabras.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.DiccionarioPalabras.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.DiccionarioPalabras.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.Email.ascx.cs">
+      <DependentUpon>AMS.Tools.Email.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.Email.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.Email.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.Enums.cs" />
+    <Compile Include="AMS.Tools.ExcelimportData.ascx.cs">
+      <DependentUpon>AMS.Tools.ExcelimportData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.ExcelimportData.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.ExcelimportData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.MensajesBienvenida.ascx.cs">
+      <DependentUpon>AMS.Tools.MensajesBienvenida.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.MensajesBienvenida.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.MensajesBienvenida.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.PlanillaBancolombia.ascx.cs">
+      <DependentUpon>AMS.Tools.PlanillaBancolombia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.PlanillaBancolombia.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.PlanillaBancolombia.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.PlanillaTercerosBancolombia.ascx.cs">
+      <DependentUpon>AMS.Tools.PlanillaTercerosBancolombia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.PlanillaTercerosBancolombia.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.PlanillaTercerosBancolombia.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.Planning.aspx.cs">
+      <DependentUpon>AMS.Tools.Planning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.Planning.aspx.designer.cs">
+      <DependentUpon>AMS.Tools.Planning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.Referencias.cs" />
+    <Compile Include="AMS.Tools.SustentoTributario.ascx.cs">
+      <DependentUpon>AMS.Tools.SustentoTributario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.SustentoTributario.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.SustentoTributario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.TareasProgramadas.cs" />
+    <Compile Include="AMS.Tools.Upload.aspx.cs">
+      <DependentUpon>AMS.Tools.Upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.Upload.aspx.designer.cs">
+      <DependentUpon>AMS.Tools.Upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.WebRequestTask.cs" />
+    <Content Include="AMS.Tools.Actualizaciones.ascx" />
+    <Content Include="AMS.Tools.AdministrarLlamadasPersonales.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Tools.AdministrarPerfiles.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Tools.AsignarPerfil.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Tools.AutorizacionCliente.ascx" />
+    <Content Include="AMS.Tools.AutorizacionClienteLista.ascx" />
+    <Content Include="AMS.Tools.CambiarVisibilidad.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Tools.CerrarSesion.ascx" />
+    <Content Include="AMS.Tools.ComentariosTablas.ascx" />
+    <Content Include="AMS.Tools.ConfigPerfil.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Tools.ConfiguracionInicial.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Tools.ConsultarLlamadas.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Tools.CrearLlamada.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Tools.CrearUsuario.ascx" />
+    <Content Include="AMS.Tools.DescargaFTP.ascx" />
+    <Content Include="AMS.Tools.DiccionarioPalabras.ascx" />
+    <Content Include="AMS.Tools.Email.ascx" />
+    <Content Include="AMS.Tools.Encabezado.ascx" />
+    <Content Include="AMS.Tools.ExcelimportData.ascx" />
+    <Content Include="AMS.Tools.ExcelImporter.ascx" />
+    <Content Include="AMS.Tools.Exporter.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Tools.Importer.ascx" />
+    <Content Include="AMS.Tools.Impresion.aspx" />
+    <Content Include="AMS.Tools.MensajesBienvenida.ascx" />
+    <Content Include="AMS.Tools.ModificarUsuario.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Tools.ModPerfil.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Tools.Permisos.ascx" />
+    <Content Include="AMS.Tools.PlanillaBancolombia.ascx" />
+    <Content Include="AMS.Tools.PlanillaTercerosBancolombia.ascx" />
+    <Content Include="AMS.Tools.Planning.aspx" />
+    <Content Include="AMS.Tools.PrePrintedForms.ascx" />
+    <Content Include="AMS.Tools.PrePrintedForms1.ascx" />
+    <Content Include="AMS.Tools.PrePrintedForms2.ascx" />
+    <Content Include="AMS.Tools.PrePrintedForms3.ascx" />
+    <Content Include="AMS.Tools.Seleccionar.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Tools.SesionesAbiertas.ascx" />
+    <Content Include="AMS.Tools.SustentoTributario.ascx" />
+    <Content Include="AMS.Tools.Upload.aspx" />
+    <Content Include="AMS.Tools.Usuarios.ascx" />
+    <Compile Include="AMS.Tools.AdministrarClientes.ascx.cs">
+      <DependentUpon>AMS.Tools.AdministrarClientes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.AdministrarClientes.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.AdministrarClientes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.AdministrarLlamadasPersonales.ascx.cs">
+      <DependentUpon>AMS.Tools.AdministrarLlamadasPersonales.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.AdministrarLlamadasPersonales.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.AdministrarLlamadasPersonales.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.AdministrarPerfiles.ascx.cs">
+      <DependentUpon>AMS.Tools.AdministrarPerfiles.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.AdministrarPerfiles.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.AdministrarPerfiles.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.AsignarPerfil.ascx.cs">
+      <DependentUpon>AMS.Tools.AsignarPerfil.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.AsignarPerfil.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.AsignarPerfil.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.Browser.cs" />
+    <Compile Include="AMS.Tools.CambiarVisibilidad.ascx.cs">
+      <DependentUpon>AMS.Tools.CambiarVisibilidad.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.CambiarVisibilidad.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.CambiarVisibilidad.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.CerrarSesion.ascx.cs">
+      <DependentUpon>AMS.Tools.CerrarSesion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.CerrarSesion.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.CerrarSesion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.ComentariosTablas.ascx.cs">
+      <DependentUpon>AMS.Tools.ComentariosTablas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.ComentariosTablas.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.ComentariosTablas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.ConfigPerfil.ascx.cs">
+      <DependentUpon>AMS.Tools.ConfigPerfil.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.ConfigPerfil.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.ConfigPerfil.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.ConfiguracionInicial.ascx.cs">
+      <DependentUpon>AMS.Tools.ConfiguracionInicial.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.ConfiguracionInicial.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.ConfiguracionInicial.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.ConsultarLlamadas.ascx.cs">
+      <DependentUpon>AMS.Tools.ConsultarLlamadas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.ConsultarLlamadas.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.ConsultarLlamadas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.Converter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.CrearCliente.ascx.cs">
+      <DependentUpon>AMS.Tools.CrearCliente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.CrearCliente.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.CrearCliente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.CrearLlamada.ascx.cs">
+      <DependentUpon>AMS.Tools.CrearLlamada.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.CrearLlamada.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.CrearLlamada.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.CrearUsuarios.ascx.cs">
+      <DependentUpon>AMS.Tools.CrearUsuario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.CrearUsuarios.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.CrearUsuario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.Encabezado.ascx.cs">
+      <DependentUpon>AMS.Tools.Encabezado.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.Encabezado.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.Encabezado.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.ExcelImporter.ascx.cs">
+      <DependentUpon>AMS.Tools.ExcelImporter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.ExcelImporter.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.ExcelImporter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.Exporter.ascx.cs">
+      <DependentUpon>AMS.Tools.Exporter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.Exporter.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.Exporter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.FormatoFactura.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.General.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.Importer.ascx.cs">
+      <DependentUpon>AMS.Tools.Importer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.Importer.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.Importer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.Impresion.aspx.cs">
+      <DependentUpon>AMS.Tools.Impresion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.Impresion.aspx.designer.cs">
+      <DependentUpon>AMS.Tools.Impresion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.LeerPDF.ascx.cs">
+      <DependentUpon>AMS.Tools.LeerPDF.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.LeerPDF.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.LeerPDF.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.Mail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.ModificarUsuario.ascx.cs">
+      <DependentUpon>AMS.Tools.ModificarUsuario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.ModificarUsuario.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.ModificarUsuario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.ModPerfil.ascx.cs">
+      <DependentUpon>AMS.Tools.ModPerfil.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.ModPerfil.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.ModPerfil.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.Permisos.ascx.cs">
+      <DependentUpon>AMS.Tools.Permisos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.Permisos.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.Permisos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.PrePrintedForms.ascx.cs">
+      <DependentUpon>AMS.Tools.PrePrintedForms.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.PrePrintedForms.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.PrePrintedForms.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.PrePrintedForms1.ascx.cs">
+      <DependentUpon>AMS.Tools.PrePrintedForms1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.PrePrintedForms1.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.PrePrintedForms1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.PrePrintedForms2.ascx.cs">
+      <DependentUpon>AMS.Tools.PrePrintedForms2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.PrePrintedForms2.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.PrePrintedForms2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.PrePrintedForms3.ascx.cs">
+      <DependentUpon>AMS.Tools.PrePrintedForms3.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.PrePrintedForms3.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.PrePrintedForms3.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.Seleccionar.ascx.cs">
+      <DependentUpon>AMS.Tools.Seleccionar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.Seleccionar.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.Seleccionar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.SesionesAbiertas.ascx.cs">
+      <DependentUpon>AMS.Tools.SesionesAbiertas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.SesionesAbiertas.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.SesionesAbiertas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.Usuarios.ascx.cs">
+      <DependentUpon>AMS.Tools.Usuarios.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Tools.Usuarios.ascx.designer.cs">
+      <DependentUpon>AMS.Tools.Usuarios.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Tools.Utils.cs" />
+    <Compile Include="AMS.Tools.VINs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="AMS.Tools.AdministrarLlamadasPersonales.ascx.resx">
+      <DependentUpon>AMS.Tools.AdministrarLlamadasPersonales.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.AdministrarPerfiles.ascx.resx">
+      <DependentUpon>AMS.Tools.AdministrarPerfiles.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.AsignarPerfil.ascx.resx">
+      <DependentUpon>AMS.Tools.AsignarPerfil.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.CambiarVisibilidad.ascx.resx">
+      <DependentUpon>AMS.Tools.CambiarVisibilidad.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.CerrarSesion.ascx.resx">
+      <DependentUpon>AMS.Tools.CerrarSesion.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.ComentariosTablas.ascx.resx">
+      <DependentUpon>AMS.Tools.ComentariosTablas.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.ConfigPerfil.ascx.resx">
+      <DependentUpon>AMS.Tools.ConfigPerfil.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.ConfiguracionInicial.ascx.resx">
+      <DependentUpon>AMS.Tools.ConfiguracionInicial.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.ConsultarLlamadas.ascx.resx">
+      <DependentUpon>AMS.Tools.ConsultarLlamadas.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.CrearLlamada.ascx.resx">
+      <DependentUpon>AMS.Tools.CrearLlamada.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.CrearUsuarios.ascx.resx">
+      <DependentUpon>AMS.Tools.CrearUsuarios.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.ExcelImporter.ascx.resx">
+      <DependentUpon>AMS.Tools.ExcelImporter.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.Exporter.ascx.resx">
+      <DependentUpon>AMS.Tools.Exporter.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.Impresion.aspx.resx">
+      <DependentUpon>AMS.Tools.Impresion.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.LeerPDF.ascx.resx">
+      <DependentUpon>AMS.Tools.LeerPDF.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.ModificarUsuario.ascx.resx">
+      <DependentUpon>AMS.Tools.ModificarUsuario.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.ModPerfil.ascx.resx">
+      <DependentUpon>AMS.Tools.ModPerfil.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.Permisos.ascx.resx">
+      <DependentUpon>AMS.Tools.Permisos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.PrePrintedForms.ascx.resx">
+      <DependentUpon>AMS.Tools.PrePrintedForms.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.PrePrintedForms1.ascx.resx">
+      <DependentUpon>AMS.Tools.PrePrintedForms1.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.PrePrintedForms2.ascx.resx">
+      <DependentUpon>AMS.Tools.PrePrintedForms2.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.PrePrintedForms3.ascx.resx">
+      <DependentUpon>AMS.Tools.PrePrintedForms3.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.Seleccionar.ascx.resx">
+      <DependentUpon>AMS.Tools.Seleccionar.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.SesionesAbiertas.ascx.resx">
+      <DependentUpon>AMS.Tools.SesionesAbiertas.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Tools.Usuarios.ascx.resx">
+      <DependentUpon>AMS.Tools.Usuarios.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AMS.Tools.AdministrarClientes.ascx" />
+    <Content Include="AMS.Tools.CrearCliente.ascx" />
+    <Content Include="AMS.Tools.LeerPDF.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AMS.CryptoServices\AMS.CryptoServices.csproj">
+      <Project>{137D79F7-AA92-4A71-A6F4-FE44FFEB715B}</Project>
+      <Name>AMS.CryptoServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Forms\AMS.Forms.csproj">
+      <Project>{4e9173a3-45b7-4b17-846d-8d790517ddf5}</Project>
+      <Name>AMS.Forms</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1154</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/AMS/AMS.Tools</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

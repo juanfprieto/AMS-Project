@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<ArchivoRegistro xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ListaRegistroActividad />
+  <ListaRegistroError />
+  <ListaRegistroInformacion />
+  <ListaRegistroErrorCrystalReports>
+    <Registro>
+      <Fecha>2018-06-06T14:48:05.8604572-05:00</Fecha>
+      <Dia>6/6/2018</Dia>
+      <Hora>2:48 PM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>ErrorCrystalReports</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>CrystalDecisions.Shared.CrystalReportsException</NombreExcepcion>
+      <MensajeExcepcion>Load report failed.</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.Documentos.Imprimir.PreviewReport2(String Rpt, String header, String footer, Int32 copias, Int32 PaginaInicial, Int32 PaginaFinal, String Sentencia, String Tabla, String archivo, String tipo, String nomuser, String passw, String[] Nomformulas, String[] Valformulas, Label lb)
+   at AMS.Documentos.Imprimir.ImprimirRPT(String nomReporte, Hashtable parametros)
+   at AMS.Automotriz.VistaImpresion.RevisionImpresionPDF()
+   at AMS.Automotriz.VistaImpresion.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.aspx_ams_web_index_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Error en PreviewReport : Load report failed.  .:.  System.Runtime.InteropServices.COMException (0x80041811): Unsupported Operation. A document processed by the JRC engine cannot be opened in the C++ stack.
+   at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()  .:.  CrystalDecisions.CrystalReports.Engine  .:.   en el paso1</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-06-06T14:48:06.5764981-05:00</Fecha>
+      <Dia>6/6/2018</Dia>
+      <Hora>2:48 PM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>ErrorCrystalReports</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>CrystalDecisions.Shared.CrystalReportsException</NombreExcepcion>
+      <MensajeExcepcion>Load report failed.</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.Documentos.Imprimir.PreviewReport2(String Rpt, String header, String footer, Int32 copias, Int32 PaginaInicial, Int32 PaginaFinal, String Sentencia, String Tabla, String archivo, String tipo, String nomuser, String passw, String[] Nomformulas, String[] Valformulas, Label lb)
+   at AMS.Documentos.Imprimir.ImprimirRPT(String nomReporte, Hashtable parametros)
+   at AMS.Automotriz.VistaImpresion.RevisionImpresionPDF()
+   at AMS.Automotriz.VistaImpresion.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.aspx_ams_web_index_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Error en PreviewReport : Load report failed.  .:.  System.Runtime.InteropServices.COMException (0x80041811): Unsupported Operation. A document processed by the JRC engine cannot be opened in the C++ stack.
+   at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()  .:.  CrystalDecisions.CrystalReports.Engine  .:.   en el paso1</Observaciones>
+    </Registro>
+  </ListaRegistroErrorCrystalReports>
+  <ListaRegistroInformacionCrystalRepots />
+</ArchivoRegistro>

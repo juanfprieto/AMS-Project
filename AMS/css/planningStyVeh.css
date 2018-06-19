@@ -1,0 +1,271 @@
+﻿body
+{
+	background: rgba(205,205,244,0.65);
+}
+
+table.titulo
+{
+	position: fixed;
+	background-color: white;
+	color: #2F2F45;
+	border-radius: 6px;
+	width: 100%;
+	left: 0px;
+	top: -10px;
+	z-index: 1001;
+}
+
+table.meca
+{
+	height: 300px;
+	width: 160px;
+	background: rgba(205,205,244,0.8);
+	position: fixed;
+	margin-top: 112px;
+	left: 0px;
+	z-index: 999;
+	border-radius: 6px;
+	box-shadow: 4px 1px 14px #A2A3A3;
+}
+table.meca th
+{
+	border-radius: 6px;
+	height: 30px;
+	border-style: solid;
+	background: rgba(120,120,228,1);
+	font-size: 22px;
+	border-top-width: 1px;
+	border-bottom-width: 3px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+}
+table.meca td
+{
+	border-radius: 6px;
+	border-style: solid;
+	border-width: 1px;
+	background: rgba(183,221,240,1);
+	text-align: center;
+	height: 125px;
+}
+
+table.cont 
+{
+	height: 300px;
+	background: rgba(205,205,244,0.65);
+	overflow: scroll;
+	position: absolute;
+	top: 120px;
+	left: 168px;
+}
+table.cont th
+{
+	border-radius: 6px;
+	height: 30px;
+	width: 125px;
+	border-style: solid;
+	background: rgba(120,120,228,1);
+	font-size: 22px;
+	border-top-width: 1px;
+	border-bottom-width: 3px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+}
+table.cont td
+{
+	border-radius: 6px;
+	border-style: solid;
+	border-width: 1px;
+	background: rgba(174,240,100,0.2);
+	width: 125px;
+	height: 40px;
+	vertical-align: top;
+}
+
+.vacio
+{
+	width: 125px;
+	height: 125px;
+}
+
+table.ficha
+{
+	border-radius: 6px;
+	background: rgba(205,205,244,0);
+	width: 98%;
+}
+table.ficha th
+{
+	font-size: 18px;
+	border-radius: 0px;
+	height: 20px;
+	background: transparent;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 6px;
+}
+table.ficha th.morado
+{
+	background: rgba(170,111,254,0.9);
+	border-color: white;
+	border-width: 2px;
+}
+table.ficha th.azul
+{
+	background: rgba(111,178,254,0.9);
+	border-color: white;
+	border-width: 2px;
+}
+table.ficha th.cafe
+{
+	background: rgba(104,96,73,0.9);
+	border-color: white;
+	border-width: 2px;
+}
+table.ficha th.verde
+{
+	background: rgba(67,242,111,0.9);
+	border-color: white;
+	border-width: 2px;
+}
+table.ficha th.verdeClaro
+{
+	background: rgba(188,255,219,0.9);
+	border-color: white;
+	border-width: 2px;
+}
+table.ficha th.verdemuyClaro
+{
+	background: rgba(192,255,62,0.9);
+	border-color: white;
+	border-width: 2px;
+}
+table.ficha td
+{
+	text-align: center;
+	border-style: solid;
+	border-width: 0px;
+	background: transparent;
+}
+
+table td.rojo
+{
+	background: rgba(250,100,100,0.9);
+}
+table td.naranja
+{
+	background: rgba(255,160,20,0.9);
+}
+table td.amarillo
+{
+	background: rgba(255,241,38,0.9);
+}
+table td.verde
+{
+	background: rgba(174,240,100,0.9);
+}
+
+.eRojo
+{
+	background: rgba(250,100,100,0.9);
+	display: inline-block;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 6px;
+	padding: 0.5px;
+}
+.eNaranja
+{
+	background: rgba(255,160,20,0.9);
+	display: inline-block;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 6px;
+	padding: 0.5px;
+}
+.eAmarillo
+{
+	background: rgba(255,241,38,0.9);
+	display: inline-block;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 6px;
+	padding: 0.5px;
+}
+.eVerde
+{
+	background: rgba(174,240,100,0.9);
+	display: inline-block;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 6px;
+	padding: 0.5px;
+}
+.estmorado
+{
+	background: rgba(170,111,254,0.7);
+	display: inline-block;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 6px;
+	padding: 0.5px;
+}
+.estazul
+{
+	background: rgba(111,178,254,0.7);
+	display: inline-block;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 6px;
+	padding: 0.5px;
+}
+.estcafe
+{
+	background: rgba(104,96,73,0.7);
+	display: inline-block;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 6px;
+	padding: 0.5px;
+}
+.estverde
+{
+	background: rgba(67,242,111,0.7);
+	display: inline-block;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 6px;
+	padding: 0.5px;
+}
+.estverdeClaro
+{
+	background: rgba(188,255,219,0.7);
+	display: inline-block;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 6px;
+	padding: 0.5px;
+}
+.estverdemuyClaro
+{
+	background: rgba(192,255,62,0.7);
+	display: inline-block;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 6px;
+	padding: 0.5px;
+}
+
+.paginador
+{
+	top: 690px; 
+	position: absolute;
+	background: green; 
+	padding: 1px; 
+	border-radius: 6px;
+	display: inline-block; 
+	width: 15px; 
+	text-align: center;
+	cursor:pointer;
+	box-shadow: 2px 2px 8px #727373;
+}

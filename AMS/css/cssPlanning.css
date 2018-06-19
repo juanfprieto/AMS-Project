@@ -1,0 +1,74 @@
+﻿
+#divTablero
+{
+    position: absolute;
+    background-color: white;
+    top: 10px;
+    width: 99%;
+    height: 98%;
+    left: 10px;
+    overflow-x: scroll;
+}
+
+#divEncabezado
+{
+    position: absolute;
+    width: 95%;
+    top: 0px;
+    left: 66px;
+}
+
+#divDescriptor
+{
+    position: absolute;
+    width: 135px;
+    left: 0px;
+    top: 100px;
+    z-index: 9999;
+}
+
+#divContenido
+{
+    position: absolute;
+    left: 135px;
+    top: 100px;
+}
+
+.ficha
+{
+    border: 2px solid black;
+    border-radius: 4px;
+    height: 110px;
+    width: 120px;
+    text-align: center;
+}
+
+.fichaHeader
+{
+    width: 116px;
+    border: 2px solid black;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fichaBody
+{
+    width: 100%;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.fichaEstado
+{
+    border: 2px solid black;
+    border-radius: 4px;
+    text-align: center;
+    width: 120px;
+    display: inline-block;
+}
+
+.fichaDescriptor
+{
+    background-color: lightyellow;
+}

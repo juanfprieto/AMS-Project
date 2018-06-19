@@ -1,0 +1,21 @@
+﻿/* The styles for the vertical scrollbar */
+.ob_gVSHelper  {
+    overflow:auto;
+    position:absolute;
+    right:0px;
+    top:0;
+    width:40px;
+    overflow-x: hidden;
+}
+
+.ob_gVSHelper div
+{
+    width:1px;
+}
+
+/* The styles for a fixed row */   
+.ob_gRFixed
+{
+    background-image:url("fixed-rows.png") !important;
+    color:#353B4D !important;
+}

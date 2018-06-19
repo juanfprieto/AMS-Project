@@ -1,0 +1,24 @@
+30
+<RED>------------------------------
+      COOTRANSBOL LTDA.       
+      NIT. 800.174.156-9      
+<RED>------------------------------
+ 
+Numero:    <NUMERO>
+Fecha:     <FECHA>
+Bus:       <BUS_NUMERO> (<BUS_PLACA>)
+Origen :   <ORIGEN>
+Destino:   <DESTINO>
+Origen :   <ORIGEN_GEMELA>
+Destino:   <DESTINO_GEMELA>
+Cod Int.:  <RUTA_INTERNA>
+Agencia:   <AGENCIA>
+Salida:    <FECHA_SALIDA>
+Conductor: <CONDUCTOR_NOMBRE>
+Relevador: <RELEVADOR_NOMBRE>
+ 
+<CONTENIDO>
+ 
+<RED>INGRESOS:        <INGRESOS>
+<RED>EGRESOS:         <EGRESOS>
+<RED>TOTAL PASAJEROS: <PASAJEROS>

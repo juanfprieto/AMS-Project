@@ -1,0 +1,977 @@
+<?xml version="1.0"?>
+<ArchivoRegistro xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ListaRegistroActividad />
+  <ListaRegistroError>
+    <Registro>
+      <Fecha>2018-05-21T11:32:41.1630034-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:32 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Web.JMenu.Proceso_Logueo()
+   at AMS.Web.JMenu.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.aspx_ams_web_jmenu_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T11:32:42.0570545-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:32 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Web.JMenu.Proceso_Logueo()
+   at AMS.Web.JMenu.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.aspx_ams_web_jmenu_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T11:32:42.817098-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:32 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.Request(DataSet ds, IncludeSchema isEnum, String sql)
+   at AMS.DB.DBFunctions.Request(DataSet ds, IncludeSchema isEnum, String sql)
+   at AMS.Web.JMenu.Cargar_OpcionesMenu(String Cedula)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Ajax.AjaxRequestProcessor.Run()
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T11:32:42.9351047-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:32 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Web.Bienvenida.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.aspx_ams_web_bienvenida_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T11:32:43.5531401-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:32 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Web.Bienvenida.mostrarMensaje()
+   at AMS.Web.Bienvenida.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.aspx_ams_web_bienvenida_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=ECASSAS;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T11:32:51.4945943-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:32 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Web.Bienvenida.mostrarMensaje()
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Ajax.AjaxRequestProcessor.Run()
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T11:32:58.7320083-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:32 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Web.Bienvenida.mostrarMensaje()
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Ajax.AjaxRequestProcessor.Run()
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T11:33:05.9334202-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:33 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Web.Bienvenida.mostrarMensaje()
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Ajax.AjaxRequestProcessor.Run()
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T11:33:13.1448326-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:33 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Web.Bienvenida.mostrarMensaje()
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Ajax.AjaxRequestProcessor.Run()
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T11:33:20.3342438-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:33 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Web.Bienvenida.mostrarMensaje()
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Ajax.AjaxRequestProcessor.Run()
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T11:34:13.3602767-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:34 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Web.JMenu.Proceso_Logueo()
+   at AMS.Web.JMenu.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.aspx_ams_web_jmenu_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T11:34:14.0153142-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:34 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Web.JMenu.Proceso_Logueo()
+   at AMS.Web.JMenu.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.aspx_ams_web_jmenu_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T11:34:14.7783579-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:34 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.Request(DataSet ds, IncludeSchema isEnum, String sql)
+   at AMS.DB.DBFunctions.Request(DataSet ds, IncludeSchema isEnum, String sql)
+   at AMS.Web.JMenu.Cargar_OpcionesMenu(String Cedula)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Ajax.AjaxRequestProcessor.Run()
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T11:34:15.0493734-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:34 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Web.Bienvenida.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.aspx_ams_web_bienvenida_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T11:34:15.6284065-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:34 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Web.Bienvenida.mostrarMensaje()
+   at AMS.Web.Bienvenida.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.aspx_ams_web_bienvenida_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=ECASSAS;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T11:34:23.5978623-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:34 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Web.Bienvenida.mostrarMensaje()
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Ajax.AjaxRequestProcessor.Run()
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T11:34:30.796274-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:34 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Web.Bienvenida.mostrarMensaje()
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Ajax.AjaxRequestProcessor.Run()
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T11:34:38.0446886-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:34 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Web.Bienvenida.mostrarMensaje()
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Ajax.AjaxRequestProcessor.Run()
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T11:34:45.1960977-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:34 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Web.Bienvenida.mostrarMensaje()
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Ajax.AjaxRequestProcessor.Run()
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T11:34:52.475514-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:34 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Web.Bienvenida.mostrarMensaje()
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Ajax.AjaxRequestProcessor.Run()
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T11:34:59.6019216-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>11:34 AM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [] [IBM] SQL1643C  El gestor de bases de datos no ha podido asignar memoria compartida porque se ha alcanzado el límite de memoria de instancia del gestor de bases de datos.
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Web.Bienvenida.mostrarMensaje()
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Ajax.AjaxRequestProcessor.Run()
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T12:04:46.617133-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>12:04 PM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql>SET SCHEMA DBXSCHEMA</Sql>
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [08001] [IBM] SQL30081N  Se ha detectado un error en las comunicaciones. Protocolo de comunicaciones que se está utilizando: "TCP/IP".  API de comunicaciones que se está utilizando: "SOCKETS".  Ubicación donde se ha encontrado el error: "50.23.209.234".  Función de comunicación que ha detectado el error: "recv".  Código(s) de error específico(s) del protocolo: "*", "*", "0".  SQLSTATE=08001
+
+ERROR [08001] [IBM] SQL30081N  Se ha detectado un error en las comunicaciones. Protocolo de comunicaciones que se está utilizando: "TCP/IP".  API de comunicaciones que se está utilizando: "SOCKETS".  Ubicación donde se ha encontrado el error: "50.23.209.234".  Función de comunicación que ha detectado el error: "recv".  Código(s) de error específico(s) del protocolo: "*", "*", "0".  SQLSTATE=08001
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.SetSchema(DB2Connection con)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Inventarios.Facturacion.NewAjust(Object Sender, EventArgs E)
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.aspx_ams_web_index_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Error al ejecutar: 
+
+IBM.Data.DB2.DB2Exception (0x80004005): ERROR [08001] [IBM] SQL30081N  Se ha detectado un error en las comunicaciones. Protocolo de comunicaciones que se está utilizando: "TCP/IP".  API de comunicaciones que se está utilizando: "SOCKETS".  Ubicación donde se ha encontrado el error: "50.23.209.234".  Función de comunicación que ha detectado el error: "recv".  Código(s) de error específico(s) del protocolo: "*", "*", "0".  SQLSTATE=08001
+
+ERROR [08001] [IBM] SQL30081N  Se ha detectado un error en las comunicaciones. Protocolo de comunicaciones que se está utilizando: "TCP/IP".  API de comunicaciones que se está utilizando: "SOCKETS".  Ubicación donde se ha encontrado el error: "50.23.209.234".  Función de comunicación que ha detectado el error: "recv".  Código(s) de error específico(s) del protocolo: "*", "*", "0".  SQLSTATE=08001
+
+   at IBM.Data.DB2.DB2Connection.HandleError(IntPtr hHandle, SQL_HANDLE hType, RETCODE retcode)
+   at IBM.Data.DB2.DB2Command.ExecuteNonQueryObject(Boolean skipInitialValidation)
+   at IBM.Data.DB2.DB2Command.ExecuteNonQueryObject()
+   at IBM.Data.DB2.DB2Command.ExecuteNonQuery()
+   at AMS.DB.DB2Functions.SetSchema(DB2Connection con) in C:\inetpub\wwwroot\AMS\AMS.DB\AMS.DB.DB2Functions.cs:line 219</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T12:04:46.7091383-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>12:04 PM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>System.InvalidOperationException</NombreExcepcion>
+      <MensajeExcepcion>Invalid operation. The connection is closed.</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Inventarios.Facturacion.NewAjust(Object Sender, EventArgs E)
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.aspx_ams_web_index_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T15:05:56.2728418-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>3:05 PM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql>SET SCHEMA DBXSCHEMA</Sql>
+      <NombreExcepcion>IBM.Data.DB2.DB2Exception</NombreExcepcion>
+      <MensajeExcepcion>ERROR [08001] [IBM] SQL30081N  Se ha detectado un error en las comunicaciones. Protocolo de comunicaciones que se está utilizando: "TCP/IP".  API de comunicaciones que se está utilizando: "SOCKETS".  Ubicación donde se ha encontrado el error: "50.23.209.234".  Función de comunicación que ha detectado el error: "recv".  Código(s) de error específico(s) del protocolo: "*", "*", "0".  SQLSTATE=08001
+
+ERROR [08001] [IBM] SQL30081N  Se ha detectado un error en las comunicaciones. Protocolo de comunicaciones que se está utilizando: "TCP/IP".  API de comunicaciones que se está utilizando: "SOCKETS".  Ubicación donde se ha encontrado el error: "50.23.209.234".  Función de comunicación que ha detectado el error: "recv".  Código(s) de error específico(s) del protocolo: "*", "*", "0".  SQLSTATE=08001
+</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.SetSchema(DB2Connection con)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Inventarios.PedidoFactura.RealizarFac(Boolean guardar)
+   at AMS.Inventarios.Facturacion.NewAjust(Object Sender, EventArgs E)
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.aspx_ams_web_index_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Error al ejecutar: 
+
+IBM.Data.DB2.DB2Exception (0x80004005): ERROR [08001] [IBM] SQL30081N  Se ha detectado un error en las comunicaciones. Protocolo de comunicaciones que se está utilizando: "TCP/IP".  API de comunicaciones que se está utilizando: "SOCKETS".  Ubicación donde se ha encontrado el error: "50.23.209.234".  Función de comunicación que ha detectado el error: "recv".  Código(s) de error específico(s) del protocolo: "*", "*", "0".  SQLSTATE=08001
+
+ERROR [08001] [IBM] SQL30081N  Se ha detectado un error en las comunicaciones. Protocolo de comunicaciones que se está utilizando: "TCP/IP".  API de comunicaciones que se está utilizando: "SOCKETS".  Ubicación donde se ha encontrado el error: "50.23.209.234".  Función de comunicación que ha detectado el error: "recv".  Código(s) de error específico(s) del protocolo: "*", "*", "0".  SQLSTATE=08001
+
+   at IBM.Data.DB2.DB2Connection.HandleError(IntPtr hHandle, SQL_HANDLE hType, RETCODE retcode)
+   at IBM.Data.DB2.DB2Command.ExecuteNonQueryObject(Boolean skipInitialValidation)
+   at IBM.Data.DB2.DB2Command.ExecuteNonQueryObject()
+   at IBM.Data.DB2.DB2Command.ExecuteNonQuery()
+   at AMS.DB.DB2Functions.SetSchema(DB2Connection con) in C:\inetpub\wwwroot\AMS\AMS.DB\AMS.DB.DB2Functions.cs:line 219</Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-05-21T15:05:56.5828595-05:00</Fecha>
+      <Dia>5/21/2018</Dia>
+      <Hora>3:05 PM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>Error</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>System.InvalidOperationException</NombreExcepcion>
+      <MensajeExcepcion>Invalid operation. The connection is closed.</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.DB2Functions.OpenConnection()
+   at AMS.DB.DB2Functions.SingleData(String sql)
+   at AMS.DB.DBFunctions.SingleData(String sql)
+   at AMS.Inventarios.PedidoFactura.RealizarFac(Boolean guardar)
+   at AMS.Inventarios.Facturacion.NewAjust(Object Sender, EventArgs E)
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.aspx_ams_web_index_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Server=ams.ecas.co:50000;DataBase=CAPATECK;UID=db2admin;PWD=.ecas2010.;QueryTimeout=3600</Observaciones>
+    </Registro>
+  </ListaRegistroError>
+  <ListaRegistroInformacion />
+  <ListaRegistroErrorCrystalReports />
+  <ListaRegistroInformacionCrystalRepots />
+</ArchivoRegistro>

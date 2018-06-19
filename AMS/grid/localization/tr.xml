@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization xmlns="obout:grid:localization-schema">
+  <grid
+     page_size_text  = "Gösterilecek Kayıt Sayısı:"
+     records_text    = "Kayıtlar:"
+     to_text         = "-"
+     of_text         = "/"
+     pages_text      = "Sayfa:"          
+     loading_text    = "Yükleniyor..."
+     no_records_text = "Kayıt yok."
+     resizing_tooltip_width = "Genişlik:"
+     resizing_tooltip_pixels = "piksel"
+     type_validation_error = "XXXXX sütununa girdiğiniz değer geçerli değil."
+     maxlength_validation_error = "XXXXX sütununa girdiğiniz değer, bu sütun için izin verilen maksimum YYYYY değer sınırını aşmaktadır."
+     js_warning = "'[GRID_ID]' id nolu Grid çalıştırılırken hata oluştu.\n\n[UYARI]\n\nLütfen, http://www.obout.com/inc/support.aspx adresini kullanarak yardım için bize ulaşın."
+     >
+
+    <commands
+      add_link	      = "Yeni Kayıt"
+      edit_link       = "Düzenle"
+      delete_link     = "Sil"      
+      update_link     = "Güncelle"      
+      cancel_link     = "İptal"
+      save_link       = "Kaydet"
+      save_all_link   = "Hepsini Kaydet"
+      cancel_all_link = "Hepsini İptal Et"
+      remove_link     = "Kaldır"
+      modify_link     = "Yapılandır"
+      undelete_link   = "Silmeyi Geri Al"
+    />
+    
+    <filter
+      button_show_filter   = "Filtrelemeyi Göster"
+      button_hide_filter   = "Filtrelemeyi Gizle"
+      button_filter        = "Filtrelemeyi Uygula"
+      button_remove_filter = "Filtrelemeyi Kaldır"
+      
+      filter_criteria_nofilter                 = "Filtre Yok"
+      filter_criteria_contains                 = "İçeren"
+      filter_criteria_does_not_contain         = "İçermeyen"
+      filter_criteria_starts_with              = ".. İle Başlayan"
+      filter_criteria_ends_with                = ".. İle Biten"
+      filter_criteria_equal_to                 = "Eşit"
+      filter_criteria_not_equal_to             = "Eşit Değil"
+      filter_criteria_smaller_than             = "'Den Küçük"
+      filter_criteria_greater_than             = "'Den Büyük"
+      filter_criteria_smaller_than_or_equal_to = "'Den Küçük veya Eşit"
+      filter_criteria_greater_than_or_equal_to = "'Den Büyük veya Eşit"
+      filter_criteria_is_null                  = "Null"
+      filter_criteria_is_not_null              = "Null Değil"
+      filter_criteria_is_empty                 = "Boş"
+      filter_criteria_is_not_empty             = "Boş Değil"
+    />        
+
+    <grouping
+      grouping_area_text = "Gruplandırmak istediğiniz sütun başlığını buraya sürükleyiniz."
+      group_information_count = " (XXXXX kayıt)"
+      group_information_count_single = " (XXXXX kayıt)"
+      group_information_next_page = " (YYYYY kayıttan XXXXX tanesi gösteriliyor - Bu grup diğer sayfada devam etmektedir)"
+      group_information_previous_page = " (YYYYY kayıttan XXXXX tanesi gösteriliyor - Bu grup önceki sayfadan başlamaktadır)"
+      group_information_previous_next_page = " (YYYYY kayıttan XXXXX tanesi gösteriliyor - Bu grup önceki sayfadan başladı ve diğer sayfada devam etmektedir)"
+    />
+
+    <paging
+      total_number_of_pages  = " (/ XXXXX)"
+      manual_paging_link  = "Sayfaya Git »"
+      page_size_options_all = "Hepsi"
+    />
+    
+  </grid>
+</localization>

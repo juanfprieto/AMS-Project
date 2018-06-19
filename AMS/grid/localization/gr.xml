@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization xmlns="obout:grid:localization-schema">
+  <grid
+     page_size_text  = "Εγγραφές ανα σελίδα:"
+     records_text    = "Εγγραφές"
+     to_text         = "έως"
+     of_text         = "από"
+     pages_text      = "Σελίδες:"
+     loading_text    = "Loading..."
+     no_records_text = "Δεν υπάρχουν εγγραφές."
+     resizing_tooltip_width = "Μέγεθος:"
+     resizing_tooltip_pixels = "pixels"
+     type_validation_error = "Η τιμή που εισαγάγατε στο πεδίο 'XXXXX' δεν είναι έγκυρη."
+     maxlength_validation_error = "The value you have entered in the XXXXX column exceeded the maximum number of YYYYY characters allowed for this column."
+     js_warning = "There was an error initializing the Grid with the ID '[GRID_ID]'.\n\n[WARNING]\n\nPlease contact support@obout.com for help."
+     >
+
+    <commands
+      add_link	      = "Προσθήκη νέου"
+      edit_link       = "Επεξεργασία"
+      delete_link     = "Διαγραφή"     
+      update_link     = "Αποθήκευση"     
+      cancel_link     = "Άκυρο"
+      save_link       = "Αποθήκευση" 
+      save_all_link   = "Save All"
+      cancel_all_link = "Cancel All"
+      remove_link     = "Remove"
+      modify_link     = "Modify"
+      undelete_link   = "Undelete"
+    />
+    
+    <filter
+        button_show_filter   = "Προβολή φίλτρου"
+        button_hide_filter   = "Απόκρυψη φίλτρου"
+        button_filter        = "Εφαρμογή φίλτρου"
+        button_remove_filter = "Αφαίρεση φίλτρου"
+        
+        filter_criteria_nofilter                 = "Χωρίς φίλτρο"
+        filter_criteria_contains                 = "Περιέχει"
+        filter_criteria_does_not_contain         = "Δεν περιέχει"
+        filter_criteria_starts_with              = "Αρχίζει με"
+        filter_criteria_ends_with                = "Τελειώνει με"
+        filter_criteria_equal_to                 = "Ισούται με"
+        filter_criteria_not_equal_to             = "Δεν ισούται με"
+        filter_criteria_smaller_than             = "Μικρότερο από"
+        filter_criteria_greater_than             = "Μεγαλύτερο από"
+        filter_criteria_smaller_than_or_equal_to = "Μικρότερο από ή ίσο με"
+        filter_criteria_greater_than_or_equal_to = "Μεγαλύτερο από ή ίσο με"
+        filter_criteria_is_null                  = "Να είναι Null"
+        filter_criteria_is_not_null              = "Να μην είναι Null"
+        filter_criteria_is_empty                 = "Να είναι Empty"
+        filter_criteria_is_not_empty             = "Να μην είναι Empty"
+    />
+    
+    <grouping
+        grouping_area_text = "Σύρατε μία στήλη εδώ για να κάνετε ένα group με αυτή τη στήλη."
+        group_information_count = " (XXXXX records)"
+        group_information_count_single = " (XXXXX record)"
+        group_information_next_page = " (Προβολή XXXXX από YYYYY εγγραφών - Αυτό το group συνεχίζετε και στην επόμενη σελίδα)"
+        group_information_previous_page = " (Προβολή XXXXX από YYYYY εγγραφών - Αυτό το group ξεκίνησε και στην επόμενη σελίδα)"
+        group_information_previous_next_page = " (Προβολή XXXXX από YYYYY εγγραφών - Αυτό το group ξεκίνησε από προηγούμενη σελίδα και συνεχίζετε στην επόμενη)"
+    />
+    
+    <paging
+      total_number_of_pages  = " (out of XXXXX)"
+      manual_paging_link  = "Go to page »"
+      page_size_options_all = "All"
+    />
+    
+  </grid>
+</localization>

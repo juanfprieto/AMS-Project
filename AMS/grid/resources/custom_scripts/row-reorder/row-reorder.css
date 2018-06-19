@@ -1,0 +1,14 @@
+﻿.grid-rows-dragging-container
+{            
+    position: absolute;
+    z-index: 999;
+}
+        
+.grid-rows-dragging-indicator
+{
+    position: absolute;
+    z-index: 100;
+    height: 1px;
+    width: 100%;
+    border-bottom: 2px dashed #000;
+}

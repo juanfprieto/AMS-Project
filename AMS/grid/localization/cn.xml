@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<localization xmlns="obout:grid:localization-schema">
+  <grid
+     page_size_text  = "每页记录数:"
+     records_text    = "记录数:"
+     to_text         = "-"
+     of_text         = "的"
+     pages_text      = "页数:"          
+     loading_text    = "载入中..."
+     no_records_text = "没有纪录."
+     resizing_tooltip_width = "宽:"
+     resizing_tooltip_pixels = "像素"
+     type_validation_error = "XXXXX列输入值无效."
+     maxlength_validation_error = "输入XXXX列的值超过此列允许的最大字符数YYYY."
+     js_warning = "格框ID '[GRID_ID]'初始化错误.\n\n[警告]\n\n请联系我们有关如何使用该页面 http://www.obout.com/inc/support.aspx."
+     >
+
+    <commands
+      add_link	      = "添加"
+      edit_link       = "编辑"
+      delete_link     = "删除"      
+      update_link     = "更新"      
+      cancel_link     = "取消"
+      save_link       = "保存"
+      save_all_link   = "保存全部"
+      cancel_all_link = "取消全部"
+      remove_link     = "清除"
+      modify_link     = "修改"
+      undelete_link   = "取消删除"
+    />
+    
+    <filter
+      button_show_filter   = "显示筛选"
+      button_hide_filter   = "隐藏筛选"
+      button_filter        = "筛选"
+      button_remove_filter = "清除筛选"
+      
+      filter_criteria_nofilter                 = "不筛选"
+      filter_criteria_contains                 = "字符串包含"
+      filter_criteria_does_not_contain         = "字符串不包含"
+      filter_criteria_starts_with              = "字符串开头"
+      filter_criteria_ends_with                = "字符串结尾"
+      filter_criteria_equal_to                 = "等于"
+      filter_criteria_not_equal_to             = "不等于"
+      filter_criteria_smaller_than             = "小于"
+      filter_criteria_greater_than             = "大于"
+      filter_criteria_smaller_than_or_equal_to = "小于或等于"
+      filter_criteria_greater_than_or_equal_to = "大于或等于"
+      filter_criteria_is_null                  = "是无效值"
+      filter_criteria_is_not_null              = "不是无效值"
+      filter_criteria_is_empty                 = "是空值"
+      filter_criteria_is_not_empty             = "不是空值"
+    />        
+
+    <grouping
+      grouping_area_text = "拖动列标题到这里,按该列进行分组."
+      group_information_count = " (XXXXX记录数)"
+      group_information_count_single = " (XXXXX记录)"
+      group_information_next_page = " (显示XXXXX的YYYYY记录数 - 这组在下一页继续)"
+      group_information_previous_page = " (显示XXXXX的YYYYY记录数 - 这组从前一页开始)"
+      group_information_previous_next_page = " (显示XXXXX的YYYYY记录数 - 这组从前一页开始并在下一页继续)"
+    />
+
+    <paging
+      total_number_of_pages  = " (出于XXXXX)"
+      manual_paging_link  = "转到页 »"
+      page_size_options_all = "全部"
+    />
+    
+  </grid>
+</localization>

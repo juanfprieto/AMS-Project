@@ -1,0 +1,1721 @@
+/* Main Container */
+/* ----- */
+.master .ob_gMCont
+{
+    position: relative;
+}
+
+* html .master .ob_gMCont
+{
+    #overflow: hidden;
+}
+
+.master .ob_gMCont_DT
+{
+    overflow: hidden;
+}
+
+/* Left Side (Border) - used when grouping is enabled */
+.master .ob_gBLSWG
+{
+    position: absolute;
+    top: 46px;
+    bottom: 16px;
+    left: -5px;
+    margin-top: 0px;
+    margin-bottom: 0px;    
+    width: 10px;
+    font-size: 1px;
+    background-image: url(left_side.png);
+    background-repeat: repeat-y;
+    z-index: 31;
+}
+
+/* Left Side (Border) - used when grouping is disabled */
+.master .ob_gBLS
+{
+    position: absolute;
+    top: 17px;
+    bottom: 16px;
+    left: -5px;
+    margin-top: 0px;
+    margin-bottom: 0px;    
+    width: 10px;
+    font-size: 1px;
+    background-image: url(left_side.png);
+    background-repeat: repeat-y;
+    z-index: 31;
+}
+
+* html .master .ob_gBLSWG, * html .master .ob_gBLS
+{
+    -background-image: url(left_side.gif);
+}
+
+/* Right Side (Border) - used when grouping is enabled */
+.master .ob_gBRSWG
+{
+    position: absolute;
+    top: 46px;
+    bottom: 16px;
+    right: -5px;
+    margin-top: 0px;
+    margin-bottom: 0px;    
+    width: 10px;
+    font-size: 1px;
+    background-image: url(right_side.png);
+    background-repeat: repeat-y;    
+    z-index: 31;
+}
+
+/* Right Side (Border) - used when grouping is disabled */
+.master .ob_gBRS
+{
+    position: absolute;
+    top: 17px;
+    bottom: 16px;
+    right: -5px;
+    margin-top: 0px;
+    margin-bottom: 0px;    
+    width: 10px;
+    font-size: 1px;
+    background-image: url(right_side.png);
+    background-repeat: repeat-y;
+    z-index: 31;
+}
+
+* html .master .ob_gBRSWG, * html .master .ob_gBRS
+{
+    -background-image: url(right_side.gif);
+}
+
+
+
+
+
+/* Common */
+/* ------ */
+
+.master .ob_gC
+{
+    white-space: nowrap;
+    cursor: default;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+.master .ob_gC_I
+{
+    display: none;
+    white-space: nowrap;
+    cursor: default;
+    padding: 0px;
+    margin: 0px;
+}
+
+.master .ob_gCW
+{
+    white-space: normal;
+    cursor: default;
+    vertical-align: middle;
+}
+
+.master .ob_gCW_I
+{
+    display: none;
+    white-space: normal;
+    cursor: default;
+}
+
+.master .ob_gC div.ob_gCc2
+{
+    white-space: nowrap;
+}
+
+.master .ob_gCW div.ob_gCc2
+{
+    white-space: normal;
+}
+
+.master .ob_gC div.ob_gCc2, .master .ob_gCW div.ob_gCc2, .master .ob_gC div.ob_gCc2C, .master .ob_gCW div.ob_gCc2C, .master .ob_gC div.ob_gCc2R, .master .ob_gCW div.ob_gCc2R
+{
+    padding: 0px;
+    /*padding-top: 2px;*/
+    padding-left: 20px;
+    margin-right: 3px;
+    position: static;
+    width: auto;
+    overflow: hidden;
+}
+
+.master .ob_gC div.ob_gCc2C, .master .ob_gCW div.ob_gCc2C
+{
+    text-align: center;
+}
+
+.master .ob_gC div.ob_gCc2R, .master .ob_gCW div.ob_gCc2R
+{
+    text-align: right;
+}
+
+.master .ob_gH div.ob_gCc2, .master .ob_gH div.ob_gCc2C, .master .ob_gH div.ob_gCc2R
+{
+    margin-right: 16px;
+}
+
+.master .ob_gC_Fc div.ob_gCc2, .master .ob_gC_Fc div.ob_gCc2C, .master .ob_gC_Fc div.ob_gCc2R
+{
+    /*padding-left: 25px;*/
+    padding-left: 20px;
+}
+
+.master .ob_gC_Lc div.ob_gCc2, .master .ob_gC_Lc div.ob_gCc2C, .master .ob_gC_Lc div.ob_gCc2R
+{
+    margin-right: 12px;
+}
+
+.master .ob_gH .ob_gC_Lc div.ob_gCc2, .master .ob_gH .ob_gC_Lc div.ob_gCc2C, .master .ob_gH .ob_gC_Lc div.ob_gCc2R
+{
+    margin-right: 26px;
+}
+
+
+.master .ob_gCd
+{
+    display: none;
+}
+
+.master .ob_gD
+{
+    display: none;
+}
+
+/* Resize lines */
+.master .ob_gRL
+{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 1px;
+    background-color: #B9C9D7;
+    font-size: 1px;
+    z-index: 999;
+}
+
+/* Resize tooltip */
+.master .ob_gRT
+{
+	cursor: default;		
+	margin: 0px;
+	padding: 1px;
+	border: 1px solid #000000;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #000000;	
+	height: 12px;
+	margin-top: -10px;		
+	top: 0px;
+	vertical-align: middle;
+	background-color: #F5F5DC;
+	position: absolute;
+	z-index: 999;
+}
+.master .ob_gRT span
+{
+	padding-left: 3px;
+}
+
+
+
+
+
+/* Header */
+/* ------ */
+
+/* Container for the header - used when grouping is disabled */
+.master .ob_gHContWG
+{
+    position: relative;
+    overflow: hidden;    
+    margin-left: 5px;
+    margin-right:5px;
+}
+
+* html .master .ob_gHContWG
+{
+    width: 100%;
+    #margin-left: 0px;
+    #margin-right:0px;
+}
+
+/* Container for the header - used when grouping is enabled */
+.master .ob_gHCont
+{
+    position: relative;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+* html .master .ob_gHCont
+{
+    width: 100%;
+    #margin-left: 0px;
+    #margin-right:0px;
+}
+
+.master .ob_gHICont
+{
+    position: relative;
+    overflow: hidden;
+}
+
+* html .master .ob_gHICont, .master .ob_gMCont_DT .ob_gHICont
+{
+    width: 100%;
+}
+
+.master .ob_gMCont_DT .ob_gHICont
+{
+    height: 25px;
+}
+
+.master .ob_gH
+{
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.master .ob_gHR
+{
+}
+
+.master .ob_gHContWG .ob_gH .ob_gC, .master .ob_gHContWG .ob_gH .ob_gCW
+{
+    background-image: url(header_without_grouping.png);
+    background-repeat: repeat-x;
+    background-color: #A8AEBD;
+    height: 25px;
+    font-family: Verdana;
+	font-size: 11px;
+	font-weight: normal;
+	color: #01354d;
+	text-align: left;
+	cursor: pointer;
+}
+
+
+.master .ob_gHCont .ob_gH .ob_gC, .master .ob_gHCont .ob_gH .ob_gCW
+{
+    background-image: url(header.png);
+    background-repeat: repeat-x;
+    background-color: #A8AEBD;
+    height: 25px;
+    font-family: Verdana;
+	font-size: 11px;
+	font-weight: normal;
+	color: #01354d;
+	text-align: left;
+	cursor: pointer;
+}
+
+.master .ob_gHContWG .ob_gH .ob_gC div.ob_gCc1, .master .ob_gHContWG .ob_gH .ob_gCW div.ob_gCc1
+{
+    padding-bottom: 6px;
+}
+
+.master .ob_gHContWG .ob_gH .ob_gC div.ob_gCc1_F, .master .ob_gHContWG .ob_gH .ob_gCW div.ob_gCc1_F
+{
+    _margin-top: 3px;
+}
+
+.master .ob_gHCont .ob_gH .ob_gC div.ob_gCc1, .master .ob_gHCont .ob_gH .ob_gCW div.ob_gCc1
+{
+    padding-bottom: 6px;
+}
+
+.master .ob_gH .ob_gC div.ob_gCc1, .master .ob_gH .ob_gCW div.ob_gCc1
+{
+    position: relative;
+}
+
+.master .ob_gH .ob_gC div.ob_gCc1_F, .master .ob_gH .ob_gCW div.ob_gCc1_F
+{
+    _margin-top: 3px;
+}
+
+.master .ob_gMCont_DT .ob_gH div.ob_gCc1
+{
+    margin-top: -6px;
+}
+
+.master .ob_gHContWG .ob_gH .ob_gC div.ob_gHSI, .master .ob_gHContWG .ob_gH .ob_gCW div.ob_gHSI
+{
+}
+
+.master .ob_gHCont .ob_gH .ob_gC div.ob_gHSI, .master .ob_gHCont .ob_gH .ob_gCW div.ob_gHSI
+{
+    
+}
+
+.master .ob_gH .ob_gC div.ob_gHSI, .master .ob_gH .ob_gCW div.ob_gHSI
+{
+    position: absolute;
+    height: 15px;
+    right: 2px;
+    top: 50%;    
+    margin: 0px;
+    margin-top: -11px;
+    margin-top /*\**/: -10px\9;
+    #margin-top: -11px;
+    -margin-top: -14px;    
+}
+
+.master .ob_gH .ob_gC div.ob_gHSI_F_D, .master .ob_gH .ob_gCW div.ob_gHSI_F_D
+{
+    margin-top: -10px;
+}
+
+.master .ob_gH .ob_gC_Lc div.ob_gHSI
+{
+    right: 12px;
+}
+
+.master .ob_gH .ob_gC div.ob_gHSI_F, .master .ob_gH .ob_gCW div.ob_gHSI_F
+{
+    position: absolute;
+    height: 15px;
+    right: 2px;
+    top: 50%;    
+    margin: 0px;
+    margin-bottom: auto;
+    #margin-top: -14px;
+    -margin-top: -13px;
+}
+
+/* Cells separator */
+.master .ob_gHCont .ob_gCS, .master .ob_gHContWG .ob_gCS, .master .ob_gHCont .ob_gCS_F, .master .ob_gHContWG .ob_gCS_F
+{
+    position: absolute;
+    top: 0px;    
+    font-size: 1px;
+    cursor: e-resize;
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-left: -1px;
+    background-color: Transparent !important;
+}
+
+.master .ob_gHCont .ob_gCS, .master .ob_gHContWG .ob_gCS
+{
+    bottom: 0px;
+}
+
+.master .ob_gHCont .ob_gCS div, .master .ob_gHCont .ob_gCS_F div
+{
+    background-color: #EEEEEE;
+}
+
+.master .ob_gHContWG .ob_gCS div, .master .ob_gHContWG .ob_gCS_F div
+{
+    background-color: #EEEEEE;
+}
+
+.master .ob_gHCont .ob_gCS div, .master .ob_gHContWG .ob_gCS div, .master .ob_gHCont .ob_gCS_F div, .master .ob_gHContWG .ob_gCS_F div
+{
+    width: 1px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+}
+
+
+
+
+
+/* Body */
+/* ------ */
+.master .ob_gBCont
+{
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+* html .master .ob_gBCont
+{
+    width: 100%;
+    #margin-left: 0px;
+    #margin-right:0px;
+}
+
+.master .ob_gBICont
+{
+    position: relative;
+    overflow: hidden;
+}
+
+* html .master .ob_gBICont, .master .ob_gMCont_DT .ob_gBICont
+{
+    width: 100%;
+}
+
+.master .ob_gBody
+{
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+/* Row - Normal state */
+.master .ob_gR
+{
+	background-image: url(row1.png);
+	background-position:bottom;
+	background-repeat:repeat-x;
+	background-color:#E5E5E5;	
+	color: #2b4c61;
+}
+
+/* Row - Alternate state */
+.master .ob_gRA
+{
+	background-image: url(row2.png);
+	background-position:bottom;
+	background-repeat:repeat-x;
+	background-color:#ffffff;
+	color: #2b4c61;
+}
+
+
+/* Row - Selected state */
+.master .ob_gRS
+{
+	background-image: url(row_selected.png);
+	background-position:bottom;
+	background-repeat:repeat-x;
+	background-color:#E7F9FE;
+	color: #063e61;
+}
+
+/* Row - Hover state */
+.master .ob_gRH
+{
+	background-image: url(row_hover.png);
+	background-position:bottom;
+	background-repeat:repeat-x;
+	background-color:#D8F5FE;
+	color: #063e61;
+}
+
+.master .ob_gBody .ob_gC, .master .ob_gBody .ob_gCW
+{
+    height: 25px;
+    font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.master .ob_gBody .ob_gC div.ob_gCc1, .master .ob_gBody .ob_gCW div.ob_gCc1
+{    
+    #overflow: visible;
+    #overflow-x: hidden;
+    /*position: relative;*/
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.master .ob_gRGF .ob_gC, .master .ob_gRGF .ob_gCW
+{
+    color: #704803;
+}
+
+.master .ob_gBCont .ob_gCS, .master .ob_gBCont .ob_gCS_F
+{
+    position: absolute;
+    top: 0px;
+    width: 1px;
+    background-color: #EEEEEE;
+    font-size: 1px;
+    z-index: 10;
+}
+
+.master .ob_gBCont .ob_gCS
+{
+    bottom: 0px;
+}
+
+/* Container for the loading message displayed during a callback */
+.master div.ob_gBLM, .master div.ob_gBLM_F
+{
+    position: absolute;
+	background-color: #F6F7F7;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	text-align: center;
+	z-index: 30;
+	width: 100%;
+
+}
+.master div.ob_gBLM
+{
+    bottom: 0px;
+}
+.master div.ob_gBLM div, .master div.ob_gBLM_F div
+{    
+    position: absolute;
+    font-family: Verdana;
+	font-size: 10px;
+	color:#0C416F;
+	height: 10px;
+	top: 50%;	
+	margin-top: -5px;	
+	left: 0px;
+	right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 100%;
+}
+
+/* Action links */
+.master a.ob_gAL
+{
+	font-family: Verdana;
+	font-size: 10px;
+	color: #065a8e;
+	font-weight: normal;
+	text-decoration:none;
+}
+
+/* Action links - hover state */
+.master a.ob_gAL:hover
+{
+	font-family: Verdana;
+	font-size: 10px;
+	color: #065a8e;
+	font-weight: normal;				
+	text-decoration:underline;		
+}
+
+/* Cell - temporary added (multi-record adding) */
+.master .ob_gCTA
+{
+    color: #2a8b03;
+}
+
+/* Cell - temporary edited (multi-record editing) */
+.master .ob_gCTE
+{
+    color: #b81336;
+}
+
+/* Cell - temporary deleted (multi-record deleting) */
+.master .ob_gCTD
+{
+    color: #777d81;			
+	text-decoration: line-through;
+}
+
+/* Group header - container */
+.master .ob_gRGH
+{
+	background-image: url(record_group_header.png);
+	height: 25px;
+}
+
+/* Group header - inner container */
+.master .ob_gRGHI
+{
+    position: relative;
+    height: 25px;
+    z-index: 15;
+    background-image: url(record_group_header.png);
+    /*padding-left: 5px;
+    padding-right: 5px;*/
+}
+
+/* Group header - content*/
+.master .ob_gRGHC
+{
+	cursor: default;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #FFFFFF;	
+	height: 25px;	
+	vertical-align: middle;
+	font-weight: normal;
+	cursor: pointer;
+	border: 0px;
+	float: left;
+	line-height: 25px;
+}
+
+/* Group header - Expand/Collapse button */
+.master .ob_gRGHB 
+{	
+	padding: 0px;
+	padding-left: 0px;
+	padding-right: 3px;	
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: top;
+	height: 25px;
+	font-size: 1px;
+	float: left;
+}	
+.master .ob_gRGHB img
+{
+	height: 25px;
+	cursor: pointer;
+	margin: 0px;
+	font-size: 1px;
+}
+
+/* Group header - Left side spacer */
+.master .ob_gRGBS
+{
+	width: 23px;
+	height: 25px;
+	font-size: 1px;
+	text-align: right;
+	background-image: url(record_group_header_padding.png);
+	float: left;
+}
+.master .ob_gRGBS div
+{
+	background-image: url(record_group_header_padding_right.png);
+	height: 25px;
+	width: 11px;
+	margin-left: 12px;
+}
+
+/* Group footer */
+.master .ob_gRGF
+{
+	background-image: url(group_summary.png);
+	color: #353b4d;
+	font-family: Verdana;
+	font-size: 10px;
+}
+
+/* Message displayed when grid has no records */
+.master .ob_gNRM
+{
+	font-family: Verdana;
+	font-size: 10px;
+	border: 0px;			
+	background-image: url(row1.png);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	background-color:#ececf0;
+	color: #5f627b;
+	height: 25px;
+	border-bottom: 1px solid #C3C9CE;
+}
+
+.master .ob_gNRM .ob_gCc1
+{
+    position: relative;
+    height: 25px;
+    z-index: 15;
+    background-image: url(row1.png);
+    line-height: 25px;
+}
+
+/* Selection area */
+.master .ob_gSA
+{
+    position: absolute;
+    z-index: 999;
+    background-color: #F6F7F7;
+	border: 1px solid #4B555E;
+	font-size: 1px;
+}
+
+/* Edit control - backward compatibility */
+.master .ob_gEC
+{
+	padding: 0px;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #202426;			
+	background-color: #FFFFFF;
+	width: 96%;
+	border: 1px solid #196585;
+}
+
+/* Row Edit Template container */
+.master .ob_gRETpl
+{
+	font-family: Verdana;
+	font-size: 10px;
+	color: #196585;
+	padding: 15px;
+	border-top: 1px solid #7BB8D9;
+	background-color:#e3e3e8;
+	background-image:url(form_bgr.png);
+	background-repeat:repeat-x;
+	background-position:top;
+	border-bottom:1px solid #dbdbe1;
+	border-top:1px solid #dbdbe1;
+	position: relative;
+	z-index: 11;
+}
+
+/* Row in THead section of the body table */
+.master .ob_gBTLRV
+{
+    visibility: hidden;
+    *display: none;
+}
+.master .ob_gBTLRV td
+{
+    height: 0px !important;
+    font-size: 0px !important;
+    padding: 0px;
+	margin: 0px;
+	border: 0px;
+	visibility: hidden;
+}
+
+
+
+
+
+/* Footer */
+/* ------ */
+.master .ob_gFCont /*.ob_gridFooterContainer*/
+{		
+	background-image: url(footer.png);
+	padding: 0px;
+	margin-top: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 0px;
+	height: 27px;
+	padding-left: 20px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	vertical-align: middle;
+	position: relative;
+	cursor: default;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #080808;
+	white-space: nowrap;
+	z-index: 0;
+	overflow: hidden;
+}
+
+* html .master .ob_gFCont
+{
+    #margin-left: 0px;
+    #margin-right:0px;
+}
+
+.master .ob_gFCont_F_D
+{		
+	background-image: url(footer.png);
+	padding: 0px;
+	margin-top: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 0px;
+	height: 27px;
+	padding-left: 20px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	vertical-align: middle;
+	position: relative;
+	cursor: default;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #080808;
+	white-space: nowrap;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.master .ob_gPSTT
+{
+	position: relative;
+	top:9px;
+	display:-moz-inline-stack;
+    display:inline-block;
+	height: 19px;
+	z-index: 2;
+	padding-top: 1px;
+}
+
+.master .ob_gFCont .ob_gPSTT
+{
+    zoom:1;
+    *display:inline;
+}
+
+.master .ob_gPSTD
+{
+	width: 60px;
+	position: absolute;
+	right: -65px;
+	top: -3px;
+}
+
+.master .ob_gPSTDIC
+{
+    width: 61px !important;
+}
+
+.master .ob_gFEC
+{
+    position: absolute;
+    top: 6px;
+    right: 0px;
+    height: 23px;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.master .ob_gFCont_F_D .ob_gFEC
+{
+    width: 100%;
+}
+
+/* Container for the action links */
+.master .ob_gFALC
+{
+    height: 19px;
+    line-height: 19px;
+    float: right;
+    #float: none;
+}
+
+.master .ob_gFCont_F_D .ob_gFALC
+{
+    float: none;
+}
+
+.master .ob_gFAL
+{
+    display:-moz-inline-stack;
+    display:inline-block;
+    zoom:1;
+    *display:inline;
+    float: right;
+}
+
+.master a.ob_gALF /*a.ob_gridActionLinkFooter*/
+{
+	font-family: Verdana;
+	font-size: 10px;
+	color: #065a8e;
+	font-weight: normal;
+	text-decoration:none;
+	padding-right: 1px;
+}
+
+.master a.ob_gALF:hover /*a.ob_gridActionLinkFooter:hover*/
+{
+	font-family: Verdana;
+	font-size: 10px;
+	color: #065a8e;
+	font-weight: normal;				
+	text-decoration: underline;
+	padding-right: 1px;
+}
+
+.master .ob_gALFS /*.ob_gridAdd_FilterSpacer*/
+{
+	width: 30px;
+	text-align: center;
+	display:-moz-inline-stack;
+    display:inline-block;
+    zoom:1;
+    *display:inline;
+    float: right;
+}
+
+/* Container for the paging section */
+.master .ob_gFP
+{
+    float: right;
+    #float: none;
+    margin-right: 6px;
+}
+
+.master .ob_gFCont_F_D .ob_gFP
+{
+    width: 305px;
+}
+
+/* Container for the text in the paging section */
+.master .ob_gFPT
+{
+    float: right;
+    padding-top: 4px;
+}
+
+/* Container for navigation/paging buttons */
+.master .ob_gPBC
+{
+    float: right;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+/* Container for the page links */
+.master .ob_gPLC
+{        
+    float: right;
+    padding-top: 2px;
+    height: 22px;
+}
+
+/* Page link */
+.master .ob_gPLCL
+{
+    font:normal 11px Verdana;
+    color:#FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    padding:2px 3px 1px 3px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-image:url(page_number_normal.png);
+    float: left;
+    height: 20px;
+}
+
+/* Page link - hover */
+.master .ob_gPLCLH
+{
+    font:normal 11px Verdana;
+    color:#FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    padding:2px 3px 1px 3px;
+    border-left: 1px solid #1b314e;
+    border-right: 1px solid #1b314e;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-image:url(page_number_over.png);
+    float: left;
+    height: 20px;
+}
+
+/* Separator between page links */
+.master .ob_gPLS
+{
+    font-family: Verdana;
+    font-size: 11px;
+    color:#44556D;
+    font-weight: normal;
+    text-decoration:none;
+    cursor: default;
+    padding-left: 2px;
+    padding-right: 2px;
+    float: left;
+    display: none;
+}
+
+/* Page link disabled */
+.master .ob_gPLD
+{
+    font:normal 11px Verdana;
+    color:#000000;
+    text-decoration: none;
+    cursor: pointer;
+    padding:2px 3px 1px 3px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-image:url(page_number_selected.png);
+    float: left;
+    height: 20px;
+}
+
+/* Container for the total number of pages text */
+.master .ob_gTNOP
+{
+    float: right;
+    padding-top: 4px;
+    height: 20px;
+    margin-left: 3px;
+    margin-right: 0px;
+}
+
+/* Container for the manual paging section */
+.master .ob_gMPS
+{
+    float: right;
+    padding-top: 2px;
+    height: 20px;
+    margin-left: 3px;
+    margin-right: 0px;
+}
+
+/* Container for the manual paging textbox */
+.master .ob_gMPST
+{
+    float: left;
+    margin-left: 4px;
+    margin-top: -1px;
+}
+
+/* Container for the manual paging action link */
+.master .ob_gMPSL
+{
+    float: left;
+    margin-top: 3px;
+    margin-left: 4px;
+}
+
+
+
+
+
+/* Grouping Area */
+/* ------------- */
+
+/* Grouping Area - Container */
+.master .ob_gGACont
+{
+	height: 46px;
+	position: relative;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Grouping Area - Left corner */
+.master .ob_gGACnL
+{
+	width: 25px;
+	height: 46px;
+	background-image: url(grouping_area_left.png);
+	position: absolute;
+	left: -5px;
+	top: 0px;
+}
+
+* html .master .ob_gGACnL
+{
+    -background-image: url(grouping_area_left.gif);
+}
+
+/* main section for grouping area */
+.master .ob_gGA
+{
+	border:0px solid #FFFFFF;
+	background-image: url(grouping_area.png);
+	height: 46px;
+	position: absolute;
+	top: 0px;
+	line-height: 41px;	
+	left: 20px;
+	right: 20px;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 0px;
+}
+
+* html .master .ob_gGA
+{
+    width: 100%;
+    -background-image: url(grouping_area.gif);
+}
+
+/* Grouping Area - Default text */
+.master .ob_gGADC
+{
+    font-family: Verdana;
+	font-size: 11px;
+	font-weight: normal;		
+	color: #FFFFFF;
+	text-align: left;
+	height: 41px;
+	line-height: 41px;
+}
+
+/* Grouping Area - Right corner */
+.master .ob_gGACnR
+{
+	width: 25px;
+	height: 46px;
+	background-image: url(grouping_area_right.png);
+	position: absolute;
+	right: -5px;
+	top: 0px;
+}
+
+* html .master .ob_gGACnR
+{
+    -background-image: url(grouping_area_right.gif);
+}
+
+/* Grouping - Dragging column */
+.master .ob_gGDC
+{
+    position: absolute;
+    z-index: 999;
+    font-family: Verdana;
+	font-size: 11px;
+	font-weight: normal;		
+	color: #2b2b3d;
+	text-align: left;				
+	border: 1px solid #829fb7;
+	background-image: url(header_pressed.png);
+	vertical-align: middle;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 20px;
+}
+
+/* Grouping - Groupped dragging column */
+.master .ob_gGDC2
+{
+    position: absolute;
+    z-index: 999;
+    line-height: 21px;    
+}
+
+/* Grouping - Header column highlighted */
+.master .ob_gHCHWG
+{
+	background-image: url(header_pressed.png) !important;
+}
+
+/* Grouping - Top arrow */
+.master .ob_gGATA
+{
+	background-image: url(group_arrow_top.png);
+	width: 9px;
+	height: 9px;
+	font-size: 1px;
+	padding: 0px;
+	z-index: 999 !important;
+}
+
+* html .master .ob_gGATA
+{
+    -background-image: url(group_arrow_top.gif);
+}
+
+/* Grouping - Bottom arrow */
+.master .ob_gGABA
+{
+	background-image: url(group_arrow_bottom.png);
+	width: 9px;
+	height: 9px;
+	font-size: 1px;
+	padding: 0px;
+    z-index: 999 !important;
+}
+
+* html .master .ob_gGABA
+{
+    -background-image: url(group_arrow_bottom.gif);
+}
+
+/* Column in grouping area - container */
+.master .ob_gGAC
+{	
+	cursor: move;
+	float: left;
+    position: relative;
+}
+
+/* Column in grouping area - left side */
+.master .ob_gGACL
+{
+	width: 12px;
+	background-image: url(grouping_area_column_left_dragging.png);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 19px;
+	background-repeat: no-repeat;
+}
+
+* html .master .ob_gGACL
+{
+    -background-image: url(grouping_area_column_left_dragging.gif);
+}
+
+.master .ob_gGA .ob_gGACL
+{		
+	background-image: url(grouping_area_column_left.png);
+	height: 46px;
+}
+
+* html .master .ob_gGA .ob_gGACL
+{
+    -background-image: url(grouping_area_column_left.gif);
+}
+
+/* Column in grouping area - center */
+.master .ob_gGACM
+{
+	height: 19px;
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;		
+	color: #080808;
+	background-image: none;
+	overflow: visible;
+	white-space: nowrap;
+	text-align: center;	
+	background-image: url(grouping_area_column_dragging.png);
+	margin-left: 12px;
+	margin-right: 12px;
+	line-height: 19px;
+	background-repeat: repeat-x;
+}
+
+* html .master .ob_gGACM
+{
+    -background-image: url(grouping_area_column_dragging.gif);
+}
+
+.master .ob_gGA .ob_gGACM
+{
+	height: 46px;
+	background-image: url(grouping_area_column.png);
+	padding-top: 1px;
+	#zoom:1;
+    #display:inline;
+    line-height: 41px;
+}
+
+* html .master .ob_gGA .ob_gGACM
+{
+    -background-image: url(grouping_area_column.gif);
+}
+
+/* Column in grouping area - right side */
+.master .ob_gGACR
+{
+	width: 13px;
+	background-image: url(grouping_area_column_right_dragging.png);
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 19px;
+	background-repeat: no-repeat;
+	background-color: Transparent;
+}
+
+* html .master .ob_gGACR
+{
+    -background-image: url(grouping_area_column_right_dragging.gif);
+}
+
+.master .ob_gGA .ob_gGACR
+{
+	width: 12px;
+	background-image: url(grouping_area_column_right.png);
+	height: 46px;
+}
+
+* html .master .ob_gGA .ob_gGACR
+{
+    -background-image: url(grouping_area_column_right.gif);
+}
+
+/* Column in grouping area - spacer/link between columns*/	
+.master .ob_gGACS
+{
+	height: 34px;
+	width: 20px;
+	background-image: url(grouping_area_column_spacer.png);
+	float: left;
+	margin-right: 5px;
+}
+
+
+
+
+
+/* Horizontal Scroller */
+/* ------------------- */
+
+.master .ob_gSH
+{
+    position: relative;
+    overflow: hidden;
+    height: 20px;
+    height /*\**/: 16px\9;
+    #height: 16px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+* html .master .ob_gSH
+{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.master .ob_gSH div
+{
+    width: 100%;
+    height: 40px;
+    height /*\**/: 36px\9;
+    #height: 36px;
+	overflow: auto;
+	overflow-y: hidden;
+	position: absolute;
+	top: -20px;
+}
+
+.master .ob_gSH div div
+{
+    height: 20px;
+    visibility: hidden;
+}
+
+
+
+
+
+/* Filter */
+/* ------ */
+
+.master .ob_gFlCont
+{
+    position: relative;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+* html .master .ob_gFlCont
+{
+    width: 100%;
+    #margin-left: 0px;
+    #margin-right:0px;
+}
+
+.master .ob_gFlICont
+{
+    position: relative;
+    overflow: hidden;
+}
+
+* html .master .ob_gFlICont, .master .ob_gMCont_DT .ob_gFlICont
+{
+    width: 100%;
+}
+
+.master .ob_gFl
+{
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.master .ob_gFl .ob_gC, .master .ob_gFl .ob_gCW
+{
+    background-image: url(filter.png);
+    height: 50px;
+    font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-align: left;
+}
+
+.master .ob_gFl .ob_gC div.ob_gCc1, .master .ob_gFl .ob_gCW div.ob_gCc1
+{    
+    overflow: visible;
+    position: relative;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+
+/* Cells separator */
+.master .ob_gFlCont .ob_gCS, .master .ob_gFlCont .ob_gCS_F
+{
+    position: absolute;
+    top: 0px;    
+    width: 1px;
+    background-color: #EEEEEE;
+    font-size: 1px;
+}
+
+.master .ob_gFlCont .ob_gCS
+{
+    bottom: 0px;
+}
+
+
+
+
+
+/* Columns Footer */
+/* ------ */
+
+.master .ob_gCFCont
+{
+    position: relative;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+* html .master .ob_gCFCont
+{
+    width: 100%;
+    #margin-left: 0px;
+    #margin-right:0px;
+}
+
+.master .ob_gCFICont
+{
+    position: relative;
+    overflow: hidden;
+}
+
+* html .master .ob_gCFICont, .master .ob_gMCont_DT .ob_gCFICont
+{
+    width: 100%;
+}
+
+.master .ob_gCFR
+{
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.master .ob_gCFR .ob_gC, .master .ob_gCFR .ob_gCW
+{
+    background-image: url(summary.png);
+    height: 25px;
+    font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	color: #701f03;
+	text-align: left;
+}
+
+.master .ob_gCFR .ob_gC div.ob_gCc1, .master .ob_gCFR .ob_gCW div.ob_gCc1
+{    
+    overflow: visible;
+    position: relative;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+/* Cells separator */
+.master .ob_gCFCont .ob_gCS, .master .ob_gCFCont .ob_gCS_F
+{
+    position: absolute;
+    top: 0px;
+    width: 1px;
+    background-color: #EEEEEE;
+    font-size: 1px;
+}
+
+.master .ob_gCFCont .ob_gCS
+{
+    bottom: 0px;
+}
+
+
+
+
+
+/* Master/Detail */
+/* ------------------- */
+
+/* Row containing a detail grid */
+.master .ob_gDGC
+{
+}
+
+/* The container of a detail grid */
+.master .ob_gDGCCT
+{
+    background-color: #F6F7F7;
+    padding-left: 20px;
+    z-index: 15;
+    position: relative;
+    width: 100%;
+}
+
+.master .ob_gDGCCIT
+{
+    width: 100%;
+    position: relative;
+}
+
+/* Cell containing the +/- buttons for expanding/collapsing the detail grids */
+.master .ob_gDGE
+{
+}
+.master .ob_gDGE div.ob_gCc1
+{
+    position: relative !important;
+}
+
+/* Container for the +/- buttons for expanding/collapsing the detail grids */ 
+.master .ob_gDGEB
+{
+    position: absolute;
+    height: 24px;
+    width: 19px;
+    top: 50%;
+    overflow: visible;
+}
+
+.master .ob_gDGEB img
+{
+    margin-top: -12px;
+    position: absolute;
+    cursor: pointer;
+}
+
+/* Loading message displayed while a detail grid is loading (OnCallback)*/
+.master td.ob_gBLM
+{
+    background-color: #F6F7F7;
+    text-align: center;
+    font-family: Verdana;
+	font-size: 10px;
+	color:#0C416F;
+	height: 20px;
+}
+.master td.ob_gBLM div
+{
+    position: relative;
+    z-index: 15;
+    height: 20px;
+    line-height: 20px;
+    background-color: #F6F7F7;
+}
+
+
+
+
+
+/* Corners displayed at the top of the grid */
+/* ------ */
+
+/* Container for the top corners */
+.master .ob_gHCnC
+{
+	height: 17px;
+	position: relative;
+	background-image: url(header_corner_middle.png);
+	background-repeat: repeat-x;
+	font-size: 1px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+* html .master .ob_gHCnC
+{
+    -background-image: url(header_corner_middle.gif);
+}
+
+/* Left corner */
+.master .ob_gHCnL
+{
+	background-image: url(header_corner_left.png);
+	height: 17px;
+	width: 25px;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: -25px;
+}
+
+* html .master .ob_gHCnL
+{
+    -background-image: url(header_corner_left.gif);
+}
+
+/* Right corner */
+.master .ob_gHCnR
+{
+	background-image: url(header_corner_right.png);
+	height: 17px;
+	width: 25px;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: -25px;
+}
+
+* html .master .ob_gHCnR
+{
+    -background-image: url(header_corner_right.gif);
+}
+
+
+
+
+
+/* Corners displayed at the bottom of the grid */
+/* ------ */
+
+/* Container for the bottom corners */
+.master .ob_gFCnC
+{
+	height: 16px;
+	position: relative;
+	background-image: url(footer_corner_middle.png);
+	background-repeat: repeat-x;
+	font-size: 1px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+* html .master .ob_gFCnC
+{
+    -background-image: url(footer_corner_middle.gif);
+}
+
+/* Left corner */
+.master .ob_gFCnL
+{
+	background-image: url(footer_corner_left.png);
+	height: 16px;
+	width: 25px;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: -25px;
+}
+
+* html .master .ob_gFCnL
+{
+    -background-image: url(footer_corner_left.gif);
+}
+
+/* Right corner */
+.master .ob_gFCnR
+{
+	background-image: url(footer_corner_right.png);
+	height: 16px;
+	width: 25px;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: -25px;
+}
+
+* html .master .ob_gFCnR
+{
+    -background-image: url(footer_corner_right.gif);
+}

@@ -1,0 +1,22 @@
+30
+<RED>------------------------------
+                VIAJE
+<RED>------------------------------
+Numero: <NUMERO>
+Agencia:
+ <AGENCIA>
+Ruta principal:
+ <RUTA_PRINCIPAL>
+Fecha Salida:
+ <FECHA_SALIDA>
+Bus: 
+ <BUS_NUMERO> (<BUS_PLACA>)
+Conductor:
+ <CONDUCTOR_NOMBRE>
+ <CONDUCTOR_NIT>
+Relevador:
+ <RELEVADOR_NOMBRE>
+ <RELEVADOR_NIT>
+Propietario:
+ <PROPIETARIO_NOMBRE>
+ <PROPIETARIO_NIT>

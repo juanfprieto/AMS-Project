@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<localization xmlns="obout:grid:localization-schema">
+  <grid
+     page_size_text  = "Rekordów na stronę:"
+     records_text    = "Rekordy:"
+     to_text         = "do"
+     of_text         = "z"
+     pages_text      = "Strony:"        
+     loading_text    = "Ładowanie danych..."
+     no_records_text = "Brak dostępnych rekordów."
+     resizing_tooltip_width = "Szerokość:"
+     resizing_tooltip_pixels = "pikseli"
+     type_validation_error = "Wartość wpisana w kolumnie XXXXX jest nieprawidłowa."
+     maxlength_validation_error = "Maksymalna ilość Liter w kolumnie XXXXX zostala przekroczona, maksymalna dozwolona ilość w kolumnie jest YYYYY."
+     js_warning = "Błąd przy initializacji Grid z ID '[GRID_ID]'.\n\n[UWAGA]\n\nProsimy nas zkontaktować dla uzyskania pomocy w uźyciu tej strony http://www.obout.com/inc/support.aspx."
+     >
+
+    <commands
+      add_link	      = "Dodaj nowy"
+      edit_link       = "Edytuj"
+      delete_link     = "Usuń"
+      update_link     = "Uaktualnij"
+      cancel_link     = "Anuluj"
+      save_link       = "Zapisz"  
+      save_all_link   = "Zapisz wszystkie"
+      cancel_all_link = "Anuluj wszystkie"
+      remove_link     = "Usunij"
+      modify_link     = "Modyfikuj"
+      undelete_link   = "Przywrócić"
+    />
+    
+    <filter
+       button_show_filter   = "Pokarz Filter"
+       button_hide_filter   = "Skryj Filter"
+       button_filter        = "Dodaj Filter"
+       button_remove_filter = "Usunij Filter"
+        
+       filter_criteria_nofilter                 = "Bez Filtru"
+       filter_criteria_contains                 = "Zawiera"
+       filter_criteria_does_not_contain         = "Nie Zawiera"
+       filter_criteria_starts_with              = "Zaczyna z"
+       filter_criteria_ends_with                = "Kończy z"
+       filter_criteria_equal_to                 = "Równa sie"
+       filter_criteria_not_equal_to             = "Nie Równa sie"
+       filter_criteria_smaller_than             = "Mniejszy niż"
+       filter_criteria_greater_than             = "Większe niż"
+       filter_criteria_smaller_than_or_equal_to = "Mniejszy lub równy"
+       filter_criteria_greater_than_or_equal_to = "Większy lub równy"
+       filter_criteria_is_null                  = "Jest Null"
+       filter_criteria_is_not_null              = "Nie jest Null"
+       filter_criteria_is_empty                 = "Jest pusty"
+       filter_criteria_is_not_empty             = "Nie Jest pusty"
+    />
+
+    <grouping
+        grouping_area_text = "Przeciągnij tutaj nagłówek kolumny dla zgrupowania, według tej kolumny."
+        group_information_count = " (XXXXX rekordów)"
+        group_information_count_single = " (XXXXX rekordów)"
+        group_information_next_page = " (Wyświetlanie rekordów XXXXX / YYYYY - Ta grupa jest kontynuowany na następnej stronie)"
+        group_information_previous_page = " (Wyświetlanie rekordów XXXXX / YYYYY - Ta grupa powstała na poprzedniej stronie)"
+        group_information_previous_next_page = " (Wyświetlanie rekordów XXXXX / YYYYY - Ta grupa powstała na poprzedniej stronie i kontynuuje następnej stronie)"
+    />
+
+    <paging
+      total_number_of_pages  = " (z XXXXX)"
+      manual_paging_link  = "Przejdź do strony »"
+      page_size_options_all = "Wszystkie"
+    />
+
+  </grid>
+ </localization>

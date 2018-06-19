@@ -1,0 +1,136 @@
+body
+{
+	background-color:#FFFFFF;
+}
+	
+TABLE.green{border: 0px solid #666666;vertical-align:middle;background: transparent;padding:0 0 0 0;margin:0 0 0 0;border-collapse: collapse;}
+TABLE.orange{border: 0px solid #666666;vertical-align:middle;background: transparent;padding:0 0 0 0;margin:0 0 0 0;border-collapse: collapse;}
+TABLE.red{border: 0px solid #666666;vertical-align:middle;background: transparent;padding:0 0 0 0;margin:0 0 0 0;border-collapse: collapse;}
+TABLE.yellow{border: 0px solid #666666;vertical-align:middle;background: transparent;padding:0 0 0 0;margin:0 0 0 0;border-collapse: collapse;}
+TABLE.titulo_hora{border: 0px solid #666666;vertical-align:middle;background: transparent;padding:0 0 0 0;margin:0 0 0 0;border-collapse: collapse;}
+TABLE.titulo_vendedor{border: 0px solid #666666;vertical-align:middle;background: transparent;padding:0 0 0 0;margin:0 0 0 0;border-collapse: collapse;}
+TABLE.titulo_tiempo{border: 0px solid #666666;vertical-align:middle;background: transparent;padding:0 0 0 0;margin:0 0 0 0;border-collapse: collapse;}
+TABLE.encabezado{border: 0px; width:100%;}
+TABLE.invisible{border: 0px; background: transparent;padding:0 0 0 0;margin:0 0 0 0;border-collapse: collapse;}
+
+td.centro{background-position:bottom right;background-repeat:no-repeat;}
+
+td.bordeizqsup{background-position:top left;background-repeat:no-repeat;background-image:url(../img/izqsup_cuadrotaller.gif);width:4;height:4;border-width:0;}
+td.bordedersup{background-position:top right;background-repeat:no-repeat;background-image:url(../img/dersup_cuadrotaller.gif);width:4;height:4;border-width:0;}
+td.bordesup{background-position:top right;background-repeat:repeat-x;background-image:url(../img/sup_cuadrotaller.gif);border-width:0;}
+td.bordeizq{background-position:top left;background-repeat:repeat-y;background-image:url(../img/izq_cuadrotaller.gif);width:4;border-width:0;}
+td.bordeder{background-position:top right;background-repeat:repeat-y;background-image:url(../img/der_cuadrotaller.gif);width:4;border-width:0;}
+td.bordeizqinf{background-position:bottom left;background-repeat:no-repeat;background-image:url(../img/izqinf_cuadrotaller.gif);width:4;height:4;border-width:0;}
+td.bordederinf{background-position:bottom right;background-repeat:no-repeat;background-image:url(../img/derinf_cuadrotaller.gif);width:4;height:4;border-width:0;}
+td.bordeinf{background-position:bottom right;background-repeat:repeat-x;background-image:url(../img/inf_cuadrotaller.gif);height:4;border-width:0;}
+
+td.green{background-color:#00FF00;filter: alpha(opacity=80);}
+td.orange{background-color:orange;filter: alpha(opacity=80);}
+td.red{background-color:#FF0000;filter: alpha(opacity=80);}
+td.yellow{background-color:yellow;filter: alpha(opacity=80);}
+input.{border: 1px solid #AAAA99; background: #eaeaea}
+
+td.logoizquierda{width:200;height:140;background-position:top left;background-repeat:no-repeat;background-image:url(../img/logo_cuadrotaller.jpg);border-width:0;}
+td.logoderecha{width:200;height:140;border-width:0;}
+td.logocentro{height:140;background-position:bottom center;background-repeat:no-repeat;background-image:url(../img/logocentro_cuadrotaller.jpg);border-width:0;vertical-align:middle;}
+
+.boton
+{
+	background-color:Transparent;
+	border:0;	
+}
+p.titulo
+{
+	font-family:Arial; 
+	font-size:32pt; 
+	color: #EEEEEE; 
+	font-weight:bold;
+	text-align:center;
+}
+p.titulo_hora
+{
+	font-family:Arial; 
+	font-size:26pt; 
+	color: #EEEEEE; 
+	font-weight:bold;
+	text-align:center;
+}
+p.titulo_vendedor
+{
+	font-family:Arial; 
+	font-size:14pt; 
+	color: #EEEEEE; 
+	font-weight:bold;
+	text-align:center;
+}
+p.titulo_tiempo
+{
+	font-family:Arial; 
+	font-size:32pt; 
+	color: #DDDDDD; 
+	font-weight:bold;
+	text-align:center;
+}
+p.green
+{
+	font-family:Arial; 
+	font-size:18pt; 
+	color: #222222; 
+	font-weight:bold;
+	text-align:center;
+}
+p.orange
+{
+	font-family:Arial; 
+	font-size:18pt; 
+	color: #222222; 
+	font-weight:bold;
+	text-align:center;
+}
+p.red
+{
+	font-family:Arial; 
+	font-size:18pt; 
+	color: #222222; 
+	font-weight:bold;
+	text-align:center;
+}
+p.yellow
+{
+	font-family:Arial; 
+	font-size:18pt; 
+	color: #222222; 
+	font-weight:bold;
+	text-align:center;
+}
+p.empresa
+{
+	font-family:Arial; 
+	font-size:20pt; 
+	color: #A5B3CC; 
+	text-align:center;
+	font-weight:bold;
+}
+p.hora
+{
+	font-family:Arial; 
+	font-size:18pt; 
+	color: #BFCEF5; 
+	text-align:center;
+	font-weight:bold;
+}
+p.fecha
+{
+	font-family:Arial; 
+	font-size:14pt; 
+	color: #BFCEF5; 
+	text-align:center;
+	font-weight:bold;
+}
+p.cita
+{
+	font-family:Arial; 
+	font-size:18pt; 
+	color: #000000; 
+	text-align:center;
+}

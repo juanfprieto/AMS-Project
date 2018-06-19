@@ -1,0 +1,42 @@
+30
+<RED>------------------------------
+            GIRO
+<RED>------------------------------
+ 
+Num giro:   <NUMERO>
+Fecha giro: <FECHA>
+ 
+Agencia Origen:
+ <AGENCIA_ORIGEN>
+Agencia Destino:
+ <AGENCIA_DESTINO>
+ 
+Envia:
+ <ENTREGA_NOMBRE>
+ <ENTREGA_NIT>
+Recibe:
+ <RECIBE_NOMBRE>
+ <RECIBE_NIT>
+ 
+Valor Giro:
+ <VALOR_GIRO>
+Costo Giro:
+ <COSTO_GIRO>
+IVA:
+ <IVA_GIRO>
+Total:
+ <TOTAL_GIRO>
+ 
+ 
+ 
+ 
+ 
+_______________________________ 
+Firma Encargado
+ 
+ 
+ 
+ 
+_______________________________
+Firma Cliente
+ 

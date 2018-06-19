@@ -1,0 +1,29 @@
+30
+------------------------------
+      COOTRANSBOL LTDA.       
+      NIT. 800.174.156-9      
+      Regimen comun IVA       
+   Entidad regimen especial   
+        (098) 7610717         
+  http://www.cootransbol.com 
+  <FECHA_IMPRESION>  
+------------------------------
+numero  : <NUMERO>
+Fecha   : <FECHA_VIAJE> 
+Hora    : <HORA>:<MINUTO>
+Bus     : <BUS_NUMERO> (<BUS_PLACA>)
+Puesto  : <PUESTOS>
+Origen  : <ORIGEN>
+Destino : <DESTINO>
+Pasajes : <CANTIDAD>
+Valor   : <VALOR_UNIDAD>
+Total   : <VALOR_TOTAL>
+Servicio: Transporte terrestre
+Vendedor: <VENDEDOR>
+Planilla: <PLANILLA>
+Cliente : <CLIENTE_NOMBRE>
+          <CLIENTE_NIT>
+celular:  <MPAS_TELEFONO>
+***********************************
+
+

@@ -1,0 +1,230 @@
+﻿h1,h2,h3,h4,h5
+{
+    margin:3px;
+}
+.imgSol
+{
+    cursor:pointer;
+    height:37px;
+    transition: 0.5s all ease;
+    width:36px;
+   -webkit-filter: drop-shadow(5px 5px 10px black);    
+}
+.imgSol:hover
+{
+    height:39px;
+    width:39px;
+    -webkit-filter: drop-shadow(5px 5px 5px blue);    
+}
+.imgSolSelec
+{
+    height:39px;
+    width:39px;
+    -webkit-filter: drop-shadow(6px 8px 3px blue);    
+}
+.tarjeta
+{
+	background:rgba(255, 216, 0, 0.7);
+	border:solid 1px gray;
+	-moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+	display:inline-block;
+	margin:3px 3px 3px 3px;
+	width: 720px;
+	box-shadow: 4px 7px 15px #888888;
+	padding: 5px;
+	font-size: 18px;
+}
+.tarjetaAsig 
+{
+	background:rgba(0, 163, 255, 0.7);
+	border:solid 1px gray;
+	-moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+	display:inline-block;
+	margin:3px 3px 3px 3px;
+	width: 720px;
+	box-shadow: 4px 7px 15px #888888;
+	padding: 5px;
+	font-size: 18px;
+}
+.tarjetaClose 
+{
+	background:rgba(101, 255, 87, 0.7);
+	border:solid 1px gray;
+	-moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+	display:inline-block;
+	margin:3px 3px 3px 3px;
+	width: 720px;
+	box-shadow: 4px 7px 15px #888888;
+	padding: 5px;
+	font-size: 18px;
+}
+.tarjetaDesa 
+{
+	background:rgba(255, 216, 0, 0.7);
+	border:solid 1px gray;
+	-moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+	display:inline-block;
+	margin:3px 3px 3px 3px;
+	width: 720px;
+	box-shadow: 4px 7px 15px #888888;
+	padding: 5px;
+	font-size: 18px;
+}
+
+.tarjetaCalidad 
+{
+	background:rgba(245, 165, 54, 0.8);
+	border:solid 1px gray;
+	-moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+	display:inline-block;
+	margin:3px 3px 3px 3px;
+	width: 720px;
+	box-shadow: 4px 7px 15px #888888;
+	padding: 5px;
+	font-size: 18px;
+}
+
+.tarjetaImplementada 
+{
+	background:rgba(238, 130, 238, 0.7);
+	border:solid 1px gray;
+	-moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+	display:inline-block;
+	margin:3px 3px 3px 3px;
+	width: 720px;
+	box-shadow: 4px 7px 15px #888888;
+	padding: 5px;
+	font-size: 18px;
+}
+
+.tarjetaOpen
+{
+	background:rgba(201, 201, 164, 0.7);
+	border:solid 1px gray;
+	-moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+	display:inline-block;
+	margin:3px 3px 3px 3px;
+	width: 720px;
+	box-shadow: 4px 7px 15px #888888;
+	padding: 5px;
+	font-size: 18px;
+}
+
+.tarjetaN
+{
+	background: orange;
+	border:solid 1px gray;
+	-moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+	display:inline-block;
+	margin:1em 1em 1em 1em;
+	width: 100px;
+	box-shadow: 4px 7px 15px #888888;
+	padding: 10px;
+	font-size: 18px;
+	color: Black;
+} 
+.tarjetaE
+{
+	font-size: 15px;
+	font-weight: lighter;
+	margin-top: -26px;
+} 
+.tarjetaInfo
+{
+    background: gray;
+	border:solid 1px gray;
+	-moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+	width: 100%;
+	box-shadow: 1px 4px 15px #888888;
+	padding: 3px;
+	font-size: 14px;
+	color: white;
+}
+
+.ruta
+{
+    background:rgba(108, 124, 247, 0.63);
+	border:solid 1px gray;
+	-moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+	display:inline-block;
+	margin:3px 3px 3px 3px;
+	box-shadow: 4px 7px 15px #888888;
+	padding: 5px;
+	font-size: 16px;
+}
+.numero
+{
+    background:rgba(52, 125, 255, 1);
+	border:solid 1px gray;
+	-moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+	display:inline-block;
+	margin:3px 3px 3px 3px;
+	box-shadow: 4px 7px 15px #888888;
+	padding: 5px;
+	font-size: 22px;
+}
+testCambios
+{
+    background:rgba(248, 248, 248, 1);
+	border:solid 1px gray;
+	-moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+	display:inline-block;
+	margin:3px 3px 3px 3px;
+	box-shadow: 4px 7px 15px #888888;
+	padding: 5px;
+	font-size: 16px;
+}
+.fechaHoja
+{
+    background:rgba(108, 124, 247, 0.63);
+	border:solid 1px gray;
+	-moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+	display:inline-block;
+	margin:3px 3px 3px 3px;
+	box-shadow: 4px 7px 15px #888888;
+	padding: 5px;
+	font-size: 16px;
+}
+
+
+.HojaVida
+{
+	background:rgba(107, 110, 111, 0.5);
+	border:solid 1px gray;	
+    border-radius: 0.5em;
+    box-shadow: 4px 7px 15px #888888;
+	display:inline-block;	
+	font-size: 18px;
+	margin:3px 3px 20px 3px;
+	text-align: left;
+	padding: 5px;
+	-moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    width: 720px;
+}

@@ -1,0 +1,596 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E5D9657-A3F0-4BCA-8D48-3F089E82439D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>AMS.Contabilidad</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AMS.Contabilidad</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\AMS\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\Compilados\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'AMS.Automotriz|AnyCPU'">
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajax, Version=5.7.22.2, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS\bin\Ajax.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxControlToolkit, Version=4.1.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="eWorld.UI, Version=1.9.0.0, Culture=neutral, PublicKeyToken=24d65337282035f2">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMS\bin\eWorld.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AMS.Contabilidad.ActDetActivoFijo.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.ActDetActivoFijo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.ActDetActivoFijo.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.ActDetActivoFijo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.ConsolidacionLibreria.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.ConsolidacionLibreria.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.ConsolidacionLibreria.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.ConsolidacionLibreria.ascx</DependentUpon>
+    </Compile>
+    <Content Include="AMS.Contabilidad.ActDetActivoFijo.ascx" />
+    <Content Include="AMS.Contabilidad.AjusInflacion.ascx" />
+    <Content Include="AMS.Contabilidad.BalComp.ascx" />
+    <Content Include="AMS.Contabilidad.BalGen.ascx" />
+    <Content Include="AMS.Contabilidad.BalPru.ascx" />
+    <Content Include="AMS.Contabilidad.CapEdiCom.ascx" />
+    <Content Include="AMS.Contabilidad.CausaDiferidos.ascx" />
+    <Content Include="AMS.Contabilidad.CompGrid.ascx" />
+    <Content Include="AMS.Contabilidad.DefCueAnexos.ascx" />
+    <Content Include="AMS.Contabilidad.DefPresupuesto.ascx" />
+    <Content Include="AMS.Contabilidad.DepreciaActivos.ascx" />
+    <Content Include="AMS.Contabilidad.ElimCom.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Contabilidad.EstCen.ascx" />
+    <Content Include="AMS.Contabilidad.EstRes.ascx" />
+    <Content Include="AMS.Contabilidad.ExportatrSaldosNIT.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Contabilidad.LibCue.ascx" />
+    <Content Include="AMS.Contabilidad.LibDia.ascx" />
+    <Content Include="AMS.Contabilidad.LibMay.ascx" />
+    <Content Include="AMS.Contabilidad.LibOfi.ascx" />
+    <Content Include="AMS.Contabilidad.LisCon.ascx" />
+    <Content Include="AMS.Contabilidad.MovCom.ascx" />
+    <Content Include="AMS.Contabilidad.PatronesHechosEcono.ascx" />
+    <Content Include="AMS.Contabilidad.PerforVehiculos.ascx" />
+    <Content Include="AMS.Contabilidad.ProceHecEco.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="AMS.Contabilidad.Prueba.ascx" />
+    <Content Include="AMS.Contabilidad.ReclasificarCuentas.ascx" />
+    <Content Include="AMS.Contabilidad.Terceros.ascx" />
+    <Content Include="AMS.Contabilidad.UnificarCiudades.ascx" />
+    <Content Include="AMS.Contabilidad.UnificarNits.ascx" />
+    <Content Include="AMS.Contabilidad.ProceHecEcoProgramado.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Compile Include="AMS.Contabilidad.AjusInflacion.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.AjusInflacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.AjusInflacion.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.AjusInflacion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.Almacen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.BalComp.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.BalComp.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.BalComp.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.BalComp.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.BalGen.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.BalGen.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.BalGen.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.BalGen.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.BalPru.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.BalPru.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.BalPru.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.BalPru.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.CapEdiCom.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.CapEdiCom.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.CapEdiCom.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.CapEdiCom.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.Catalogo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.CausaDiferidos.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.CausaDiferidos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.CausaDiferidos.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.CausaDiferidos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.CentroCosto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.CierreContable.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.CierreContable.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.CierreContable.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.CierreContable.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.CompGrid.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.CompGrid.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.CompGrid.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.CompGrid.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.Comprobante.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.DefCueAnexos.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.DefCueAnexos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.DefCueAnexos.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.DefCueAnexos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.DefPresupuesto.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.DefPresupuesto.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.DefPresupuesto.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.DefPresupuesto.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.DepreciaActivos.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.DepreciaActivos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.DepreciaActivos.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.DepreciaActivos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.ElimCom.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.ElimCom.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.ElimCom.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.ElimCom.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.EstCen.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.EstCen.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.EstCen.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.EstCen.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.EstRes.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.EstRes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.EstRes.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.EstRes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.ExportatrSaldosNIT.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.ExportatrSaldosNIT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.ExportatrSaldosNIT.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.ExportatrSaldosNIT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.InterfaceContable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.LibCue.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.LibCue.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.LibCue.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.LibCue.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.LibDia.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.LibDia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.LibDia.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.LibDia.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.LibMay.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.LibMay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.LibMay.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.LibMay.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.LibOfi.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.LibOfi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.LibOfi.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.LibOfi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.LisCon.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.LisCon.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.LisCon.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.LisCon.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.MovCom.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.MovCom.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.MovCom.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.MovCom.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.PatronesHechosEcono.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.PatronesHechosEcono.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.PerforVehiculos.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.PerforVehiculos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.PerforVehiculos.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.PerforVehiculos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.ProceHecEco.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.ProceHecEco.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.ProceHecEco.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.ProceHecEco.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.Prueba.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.Prueba.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.Prueba.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.Prueba.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.Reclasificar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.ReclasificarCuentas.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.ReclasificarCuentas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.ReclasificarCuentas.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.ReclasificarCuentas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.Terceros.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.Terceros.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.Terceros.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.Terceros.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.UnificarCiudades.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.UnificarCiudades.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.UnificarCiudades.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.UnificarCiudades.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.UnificarNits.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.UnificarNits.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.UnificarNits.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.UnificarNits.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.ValorizaActivosNIIF.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.ValorizaActivosNIIF.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.ValorizaActivosNIIF.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.ValorizaActivosNIIF.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.Varios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.ProceHecEcoProgramado.ascx.cs">
+      <DependentUpon>AMS.Contabilidad.ProceHecEcoProgramado.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS.Contabilidad.ProceHecEcoProgramado.ascx.designer.cs">
+      <DependentUpon>AMS.Contabilidad.ProceHecEcoProgramado.ascx</DependentUpon>
+    </Compile>
+    <Content Include="AMS.Contabilidad.ConsolidacionLibreria.ascx" />
+    <EmbeddedResource Include="AMS.Contabilidad.AjusInflacion.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.AjusInflacion.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.BalComp.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.BalComp.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.BalGen.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.BalGen.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.BalPru.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.BalPru.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.CapEdiCom.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.CapEdiCom.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.CausaDiferidos.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.CausaDiferidos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.CierreContable.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.CierreContable.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.CompGrid.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.CompGrid.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.DefCueAnexos.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.DefCueAnexos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.ElimCom.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.ElimCom.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.EstCen.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.EstCen.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.EstRes.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.EstRes.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.ExportatrSaldosNIT.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.ExportatrSaldosNIT.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.LibCue.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.LibCue.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.LibDia.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.LibDia.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.LibMay.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.LibMay.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.MovCom.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.MovCom.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.PatronesHechosEcono.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.PatronesHechosEcono.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.PerforVehiculos.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.PerforVehiculos.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.ProceHecEco.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.ProceHecEco.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.Prueba.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.Prueba.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.ReclasificarCuentas.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.ReclasificarCuentas.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.Terceros.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.Terceros.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.UnificarNits.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.UnificarNits.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMS.Contabilidad.ProceHecEcoProgramado.ascx.resx">
+      <DependentUpon>AMS.Contabilidad.ProceHecEcoProgramado.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AMS.Contabilidad.CierreContable.ascx" />
+    <Content Include="AMS.Contabilidad.ValorizaActivosNIIF.ascx" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AMS.CryptoServices\AMS.CryptoServices.csproj">
+      <Project>{137D79F7-AA92-4A71-A6F4-FE44FFEB715B}</Project>
+      <Name>AMS.CryptoServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.DBManager\AMS.DBManager.csproj">
+      <Project>{41ED97B6-DDCF-4AA6-BA60-8F23A5661C49}</Project>
+      <Name>AMS.DBManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.DB\AMS.DB.csproj">
+      <Project>{BAE52CE2-EF3D-4B65-9F5A-9DA33502F99C}</Project>
+      <Name>AMS.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Documentos\AMS.Documentos.csproj">
+      <Project>{19EF3FAA-C588-4E81-813B-6F3C723B222B}</Project>
+      <Name>AMS.Documentos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Forms\AMS.Forms.csproj">
+      <Project>{4E9173A3-45B7-4B17-846D-8D790517DDF5}</Project>
+      <Name>AMS.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Reportes\AMS.Reportes.csproj">
+      <Project>{e680f9b3-ae3f-4a97-b6e9-3294983eba18}</Project>
+      <Name>AMS.Reportes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMS.Tools\AMS.Tools.csproj">
+      <Project>{97030739-855C-4ECE-A72B-231624365A8D}</Project>
+      <Name>AMS.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1052</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/AMS/AMS.Contabilidad</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

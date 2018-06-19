@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Adding Telerik HTML5 Report Viewer page log</title>
+    <style>
+        body {
+            background: #fff;
+            color: #505050;
+            font: 14px 'Segoe UI', tahoma, arial, helvetica, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+
+        #header {
+            background: #efefef;
+            padding: 0;
+        }
+
+        /* Start: Toggle details */
+        label { 
+            top:0; 
+            left:0; 
+            font-weight:700; 
+            margin-top: 10px;
+            user-select: none;
+            -ms-user-select: none;
+        }
+
+            label:hover{
+                color: cadetblue;
+                border-color: #505050;
+            }
+
+        input#show, input#hide {
+            display:none;
+        }
+
+        ul#details {
+            transition: opacity 1s ease-out;
+            opacity: 0; 
+            height: 0;
+            font-size: 0;
+            overflow: hidden;
+        }
+
+        input#show:checked ~ .show:before {
+            content: "";
+        }
+
+        input#show:checked ~ .hide:before {
+            content: "Hide details";
+            border: solid;
+            padding: 3px;
+        }
+
+        input#hide:checked ~ .hide:before {
+            content: "";
+        }
+
+        input#hide:checked ~ .show:before {
+            content: "Show details"; 
+            border: solid;
+            padding: 3px;
+        }
+
+        input#show:checked ~ ul#details {
+            opacity: 1;
+            font-size: 100%;
+            height: auto;
+            padding: 10px;
+        }
+
+        input#hide:checked ~ ul#details {
+            transition: opacity 1s ease-out;
+            opacity: 0; 
+            height: 0;
+            font-size: 0;
+            overflow: hidden;
+        }
+
+        /* End: toggle details */
+
+
+        h1 {
+            font-size: 48px;
+            font-weight: normal;
+            margin: 0;
+            padding: 0 30px;
+            line-height: 150px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #fff;
+            background: #969696;
+            padding: 0 30px;
+            line-height: 50px;
+        }
+
+        #main {
+            padding: 5px 30px;
+        }
+
+        .section {
+            width: 21.7%;
+            float: left;
+            margin: 0 0 0 40px;
+        }
+
+            .section h2 {
+                font-size: 13px;
+                text-transform: uppercase;
+                margin: 0;
+                border-bottom: 1px solid silver;
+                padding-bottom: 12px;
+                margin-bottom: 8px;
+            }
+
+            .section.first {
+                margin-left: 0;
+                width: 25%
+            }
+
+                .section.first h2 {
+                    font-size: 20px;
+                    text-transform: none;
+                    margin-bottom: 16px;
+                    border: none;
+                }
+
+                .section.first li {
+                    border-top: 1px solid silver;
+                    padding: 8px 0;
+                }
+
+            .section.last {
+                margin-right: 0;
+                width: 70%;
+            }
+            
+            .section.last h2 {
+                    font-size: 20px;
+                    text-transform: none;
+                    margin-bottom: 5px;
+                    border: none;
+                }
+
+            .section.last li {
+                padding: 4px 0;
+                border-bottom: solid;
+                border-bottom-width: 1px;
+                border-color: lightgray;
+            }
+            
+            .section.last ul{
+                padding-bottom:10px;   
+                margin-bottom: 10px; 
+            }
+            
+                
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            line-height: 20px;
+        }
+
+
+
+        a {
+            color: #267cb2;
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <p>Congratulations! You've successfully added an Web form with Telerik HTML5 Report Viewer</p>
+    </div>
+
+    <div id="main">
+        <div class="section first">
+            <h2>Telerik HTML5 Web Form Report Viewer enabled application consists of: </h2>
+            <ul>
+                <li><a href="http://www.telerik.com/help/reporting/html5-report-viewer.html" >HTML5 Web Form Report Viewer</a> prerequisites</li>
+                <li>Web form with HTML5 Report Viewer</li>
+                <li><a href="http://www.telerik.com/help/reporting/telerik-reporting-rest-conception.html" >Telerik Reporting REST Service</a> with its prerequisites</li>
+            </ul>
+        </div>
+
+        <div class="section last">
+            <h2>Summary</h2>
+            <ul style="padding-bottom: 10px; padding-left: 7px;">
+                <li style="color: none;">Added folder: Reports</li>
+<li style="color: none;">Added SampleReport.trdx</li>
+<li style="color: none;">Reference added: Telerik.ReportViewer.Html5.WebForms</li>
+<li style="color: none;">Reference added: Telerik.Reporting</li>
+<li style="color: none;">Reference added: Telerik.Reporting.Services.WebApi</li>
+<li style="color: none;">Reference added: Telerik.Reporting.XpsRendering</li>
+<li style="color: none;">Installed NuGet package: Newtonsoft.Json 4.5.11</li>
+<li style="color: none;">Installed NuGet package: Microsoft.Net.Http 2.0.20710.0</li>
+<li style="color: none;">Installed NuGet package: Microsoft.AspNet.WebApi.Client 4.0.30506</li>
+<li style="color: none;">Installed NuGet package: Microsoft.AspNet.WebApi.Core 4.0.30506</li>
+<li style="color: none;">Installed NuGet package: Microsoft.Web.Infrastructure 1.0.0.0</li>
+<li style="color: none;">Installed NuGet package: Microsoft.AspNet.WebApi.WebHost 4.0.30506</li>
+<li style="color: none;">Added Global.asax</li>
+<li style="color: none;">Registered REST Report Service routes in Global.asax</li>
+<li style="color: none;">Added ReportViewerForm1.aspx</li>
+<li style="color: none;">Added ReportViewerForm1.aspx.cs</li>
+<li style="color: none;">Added ReportViewerForm1.aspx.designer.cs</li>
+<li style="color: none;">Added folder: Controllers</li>
+<li style="color: none;">Added ReportsController.cs</li>
+
+            </ul>
+
+            <input type="radio" id="show" name="group" />   
+            <input type="radio" id="hide" name="group" checked />
+            <label for="hide" class="hide" unselectable="on"></label>
+            <label for="show" class="show" unselectable="on"></label> 
+
+            <ul id="details">
+                2016-04-08 11:42:27
+<li style="color: none;">Check Framework Support</li>
+<li style="color: none;">Assembly name is null: False</li>
+<li style="color: none;">Assembly : Ajax</li>
+<li style="color: none;">Assembly Version: 5.7.22.2</li>
+<li style="color: none;">Product Version: 10.0.16.204</li>
+<li style="color: none;">Verify Telerik Reporting Version: True</li>
+<li style="color: none;">Assembly name is null: False</li>
+<li style="color: none;">Assembly : obout_Grid_NET</li>
+<li style="color: none;">Assembly Version: 7.0.10.0</li>
+<li style="color: none;">Product Version: 10.0.16.204</li>
+<li style="color: none;">Verify Telerik Reporting Version: True</li>
+<li style="color: none;">Assembly name is null: False</li>
+<li style="color: none;">Assembly : System</li>
+<li style="color: none;">Assembly Version: </li>
+<li style="color: none;">Product Version: 10.0.16.204</li>
+<li style="color: none;">Verify Telerik Reporting Version: True</li>
+<li style="color: none;">Assembly name is null: False</li>
+<li style="color: none;">Assembly : System.Data</li>
+<li style="color: none;">Assembly Version: </li>
+<li style="color: none;">Product Version: 10.0.16.204</li>
+<li style="color: none;">Verify Telerik Reporting Version: True</li>
+<li style="color: none;">Assembly name is null: False</li>
+<li style="color: none;">Assembly : System.Data.DataSetExtensions</li>
+<li style="color: none;">Assembly Version: </li>
+<li style="color: none;">Product Version: 10.0.16.204</li>
+<li style="color: none;">Verify Telerik Reporting Version: True</li>
+<li style="color: none;">Assembly name is null: False</li>
+<li style="color: none;">Assembly : System.Web.ApplicationServices</li>
+<li style="color: none;">Assembly Version: </li>
+<li style="color: none;">Product Version: 10.0.16.204</li>
+<li style="color: none;">Verify Telerik Reporting Version: True</li>
+<li style="color: none;">Assembly name is null: False</li>
+<li style="color: none;">Assembly : System.Web.DynamicData</li>
+<li style="color: none;">Assembly Version: </li>
+<li style="color: none;">Product Version: 10.0.16.204</li>
+<li style="color: none;">Verify Telerik Reporting Version: True</li>
+<li style="color: none;">Assembly name is null: False</li>
+<li style="color: none;">Assembly : System.Web.Entity</li>
+<li style="color: none;">Assembly Version: </li>
+<li style="color: none;">Product Version: 10.0.16.204</li>
+<li style="color: none;">Verify Telerik Reporting Version: True</li>
+<li style="color: none;">Assembly name is null: False</li>
+<li style="color: none;">Assembly : System.Drawing</li>
+<li style="color: none;">Assembly Version: </li>
+<li style="color: none;">Product Version: 10.0.16.204</li>
+<li style="color: none;">Verify Telerik Reporting Version: True</li>
+<li style="color: none;">Assembly name is null: False</li>
+<li style="color: none;">Assembly : System.Web</li>
+<li style="color: none;">Assembly Version: </li>
+<li style="color: none;">Product Version: 10.0.16.204</li>
+<li style="color: none;">Verify Telerik Reporting Version: True</li>
+<li style="color: none;">Assembly name is null: False</li>
+<li style="color: none;">Assembly : System.Web.Extensions</li>
+<li style="color: none;">Assembly Version: </li>
+<li style="color: none;">Product Version: 10.0.16.204</li>
+<li style="color: none;">Verify Telerik Reporting Version: True</li>
+<li style="color: none;">Assembly name is null: False</li>
+<li style="color: none;">Assembly : System.Windows.Forms</li>
+<li style="color: none;">Assembly Version: </li>
+<li style="color: none;">Product Version: 10.0.16.204</li>
+<li style="color: none;">Verify Telerik Reporting Version: True</li>
+<li style="color: none;">Assembly name is null: False</li>
+<li style="color: none;">Assembly : System.Xml</li>
+<li style="color: none;">Assembly Version: </li>
+<li style="color: none;">Product Version: 10.0.16.204</li>
+<li style="color: none;">Verify Telerik Reporting Version: True</li>
+<li style="color: none;">Assembly name is null: False</li>
+<li style="color: none;">Assembly : System.Configuration</li>
+<li style="color: none;">Assembly Version: </li>
+<li style="color: none;">Product Version: 10.0.16.204</li>
+<li style="color: none;">Verify Telerik Reporting Version: True</li>
+<li style="color: none;">Assembly name is null: False</li>
+<li style="color: none;">Assembly : System.Web.Services</li>
+<li style="color: none;">Assembly Version: </li>
+<li style="color: none;">Product Version: 10.0.16.204</li>
+<li style="color: none;">Verify Telerik Reporting Version: True</li>
+<li style="color: none;">Assembly name is null: False</li>
+<li style="color: none;">Assembly : System.EnterpriseServices</li>
+<li style="color: none;">Assembly Version: </li>
+<li style="color: none;">Product Version: 10.0.16.204</li>
+<li style="color: none;">Verify Telerik Reporting Version: True</li>
+<li style="color: none;">Assembly name is null: False</li>
+<li style="color: none;">Assembly : System.Web.Mobile</li>
+<li style="color: none;">Assembly Version: </li>
+<li style="color: none;">Product Version: 10.0.16.204</li>
+<li style="color: none;">Verify Telerik Reporting Version: True</li>
+<li style="color: none;">Assembly name is null: False</li>
+<li style="color: none;">Assembly : System.Xml.Linq</li>
+<li style="color: none;">Assembly Version: </li>
+<li style="color: none;">Product Version: 10.0.16.204</li>
+<li style="color: none;">Verify Telerik Reporting Version: True</li>
+<li style="color: none;">Check project: AMS.Comercial</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Contabilidad</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.DBManager</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.DB</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.CryptoServices</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Documentos</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Estadisticos</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Gerencial</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Finanzas</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Forms</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Garantias</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Interface</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Marketing</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Inventarios</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Vehiculos</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Tramite</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Tools</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Reportes</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Nomina</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Automotriz</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Produccion</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Web</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Utilidades</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.VIP</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.FileSync</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.WebService</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Calidad</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.ecasWCF</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Check project: AMS.Asousados</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Added folder: Reports</li>
+<li style="color: none;">Added SampleReport.trdx</li>
+<li style="color: none;">Cancel the form closing: False</li>
+<li style="color: none;">Add project references</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Reference added: Telerik.ReportViewer.Html5.WebForms</li>
+<li style="color: none;">Add required references.</li>
+<li style="color: none;">Add project references</li>
+<li style="color: none;">Get project references.</li>
+<li style="color: none;">Reference added: Telerik.Reporting</li>
+<li style="color: none;">Reference added: Telerik.Reporting.Services.WebApi</li>
+<li style="color: none;">Reference added: Telerik.Reporting.XpsRendering</li>
+<li style="color: none;">Verify Newtonsoft.Json package version</li>
+<li style="color: none;">Installed NuGet package: Newtonsoft.Json 4.5.11</li>
+<li style="color: none;">Verify Microsoft.Net.Http package version</li>
+<li style="color: none;">Installed NuGet package: Microsoft.Net.Http 2.0.20710.0</li>
+<li style="color: none;">Can not resolve the project types for project AMS.Finanzas.</li>
+<li style="color: none;">System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.VisualStudio.Design.VSTypeResolutionService.SearchGeneratedEntries(String fullName, Boolean correctThread)
+   at Microsoft.VisualStudio.Design.VSTypeResolutionService.System.ComponentModel.Design.IDesignTimeAssemblyLoader.GetTargetAssemblyPath(AssemblyName runtimeOrTargetAssemblyName, String suggestedAssemblyPath, FrameworkName targetFramework)
+   at Microsoft.VisualStudio.Shell.Design.VsTargetFrameworkUniverse.ResolveAssembly(AssemblyName assemblyName, Assembly runtimeAssembly)
+   at Microsoft.VisualStudio.Shell.Design.VsTargetFrameworkUniverse.GetTypeFromTargetLocation(Type type, Boolean validateBase)
+   at Microsoft.VisualStudio.Shell.Design.VsTargetFrameworkUniverse.IsSupportedType(Type type)
+   at Microsoft.VisualStudio.Shell.Design.VsTargetFrameworkProvider.IsSupportedType(Type type)
+   at Microsoft.VisualStudio.Design.VSTypeResolutionService.SearchEntries(Type baseType, Boolean excludeGlobalTypes)
+   at Microsoft.VisualStudio.Design.VSTypeResolutionService.System.ComponentModel.Design.ITypeDiscoveryService.GetTypes(Type baseType, Boolean excludeGlobalTypes)
+   at Telerik.Reporting.Vs.Common.ProjectManager.GetTypes(Boolean excludeGlobalTypes)</li>
+<li style="color: none;">Verify Microsoft.AspNet.WebApi.Client package version</li>
+<li style="color: none;">Installed NuGet package: Microsoft.AspNet.WebApi.Client 4.0.30506</li>
+<li style="color: none;">Can not resolve the project types for project AMS.Inventarios.</li>
+<li style="color: none;">System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.VisualStudio.Design.VSTypeResolutionService.SearchGeneratedEntries(String fullName, Boolean correctThread)
+   at Microsoft.VisualStudio.Design.VSTypeResolutionService.System.ComponentModel.Design.IDesignTimeAssemblyLoader.GetTargetAssemblyPath(AssemblyName runtimeOrTargetAssemblyName, String suggestedAssemblyPath, FrameworkName targetFramework)
+   at Microsoft.VisualStudio.Shell.Design.VsTargetFrameworkUniverse.ResolveAssembly(AssemblyName assemblyName, Assembly runtimeAssembly)
+   at Microsoft.VisualStudio.Shell.Design.VsTargetFrameworkUniverse.ResolveAssembly(Module scope, Token tokenAssemblyRef)
+   at Microsoft.MetadataReader.MetadataOnlyModule.ResolveTypeRef(ITypeReference typeReference)
+   at Microsoft.MetadataReader.MetadataOnlyTypeReference.GetResolvedTypeWorker()
+   at Microsoft.MetadataReader.TypeProxy.GetResolvedType()
+   at System.Reflection.Adds.Helpers.EnsureResolve(Type type)
+   at Microsoft.VisualStudio.Shell.Design.VsTargetFrameworkUtil.EnsureResolvedType(Type type)
+   at Microsoft.VisualStudio.Shell.Design.VsTargetFrameworkUniverse.BaseTypesAreResolvable(Type type)
+   at Microsoft.VisualStudio.Shell.Design.VsTargetFrameworkUniverse.GetTypeFromTargetLocation(Type type, Boolean validateBase)
+   at Microsoft.VisualStudio.Shell.Design.VsTargetFrameworkUniverse.IsSupportedType(Type type)
+   at Microsoft.VisualStudio.Shell.Design.VsTargetFrameworkProvider.IsSupportedType(Type type)
+   at Microsoft.VisualStudio.Design.VSTypeResolutionService.SearchEntries(Type baseType, Boolean excludeGlobalTypes)
+   at Microsoft.VisualStudio.Design.VSTypeResolutionService.System.ComponentModel.Design.ITypeDiscoveryService.GetTypes(Type baseType, Boolean excludeGlobalTypes)
+   at Telerik.Reporting.Vs.Common.ProjectManager.GetTypes(Boolean excludeGlobalTypes)</li>
+<li style="color: none;">Verify Microsoft.AspNet.WebApi.Core package version</li>
+<li style="color: none;">Installed NuGet package: Microsoft.AspNet.WebApi.Core 4.0.30506</li>
+<li style="color: none;">Verify Microsoft.Web.Infrastructure package version</li>
+<li style="color: none;">Installed NuGet package: Microsoft.Web.Infrastructure 1.0.0.0</li>
+<li style="color: none;">Verify Microsoft.AspNet.WebApi.WebHost package version</li>
+<li style="color: none;">Installed NuGet package: Microsoft.AspNet.WebApi.WebHost 4.0.30506</li>
+<li style="color: none;">Added Global.asax</li>
+<li style="color: none;">Enhance Global.asax</li>
+<li style="color: none;">Namespace Kind: vsCMElementNamespace</li>
+<li style="color: none;">Register routes</li>
+<li style="color: none;">Is REST Report Service route registered: False</li>
+<li style="color: none;">Registered REST Report Service routes in Global.asax</li>
+<li style="color: none;">Class with name ReportsController is not found</li>
+<li style="color: none;">Adding TelerikViewerPage.aspx.Trdx project item</li>
+<li style="color: none;">Added ReportViewerForm1.aspx</li>
+<li style="color: none;">Adding TelerikViewerPage.aspx.Type project item</li>
+<li style="color: none;">Adding TelerikViewerPage.aspx.ReportServer project item</li>
+<li style="color: none;">Adding TelerikViewerPage.aspx.cs project item</li>
+<li style="color: none;">Added ReportViewerForm1.aspx.cs</li>
+<li style="color: none;">Adding TelerikViewerPage.aspx.designer.cs project item</li>
+<li style="color: none;">Added ReportViewerForm1.aspx.designer.cs</li>
+<li style="color: none;">Added folder: Controllers</li>
+<li style="color: none;">Added ReportsController.cs</li>
+
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

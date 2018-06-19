@@ -1,0 +1,348 @@
+<?xml version="1.0"?>
+<ArchivoRegistro xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ListaRegistroActividad />
+  <ListaRegistroError />
+  <ListaRegistroInformacion />
+  <ListaRegistroErrorCrystalReports>
+    <Registro>
+      <Fecha>2018-04-27T16:08:31.5366238-05:00</Fecha>
+      <Dia>4/27/2018</Dia>
+      <Hora>4:08 PM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>ErrorCrystalReports</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>CrystalDecisions.Shared.CrystalReportsException</NombreExcepcion>
+      <MensajeExcepcion>Load report failed.</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.Documentos.FormatosDocumentos.PreviewReport(String Rpt, String archivo, String tipo, String nomuser, String passw, String nomvistatotal, String nomtotal, String nomformulaletras, String pref, String num)
+   at AMS.Documentos.FormatosDocumentos.Cargar_Formato()
+   at AMS.Inventarios.CrearPedido.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.aspx_ams_web_index_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Error al generar formato. .:. 
+ Load report failed. .:. 
+ System.Runtime.InteropServices.COMException (0x80041811): Unsupported Operation. A document processed by the JRC engine cannot be opened in the C++ stack.
+   at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened() .:. 
+ CrystalDecisions.CrystalReports.Engine .:. 
+    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at AMS.Documentos.FormatosDocumentos.PreviewReport(String Rpt, String archivo, String tipo, String nomuser, String passw, String nomvistatotal, String nomtotal, String nomformulaletras, String pref, String num) in C:\inetpub\wwwroot\AMS\AMS.Documentos\AMS.Documentos.Imprimir.cs:line 872 .:. 
+ </Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-04-27T16:08:33.9657627-05:00</Fecha>
+      <Dia>4/27/2018</Dia>
+      <Hora>4:08 PM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>ErrorCrystalReports</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>CrystalDecisions.Shared.CrystalReportsException</NombreExcepcion>
+      <MensajeExcepcion>Load report failed.</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.Documentos.FormatosDocumentos.PreviewReport(String Rpt, String archivo, String tipo, String nomuser, String passw, String nomvistatotal, String nomtotal, String nomformulaletras, String pref, String num)
+   at AMS.Documentos.FormatosDocumentos.Cargar_Formato()
+   at AMS.Inventarios.CrearPedido.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.aspx_ams_web_index_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Error al generar formato. .:. 
+ Load report failed. .:. 
+ System.Runtime.InteropServices.COMException (0x80041811): Unsupported Operation. A document processed by the JRC engine cannot be opened in the C++ stack.
+   at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened() .:. 
+ CrystalDecisions.CrystalReports.Engine .:. 
+    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at AMS.Documentos.FormatosDocumentos.PreviewReport(String Rpt, String archivo, String tipo, String nomuser, String passw, String nomvistatotal, String nomtotal, String nomformulaletras, String pref, String num) in C:\inetpub\wwwroot\AMS\AMS.Documentos\AMS.Documentos.Imprimir.cs:line 872 .:. 
+ Error al generar formato. .:. 
+ Load report failed. .:. 
+ System.Runtime.InteropServices.COMException (0x80041811): Unsupported Operation. A document processed by the JRC engine cannot be opened in the C++ stack.
+   at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened() .:. 
+ CrystalDecisions.CrystalReports.Engine .:. 
+    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at AMS.Documentos.FormatosDocumentos.PreviewReport(String Rpt, String archivo, String tipo, String nomuser, String passw, String nomvistatotal, String nomtotal, String nomformulaletras, String pref, String num) in C:\inetpub\wwwroot\AMS\AMS.Documentos\AMS.Documentos.Imprimir.cs:line 872 .:. 
+ </Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-04-27T16:46:07.2725626-05:00</Fecha>
+      <Dia>4/27/2018</Dia>
+      <Hora>4:46 PM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>ErrorCrystalReports</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>CrystalDecisions.Shared.CrystalReportsException</NombreExcepcion>
+      <MensajeExcepcion>Load report failed.</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.Documentos.FormatosDocumentos.PreviewReport(String Rpt, String archivo, String tipo, String nomuser, String passw, String nomvistatotal, String nomtotal, String nomformulaletras, String pref, String num)
+   at AMS.Documentos.FormatosDocumentos.Cargar_Formato()
+   at AMS.Inventarios.CrearPedido.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.aspx_ams_web_index_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Error al generar formato. .:. 
+ Load report failed. .:. 
+ System.Runtime.InteropServices.COMException (0x80041811): Unsupported Operation. A document processed by the JRC engine cannot be opened in the C++ stack.
+   at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened() .:. 
+ CrystalDecisions.CrystalReports.Engine .:. 
+    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at AMS.Documentos.FormatosDocumentos.PreviewReport(String Rpt, String archivo, String tipo, String nomuser, String passw, String nomvistatotal, String nomtotal, String nomformulaletras, String pref, String num) in C:\inetpub\wwwroot\AMS\AMS.Documentos\AMS.Documentos.Imprimir.cs:line 872 .:. 
+ </Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-04-27T16:46:09.3716827-05:00</Fecha>
+      <Dia>4/27/2018</Dia>
+      <Hora>4:46 PM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>ErrorCrystalReports</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>CrystalDecisions.Shared.CrystalReportsException</NombreExcepcion>
+      <MensajeExcepcion>Load report failed.</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.Documentos.FormatosDocumentos.PreviewReport(String Rpt, String archivo, String tipo, String nomuser, String passw, String nomvistatotal, String nomtotal, String nomformulaletras, String pref, String num)
+   at AMS.Documentos.FormatosDocumentos.Cargar_Formato()
+   at AMS.Inventarios.CrearPedido.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.aspx_ams_web_index_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Error al generar formato. .:. 
+ Load report failed. .:. 
+ System.Runtime.InteropServices.COMException (0x80041811): Unsupported Operation. A document processed by the JRC engine cannot be opened in the C++ stack.
+   at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened() .:. 
+ CrystalDecisions.CrystalReports.Engine .:. 
+    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at AMS.Documentos.FormatosDocumentos.PreviewReport(String Rpt, String archivo, String tipo, String nomuser, String passw, String nomvistatotal, String nomtotal, String nomformulaletras, String pref, String num) in C:\inetpub\wwwroot\AMS\AMS.Documentos\AMS.Documentos.Imprimir.cs:line 872 .:. 
+ Error al generar formato. .:. 
+ Load report failed. .:. 
+ System.Runtime.InteropServices.COMException (0x80041811): Unsupported Operation. A document processed by the JRC engine cannot be opened in the C++ stack.
+   at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened() .:. 
+ CrystalDecisions.CrystalReports.Engine .:. 
+    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at AMS.Documentos.FormatosDocumentos.PreviewReport(String Rpt, String archivo, String tipo, String nomuser, String passw, String nomvistatotal, String nomtotal, String nomformulaletras, String pref, String num) in C:\inetpub\wwwroot\AMS\AMS.Documentos\AMS.Documentos.Imprimir.cs:line 872 .:. 
+ </Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-04-27T18:00:18.1168313-05:00</Fecha>
+      <Dia>4/27/2018</Dia>
+      <Hora>6:00 PM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>ErrorCrystalReports</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>CrystalDecisions.Shared.CrystalReportsException</NombreExcepcion>
+      <MensajeExcepcion>Load report failed.</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.Documentos.FormatosDocumentos.PreviewReport(String Rpt, String archivo, String tipo, String nomuser, String passw, String nomvistatotal, String nomtotal, String nomformulaletras, String pref, String num)
+   at AMS.Documentos.FormatosDocumentos.Cargar_Formato()
+   at AMS.Inventarios.CrearPedido.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.aspx_ams_web_index_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Error al generar formato. .:. 
+ Load report failed. .:. 
+ System.Runtime.InteropServices.COMException (0x80041811): Unsupported Operation. A document processed by the JRC engine cannot be opened in the C++ stack.
+   at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened() .:. 
+ CrystalDecisions.CrystalReports.Engine .:. 
+    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at AMS.Documentos.FormatosDocumentos.PreviewReport(String Rpt, String archivo, String tipo, String nomuser, String passw, String nomvistatotal, String nomtotal, String nomformulaletras, String pref, String num) in C:\inetpub\wwwroot\AMS\AMS.Documentos\AMS.Documentos.Imprimir.cs:line 872 .:. 
+ </Observaciones>
+    </Registro>
+    <Registro>
+      <Fecha>2018-04-27T18:00:20.2639541-05:00</Fecha>
+      <Dia>4/27/2018</Dia>
+      <Hora>6:00 PM</Hora>
+      <Usuario>hangulo</Usuario>
+      <TipoRegistro>ErrorCrystalReports</TipoRegistro>
+      <Sql />
+      <NombreExcepcion>CrystalDecisions.Shared.CrystalReportsException</NombreExcepcion>
+      <MensajeExcepcion>Load report failed.</MensajeExcepcion>
+      <PilaLLamados>   at AMS.DB.Registro.CargarPilaLlamados(TipoRegistro tipoRegistro, Exception excepcion)
+   at AMS.DB.Registro..ctor(String usuario, TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.DB.AdministradorCarpetasRegistro.GrabarLogs(TipoRegistro tipoRegistro, String sql, Exception excepcion, String observaciones)
+   at AMS.Documentos.FormatosDocumentos.PreviewReport(String Rpt, String archivo, String tipo, String nomuser, String passw, String nomvistatotal, String nomtotal, String nomformulaletras, String pref, String num)
+   at AMS.Documentos.FormatosDocumentos.Cargar_Formato()
+   at AMS.Inventarios.CrearPedido.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.aspx_ams_web_index_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus&amp; notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+</PilaLLamados>
+      <Observaciones>Error al generar formato. .:. 
+ Load report failed. .:. 
+ System.Runtime.InteropServices.COMException (0x80041811): Unsupported Operation. A document processed by the JRC engine cannot be opened in the C++ stack.
+   at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened() .:. 
+ CrystalDecisions.CrystalReports.Engine .:. 
+    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at AMS.Documentos.FormatosDocumentos.PreviewReport(String Rpt, String archivo, String tipo, String nomuser, String passw, String nomvistatotal, String nomtotal, String nomformulaletras, String pref, String num) in C:\inetpub\wwwroot\AMS\AMS.Documentos\AMS.Documentos.Imprimir.cs:line 872 .:. 
+ Error al generar formato. .:. 
+ Load report failed. .:. 
+ System.Runtime.InteropServices.COMException (0x80041811): Unsupported Operation. A document processed by the JRC engine cannot be opened in the C++ stack.
+   at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object&amp; DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened() .:. 
+ CrystalDecisions.CrystalReports.Engine .:. 
+    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at AMS.Documentos.FormatosDocumentos.PreviewReport(String Rpt, String archivo, String tipo, String nomuser, String passw, String nomvistatotal, String nomtotal, String nomformulaletras, String pref, String num) in C:\inetpub\wwwroot\AMS\AMS.Documentos\AMS.Documentos.Imprimir.cs:line 872 .:. 
+ </Observaciones>
+    </Registro>
+  </ListaRegistroErrorCrystalReports>
+  <ListaRegistroInformacionCrystalRepots />
+</ArchivoRegistro>

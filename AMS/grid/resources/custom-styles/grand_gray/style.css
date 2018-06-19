@@ -1,0 +1,1602 @@
+/* Main Container */
+/* ----- */
+.ob_gDGCCT .ob_gDGCCT .ob_gMCont
+{
+    position: relative;
+    overflow: hidden;
+    /*background-color: #EEEEEE;*/
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gMCont_DT
+{
+    overflow: hidden;
+}
+
+/* Left Side (Border) - used when grouping is enabled */
+.ob_gDGCCT .ob_gDGCCT .ob_gBLSWG
+{
+    position: absolute;
+    top: 34px;
+    bottom: 6px;
+    left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;    
+    width: 1px;
+    font-size: 1px;
+    background-color: #C3C9CE;
+    z-index: 31;
+}
+
+/* Left Side (Border) - used when grouping is disabled */
+.ob_gDGCCT .ob_gDGCCT .ob_gBLS
+{
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;    
+    width: 1px;
+    font-size: 1px;
+    background-color: #C3C9CE;
+    z-index: 31;
+}
+
+/* Right Side (Border) - used when grouping is enabled */
+.ob_gDGCCT .ob_gDGCCT .ob_gBRSWG
+{
+    position: absolute;
+    top: 34px;
+    bottom: 6px;
+    right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;    
+    width: 1px;
+    font-size: 1px;
+    background-color: #C3C9CE;
+    z-index: 31;
+}
+
+/* Right Side (Border) - used when grouping is disabled */
+.ob_gDGCCT .ob_gDGCCT .ob_gBRS
+{
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;    
+    width: 1px;
+    font-size: 1px;
+    background-color: #C3C9CE;
+    z-index: 31;
+}
+
+
+
+
+
+/* Common */
+/* ------ */
+
+.ob_gDGCCT .ob_gDGCCT .ob_gC
+{
+    white-space: nowrap;
+    cursor: default;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gC_I
+{
+    display: none;
+    white-space: nowrap;
+    cursor: default;
+    padding: 0px;
+    margin: 0px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gCW
+{
+    white-space: normal;
+    cursor: default;
+    vertical-align: middle;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gCW_I
+{
+    display: none;
+    white-space: normal;
+    cursor: default;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gC div div
+{
+    white-space: nowrap;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gCW div div
+{
+    white-space: normal;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gCd
+{
+    display: none;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gD
+{
+    display: none;
+}
+
+/* Resize lines */
+.ob_gDGCCT .ob_gDGCCT .ob_gRL
+{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 1px;
+    background-color: #B9C9D7;
+    font-size: 1px;
+    z-index: 999;
+}
+
+/* Resize tooltip */
+.ob_gDGCCT .ob_gDGCCT .ob_gRT
+{
+	cursor: default;		
+	margin: 0px;
+	padding: 1px;
+	border: 1px solid #000000;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #000000;	
+	height: 12px;
+	margin-top: -10px;		
+	top: 0px;
+	vertical-align: middle;
+	background-color: #F5F5DC;
+	position: absolute;
+	z-index: 999;
+}
+.ob_gDGCCT .ob_gDGCCT .ob_gRT span
+{
+	padding-left: 3px;
+}
+
+
+
+
+
+/* Header */
+/* ------ */
+
+/* Container for the header - used when grouping is disabled */
+.ob_gDGCCT .ob_gDGCCT .ob_gHContWG
+{
+    position: relative;
+    overflow: hidden;
+    width: 100%;    
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* Container for the header - used when grouping is enabled */
+.ob_gDGCCT .ob_gDGCCT .ob_gHCont
+{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gHICont
+{
+    position: relative;
+    overflow: hidden;
+}
+
+* html .ob_gDGCCT .ob_gDGCCT .ob_gHICont, ob_gDGCCT .ob_gMCont_DT .ob_gHICont
+{
+    width: 100%;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gMCont_DT .ob_gHICont
+{
+    height: 25px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gH
+{
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gHR
+{
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gHContWG .ob_gH .ob_gC, .ob_gDGCCT .ob_gDGCCT .ob_gHContWG .ob_gH .ob_gCW
+{
+    background-image: url(header_without_grouping.gif);
+    background-repeat: repeat-x;
+    background-color: #A8AEBD;
+    height: 25px;
+    font-family: Verdana;
+	font-size: 11px;
+	font-weight: normal;
+	color: #2b2b3d;
+	text-align: left;
+	cursor: pointer;
+}
+
+
+.ob_gDGCCT .ob_gDGCCT .ob_gHCont .ob_gH .ob_gC, .ob_gDGCCT .ob_gDGCCT .ob_gHCont .ob_gH .ob_gCW
+{
+    background-image: url(header.gif);
+    background-repeat: repeat-x;
+    background-color: #9497A8;
+    height: 25px;
+    font-family: Verdana;
+	font-size: 11px;
+	font-weight: normal;
+	color: #2b2b3d;
+	text-align: left;
+	cursor: pointer;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gHContWG .ob_gH .ob_gC div.ob_gCc1, .ob_gDGCCT .ob_gDGCCT .ob_gHContWG .ob_gH .ob_gCW div.ob_gCc1
+{
+    padding-bottom: 6px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gHContWG .ob_gH .ob_gC div.ob_gCc1_F, .ob_gDGCCT .ob_gDGCCT .ob_gHContWG .ob_gH .ob_gCW div.ob_gCc1_F
+{
+    _margin-top: 3px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gHCont .ob_gH .ob_gC div.ob_gCc1, .ob_gDGCCT .ob_gDGCCT .ob_gHCont .ob_gH .ob_gCW div.ob_gCc1
+{
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gH .ob_gC div.ob_gCc1, .ob_gDGCCT .ob_gDGCCT .ob_gH .ob_gCW div.ob_gCc1
+{
+    position: relative;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gH .ob_gC div.ob_gCc1_F, .ob_gDGCCT .ob_gDGCCT .ob_gH .ob_gCW div.ob_gCc1_F
+{
+    _margin-top: 6px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gH .ob_gC div.ob_gCc2, .ob_gDGCCT .ob_gDGCCT .ob_gH .ob_gCW div.ob_gCc2
+{
+    padding: 0px;
+    padding-left: 20px;
+    margin-right: 3px;
+    position: static;
+    width: auto;
+    overflow: hidden;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gH .ob_gC div.ob_gCc2C, .ob_gDGCCT .ob_gDGCCT .ob_gH .ob_gCW div.ob_gCc2C
+{
+    padding: 0px;
+    padding-left: 20px;
+    margin-right: 3px;
+    position: static;
+    width: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gH .ob_gC div.ob_gCc2R, .ob_gDGCCT .ob_gDGCCT .ob_gH .ob_gCW div.ob_gCc2R
+{
+    padding: 0px;
+    padding-left: 20px;
+    margin-right: 16px;
+    position: static;
+    width: auto;
+    overflow: hidden;
+    text-align: right;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gMCont_DT .ob_gH div.ob_gCc1
+{
+    margin-top: -6px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gHContWG .ob_gH .ob_gC div.ob_gHSI, .ob_gDGCCT .ob_gDGCCT .ob_gHContWG .ob_gH .ob_gCW div.ob_gHSI
+{
+    bottom: 5px;
+    margin-top: -10px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gHCont .ob_gH .ob_gC div.ob_gHSI, .ob_gDGCCT .ob_gDGCCT .ob_gHCont .ob_gH .ob_gCW div.ob_gHSI
+{
+    
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gH .ob_gC div.ob_gHSI, .ob_gDGCCT .ob_gDGCCT .ob_gH .ob_gCW div.ob_gHSI
+{
+    position: absolute;
+    height: 16px;
+    right: 2px;
+    top: 50%;    
+    margin: 0px;
+    margin-bottom: auto;
+    margin-top: -8px;
+    _margin-top: -13px !important;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gH .ob_gC div.ob_gHSI_F, .ob_gDGCCT .ob_gDGCCT .ob_gH .ob_gCW div.ob_gHSI_F
+{
+    position: absolute;
+    height: 16px;
+    right: 2px;
+    top: 50%;    
+    margin: 0px;
+    margin-bottom: auto;
+    margin-top: -8spx;
+    _margin-top: -13px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gH .ob_gC_Lc div.ob_gHSI
+{
+    right: 3px;
+}
+
+/* Cells separator */
+.ob_gDGCCT .ob_gDGCCT .ob_gHCont .ob_gCS, .ob_gDGCCT .ob_gDGCCT .ob_gHContWG .ob_gCS, .ob_gDGCCT .ob_gDGCCT .ob_gHCont .ob_gCS_F, .ob_gDGCCT .ob_gDGCCT .ob_gHContWG .ob_gCS_F
+{
+    position: absolute;
+    top: 0px;    
+    font-size: 1px;
+    cursor: e-resize;
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-left: -1px;
+    background-color: Transparent !important;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gHCont .ob_gCS, .ob_gDGCCT .ob_gDGCCT .ob_gHContWG .ob_gCS
+{
+    bottom: 0px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gHCont .ob_gCS div, .ob_gDGCCT .ob_gDGCCT .ob_gHCont .ob_gCS_F div
+{
+    background-color: #bdbec9;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gHContWG .ob_gCS div, .ob_gDGCCT .ob_gDGCCT .ob_gHContWG .ob_gCS_F div
+{
+    background-color: #ccccd3;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gHCont .ob_gCS div, .ob_gHContWG .ob_gCS div, .ob_gDGCCT .ob_gDGCCT .ob_gHCont .ob_gCS_F div, .ob_gDGCCT .ob_gDGCCT .ob_gHContWG .ob_gCS_F div
+{
+    width: 1px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+}
+
+
+
+
+
+/* Body */
+/* ------ */
+.ob_gDGCCT .ob_gDGCCT .ob_gBCont
+{
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    width: 100%; 
+    margin-left: 0px;
+    margin-right: 0px;   
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gBICont
+{
+    position: relative;
+    overflow: hidden;
+}
+
+* html .ob_gDGCCT .ob_gDGCCT .ob_gBICont, .ob_gDGCCT .ob_gDGCCT .ob_gMCont_DT .ob_gBICont
+{
+    width: 100%;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gBody
+{
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+/* Row - Normal state */
+.ob_gDGCCT .ob_gDGCCT .ob_gR
+{
+	background-image: url(row1.gif);
+	background-position:bottom;
+	background-repeat:repeat-x;
+	background-color:#ececf0;	
+	color: #5f627b;
+}
+
+/* Row - Alternate state */
+.ob_gDGCCT .ob_gDGCCT .ob_gRA
+{
+	background-image: url(row2.gif);
+	background-position:bottom;
+	background-repeat:repeat-x;
+	background-color:#ffffff;
+	color: #5f627b;
+}
+
+
+/* Row - Selected state */
+.ob_gDGCCT .ob_gDGCCT .ob_gRS
+{
+	background-image: url(row_selected.gif);
+	background-position:bottom;
+	background-repeat:repeat-x;
+	background-color:#d6dae1;
+	color: #515a6e;
+}
+
+/* Row - Hover state */
+.ob_gDGCCT .ob_gDGCCT .ob_gRH
+{
+	background-image: url(row_hover.gif);
+	background-position:bottom;
+	background-repeat:repeat-x;
+	background-color:#c3d7ef;
+	color: #3d4e93;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gBody .ob_gC, .ob_gDGCCT .ob_gDGCCT .ob_gBody .ob_gCW
+{
+    height: 25px;
+    font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gBody .ob_gC div.ob_gCc1, .ob_gDGCCT .ob_gDGCCT .ob_gBody .ob_gCW div.ob_gCc1
+{    
+    #overflow: visible;
+    #overflow-x: hidden;
+    /*position: relative;*/
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gBody .ob_gC div.ob_gCc2, .ob_gDGCCT .ob_gDGCCT .ob_gBody .ob_gCW div.ob_gCc2
+{
+    padding: 0px;
+    padding-left: 20px;
+    margin-right: 3px;
+    position: static;
+    width: auto;
+    overflow: hidden;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gBody .ob_gC div.ob_gCc2C, .ob_gDGCCT .ob_gDGCCT .ob_gBody .ob_gCW div.ob_gCc2C
+{
+    padding: 0px;
+    padding-left: 20px;
+    margin-right: 3px;
+    position: static;
+    width: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gBody .ob_gC div.ob_gCc2R, .ob_gDGCCT .ob_gDGCCT .ob_gBody .ob_gCW div.ob_gCc2R
+{
+    padding: 0px;
+    padding-left: 20px;
+    margin-right: 3px;
+    position: static;
+    width: auto;
+    overflow: hidden;
+    text-align: right;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gBCont .ob_gCS, .ob_gDGCCT .ob_gDGCCT .ob_gBCont .ob_gCS_F
+{
+    position: absolute;
+    top: 0px;
+    width: 1px;
+    background-color: #dbdbe1;
+    font-size: 1px;
+    z-index: 10;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gBCont .ob_gCS
+{
+    bottom: 0px;
+}
+
+/* Container for the loading message displayed during a callback */
+.ob_gDGCCT .ob_gDGCCT div.ob_gBLM, .ob_gDGCCT .ob_gDGCCT div.ob_gBLM_F
+{
+    position: absolute;
+	background-color: #F6F7F7;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	text-align: center;
+	z-index: 30;
+	width: 100%;
+
+}
+.ob_gDGCCT .ob_gDGCCT div.ob_gBLM
+{
+    bottom: 0px;
+}
+.ob_gDGCCT .ob_gDGCCT div.ob_gBLM div, .ob_gDGCCT .ob_gDGCCT div.ob_gBLM_F div
+{    
+    position: absolute;
+    font-family: Verdana;
+	font-size: 10px;
+	color:#0C416F;
+	height: 10px;
+	top: 50%;	
+	margin-top: -5px;	
+	left: 0px;
+	right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 100%;
+}
+
+/* Action links */
+.ob_gDGCCT .ob_gDGCCT a.ob_gAL
+{
+	font-family: Verdana;
+	font-size: 10px;
+	color: #27489d;
+	font-weight: normal;
+	text-decoration:none;
+}
+
+/* Action links - hover state */
+.ob_gDGCCT .ob_gDGCCT a.ob_gAL:hover
+{
+	font-family: Verdana;
+	font-size: 10px;
+	color: #27489d;
+	font-weight: normal;				
+	text-decoration:underline;		
+}
+
+/* Cell - temporary added (multi-record adding) */
+.ob_gDGCCT .ob_gDGCCT .ob_gCTA
+{
+    color: #2a8b03;
+}
+
+/* Cell - temporary edited (multi-record editing) */
+.ob_gDGCCT .ob_gDGCCT .ob_gCTE
+{
+    color: #b81336;
+}
+
+/* Cell - temporary deleted (multi-record deleting) */
+.ob_gDGCCT .ob_gDGCCT .ob_gCTD
+{
+    color: #777d81;			
+	text-decoration: line-through;
+}
+
+/* Group header - container */
+.ob_gDGCCT .ob_gDGCCT .ob_gRGH
+{
+	background-image: url(record_group_header.gif);
+	height: 25px;
+}
+
+/* Group header - inner container */
+.ob_gDGCCT .ob_gDGCCT .ob_gRGHI
+{
+    position: relative;
+    height: 25px;
+    z-index: 15;
+    background-image: url(record_group_header.gif);
+}
+
+/* Group header - content*/
+.ob_gDGCCT .ob_gDGCCT .ob_gRGHC
+{
+	cursor: default;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #FFFFFF;	
+	height: 25px;	
+	vertical-align: middle;
+	font-weight: normal;
+	cursor: pointer;
+	border: 0px;
+	float: left;
+	line-height: 25px;
+}
+
+/* Group header - Expand/Collapse button */
+.ob_gDGCCT .ob_gDGCCT .ob_gRGHB 
+{	
+	padding: 0px;
+	padding-left: 0px;
+	padding-right: 3px;	
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: top;
+	height: 25px;
+	font-size: 1px;
+	float: left;
+}	
+.ob_gDGCCT .ob_gDGCCT .ob_gRGHB img
+{
+	height: 25px;
+	cursor: pointer;
+	margin: 0px;
+	font-size: 1px;
+}
+
+/* Group header - Left side spacer */
+.ob_gDGCCT .ob_gDGCCT .ob_gRGBS
+{
+	width: 17px;
+	height: 25px;
+	font-size: 1px;
+	text-align: right;
+	background-image: url(record_group_header_padding.gif);
+	float: left;
+}
+.ob_gDGCCT .ob_gDGCCT .ob_gRGBS div
+{
+	background-image: url(record_group_header_padding_right.gif);
+	height: 25px;
+	width: 5px;
+	margin-left: 12px;
+}
+
+/* Group footer */
+.ob_gDGCCT .ob_gDGCCT .ob_gRGF
+{
+	background-image: url(group_summary.gif);
+	color: #353b4d;
+	font-family: Verdana;
+	font-size: 10px;
+}
+
+/* Message displayed when grid has no records */
+.ob_gDGCCT .ob_gDGCCT .ob_gNRM
+{
+	font-family: Verdana;
+	font-size: 10px;
+	border: 0px;			
+	background-image: url(row1.gif);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	background-color:#ececf0;
+	color: #5f627b;
+	height: 25px;
+	border-bottom: 1px solid #C3C9CE;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gNRM .ob_gCc1
+{
+    position: relative;
+    height: 25px;
+    z-index: 15;
+    background-image: url(row1.gif);
+    line-height: 25px;
+}
+
+/* Selection area */
+.ob_gDGCCT .ob_gDGCCT .ob_gSA
+{
+    position: absolute;
+    z-index: 999;
+    background-color: #F6F7F7;
+	border: 1px solid #4B555E;
+	font-size: 1px;
+}
+
+/* Edit control - backward compatibility */
+.ob_gDGCCT .ob_gDGCCT .ob_gEC
+{
+	padding: 0px;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #202426;			
+	background-color: #FFFFFF;
+	width: 96%;
+	border: 1px solid #196585;
+}
+
+/* Row Edit Template container */
+.ob_gDGCCT .ob_gDGCCT .ob_gRETpl
+{
+	font-family: Verdana;
+	font-size: 10px;
+	color: #196585;
+	padding: 15px;
+	border-top: 1px solid #7BB8D9;
+	background-color:#e3e3e8;
+	background-image:url(form_bgr.gif);
+	background-repeat:repeat-x;
+	background-position:top;
+	border-bottom:1px solid #dbdbe1;
+	border-top:1px solid #dbdbe1;
+	position: relative;
+	z-index: 11;
+}
+
+/* Row in THead section of the body table */
+.ob_gDGCCT .ob_gDGCCT .ob_gBTLRV
+{
+    visibility: hidden;
+    *display: none;
+}
+.ob_gDGCCT .ob_gDGCCT .ob_gBTLRV td
+{
+    height: 0px !important;
+    font-size: 0px !important;
+    padding: 0px;
+	margin: 0px;
+	border: 0px;
+	visibility: hidden;
+}
+
+
+
+
+
+/* Footer */
+/* ------ */
+.ob_gDGCCT .ob_gDGCCT .ob_gFCont /*.ob_gridFooterContent*/
+{		
+	background-image: url(footer.gif);
+	padding: 0px;
+	margin-top: 0px;
+	border: 0px;
+	height: 27px;
+	padding-left: 20px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	vertical-align: middle;
+	position: relative;
+	cursor: default;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #2b2b3d;
+	white-space: nowrap;
+	z-index: 0;
+	margin-left: 0px;
+    margin-right: 0px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gFCont_F_D
+{		
+	background-image: url(footer.gif);
+	padding: 0px;
+	margin-top: 0px;
+	border: 0px;
+	height: 27px;
+	padding-left: 20px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	vertical-align: middle;
+	position: relative;
+	cursor: default;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #2b2b3d;
+	white-space: nowrap;
+	z-index: 0;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gPSTT
+{
+	position: relative;
+	top:11px;
+	display:-moz-inline-stack;
+    display:inline-block;
+	height: 17px;
+	z-index: 2;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gFCont .ob_gPSTT
+{
+    zoom:1;
+    *display:inline;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gPSTD
+{
+	width: 67px;
+	position: absolute;
+	right: -74px;
+	top: -2px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gPSTDIC
+{
+    width: 68px !important;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gFEC
+{
+    position: absolute;
+    top: 7px;
+    right: 0px;
+    height: 23px;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gFCont_F_D .ob_gFEC
+{
+    width: 100%;
+}
+
+/* Container for the action links */
+.ob_gDGCCT .ob_gDGCCT .ob_gFALC
+{
+    height: 19px;
+    line-height: 19px;
+    float: right;
+    #float: none;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gFCont_F_D .ob_gFALC
+{
+    float: none;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gFAL
+{
+    display:-moz-inline-stack;
+    display:inline-block;
+    zoom:1;
+    *display:inline;
+    float: right;
+}
+
+.ob_gDGCCT .ob_gDGCCT a.ob_gALF /*a.ob_gridActionLinkFooter*/
+{
+	font-family: Verdana;
+	font-size: 10px;
+	color: #27489d;
+	font-weight: normal;
+	text-decoration:none;
+	padding-right: 1px;
+}
+
+.ob_gDGCCT .ob_gDGCCT a.ob_gALF:hover /*a.ob_gridActionLinkFooter:hover*/
+{
+	font-family: Verdana;
+	font-size: 10px;
+	color: #27489d;
+	font-weight: normal;				
+	text-decoration: underline;
+	padding-right: 1px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gALFS /*.ob_gridAdd_FilterSpacer*/
+{
+	width: 30px;
+	text-align: center;
+	display:-moz-inline-stack;
+    display:inline-block;
+    zoom:1;
+    *display:inline;
+    float: right;
+}
+
+/* Container for the paging section */
+.ob_gDGCCT .ob_gDGCCT .ob_gFP
+{
+    float: right;
+    #float: none;
+    margin-right: 6px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gFCont_F_D .ob_gFP
+{
+    width: 305px;
+}
+
+/* Container for the text in the paging section */
+.ob_gDGCCT .ob_gDGCCT .ob_gFPT
+{
+    float: right;
+    padding-top: 4px;
+}
+
+/* Container for navigation/paging buttons */
+.ob_gDGCCT .ob_gDGCCT .ob_gPBC
+{
+    float: right;
+    cursor: pointer;
+}
+
+/* Container for the page links */
+.ob_gDGCCT .ob_gDGCCT .ob_gPLC
+{        
+    float: right;
+    padding-top: 2px;
+    height: 22px;
+}
+
+/* Page link */
+.ob_gDGCCT .ob_gDGCCT .ob_gPLCL
+{
+    font:normal 11px Verdana;
+    color:#353b4d;
+    text-decoration: none;
+    cursor: pointer;
+    padding:1px 3px 1px 3px;
+    border: 1px solid #99A3B5;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-image:url(page_number_normal.gif);
+    float: left;
+}
+
+/* Page link - hover */
+.ob_gDGCCT .ob_gDGCCT .ob_gPLCLH
+{
+    font:normal 11px Verdana;
+    color:#304eab;
+    text-decoration: none;
+    cursor: pointer;
+    padding:1px 3px 1px 3px;
+    border: 1px solid #6b7cb0;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-image:url(page_number_over.gif);
+    float: left;
+}
+
+/* Separator between page links */
+.ob_gDGCCT .ob_gDGCCT .ob_gPLS
+{
+    font-family: Verdana;
+    font-size: 11px;
+    color:#44556D;
+    font-weight: normal;
+    text-decoration:none;
+    cursor: default;
+    padding-left: 2px;
+    padding-right: 2px;
+    float: left;
+    display: none;
+}
+
+/* Page link disabled */
+.ob_gDGCCT .ob_gDGCCT .ob_gPLD
+{
+    font-family: Verdana;
+    font-size: 11px;
+    color:#44556D;
+    font-weight: normal;		
+    cursor: default;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 1px;
+    *margin-bottom: 3px;
+    float: left;
+}
+
+/* Container for the total number of pages text */
+.ob_gDGCCT .ob_gDGCCT .ob_gTNOP
+{
+    float: right;
+    padding-top: 4px;
+    height: 20px;
+    margin-left: 3px;
+    margin-right: 0px;
+}
+
+/* Container for the manual paging section */
+.ob_gDGCCT .ob_gDGCCT .ob_gMPS
+{
+    float: right;
+    padding-top: 2px;
+    height: 20px;
+    margin-left: 3px;
+    margin-right: 0px;
+}
+
+/* Container for the manual paging textbox */
+.ob_gDGCCT .ob_gDGCCT .ob_gMPST
+{
+    float: left;
+    margin-left: 4px;
+}
+
+/* Container for the manual paging action link */
+.ob_gDGCCT .ob_gDGCCT .ob_gMPSL
+{
+    float: left;
+    margin-top: 3px;
+    margin-left: 4px;
+}
+
+
+
+/* Grouping Area */
+/* ------------- */
+
+/* Grouping Area - Container */
+.ob_gDGCCT .ob_gDGCCT .ob_gGACont
+{
+	height: 34px;
+	position: relative;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Grouping Area - Left corner */
+.ob_gDGCCT .ob_gDGCCT .ob_gGACnL
+{
+	width: 20px;
+	height: 34px;
+	background-image: url(grouping_area_left.gif);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+/* main section for grouping area */
+.ob_gDGCCT .ob_gDGCCT .ob_gGA
+{
+	border:0px solid #FFFFFF;
+	background-image: url(grouping_area.gif);
+	height: 34px;
+	position: absolute;
+	top: 0px;
+	line-height: 34px;	
+	left: 20px;
+	right: 20px;
+	margin: 0px;
+	padding: 0px;
+}
+
+* html .ob_gDGCCT .ob_gDGCCT .ob_gGA
+{
+    #width: 100%;
+}
+
+/* Grouping Area - Default text */
+.ob_gDGCCT .ob_gDGCCT .ob_gGADC
+{
+    font-family: Verdana;
+	font-size: 11px;
+	font-weight: normal;		
+	color: #262636;
+	text-align: left;				
+	border:0px solid #FFFFFF;
+	height: 34px;
+}
+
+/* Grouping Area - Right corner */
+.ob_gDGCCT .ob_gDGCCT .ob_gGACnR
+{
+	width: 20px;
+	height: 34px;
+	background-image: url(grouping_area_right.gif);
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+/* Grouping - Dragging column */
+.ob_gDGCCT .ob_gDGCCT .ob_gGDC
+{
+    position: absolute;
+    z-index: 999;
+    font-family: Verdana;
+	font-size: 11px;
+	font-weight: normal;		
+	color: #2b2b3d;
+	text-align: left;				
+	border: 1px solid #829fb7;
+	background-image: url(header_pressed.gif);
+	vertical-align: middle;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 20px;
+}
+
+/* Grouping - Groupped dragging column */
+.ob_gDGCCT .ob_gDGCCT .ob_gGDC2
+{
+    position: absolute;
+    z-index: 999;
+    line-height: 21px;
+}
+
+/* Grouping - Header column highlighted */
+.ob_gDGCCT .ob_gDGCCT .ob_gHCHWG
+{
+	background-image: url(header_pressed.gif) !important;
+}
+
+/* Grouping - Top arrow */
+.ob_gDGCCT .ob_gDGCCT .ob_gGATA
+{
+	background-image: url(group_arrow_top.gif);
+	width: 9px;
+	height: 9px;
+	font-size: 1px;
+	padding: 0px;
+	z-index: 999 !important;
+}
+
+/* Grouping - Bottom arrow */
+.ob_gDGCCT .ob_gDGCCT .ob_gGABA
+{
+	background-image: url(group_arrow_bottom.gif);
+	width: 9px;
+	height: 9px;
+	font-size: 1px;
+	padding: 0px;
+	z-index: 999 !important;
+}
+
+/* Column in grouping area - container */
+.ob_gDGCCT .ob_gDGCCT .ob_gGAC
+{	
+	cursor: move;
+	float: left;
+    position: relative;
+}
+
+/* Column in grouping area - left side */
+.ob_gDGCCT .ob_gDGCCT .ob_gGACL
+{
+	width: 12px;
+	background-image: url(grouping_area_column_left_dragging.gif);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.ob_gDGCCT .ob_gDGCCT .ob_gGA .ob_gGACL
+{		
+	background-image: url(grouping_area_column_left.gif);
+}
+
+/* Column in grouping area - center */
+.ob_gDGCCT .ob_gDGCCT .ob_gGACM
+{
+	height: 21px;
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;		
+	color: #353b4d;
+	background-image: none;
+	overflow: visible;
+	white-space: nowrap;
+	text-align: center;	
+	background-image: url(grouping_area_column_dragging.gif);
+	margin-left: 12px;
+	margin-right: 12px;
+	#zoom:1;
+    #display:inline;
+}
+.ob_gDGCCT .ob_gDGCCT .ob_gGA .ob_gGACM
+{
+	height: 34px;
+	background-image: url(grouping_area_column.gif);
+}		
+
+/* Column in grouping area - right side */
+.ob_gDGCCT .ob_gDGCCT .ob_gGACR
+{
+	width: 12px;
+	background-image: url(grouping_area_column_right_dragging.gif);
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.ob_gDGCCT .ob_gDGCCT .ob_gGA .ob_gGACR
+{
+	background-image: url(grouping_area_column_right.gif);
+}
+
+/* Column in grouping area - spacer/link between columns*/	
+.ob_gDGCCT .ob_gDGCCT .ob_gGACS
+{
+	height: 34px;
+	width: 20px;
+	background-image: url(grouping_area_column_spacer.gif);
+	float: left;
+}
+
+
+
+
+
+/* Horizontal Scroller */
+/* ------------------- */
+
+.ob_gDGCCT .ob_gDGCCT .ob_gSH
+{
+    position: relative;
+    overflow: hidden;
+    height: 20px;
+    height /*\**/: 16px\9;
+    #height: 16px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gSH div
+{
+    width: 100%;
+    height: 40px;
+    height /*\**/: 36px\9;
+    #height: 36px;
+	overflow: auto;
+	overflow-y: hidden;
+	position: absolute;
+	top: -20px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gSH div div
+{
+    height: 20px;
+    visibility: hidden;
+}
+
+
+
+
+
+/* Filter */
+/* ------ */
+
+.ob_gDGCCT .ob_gDGCCT .ob_gFlCont
+{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /*border-top: 1px solid #D0EDF5;*/
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gFlICont
+{
+    position: relative;
+    overflow: hidden;
+}
+
+* html .ob_gDGCCT .ob_gDGCCT .ob_gFlICont, .ob_gDGCCT .ob_gDGCCT .ob_gMCont_DT .ob_gFlICont
+{
+    width: 100%;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gFl
+{
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gFl .ob_gC, .ob_gDGCCT .ob_gDGCCT .ob_gFl .ob_gCW
+{
+    background-image: url(filter.gif);
+    height: 50px;
+    font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-align: left;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gFl .ob_gC div.ob_gCc1, .ob_gDGCCT .ob_gDGCCT .ob_gFl .ob_gCW div.ob_gCc1
+{    
+    overflow: visible;
+    position: relative;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gFl .ob_gC div.ob_gCc2, .ob_gDGCCT .ob_gDGCCT .ob_gFl .ob_gCW div.ob_gCc2
+{
+    padding: 0px;
+    padding-top: 2px;
+    padding-left: 20px;
+    margin-right: 3px;
+    position: static;
+    width: auto;
+    overflow: hidden;
+}
+
+/* Cells separator */
+.ob_gDGCCT .ob_gDGCCT .ob_gFlCont .ob_gCS, .ob_gDGCCT .ob_gDGCCT .ob_gFlCont .ob_gCS_F
+{
+    position: absolute;
+    top: 0px;
+    width: 1px;
+    background-color: #e7e9f0;
+    font-size: 1px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gFlCont .ob_gCS
+{
+    bottom: 0px;
+}
+
+
+
+
+
+/* Columns Footer */
+/* ------ */
+
+.ob_gDGCCT .ob_gDGCCT .ob_gCFCont
+{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gCFICont
+{
+    position: relative;
+    overflow: hidden;
+}
+
+* html .ob_gDGCCT .ob_gDGCCT .ob_gCFICont, .ob_gDGCCT .ob_gDGCCT .ob_gMCont_DT .ob_gCFICont
+{
+    width: 100%;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gCFR
+{
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gCFR .ob_gC, .ob_gDGCCT .ob_gDGCCT .ob_gCFR .ob_gCW
+{
+    background-image: url(summary.gif);
+    height: 25px;
+    font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	color: #2b2b3d;
+	text-align: left;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gCFR .ob_gC div.ob_gCc1, .ob_gDGCCT .ob_gDGCCT .ob_gCFR .ob_gCW div.ob_gCc1
+{    
+    overflow: visible;
+    position: relative;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gCFR .ob_gC div.ob_gCc2, .ob_gDGCCT .ob_gDGCCT .ob_gCFR .ob_gCW div.ob_gCc2
+{
+    padding: 0px;
+    padding-top: 2px;
+    padding-left: 20px;
+    margin-right: 3px;
+    position: static;
+    width: auto;
+    overflow: hidden;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gCFR .ob_gC div.ob_gCc2C, .ob_gDGCCT .ob_gDGCCT .ob_gCFR .ob_gCW div.ob_gCc2C
+{
+    padding: 0px;
+    padding-top: 2px;
+    padding-left: 20px;
+    margin-right: 3px;
+    position: static;
+    width: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gCFR .ob_gC div.ob_gCc2R, .ob_gDGCCT .ob_gDGCCT .ob_gCFR .ob_gCW div.ob_gCc2R
+{
+    padding: 0px;
+    padding-top: 2px;
+    padding-left: 20px;
+    margin-right: 3px;
+    position: static;
+    width: auto;
+    overflow: hidden;
+    text-align: right;
+}
+
+/* Cells separator */
+.ob_gDGCCT .ob_gDGCCT .ob_gCFCont .ob_gCS, .ob_gDGCCT .ob_gDGCCT .ob_gCFCont .ob_gCS_F
+{
+    position: absolute;
+    top: 0px;
+    width: 1px;
+    background-color: #d1d1d9;
+    font-size: 1px;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gCFCont .ob_gCS
+{
+    bottom: 0px;
+}
+
+
+
+
+
+/* Master/Detail */
+/* ------------------- */
+
+/* Row containing a detail grid */
+.ob_gDGCCT .ob_gDGCCT .ob_gDGC
+{
+}
+
+/* The container of a detail grid */
+.ob_gDGCCT .ob_gDGCCT .ob_gDGCCT
+{
+    background-color: #F6F7F7;
+    padding-left: 20px;
+    z-index: 15;
+    position: relative;
+    width: 100%;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gDGCCIT
+{
+    width: 100%;
+    position: relative;
+}
+
+/* Cell containing the +/- buttons for expanding/collapsing the detail grids */
+.ob_gDGCCT .ob_gDGCCT .ob_gDGE
+{
+}
+.ob_gDGCCT .ob_gDGCCT .ob_gDGE div.ob_gCc1
+{
+    position: relative !important;
+}
+
+/* Container for the +/- buttons for expanding/collapsing the detail grids */ 
+.ob_gDGCCT .ob_gDGCCT .ob_gDGEB
+{
+    position: absolute;
+    height: 24px;
+    width: 19px;
+    top: 50%;
+    overflow: visible;
+}
+
+.ob_gDGCCT .ob_gDGCCT .ob_gDGEB img
+{
+    margin-top: -12px;
+    position: absolute;
+    cursor: pointer;
+}
+
+/* Loading message displayed while a detail grid is loading (OnCallback)*/
+.ob_gDGCCT .ob_gDGCCT td.ob_gBLM
+{
+    background-color: #F6F7F7;
+    text-align: center;
+    font-family: Verdana;
+	font-size: 10px;
+	color:#0C416F;
+	height: 20px;
+}
+.ob_gDGCCT .ob_gDGCCT td.ob_gBLM div
+{
+    position: relative;
+    z-index: 15;
+    height: 20px;
+    line-height: 20px;
+    background-color: #F6F7F7;
+}
+
+
+
+
+
+/* Corners displayed at the top of the grid */
+/* ------ */
+
+/* Container for the top corners */
+.ob_gDGCCT .ob_gDGCCT .ob_gHCnC
+{
+	height: 7px;
+	position: relative;
+	background-image: url(header_corner_middle.gif);
+	background-repeat: repeat-x;
+	font-size: 1px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+/* Left corner */
+.ob_gDGCCT .ob_gDGCCT .ob_gHCnL
+{
+	background-image: url(header_corner_left.gif);
+	height: 7px;
+	width: 20px;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: -20px;
+}
+
+/* Right corner */
+.ob_gDGCCT .ob_gDGCCT .ob_gHCnR
+{
+	background-image: url(header_corner_right.gif);
+	height: 7px;
+	width: 20px;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: -20px;
+}
+
+
+
+
+
+/* Corners displayed at the bottom of the grid */
+/* ------ */
+
+/* Container for the bottom corners */
+.ob_gDGCCT .ob_gDGCCT .ob_gFCnC
+{
+	height: 7px;
+	position: relative;
+	background-image: url(footer_corner_middle.gif);
+	background-repeat: repeat-x;
+	font-size: 1px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+/* Left corner */
+.ob_gDGCCT .ob_gDGCCT .ob_gFCnL
+{
+	background-image: url(footer_corner_left.gif);
+	height: 7px;
+	width: 20px;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: -20px;
+}
+
+/* Right corner */
+.ob_gDGCCT .ob_gDGCCT .ob_gFCnR
+{
+	background-image: url(footer_corner_right.gif);
+	height: 7px;
+	width: 20px;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: -20px;
+}

@@ -1,0 +1,43 @@
+30
+<RED>------------------------------
+          ANTICIPO
+<RED>------------------------------
+ 
+Num anticipo: <NUMERO>
+Agencia:
+ <AGENCIA>
+Bus:
+ <BUS_NUMERO> (<BUS_PLACA>)
+Planilla:
+ <PLANILLA>
+Concepto:
+ <CONCEPTO>
+Entrega:
+ <ENTREGA_NOMBRE>
+ <ENTREGA_NIT>
+Recibe:
+ <RECIBE_NOMBRE>
+ <RECIBE_NIT>
+Descripcion:
+ <DESCRIPCION>
+Cantidad:
+ <CANTIDAD>
+Valor Unidad:
+ <VALOR_UNIDAD>
+Valor Total:
+ <VALOR_TOTAL>
+Fecha:
+ <FECHA>
+ 
+ 
+ 
+ 
+_______________________________ 
+Firma Entrega
+ 
+ 
+ 
+ 
+_______________________________
+Firma Recibe
+ 

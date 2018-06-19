@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<localization xmlns="obout:grid:localization-schema">
+  <grid
+     page_size_text = "每頁記錄數:"
+     records_text = "記錄數:"
+     to_text = "-"
+     of_text = "的"
+     pages_text = "頁數:"
+     loading_text = "載入中..."
+     no_records_text = "沒有紀錄."
+     resizing_tooltip_width = "寬:"
+     resizing_tooltip_pixels = "像素"
+     type_validation_error = "XXXXX列輸入值無效."
+     maxlength_validation_error = "輸入XXXX列的值超過此列允許的最大字符數YYYY."
+     js_warning = "格框ID '[GRID_ID]'初始化錯誤.\n\n[警告]\n\n請聯繫我們有關如何使用該頁面http://www.obout.com/inc/support.aspx ."
+     >
+
+    <commands
+      add_link = "添加"
+      edit_link = "編輯"
+      delete_link = "刪除"
+      update_link = "更新"
+      cancel_link = "取消"
+      save_link = "保存"
+      save_all_link = "保存全部"
+      cancel_all_link = "取消全部"
+      remove_link = "清除"
+      modify_link = "修改"
+      undelete_link = "取消刪除"
+    />
+    
+    <filter
+      button_show_filter = "顯示篩選"
+      button_hide_filter = "隱藏篩選"
+      button_filter = "篩選"
+      button_remove_filter = "清除篩選"
+      
+      filter_criteria_nofilter = "不篩選"
+      filter_criteria_contains = "字符串包含"
+      filter_criteria_does_not_contain = "字符串不包含"
+      filter_criteria_starts_with = "字符串開頭"
+      filter_criteria_ends_with = "字符串結尾"
+      filter_criteria_equal_to = "等於"
+      filter_criteria_not_equal_to = "不等於"
+      filter_criteria_smaller_than = "小於"
+      filter_criteria_greater_than = "大於"
+      filter_criteria_smaller_than_or_equal_to = "小於或等於"
+      filter_criteria_greater_than_or_equal_to = "大於或等於"
+      filter_criteria_is_null = "是無效值"
+      filter_criteria_is_not_null = "不是無效值"
+      filter_criteria_is_empty = "是空值"
+      filter_criteria_is_not_empty = "不是空值"
+    />
+
+    <grouping
+      grouping_area_text = "拖動列標題到這裡,按該列進行分組."
+      group_information_count = " (XXXXX記錄數)"
+      group_information_count_single = " (XXXXX記錄)"
+      group_information_next_page = " (顯示XXXXX的YYYYY記錄數- 這組在下一頁繼續)"
+      group_information_previous_page = " (顯示XXXXX的YYYYY記錄數- 這組從前一頁開始)"
+      group_information_previous_next_page = " (顯示XXXXX的YYYYY記錄數- 這組從前一頁開始並在下一頁繼續)"
+    />
+
+    <paging
+      total_number_of_pages = " (出於XXXXX)"
+      manual_paging_link = "轉到頁 »"
+      page_size_options_all = "全部"
+    />
+    
+  </grid>
+</localization> 

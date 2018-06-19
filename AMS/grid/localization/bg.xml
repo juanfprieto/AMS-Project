@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<localization xmlns="obout:grid:localization-schema">
+  <grid
+     page_size_text  = "Записи на стр.:"
+     records_text    = "Записи:"
+     to_text         = "-"
+     of_text         = "от"
+     pages_text      = "Стр.:"          
+     loading_text    = "Зареждане..."
+     no_records_text = "Няма съществуващи записи."
+     resizing_tooltip_width = "широчина:"
+     resizing_tooltip_pixels = "pixels"
+     type_validation_error = "Стойността, коята въведохте в колона XXXXX е невалидна."
+     maxlength_validation_error = "Стойността, която въведохте в колона XXXXX превишава максимума от YYYYY символа позволен в колоната."
+     js_warning = "Грешка при ициализаране на Grid със  ID '[GRID_ID]'.\n\n[WARNING]\n\nМоля, информирайте на geryon.dzzd@gmail.com !"
+     >
+
+    <commands
+      add_link	      = "Добави нов"
+      edit_link       = "Редакция"
+      delete_link     = "Изтриване"      
+      update_link     = "Обновяване"      
+      cancel_link     = "Отказ"
+      save_link       = "Запис"
+      save_all_link   = "Запази всички"
+      cancel_all_link = "Откажи всички"
+      remove_link     = "Премахни"
+      modify_link     = "Модифицирай"
+      undelete_link   = "Възстанови"
+    />
+    
+    <filter
+      button_show_filter   = "Покажи филтър"
+      button_hide_filter   = "Скрий"
+      button_filter        = "Приложи"
+      button_remove_filter = "Премахни"
+      
+      filter_criteria_nofilter                 = "Няма филтър"
+      filter_criteria_contains                 = "Съдържа"
+      filter_criteria_does_not_contain         = "Не съдържа"
+      filter_criteria_starts_with              = "Започва със"
+      filter_criteria_ends_with                = "Завършва със"
+      filter_criteria_equal_to                 = "Равно на"
+      filter_criteria_not_equal_to             = "Не е равно на"
+      filter_criteria_smaller_than             = "Помалко от"
+      filter_criteria_greater_than             = "Поголямо от"
+      filter_criteria_smaller_than_or_equal_to = "Помалко от или равно на"
+      filter_criteria_greater_than_or_equal_to = "Поголямо от или равно на"
+      filter_criteria_is_null                  = "Е Null"
+      filter_criteria_is_not_null              = "Не е Null"
+      filter_criteria_is_empty                 = "Празно"
+      filter_criteria_is_not_empty             = "Не е празно"
+    />        
+
+    <grouping
+      grouping_area_text = "Постави заглавието на колоната ТУК за групиране ."
+      group_information_count = " (XXXXX записа)"
+      group_information_count_single = " (XXXXX запис)"
+      group_information_next_page = " (Показани са  XXXXX от YYYYY записа - Тази група продължава на следващата страница)"
+      group_information_previous_page = " (Показани са XXXXX от YYYYY записа - Тази група започва от предишна страница)"
+      group_information_previous_next_page = " (Показани са XXXXX от YYYYY записа -Тази група започва от предишна страница и продължава на следващата страница)"
+    />
+
+    <paging
+      total_number_of_pages  = " (Стр. XXXXX)"
+      manual_paging_link  = "Отиди на стр. »"
+      page_size_options_all = "Всички"
+    />
+    
+  </grid>
+</localization>

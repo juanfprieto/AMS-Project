@@ -1,0 +1,46 @@
+30
+<RED>*        COOTRANSBOL LTDA       *
+<RED>*        NIT : 800174156-9      *
+<RED>* CALLE 15 16-25 PISO 6 DUITAMA *
+<RED>*    TEL 7610717 FAX 7610716    *
+<RED>*FACTURA CAMBIARIA DE TRANSPORTE*
+
+<RED>Num encomienda...GUIA:   <NUMERO>
+<RED>Fecha encomienda: <FECHA>
+ 
+<RED>Agencia Origen:
+<RED> <AGENCIA>
+<RED>Ruta DESTINO: 
+<RED> <RUTA>
+
+<RED>Envia:
+<RED> <ENTREGA_NOMBRE>
+<RED> <ENTREGA_NIT>
+<RED> <ENTREGA_CEL>
+<RED>Destinatario:
+<RED> <RECIBE_NOMBRE>
+<RED> <RECIBE_NIT>
+<RED> <RECIBE_CEL>
+
+<RED>Descripcion:
+<RED><DESCRIPCION>
+<RED>Unidades: <UNIDADES>
+<RED>Peso:     <PESO>
+<RED>Volumen:  <VOLUMEN>
+<RED>Valor Declarado:  <VALOR_DECLARADO>
+<RED>Costo Encomienda:  <COSTO_ENCOMIENDA>
+
+<RED>Recibio: 
+<RED><NITRESPONSABLE><RESPONSABLE> 
+
+
+  
+_______________________________ 
+<RED>Firma Encargado
+ 
+ 
+_______________________________
+<RED>Firma Cliente
+<RED>*******************************
+      E N C O M I E N D A 
+<RED>*******************************

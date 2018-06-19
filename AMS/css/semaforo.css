@@ -1,0 +1,12 @@
+﻿/* File Created: junio 19, 2015 */
+ul#semaforo 
+    {
+    background: #333232;
+    border-radius: 0.5em;
+    width: 40%;
+    padding-left: 10px;
+     }
+
+ul#semaforo li{
+	list-style:none;
+}

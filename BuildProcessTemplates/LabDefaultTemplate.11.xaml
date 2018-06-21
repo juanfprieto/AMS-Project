@@ -1,4 +1,4 @@
-﻿<Activity mc:Ignorable="sads sap" x:Class="TfsBuild.Process" this:Process.LabWorkflowParameters="[New Microsoft.TeamFoundation.Lab.Workflow.Activities.LabWorkflowDetails()]" this:Process.Verbosity="[Microsoft.TeamFoundation.Build.Workflow.BuildVerbosity.Normal]" this:Process.BuildNumberFormat="[&quot;$(BuildDefinitionName)_$(Date:yyyyMMdd)$(Rev:.r)&quot;]" this:Process.SupportedReasons="Manual, BatchedCI, Schedule, ScheduleForced" this:Process.TimeoutForDeploymentScriptInMinutes="30" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mt="clr-namespace:Microsoft.TeamFoundation;assembly=Microsoft.TeamFoundation.Common" xmlns:mtbc="clr-namespace:Microsoft.TeamFoundation.Build.Client;assembly=Microsoft.TeamFoundation.Build.Client" xmlns:mtbc1="clr-namespace:Microsoft.TeamFoundation.Build.Common;assembly=Microsoft.TeamFoundation.Build.Common" xmlns:mtbp="clr-namespace:Microsoft.TeamFoundation.Build.ProcessComponents;assembly=Microsoft.TeamFoundation.Build.ProcessComponents" xmlns:mtbw="clr-namespace:Microsoft.TeamFoundation.Build.Workflow;assembly=Microsoft.TeamFoundation.Build.Workflow" xmlns:mtbwa="clr-namespace:Microsoft.TeamFoundation.Build.Workflow.Activities;assembly=Microsoft.TeamFoundation.Build.Workflow" xmlns:mtbws="clr-namespace:Microsoft.TeamFoundation.Build.Workflow.Services;assembly=Microsoft.TeamFoundation.Build.Workflow" xmlns:mtlc="clr-namespace:Microsoft.TeamFoundation.Lab.Client;assembly=Microsoft.TeamFoundation.Lab.Client" xmlns:mtltc="clr-namespace:Microsoft.TeamFoundation.Lab.TestIntegration.Client;assembly=Microsoft.TeamFoundation.Lab.TestIntegration.Client" xmlns:mtlwa="clr-namespace:Microsoft.TeamFoundation.Lab.Workflow.Activities;assembly=Microsoft.TeamFoundation.Lab.Workflow.Activities" xmlns:mtlwc="clr-namespace:Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client;assembly=Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client" xmlns:mttbb="clr-namespace:Microsoft.TeamFoundation.TestImpact.BuildIntegration.BuildActivities;assembly=Microsoft.TeamFoundation.TestImpact.BuildIntegration" xmlns:mttc="clr-namespace:Microsoft.TeamFoundation.TestManagement.Client;assembly=Microsoft.TeamFoundation.TestManagement.Client" xmlns:mtvc="clr-namespace:Microsoft.TeamFoundation.VersionControl.Client;assembly=Microsoft.TeamFoundation.VersionControl.Client" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:s1="clr-namespace:System;assembly=System" xmlns:s2="clr-namespace:System;assembly=System.Core" xmlns:s3="clr-namespace:System;assembly=System.ServiceModel" xmlns:s4="clr-namespace:System;assembly=System.ComponentModel.Composition" xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities" xmlns:sad="clr-namespace:System.Activities.Debugger;assembly=System.Activities" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sl="clr-namespace:System.Linq;assembly=System.Core" xmlns:this="clr-namespace:TfsBuild" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+﻿<Activity mc:Ignorable="sap sads" x:Class="TfsBuild.Process" this:Process.LabWorkflowParameters="[New Microsoft.TeamFoundation.Lab.Workflow.Activities.LabWorkflowDetails()]" this:Process.Verbosity="[Microsoft.TeamFoundation.Build.Workflow.BuildVerbosity.Normal]" this:Process.BuildNumberFormat="[&quot;$(BuildDefinitionName)_$(Date:yyyyMMdd)$(Rev:.r)&quot;]" this:Process.SupportedReasons="Manual, BatchedCI, Schedule, ScheduleForced, IndividualCI" this:Process.TimeoutForDeploymentScriptInMinutes="30" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mt="clr-namespace:Microsoft.TeamFoundation;assembly=Microsoft.TeamFoundation.Common" xmlns:mtbc="clr-namespace:Microsoft.TeamFoundation.Build.Client;assembly=Microsoft.TeamFoundation.Build.Client" xmlns:mtbc1="clr-namespace:Microsoft.TeamFoundation.Build.Common;assembly=Microsoft.TeamFoundation.Build.Common" xmlns:mtbp="clr-namespace:Microsoft.TeamFoundation.Build.ProcessComponents;assembly=Microsoft.TeamFoundation.Build.ProcessComponents" xmlns:mtbw="clr-namespace:Microsoft.TeamFoundation.Build.Workflow;assembly=Microsoft.TeamFoundation.Build.Workflow" xmlns:mtbwa="clr-namespace:Microsoft.TeamFoundation.Build.Workflow.Activities;assembly=Microsoft.TeamFoundation.Build.Workflow" xmlns:mtbws="clr-namespace:Microsoft.TeamFoundation.Build.Workflow.Services;assembly=Microsoft.TeamFoundation.Build.Workflow" xmlns:mtlc="clr-namespace:Microsoft.TeamFoundation.Lab.Client;assembly=Microsoft.TeamFoundation.Lab.Client" xmlns:mtltc="clr-namespace:Microsoft.TeamFoundation.Lab.TestIntegration.Client;assembly=Microsoft.TeamFoundation.Lab.TestIntegration.Client" xmlns:mtlwa="clr-namespace:Microsoft.TeamFoundation.Lab.Workflow.Activities;assembly=Microsoft.TeamFoundation.Lab.Workflow.Activities" xmlns:mtlwc="clr-namespace:Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client;assembly=Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client" xmlns:mttbb="clr-namespace:Microsoft.TeamFoundation.TestImpact.BuildIntegration.BuildActivities;assembly=Microsoft.TeamFoundation.TestImpact.BuildIntegration" xmlns:mttc="clr-namespace:Microsoft.TeamFoundation.TestManagement.Client;assembly=Microsoft.TeamFoundation.TestManagement.Client" xmlns:mtvc="clr-namespace:Microsoft.TeamFoundation.VersionControl.Client;assembly=Microsoft.TeamFoundation.VersionControl.Client" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:s1="clr-namespace:System;assembly=System" xmlns:s2="clr-namespace:System;assembly=System.Core" xmlns:s3="clr-namespace:System;assembly=System.ServiceModel" xmlns:s4="clr-namespace:System;assembly=System.ComponentModel.Composition" xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities" xmlns:sad="clr-namespace:System.Activities.Debugger;assembly=System.Activities" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sl="clr-namespace:System.Linq;assembly=System.Core" xmlns:this="clr-namespace:TfsBuild" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="BuildProcessVersion" Type="x:String" />
     <x:Property Name="Metadata" Type="mtbw:ProcessParameterMetadataCollection" />
@@ -20,7 +20,7 @@
   </this:Process.Metadata>
   <sap:VirtualizedContainerService.HintSize>920,3702</sap:VirtualizedContainerService.HintSize>
   <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
-  <Sequence DisplayName="Application Deployment Workflow" sad:XamlDebuggerXmlReader.FileName="D:\VSTLM\src\vset\LabManager\LabCustomActivities\Templates\LabDefaultTemplate.xaml" sap:VirtualizedContainerService.HintSize="880,3662" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
+  <Sequence DisplayName="Application Deployment Workflow" sap:VirtualizedContainerService.HintSize="880,3662" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
     <Sequence.Variables>
       <Variable x:TypeArguments="mtbc:IBuildDetail" Name="BuildDetail" />
       <Variable x:TypeArguments="x:String" Name="LabEnvironmentUri" />
@@ -32,17 +32,12 @@
       <Variable x:TypeArguments="mtbc:IBuildDetail" Name="SelectedBuildDetail" />
       <Variable x:TypeArguments="x:String" Name="BuildNumber" />
       <Variable x:TypeArguments="mtlc:LabEnvironment" Name="LabEnvironment" />
-    </Sequence.Variables>   
+    </Sequence.Variables>
     <mtbwa:UpdateBuildNumber BuildNumberFormat="[BuildNumberFormat]" DisplayName="Update Build Number" sap:VirtualizedContainerService.HintSize="858,22" />
     <mtbwa:GetBuildDetail DisplayName="Get Build Details" sap:VirtualizedContainerService.HintSize="858,22" Result="[BuildDetail]" />
     <If Condition="[LabWorkflowParameters.BuildDetails.IsTeamSystemBuild = True AndAlso LabWorkflowParameters.BuildDetails.QueueNewBuild = True]" DisplayName="If Build is needed" sap:VirtualizedContainerService.HintSize="858,416">
       <If.Then>
         <Sequence DisplayName="Do Build" sap:VirtualizedContainerService.HintSize="301,308">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
           <mtlwa:RunWorkflow BuildController="{x:Null}" LabEnvironmentUri="{x:Null}" BuildDefinition="[LabWorkflowParameters.BuildDetails.BuildDefinitionName]" DisplayName="Start Build Workflow" sap:VirtualizedContainerService.HintSize="242,22" ProjectName="[BuildDetail.TeamProject]" Result="[QueueBuildId]" />
           <mtlwa:WaitForWorkflow AllowPartiallySucceededBuild="True" BuildDetails="[ChildBuildDetail]" DisplayName="Wait For Build To Complete" sap:VirtualizedContainerService.HintSize="242,22" LabWorkflowType="[Microsoft.TeamFoundation.Lab.Workflow.Activities.WorkflowType.Build]" MaxConsecutiveFailuresToIgnoreDuringWaitForCompletion="[3]" MaxWaitTime="[TimeSpan.Zero]" QueueBuildId="[QueueBuildId]" RefreshInterval="[System.TimeSpan.FromMinutes(1)]" Result="[BuildStatus]" ThrowOnError="True" />
           <Assign DisplayName="Set Build Location" sap:VirtualizedContainerService.HintSize="242,60">
@@ -92,41 +87,41 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="No Clean Snapshot" >
-          <If Condition="[Not String.Equals(Microsoft.TeamFoundation.Lab.Client.LabEnvironment.UnmanagedProvider, labEnvironment.LabProvider)]" DisplayName= "If Virtual Environment">
+        <Sequence DisplayName="No Clean Snapshot">
+          <If Condition="[Not String.Equals(Microsoft.TeamFoundation.Lab.Client.LabEnvironment.UnmanagedProvider, labEnvironment.LabProvider)]" DisplayName="If Virtual Environment">
             <If.Then>
               <mtlwa:WriteDeploymentInformation Url="{x:Null}" DeploymentInformationType="[Microsoft.TeamFoundation.Build.Common.DeploymentInformationTypes.Deploy]" DisplayName="Clean snapshot not specified " sap:VirtualizedContainerService.HintSize="208,208" Message="Build definition did not specify a clean snapshot. It is a best practice to use clean snapshot when running the lab workflow." />
             </If.Then>
           </If>
-        </Sequence>        
+        </Sequence>
       </If.Else>
     </If>
     <If Condition="[LabWorkflowParameters.DeploymentDetails.DeploymentNeeded = True or LabWorkflowParameters.TestParameters.RunTest = True]" DisplayName="If deployment or test needed" sap:VirtualizedContainerService.HintSize="858,1214">
       <If.Then>
-	<mtlwa:WaitForEnvironmentReady DisplayName="Wait For Environment To Be Ready" sap:VirtualizedContainerService.HintSize="711,22" LabEnvironmentUri="[LabEnvironmentUri]" MaxWaitTime="[System.TimeSpan.FromMinutes(10)]" />
+        <mtlwa:WaitForEnvironmentReady DisplayName="Wait For Environment To Be Ready" sap:VirtualizedContainerService.HintSize="711,22" LabEnvironmentUri="[LabEnvironmentUri]" MaxWaitTime="[System.TimeSpan.FromMinutes(10)]" />
       </If.Then>
     </If>
     <If Condition="[LabWorkflowParameters.DeploymentDetails.DeploymentNeeded = True]" DisplayName="If deployment needed" sap:VirtualizedContainerService.HintSize="858,1214">
       <If.Then>
-        <Sequence DisplayName="Do deployment" sap:VirtualizedContainerService.HintSize="733,1106">                    
+        <Sequence DisplayName="Do deployment" sap:VirtualizedContainerService.HintSize="733,1106">
           <mtlwa:ReserveEnvironmentForDeployment DisplayName="Reserve Environment For Deployment" sap:VirtualizedContainerService.HintSize="711,22" LabEnvironmentUri="[LabEnvironmentUri]" />
-            <TryCatch DisplayName="Deploy Build on Environment">
-              <TryCatch.Try>
-                <Sequence DisplayName="Deploying Build">
-                  <ForEach x:TypeArguments="x:String" DisplayName="Run Deployment scripts" sap:VirtualizedContainerService.HintSize="711,254" Values="[LabWorkflowParameters.DeploymentDetails.Scripts]">
-                    <ActivityAction x:TypeArguments="x:String">
-                      <ActivityAction.Argument>
-                        <DelegateInArgument x:TypeArguments="x:String" Name="deploymentConfigurationPair" />
-                      </ActivityAction.Argument>
+          <TryCatch DisplayName="Deploy Build on Environment">
+            <TryCatch.Try>
+              <Sequence DisplayName="Deploying Build">
+                <ForEach x:TypeArguments="x:String" DisplayName="Run Deployment scripts" sap:VirtualizedContainerService.HintSize="711,254" Values="[LabWorkflowParameters.DeploymentDetails.Scripts]">
+                  <ActivityAction x:TypeArguments="x:String">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:String" Name="deploymentConfigurationPair" />
+                    </ActivityAction.Argument>
                       <mtlwa:RunDeploymentTask BuildLocation="[BuildLocation]" DeploymentScriptDetails="[deploymentConfigurationPair]" DisplayName="Run Deployment Task" sap:VirtualizedContainerService.HintSize="200,22" LabEnvironmentUri="[LabEnvironmentUri]" MaxWaitTime="[TimeSpan.FromMinutes(TimeoutForDeploymentScriptInMinutes)]" ThrowOnError="True" UseRoleForDeployment="[LabWorkflowParameters.DeploymentDetails.UseRoleForDeployment]" />
-                    </ActivityAction>
-                  </ForEach>
-                </Sequence>
-              </TryCatch.Try>
-              <TryCatch.Finally>
-                <mtlwa:ReleaseEnvironmentFromDeployment DisplayName="Release Environment From Deployment" sap:VirtualizedContainerService.HintSize="711,22" LabEnvironmentUri="[LabEnvironmentUri]" />
-              </TryCatch.Finally>
-            </TryCatch>
+                  </ActivityAction>
+                </ForEach>
+              </Sequence>
+            </TryCatch.Try>
+            <TryCatch.Finally>
+              <mtlwa:ReleaseEnvironmentFromDeployment DisplayName="Release Environment From Deployment" sap:VirtualizedContainerService.HintSize="711,22" LabEnvironmentUri="[LabEnvironmentUri]" />
+            </TryCatch.Finally>
+          </TryCatch>
           <mtlwa:WriteDeploymentInformation DeploymentInformationType="[Microsoft.TeamFoundation.Build.Common.DeploymentInformationTypes.Deploy]" DisplayName="Application Deployment Succeeded" sap:VirtualizedContainerService.HintSize="711,22" Message="[String.Format(&quot;The application was deployed successfully from the following build location:&quot;)]" Url="[BuildLocation]" />
           <If Condition="[LabWorkflowParameters.DeploymentDetails.TakePostDeploymentSnapshot = True]" DisplayName="Post Deployment Snapshot" sap:VirtualizedContainerService.HintSize="711,626">
             <If.Then>
@@ -153,13 +148,13 @@
               </Sequence>
             </If.Then>
             <If.Else>
-              <Sequence DisplayName = "No Post Deployment Snapshot"> 
-                <If Condition="[Not String.Equals(Microsoft.TeamFoundation.Lab.Client.LabEnvironment.UnmanagedProvider, labEnvironment.LabProvider)]" DisplayName= "If Virtual Environment">
+              <Sequence DisplayName="No Post Deployment Snapshot">
+                <If Condition="[Not String.Equals(Microsoft.TeamFoundation.Lab.Client.LabEnvironment.UnmanagedProvider, labEnvironment.LabProvider)]" DisplayName="If Virtual Environment">
                   <If.Then>
                     <mtlwa:WriteDeploymentInformation Url="{x:Null}" DeploymentInformationType="[Microsoft.TeamFoundation.Build.Common.DeploymentInformationTypes.Deploy]" DisplayName="Post deployment snapshot not specified" sap:VirtualizedContainerService.HintSize="200,518" Message="Build definition did not specify a post deployment snapshot. It is a best practice to take post deployment snapshot when running the lab workflow." />
                   </If.Then>
                 </If>
-              </Sequence>                
+              </Sequence>
             </If.Else>
           </If>
         </Sequence>

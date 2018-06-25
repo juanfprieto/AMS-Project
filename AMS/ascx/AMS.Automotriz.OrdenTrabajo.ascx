@@ -183,11 +183,21 @@
     <asp:PlaceHolder id="plcAutorizar" runat="server" Visible="true"></asp:PlaceHolder>
 </div>
 
+<div id="sTributario" runat="server"  visible="false" class="divStributario">
+    <asp:PlaceHolder id="PlcTributario " runat="server" Visible="true"></asp:PlaceHolder>
+</div>
+
+
+
 <script language = "javascript" type="text/javascript">
-    $(function () {
+     $(function () {
         var divAutorizar = "<%=autorizar.ClientID%>";
         $("#" + divAutorizar).draggable();
     });
-    
+
+     $(function () {
+         var sTributario = "<%=sTributario.ClientID%>";
+         $("#" + sTributario).draggable();
+    });    
     
 </script>

@@ -7,7 +7,7 @@
 </P>
 <table id="Table" class="filtersIn">
 	<tr>
-		<td>Acción a tomar :
+		<td>Acción1:
 		</td>
 		<td><asp:dropdownlist id="ddlaccion" Runat="server"></asp:dropdownlist></td>
 	</tr>
